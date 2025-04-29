@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Leaflet Map with Markers & User Location</title>
+    <title>Leaflet Map with Markers & Photos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
@@ -10,6 +10,32 @@
         #map { height: 500px; width: 100%; }
         #controls { margin-bottom: 10px; }
         #colorDescription { font-size: 0.9em; margin-top: 5px; }
+
+        /* Modal Styles */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+        #imageModal img {
+            display: block;
+            margin: 50px auto;
+            max-width: 90%;
+            max-height: 90%;
+            cursor: zoom-in;
+        }
+        #imageModal .close {
+            position: absolute;
+            top: 20px; right: 30px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -47,13 +73,17 @@
             <li><span style="color:goldenrod">Gold</span>: Grey parking street</li>
             <li><span style="color:yellow">Yellow</span>: Pay at day, free at night</li>
             <li><span style="color:gray">White</span>: Pay at day, residents only at night</li>
-            <li><span style="color:purple">Purple</span>: Custom use</li>
-            <li><span style="color:orange">Orange</span>: Custom use</li>
         </ul>
     </div>
 </div>
 
 <div id="map"></div>
+
+<!-- Modal for zoomable image -->
+<div id="imageModal">
+    <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
+    <img id="modalImage" src="" alt="Zoomed Photo">
+</div>
 
 <script>
     let map;
@@ -90,25 +120,14 @@
             draggable: true
         }).addTo(map);
 
-        function getPopupHTML() {
-            let html = `<b>${note}</b><br>Lat: ${lat.toFixed(5)}<br>Lng: ${lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`;
-            if (imageBase64) {
-                html += `<br><img src="${imageBase64}" style="max-width:150px;max-height:150px;margin-top:5px;" />`;
-            }
-            return html;
+        const imageId = 'img-' + Date.now();
+
+        let popupHTML = `<b>${note}</b><br>Lat: ${lat.toFixed(5)}<br>Lng: ${lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`;
+        if (imageBase64) {
+            popupHTML += `<br><img src="${imageBase64}" id="${imageId}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageBase64}')">`;
         }
 
-        marker.bindPopup(getPopupHTML());
-
-        marker.on("click", () => {
-            marker.setPopupContent(getPopupHTML());
-            marker.openPopup();
-        });
-
-        marker.on("dragend", () => {
-            const newLatLng = marker.getLatLng();
-            marker.setPopupContent(getPopupHTML(newLatLng.lat, newLatLng.lng));
-        });
+        marker.bindPopup(popupHTML);
 
         marker.on("contextmenu", () => {
             map.removeLayer(marker);
@@ -189,6 +208,13 @@
         reader.readAsText(file);
     }
 
+    function showImageModal(imageSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        modalImg.src = imageSrc;
+        modal.style.display = 'block';
+    }
+
     function startMapAtUserLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(pos) {
@@ -200,36 +226,33 @@
                     attribution: '© OpenStreetMap contributors'
                 }).addTo(map);
 
-                // Add the visible blue circle for user's location
+                // Show circle (not marker) at user's location
                 L.circle([lat, lng], {
                     color: 'blue',
                     fillColor: '#30f',
                     fillOpacity: 0.5,
-                    radius: 20
+                    radius: 10 // 10 meters radius
                 }).addTo(map);
 
                 map.on("click", onMapClick);
             }, function() {
-                alert("Geolocation failed, using default location.");
-                map = L.map('map').setView([32.075, 34.774], 15);
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                    attribution: '© OpenStreetMap contributors'
-                }).addTo(map);
-                map.on("click", onMapClick);
+                fallbackMap();
             });
         } else {
-            alert("Geolocation not supported, using default location.");
-            map = L.map('map').setView([32.075, 34.774], 15);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-            map.on("click", onMapClick);
+            fallbackMap();
         }
     }
 
-    // Initialize map
+    function fallbackMap() {
+        map = L.map('map').setView([32.075, 34.774], 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        map.on("click", onMapClick);
+    }
+
+    // Init map
     startMapAtUserLocation();
 </script>
 
