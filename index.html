@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<h2>Click on the Map to Add Custom Dots</h2>
+<h2>Click on the Map to Add Custom Markers with Photos</h2>
 
 <div id="controls">
     <label for="markerColor">Choose Marker Color:</label>
@@ -95,27 +95,31 @@
             draggable: true
         }).addTo(map);
 
-        function updatePopup() {
-            const latlng = marker.getLatLng();
-            let html = `<b>${note}</b><br>Lat: ${latlng.lat.toFixed(5)}<br>Lng: ${latlng.lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`;
+        function getPopupHTML() {
+            let html = `<b>${note}</b><br>Lat: ${lat.toFixed(5)}<br>Lng: ${lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`;
             if (imageBase64) {
                 html += `<br><img src="${imageBase64}" style="max-width:150px;max-height:150px;margin-top:5px;" />`;
             }
-            marker.setPopupContent(html);
+            return html;
         }
 
-        updatePopup();
+        // Bind popup once and update when needed
+        marker.bindPopup(getPopupHTML());
 
         marker.on("click", () => {
+            marker.setPopupContent(getPopupHTML());
             marker.openPopup();
+        });
+
+        marker.on("dragend", () => {
+            const newLatLng = marker.getLatLng();
+            marker.setPopupContent(getPopupHTML(newLatLng.lat, newLatLng.lng));
         });
 
         marker.on("contextmenu", () => {
             map.removeLayer(marker);
             markers = markers.filter(m => m.marker !== marker);
         });
-
-        marker.on("dragend", updatePopup);
 
         markers.push({ marker, data: { lat, lng, color, note, imageBase64 } });
     }
@@ -141,7 +145,7 @@
 
                     const resizedBase64 = canvas.toDataURL("image/jpeg", 0.7);
                     addMarker(e.latlng.lat, e.latlng.lng, color, note, resizedBase64);
-                    fileInput.value = '';
+                    fileInput.value = ''; // Clear input after adding
                 };
                 img.src = evt.target.result;
             };
