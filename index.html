@@ -148,7 +148,7 @@
             reader.onload = function(evt) {
                 const img = new Image();
                 img.onload = function() {
-                    const maxDim = 300;
+                    const maxDim = 400;
                     const scale = Math.min(maxDim / img.width, maxDim / img.height, 1);
                     const canvas = document.createElement('canvas');
                     canvas.width = img.width * scale;
