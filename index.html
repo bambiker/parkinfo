@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Leaflet Map with Custom Markers</title>
+    <title>Leaflet Map with Custom Markers & Photos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
@@ -10,7 +10,6 @@
         #map { height: 500px; width: 100%; }
         #controls { margin-bottom: 10px; }
         #colorDescription { font-size: 0.9em; margin-top: 5px; }
-        textarea { vertical-align: middle; }
     </style>
 </head>
 <body>
@@ -32,6 +31,9 @@
 
     <label for="markerText">Enter Note:</label>
     <input type="text" id="markerText" placeholder="Write something..." />
+
+    <label for="markerImage">Attach Photo:</label>
+    <input type="file" id="markerImage" accept="image/*" capture="environment" />
 
     <button onclick="clearMarkers()">Clear Markers</button>
     <button onclick="downloadMarkers()">Download Markers</button>
@@ -73,28 +75,6 @@
         });
     }
 
-    function addMarker(lat, lng, color, note) {
-        var marker = L.marker([lat, lng], {
-            icon: getIcon(color),
-            draggable: true
-        }).addTo(map);
-
-        function updatePopup() {
-            marker.setPopupContent(`<b>${note}</b><br>Lat: ${marker.getLatLng().lat.toFixed(5)}<br>Lng: ${marker.getLatLng().lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`);
-        }
-
-        updatePopup();
-
-        marker.on("contextmenu", () => {
-            map.removeLayer(marker);
-            markers = markers.filter(m => m.marker !== marker);
-        });
-
-        marker.on("dragend", updatePopup);
-
-        markers.push({ marker, data: { lat, lng, color, note } });
-    }
-
     function colorDescription(color) {
         const descriptions = {
             green: "Free parking lot",
@@ -109,10 +89,62 @@
         return descriptions[color] || "Unknown";
     }
 
+    function addMarker(lat, lng, color, note, imageBase64 = null) {
+        const marker = L.marker([lat, lng], {
+            icon: getIcon(color),
+            draggable: true
+        }).addTo(map);
+
+        function updatePopup() {
+            const latlng = marker.getLatLng();
+            let html = `<b>${note}</b><br>Lat: ${latlng.lat.toFixed(5)}<br>Lng: ${latlng.lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`;
+            if (imageBase64) {
+                html += `<br><img src="${imageBase64}" style="max-width:150px;max-height:150px;margin-top:5px;" />`;
+            }
+            marker.setPopupContent(html);
+        }
+
+        updatePopup();
+
+        marker.on("contextmenu", () => {
+            map.removeLayer(marker);
+            markers = markers.filter(m => m.marker !== marker);
+        });
+
+        marker.on("dragend", updatePopup);
+
+        markers.push({ marker, data: { lat, lng, color, note, imageBase64 } });
+    }
+
     function onMapClick(e) {
         const color = document.getElementById("markerColor").value;
         const note = document.getElementById("markerText").value || "No note";
-        addMarker(e.latlng.lat, e.latlng.lng, color, note);
+        const fileInput = document.getElementById("markerImage");
+        const file = fileInput.files[0];
+
+        if (file && file.type.startsWith("image/")) {
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                const img = new Image();
+                img.onload = function() {
+                    const maxDim = 300;
+                    const scale = Math.min(maxDim / img.width, maxDim / img.height, 1);
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width * scale;
+                    canvas.height = img.height * scale;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                    const resizedBase64 = canvas.toDataURL("image/jpeg", 0.7);
+                    addMarker(e.latlng.lat, e.latlng.lng, color, note, resizedBase64);
+                    fileInput.value = ''; // reset input
+                };
+                img.src = evt.target.result;
+            };
+            reader.readAsDataURL(file);
+        } else {
+            addMarker(e.latlng.lat, e.latlng.lng, color, note);
+        }
     }
 
     function clearMarkers() {
@@ -127,7 +159,8 @@
                 lat: latlng.lat,
                 lng: latlng.lng,
                 color: m.data.color,
-                note: m.data.note
+                note: m.data.note,
+                imageBase64: m.data.imageBase64 || null
             };
         });
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -147,7 +180,7 @@
             try {
                 const data = JSON.parse(e.target.result);
                 clearMarkers();
-                data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note));
+                data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.imageBase64));
             } catch (err) {
                 alert("Invalid JSON file.");
             }
