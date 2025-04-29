@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>parking info</title>
+    <title>Leaflet Map with Markers & User Location</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
@@ -56,41 +56,22 @@
 <div id="map"></div>
 
 <script>
-    var map;
-    var markers = [];
+    let map;
+    let markers = [];
 
-    // Initialize the map
-    function initMap(lat, lng) {
-        map = L.map('map').setView([lat, lng], 17);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-
-        map.on('click', onMapClick);
+    function getIcon(color) {
+        return L.icon({
+            iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
     }
 
-    // Get user's current location using Geolocation API
-    function getUserLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var userLat = position.coords.latitude;
-                var userLng = position.coords.longitude;
-                initMap(userLat, userLng);
-            }, function(error) {
-                // If geolocation fails, fall back to a default location (Tel Aviv)
-                alert("Geolocation failed, centering map to default location.");
-                initMap(32.075, 34.774); // Default to Tel Aviv if geolocation fails
-            });
-        } else {
-            alert("Geolocation is not supported by this browser.");
-            initMap(32.075, 34.774); // Default to Tel Aviv if geolocation is not supported
-        }
-    }
-
-    // Get the color description for each marker color
     function colorDescription(color) {
-        const descriptions = {
+        const desc = {
             green: "Free parking lot",
             blue: "Paid parking lot",
             red: "No parking zone",
@@ -100,10 +81,9 @@
             purple: "Custom use",
             orange: "Custom use"
         };
-        return descriptions[color] || "Unknown";
+        return desc[color] || "Unknown";
     }
 
-    // Add a marker to the map
     function addMarker(lat, lng, color, note, imageBase64 = null) {
         const marker = L.marker([lat, lng], {
             icon: getIcon(color),
@@ -138,19 +118,6 @@
         markers.push({ marker, data: { lat, lng, color, note, imageBase64 } });
     }
 
-    // Add custom icon for markers
-    function getIcon(color) {
-        return L.icon({
-            iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41]
-        });
-    }
-
-    // When the map is clicked, add a marker
     function onMapClick(e) {
         const color = document.getElementById("markerColor").value;
         const note = document.getElementById("markerText").value || "No note";
@@ -169,10 +136,9 @@
                     canvas.height = img.height * scale;
                     const ctx = canvas.getContext('2d');
                     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-
                     const resizedBase64 = canvas.toDataURL("image/jpeg", 0.7);
                     addMarker(e.latlng.lat, e.latlng.lng, color, note, resizedBase64);
-                    fileInput.value = ''; // Clear input after adding
+                    fileInput.value = '';
                 };
                 img.src = evt.target.result;
             };
@@ -182,13 +148,11 @@
         }
     }
 
-    // Clear all markers from the map
     function clearMarkers() {
         markers.forEach(m => map.removeLayer(m.marker));
         markers = [];
     }
 
-    // Download markers as JSON
     function downloadMarkers() {
         const data = markers.map(m => {
             const latlng = m.marker.getLatLng();
@@ -209,7 +173,6 @@
         URL.revokeObjectURL(url);
     }
 
-    // Upload markers from JSON
     function uploadMarkers(event) {
         const file = event.target.files[0];
         if (!file) return;
@@ -226,8 +189,48 @@
         reader.readAsText(file);
     }
 
-    // Initialize the map with user's location
-    getUserLocation();
+    function startMapAtUserLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(pos) {
+                const lat = pos.coords.latitude;
+                const lng = pos.coords.longitude;
+                map = L.map('map').setView([lat, lng], 17);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+
+                // Add the visible blue circle for user's location
+                L.circle([lat, lng], {
+                    color: 'blue',
+                    fillColor: '#30f',
+                    fillOpacity: 0.5,
+                    radius: 20
+                }).addTo(map);
+
+                map.on("click", onMapClick);
+            }, function() {
+                alert("Geolocation failed, using default location.");
+                map = L.map('map').setView([32.075, 34.774], 15);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+                map.on("click", onMapClick);
+            });
+        } else {
+            alert("Geolocation not supported, using default location.");
+            map = L.map('map').setView([32.075, 34.774], 15);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            map.on("click", onMapClick);
+        }
+    }
+
+    // Initialize map
+    startMapAtUserLocation();
 </script>
 
 </body>
