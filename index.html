@@ -106,6 +106,10 @@
 
         updatePopup();
 
+        marker.on("click", () => {
+            marker.openPopup();
+        });
+
         marker.on("contextmenu", () => {
             map.removeLayer(marker);
             markers = markers.filter(m => m.marker !== marker);
@@ -137,7 +141,7 @@
 
                     const resizedBase64 = canvas.toDataURL("image/jpeg", 0.7);
                     addMarker(e.latlng.lat, e.latlng.lng, color, note, resizedBase64);
-                    fileInput.value = ''; // reset input
+                    fileInput.value = '';
                 };
                 img.src = evt.target.result;
             };
