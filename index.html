@@ -56,25 +56,39 @@
 <div id="map"></div>
 
 <script>
-    var map = L.map('map').setView([32.075, 34.774], 15);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
+    var map;
     var markers = [];
 
-    function getIcon(color) {
-        return L.icon({
-            iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41]
-        });
+    // Initialize the map
+    function initMap(lat, lng) {
+        map = L.map('map').setView([lat, lng], 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        map.on('click', onMapClick);
     }
 
+    // Get user's current location using Geolocation API
+    function getUserLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var userLat = position.coords.latitude;
+                var userLng = position.coords.longitude;
+                initMap(userLat, userLng);
+            }, function(error) {
+                // If geolocation fails, fall back to a default location (Tel Aviv)
+                alert("Geolocation failed, centering map to default location.");
+                initMap(32.075, 34.774); // Default to Tel Aviv if geolocation fails
+            });
+        } else {
+            alert("Geolocation is not supported by this browser.");
+            initMap(32.075, 34.774); // Default to Tel Aviv if geolocation is not supported
+        }
+    }
+
+    // Get the color description for each marker color
     function colorDescription(color) {
         const descriptions = {
             green: "Free parking lot",
@@ -89,6 +103,7 @@
         return descriptions[color] || "Unknown";
     }
 
+    // Add a marker to the map
     function addMarker(lat, lng, color, note, imageBase64 = null) {
         const marker = L.marker([lat, lng], {
             icon: getIcon(color),
@@ -103,7 +118,6 @@
             return html;
         }
 
-        // Bind popup once and update when needed
         marker.bindPopup(getPopupHTML());
 
         marker.on("click", () => {
@@ -124,6 +138,19 @@
         markers.push({ marker, data: { lat, lng, color, note, imageBase64 } });
     }
 
+    // Add custom icon for markers
+    function getIcon(color) {
+        return L.icon({
+            iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+    }
+
+    // When the map is clicked, add a marker
     function onMapClick(e) {
         const color = document.getElementById("markerColor").value;
         const note = document.getElementById("markerText").value || "No note";
@@ -155,11 +182,13 @@
         }
     }
 
+    // Clear all markers from the map
     function clearMarkers() {
         markers.forEach(m => map.removeLayer(m.marker));
         markers = [];
     }
 
+    // Download markers as JSON
     function downloadMarkers() {
         const data = markers.map(m => {
             const latlng = m.marker.getLatLng();
@@ -180,6 +209,7 @@
         URL.revokeObjectURL(url);
     }
 
+    // Upload markers from JSON
     function uploadMarkers(event) {
         const file = event.target.files[0];
         if (!file) return;
@@ -196,7 +226,8 @@
         reader.readAsText(file);
     }
 
-    map.on('click', onMapClick);
+    // Initialize the map with user's location
+    getUserLocation();
 </script>
 
 </body>
