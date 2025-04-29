@@ -9,6 +9,8 @@
     <style>
         #map { height: 500px; width: 100%; }
         #controls { margin-bottom: 10px; }
+        #colorDescription { font-size: 0.9em; margin-top: 5px; }
+        textarea { vertical-align: middle; }
     </style>
 </head>
 <body>
@@ -18,9 +20,12 @@
 <div id="controls">
     <label for="markerColor">Choose Marker Color:</label>
     <select id="markerColor">
-        <option value="red">Red</option>
-        <option value="blue">Blue</option>
         <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="gold">Gold</option>
+        <option value="yellow">Yellow</option>
+        <option value="white">White</option>
         <option value="purple">Purple</option>
         <option value="orange">Orange</option>
     </select>
@@ -29,24 +34,34 @@
     <input type="text" id="markerText" placeholder="Write something..." />
 
     <button onclick="clearMarkers()">Clear Markers</button>
+    <button onclick="downloadMarkers()">Download Markers</button>
+    <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" />
+
+    <div id="colorDescription">
+        <ul>
+            <li><span style="color:green">Green</span>: Free parking lot</li>
+            <li><span style="color:blue">Blue</span>: Paid parking lot</li>
+            <li><span style="color:red">Red</span>: No parking zone</li>
+            <li><span style="color:goldenrod">Gold</span>: Grey parking street</li>
+            <li><span style="color:yellow">Yellow</span>: Pay at day, free at night</li>
+            <li><span style="color:gray">White</span>: Pay at day, residents only at night</li>
+            <li><span style="color:purple">Purple</span>: Custom use</li>
+            <li><span style="color:orange">Orange</span>: Custom use</li>
+        </ul>
+    </div>
 </div>
 
 <div id="map"></div>
 
 <script>
-    // Initialize the map
-    var map = L.map('map').setView([32.075, 34.774], 15); // Center on Tel Aviv
-
-    // Add OpenStreetMap tile layer
+    var map = L.map('map').setView([32.075, 34.774], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // Store markers in an array for clearing
     var markers = [];
 
-    // Function to get Leaflet icon with chosen color
     function getIcon(color) {
         return L.icon({
             iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
@@ -58,28 +73,90 @@
         });
     }
 
-    // Function to add a marker when clicking the map
-    function onMapClick(e) {
-        var color = document.getElementById("markerColor").value;
-        var note = document.getElementById("markerText").value || "No note";
+    function addMarker(lat, lng, color, note) {
+        var marker = L.marker([lat, lng], {
+            icon: getIcon(color),
+            draggable: true
+        }).addTo(map);
 
-        var marker = L.marker(e.latlng, { icon: getIcon(color) }).addTo(map)
-            .bindPopup("<b>" + note + "</b><br>Lat: " + e.latlng.lat.toFixed(5) + "<br>Lng: " + e.latlng.lng.toFixed(5))
-            .openPopup();
+        function updatePopup() {
+            marker.setPopupContent(`<b>${note}</b><br>Lat: ${marker.getLatLng().lat.toFixed(5)}<br>Lng: ${marker.getLatLng().lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`);
+        }
 
-        markers.push(marker); // Store marker to clear later
+        updatePopup();
+
+        marker.on("contextmenu", () => {
+            map.removeLayer(marker);
+            markers = markers.filter(m => m.marker !== marker);
+        });
+
+        marker.on("dragend", updatePopup);
+
+        markers.push({ marker, data: { lat, lng, color, note } });
     }
 
-    // Function to clear all markers
+    function colorDescription(color) {
+        const descriptions = {
+            green: "Free parking lot",
+            blue: "Paid parking lot",
+            red: "No parking zone",
+            gold: "Grey parking street",
+            yellow: "Pay at day, free at night",
+            white: "Pay at day, residents only at night",
+            purple: "Custom use",
+            orange: "Custom use"
+        };
+        return descriptions[color] || "Unknown";
+    }
+
+    function onMapClick(e) {
+        const color = document.getElementById("markerColor").value;
+        const note = document.getElementById("markerText").value || "No note";
+        addMarker(e.latlng.lat, e.latlng.lng, color, note);
+    }
+
     function clearMarkers() {
-        markers.forEach(marker => map.removeLayer(marker));
+        markers.forEach(m => map.removeLayer(m.marker));
         markers = [];
     }
 
-    // Add click event listener
+    function downloadMarkers() {
+        const data = markers.map(m => {
+            const latlng = m.marker.getLatLng();
+            return {
+                lat: latlng.lat,
+                lng: latlng.lng,
+                color: m.data.color,
+                note: m.data.note
+            };
+        });
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "markers.json";
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    function uploadMarkers(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const data = JSON.parse(e.target.result);
+                clearMarkers();
+                data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note));
+            } catch (err) {
+                alert("Invalid JSON file.");
+            }
+        };
+        reader.readAsText(file);
+    }
+
     map.on('click', onMapClick);
 </script>
 
 </body>
 </html>
-
