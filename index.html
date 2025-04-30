@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Leaflet Map with Markers & Photos</title>
+    <title>Leaflet Map with Markers & Search</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
@@ -10,8 +10,8 @@
         #map { height: 500px; width: 100%; }
         #controls { margin-bottom: 10px; }
         #colorDescription { font-size: 0.9em; margin-top: 5px; }
+        #markerCount { font-weight: bold; margin-top: 5px; }
 
-        /* Modal Styles */
         #imageModal {
             display: none;
             position: fixed;
@@ -65,6 +65,13 @@
     <button onclick="downloadMarkers()">Download Markers</button>
     <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" />
 
+    <div id="markerCount">Markers: 0</div>
+
+    <br><br>
+    <label for="searchBox">Search location:</label>
+    <input type="text" id="searchBox" placeholder="e.g. Tel Aviv">
+    <button onclick="searchLocation()">Search</button>
+
     <div id="colorDescription">
         <ul>
             <li><span style="color:green">Green</span>: Free parking lot</li>
@@ -88,6 +95,7 @@
 <script>
     let map;
     let markers = [];
+    let searchCircle;
 
     function getIcon(color) {
         return L.icon({
@@ -98,6 +106,10 @@
             popupAnchor: [1, -34],
             shadowSize: [41, 41]
         });
+    }
+
+    function updateMarkerCount() {
+        document.getElementById("markerCount").textContent = "Markers: " + markers.length;
     }
 
     function colorDescription(color) {
@@ -114,15 +126,16 @@
         return desc[color] || "Unknown";
     }
 
-    function addMarker(lat, lng, color, note, imageBase64 = null) {
+    function addMarker(lat, lng, color, note, imageBase64 = null, datetime = null) {
         const marker = L.marker([lat, lng], {
             icon: getIcon(color),
             draggable: true
         }).addTo(map);
 
+        const timestamp = datetime || new Date().toISOString();
         const imageId = 'img-' + Date.now();
 
-        let popupHTML = `<b>${note}</b><br>Lat: ${lat.toFixed(5)}<br>Lng: ${lng.toFixed(5)}<br><i>${colorDescription(color)}</i>`;
+        let popupHTML = `<b>${note}</b><br>Lat: ${lat.toFixed(5)}<br>Lng: ${lng.toFixed(5)}<br><i>${colorDescription(color)}</i><br><small>${timestamp}</small>`;
         if (imageBase64) {
             popupHTML += `<br><img src="${imageBase64}" id="${imageId}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageBase64}')">`;
         }
@@ -132,9 +145,11 @@
         marker.on("contextmenu", () => {
             map.removeLayer(marker);
             markers = markers.filter(m => m.marker !== marker);
+            updateMarkerCount();
         });
 
-        markers.push({ marker, data: { lat, lng, color, note, imageBase64 } });
+        markers.push({ marker, data: { lat, lng, color, note, imageBase64, datetime: timestamp } });
+        updateMarkerCount();
     }
 
     function onMapClick(e) {
@@ -170,6 +185,7 @@
     function clearMarkers() {
         markers.forEach(m => map.removeLayer(m.marker));
         markers = [];
+        updateMarkerCount();
     }
 
     function downloadMarkers() {
@@ -180,7 +196,8 @@
                 lng: latlng.lng,
                 color: m.data.color,
                 note: m.data.note,
-                imageBase64: m.data.imageBase64 || null
+                imageBase64: m.data.imageBase64 || null,
+                datetime: m.data.datetime
             };
         });
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -200,7 +217,7 @@
             try {
                 const data = JSON.parse(e.target.result);
                 clearMarkers();
-                data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.imageBase64));
+                data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.imageBase64, d.datetime));
             } catch (err) {
                 alert("Invalid JSON file.");
             }
@@ -215,6 +232,34 @@
         modal.style.display = 'block';
     }
 
+    function searchLocation() {
+        const query = document.getElementById('searchBox').value;
+        if (!query) return;
+        fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`)
+            .then(res => res.json())
+            .then(results => {
+                if (results.length > 0) {
+                    const lat = parseFloat(results[0].lat);
+                    const lon = parseFloat(results[0].lon);
+                    map.setView([lat, lon], 17);
+
+                    if (searchCircle) map.removeLayer(searchCircle);
+                    searchCircle = L.circle([lat, lon], {
+                        color: 'blue',
+                        fillColor: '#30f',
+                        fillOpacity: 0.5,
+                        radius: 10
+                    }).addTo(map);
+                } else {
+                    alert("Location not found.");
+                }
+            })
+            .catch(err => {
+                alert("Search failed.");
+                console.error(err);
+            });
+    }
+
     function startMapAtUserLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(pos) {
@@ -226,12 +271,11 @@
                     attribution: '© OpenStreetMap contributors'
                 }).addTo(map);
 
-                // Show circle (not marker) at user's location
                 L.circle([lat, lng], {
                     color: 'blue',
                     fillColor: '#30f',
                     fillOpacity: 0.5,
-                    radius: 10 // 10 meters radius
+                    radius: 10
                 }).addTo(map);
 
                 map.on("click", onMapClick);
@@ -252,7 +296,6 @@
         map.on("click", onMapClick);
     }
 
-    // Init map
     startMapAtUserLocation();
 </script>
 
