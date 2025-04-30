@@ -51,13 +51,18 @@
     <label for="searchBox">חפש מיקום:</label>
     <input type="text" id="searchBox" placeholder="לדוג' תל אביב" />
     <button onclick="searchLocation()">חפש</button>
-    <br><br>
+</div>
 
-    <label>
-        <input type="checkbox" id="enableAdding" />
-        אפשר הוספת סימונים למפה
-    </label>
+<div id="map"></div>
+
+<div id="imageModal">
+    <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
+    <img id="modalImage" src="" alt="תמונה מוגדלת">
+</div>
+
+<div id="controls">
     <br>
+    <label><input type="checkbox" id="enableMarkers"> אפשר הוספת סימונים</label><br><br>
 
     <label for="markerColor">בחר צבע סימון:</label>
     <select id="markerColor">
@@ -69,44 +74,26 @@
         <option value="white">לבן</option>
         <option value="purple">סגול</option>
         <option value="orange">כתום</option>
-    </select>
-    <br>
+    </select><br>
+
     <label for="markerText">הוסף הערה:</label>
-    <input type="text" id="markerText" placeholder="כתוב משהו..." /> <br>
+    <input type="text" id="markerText" placeholder="כתוב משהו..." /><br>
 
     <label for="markerImage">צרף תמונה:</label>
-    <input type="file" id="markerImage" accept="image/*" capture="environment" onchange="previewImage(event)" /><br>
-    <br><br>
+    <input type="file" id="markerImage" accept="image/*" capture="environment" /><br><br>
+
     <div id="markerCount">סימונים: 0</div>
-    
-    <button onclick="downloadMarkers()">גיבוי הסימונים</button><br> 
-    טען קובץ סימונים 
+
+    <button onclick="downloadMarkers()">גיבוי הסימונים</button><br>
+    טען קובץ סימונים:
     <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" /><br>
 </div>
 
-<div id="map"></div>
-
-<div id="imageModal">
-    <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
-    <img id="modalImage" src="" alt="תמונה מוגדלת">
-</div>
-
 <script>
+const IMGUR_CLIENT_ID = "1531d493c436bc9";
 let map;
 let markers = [];
 let currentLatLng = null;
-let currentImage = null;
-
-function previewImage(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            currentImage = e.target.result;
-        };
-        reader.readAsDataURL(file);
-    }
-}
 
 function getIcon(color) {
     return L.icon({
@@ -133,7 +120,7 @@ function colorDescription(color) {
     return desc[color] || "לא ידוע";
 }
 
-function addMarker(lat, lng, color, note, imageBase64 = null) {
+function addMarker(lat, lng, color, note, imageUrl = null) {
     const marker = L.marker([lat, lng], {
         icon: getIcon(color),
         draggable: true
@@ -142,8 +129,8 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
     const dateTime = new Date().toISOString();
 
     let popupHTML = `<b>${note}</b><br>קו: ${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך: ${dateTime}`;
-    if (imageBase64) {
-        popupHTML += `<br><img src="${imageBase64}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageBase64}')">`;
+    if (imageUrl) {
+        popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
     }
 
     const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
@@ -157,12 +144,12 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
         updateMarkerCount();
     });
 
-    markers.push({ marker, data: { lat, lng, color, note, imageBase64, dateTime } });
+    markers.push({ marker, data: { lat, lng, color, note, imageUrl, dateTime } });
     updateMarkerCount();
 
+    // Clear inputs
     document.getElementById("markerText").value = "";
     document.getElementById("markerImage").value = "";
-    currentImage = null;
 }
 
 function updateMarkerCount() {
@@ -178,7 +165,7 @@ function clearMarkers() {
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
-        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, imageBase64: m.data.imageBase64 || null, dateTime: m.data.dateTime };
+        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -197,7 +184,7 @@ function uploadMarkers(event) {
         try {
             const data = JSON.parse(e.target.result);
             clearMarkers();
-            data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.imageBase64));
+            data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.imageUrl));
         } catch (err) {
             alert("הקובץ לא תקין");
         }
@@ -231,15 +218,29 @@ function searchLocation() {
         });
 }
 
-function handleMapClick(e) {
-    if (!document.getElementById("enableAdding").checked) {
-        alert("נא לאפשר הוספת סימונים על ידי סימון התיבה");
-        return;
-    }
-    const latlng = e.latlng;
-    const color = document.getElementById("markerColor").value;
-    const note = document.getElementById("markerText").value;
-    addMarker(latlng.lat, latlng.lng, color, note, currentImage);
+function uploadToImgur(file, callback) {
+    const formData = new FormData();
+    formData.append("image", file);
+    fetch("https://api.imgur.com/3/image", {
+        method: "POST",
+        headers: {
+            Authorization: `Client-ID ${IMGUR_CLIENT_ID}`
+        },
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            callback(data.data.link);
+        } else {
+            alert("שגיאה בהעלאת התמונה");
+            callback(null);
+        }
+    })
+    .catch(() => {
+        alert("בעיה בחיבור ל-Imgur");
+        callback(null);
+    });
 }
 
 function startMapAtUserLocation() {
@@ -258,7 +259,22 @@ function startMapAtUserLocation() {
                 color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
             }).addTo(map);
 
-            map.on("click", handleMapClick);
+            map.on("click", function(e) {
+                if (!document.getElementById("enableMarkers").checked) return;
+
+                const latlng = e.latlng;
+                const color = document.getElementById("markerColor").value;
+                const note = document.getElementById("markerText").value;
+                const file = document.getElementById("markerImage").files[0];
+
+                if (file) {
+                    uploadToImgur(file, (imgUrl) => {
+                        addMarker(latlng.lat, latlng.lng, color, note, imgUrl);
+                    });
+                } else {
+                    addMarker(latlng.lat, latlng.lng, color, note, null);
+                }
+            });
         }, fallbackMap);
     } else {
         fallbackMap();
@@ -271,7 +287,23 @@ function fallbackMap() {
         maxZoom: 19,
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
-    map.on("click", handleMapClick);
+
+    map.on("click", function(e) {
+        if (!document.getElementById("enableMarkers").checked) return;
+
+        const latlng = e.latlng;
+        const color = document.getElementById("markerColor").value;
+        const note = document.getElementById("markerText").value;
+        const file = document.getElementById("markerImage").files[0];
+
+        if (file) {
+            uploadToImgur(file, (imgUrl) => {
+                addMarker(latlng.lat, latlng.lng, color, note, imgUrl);
+            });
+        } else {
+            addMarker(latlng.lat, latlng.lng, color, note, null);
+        }
+    });
 }
 
 startMapAtUserLocation();
