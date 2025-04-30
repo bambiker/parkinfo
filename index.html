@@ -64,7 +64,7 @@
     <input type="text" id="markerText" placeholder="כתוב משהו..." />
 
     <label for="markerImage">צרף תמונה:</label>
-    <input type="file" id="markerImage" accept="image/*" capture="environment" />
+    <input type="file" id="markerImage" accept="image/*" capture="environment" onchange="previewImage(event)" />
 
     <button onclick="clearMarkers()">נקה סימונים</button>
     <button onclick="downloadMarkers()">הורד קובץ</button>
@@ -89,6 +89,18 @@
 let map;
 let markers = [];
 let currentLatLng = null;
+let currentImage = null; // Store the current image for adding to markers
+
+function previewImage(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            currentImage = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+}
 
 function getIcon(color) {
     return L.icon({
@@ -128,7 +140,7 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
         popupHTML += `<br><img src="${imageBase64}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageBase64}')">`;
     }
 
-    // הוספת קישור ל-Waze
+    // Add Waze navigation link
     const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
     popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a>`;
 
@@ -230,7 +242,7 @@ function startMapAtUserLocation() {
                 const latlng = e.latlng;
                 const color = document.getElementById("markerColor").value;
                 const note = document.getElementById("markerText").value;
-                addMarker(latlng.lat, latlng.lng, color, note);
+                addMarker(latlng.lat, latlng.lng, color, note, currentImage);
             });
         }, fallbackMap);
     } else {
@@ -248,7 +260,7 @@ function fallbackMap() {
         const latlng = e.latlng;
         const color = document.getElementById("markerColor").value;
         const note = document.getElementById("markerText").value;
-        addMarker(latlng.lat, latlng.lng, color, note);
+        addMarker(latlng.lat, latlng.lng, color, note, currentImage);
     });
 }
 
