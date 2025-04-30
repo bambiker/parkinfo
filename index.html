@@ -226,7 +226,12 @@ function startMapAtUserLocation() {
                 color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
             }).addTo(map);
 
-            map.on("click", onMapClick);
+            map.on("click", function(e) {
+                const latlng = e.latlng;
+                const color = document.getElementById("markerColor").value;
+                const note = document.getElementById("markerText").value;
+                addMarker(latlng.lat, latlng.lng, color, note);
+            });
         }, fallbackMap);
     } else {
         fallbackMap();
@@ -239,7 +244,12 @@ function fallbackMap() {
         maxZoom: 19,
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
-    map.on("click", onMapClick);
+    map.on("click", function(e) {
+        const latlng = e.latlng;
+        const color = document.getElementById("markerColor").value;
+        const note = document.getElementById("markerText").value;
+        addMarker(latlng.lat, latlng.lng, color, note);
+    });
 }
 
 startMapAtUserLocation();
