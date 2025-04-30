@@ -17,7 +17,6 @@
         #controls { margin-bottom: 10px; }
         #colorDescription { font-size: 0.9em; margin-top: 5px; }
         #markerCount { font-weight: bold; margin-top: 5px; }
-
         #imageModal {
             display: none;
             position: fixed;
@@ -77,22 +76,10 @@
     <label for="searchBox">חפש מיקום:</label>
     <input type="text" id="searchBox" placeholder="לדוג' תל אביב" />
     <button onclick="searchLocation()">חפש</button>
-
-    <div id="colorDescription">
-        <ul>
-            <li><span style="color:green">ירוק</span>: חניון חינמי</li>
-            <li><span style="color:blue">כחול</span>: חניון בתשלום</li>
-            <li><span style="color:red">אזור אסור לחניה</span></li>
-            <li><span style="color:goldenrod">אפור</span>: רחוב חניה עם קו אפור</li>
-            <li><span style="color:yellow">צהוב</span>: בתשלום ביום, חינם בלילה</li>
-            <li><span style="color:gray">לבן</span>: בתשלום ביום, בלילה לתושבים בלבד</li>
-        </ul>
-    </div>
 </div>
 
 <div id="map"></div>
 
-<!-- החלון לצפייה בתמונה -->
 <div id="imageModal">
     <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
     <img id="modalImage" src="" alt="תמונה מוגדלת">
@@ -101,6 +88,7 @@
 <script>
 let map;
 let markers = [];
+let currentLatLng = null;
 
 function getIcon(color) {
     return L.icon({
@@ -133,13 +121,16 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
         draggable: true
     }).addTo(map);
 
-    const imageId = 'img-' + Date.now();
     const dateTime = new Date().toISOString();
 
     let popupHTML = `<b>${note}</b><br>קו: ${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך: ${dateTime}`;
     if (imageBase64) {
-        popupHTML += `<br><img src="${imageBase64}" id="${imageId}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageBase64}')">`;
+        popupHTML += `<br><img src="${imageBase64}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageBase64}')">`;
     }
+
+    // הוספת קישור ל-Waze
+    const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
+    popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a>`;
 
     marker.bindPopup(popupHTML);
 
@@ -151,36 +142,6 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
 
     markers.push({ marker, data: { lat, lng, color, note, imageBase64, dateTime } });
     updateMarkerCount();
-}
-
-function onMapClick(e) {
-    const color = document.getElementById("markerColor").value;
-    const note = document.getElementById("markerText").value || "אין הערה";
-    const fileInput = document.getElementById("markerImage");
-    const file = fileInput.files[0];
-
-    if (file && file.type.startsWith("image/")) {
-        const reader = new FileReader();
-        reader.onload = function(evt) {
-            const img = new Image();
-            img.onload = function() {
-                const maxDim = 400;
-                const scale = Math.min(maxDim / img.width, maxDim / img.height, 1);
-                const canvas = document.createElement('canvas');
-                canvas.width = img.width * scale;
-                canvas.height = img.height * scale;
-                const ctx = canvas.getContext('2d');
-                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-                const resizedBase64 = canvas.toDataURL("image/jpeg", 0.7);
-                addMarker(e.latlng.lat, e.latlng.lng, color, note, resizedBase64);
-                fileInput.value = '';
-            };
-            img.src = evt.target.result;
-        };
-        reader.readAsDataURL(file);
-    } else {
-        addMarker(e.latlng.lat, e.latlng.lng, color, note);
-    }
 }
 
 function updateMarkerCount() {
@@ -196,14 +157,7 @@ function clearMarkers() {
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
-        return {
-            lat: latlng.lat,
-            lng: latlng.lng,
-            color: m.data.color,
-            note: m.data.note,
-            imageBase64: m.data.imageBase64 || null,
-            dateTime: m.data.dateTime
-        };
+        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, imageBase64: m.data.imageBase64 || null, dateTime: m.data.dateTime };
     });
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -261,6 +215,7 @@ function startMapAtUserLocation() {
         navigator.geolocation.getCurrentPosition(function(pos) {
             const lat = pos.coords.latitude;
             const lng = pos.coords.longitude;
+            currentLatLng = { lat, lng };
             map = L.map('map').setView([lat, lng], 17);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
