@@ -48,6 +48,11 @@
 <h2>מידע על חניות וחניונים בישראל</h2>
 
 <div id="controls">
+    <label for="searchBox">חפש מיקום:</label>
+    <input type="text" id="searchBox" placeholder="לדוג' תל אביב" />
+    <button onclick="searchLocation()">חפש</button>
+    <br><br>
+
     <label for="markerColor">בחר צבע סימון:</label>
     <select id="markerColor">
         <option value="green">ירוק</option>
@@ -59,23 +64,15 @@
         <option value="purple">סגול</option>
         <option value="orange">כתום</option>
     </select>
-
+    <br>
     <label for="markerText">הוסף הערה:</label>
-    <input type="text" id="markerText" placeholder="כתוב משהו..." />
+    <input type="text" id="markerText" placeholder="כתוב משהו..." /> <br>
 
     <label for="markerImage">צרף תמונה:</label>
-    <input type="file" id="markerImage" accept="image/*" capture="environment" onchange="previewImage(event)" />
-
-    <button onclick="clearMarkers()">נקה סימונים</button>
-    <button onclick="downloadMarkers()">הורד קובץ</button>
-    <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" />
-
-    <div id="markerCount">סימונים: 0</div>
+    <input type="file" id="markerImage" accept="image/*" capture="environment" onchange="previewImage(event)" /><br>
 
     <br><br>
-    <label for="searchBox">חפש מיקום:</label>
-    <input type="text" id="searchBox" placeholder="לדוג' תל אביב" />
-    <button onclick="searchLocation()">חפש</button>
+    <div id="markerCount">סימונים: 0</div>
 </div>
 
 <div id="map"></div>
@@ -83,6 +80,13 @@
 <div id="imageModal">
     <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
     <img id="modalImage" src="" alt="תמונה מוגדלת">
+</div>
+
+<div id="controls">
+    <button onclick="clearMarkers()">נקה סימונים</button>
+    <button onclick="downloadMarkers()">הורד קובץ</button>
+    טען קובץ
+    <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" />
 </div>
 
 <script>
@@ -154,6 +158,10 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
 
     markers.push({ marker, data: { lat, lng, color, note, imageBase64, dateTime } });
     updateMarkerCount();
+
+    // Clear the input fields after adding the marker
+    document.getElementById("markerText").value = "";
+    document.getElementById("markerImage").value = "";
 }
 
 function updateMarkerCount() {
