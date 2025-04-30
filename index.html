@@ -51,18 +51,13 @@
     <label for="searchBox">חפש מיקום:</label>
     <input type="text" id="searchBox" placeholder="לדוג' תל אביב" />
     <button onclick="searchLocation()">חפש</button>
-    <br></div>
+    <br><br>
 
-<div id="map"></div>
-
-<div id="imageModal">
-    <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
-    <img id="modalImage" src="" alt="תמונה מוגדלת">
-</div>
-
-<div id="controls">
-
-<br>
+    <label>
+        <input type="checkbox" id="enableAdding" />
+        אפשר הוספת סימונים למפה
+    </label>
+    <br>
 
     <label for="markerColor">בחר צבע סימון:</label>
     <select id="markerColor">
@@ -84,16 +79,23 @@
     <br><br>
     <div id="markerCount">סימונים: 0</div>
     
-    <button onclick="downloadMarkers()">הורד קובץ</button><br>
-    טען קובץ
+    <button onclick="downloadMarkers()">גיבוי הסימונים</button><br> 
+    טען קובץ סימונים 
     <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" /><br>
+</div>
+
+<div id="map"></div>
+
+<div id="imageModal">
+    <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
+    <img id="modalImage" src="" alt="תמונה מוגדלת">
 </div>
 
 <script>
 let map;
 let markers = [];
 let currentLatLng = null;
-let currentImage = null; // Store the current image for adding to markers
+let currentImage = null;
 
 function previewImage(event) {
     const file = event.target.files[0];
@@ -144,7 +146,6 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
         popupHTML += `<br><img src="${imageBase64}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageBase64}')">`;
     }
 
-    // Add Waze navigation link
     const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
     popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a>`;
 
@@ -159,9 +160,9 @@ function addMarker(lat, lng, color, note, imageBase64 = null) {
     markers.push({ marker, data: { lat, lng, color, note, imageBase64, dateTime } });
     updateMarkerCount();
 
-    // Clear the input fields after adding the marker
     document.getElementById("markerText").value = "";
     document.getElementById("markerImage").value = "";
+    currentImage = null;
 }
 
 function updateMarkerCount() {
@@ -230,6 +231,17 @@ function searchLocation() {
         });
 }
 
+function handleMapClick(e) {
+    if (!document.getElementById("enableAdding").checked) {
+        alert("נא לאפשר הוספת סימונים על ידי סימון התיבה");
+        return;
+    }
+    const latlng = e.latlng;
+    const color = document.getElementById("markerColor").value;
+    const note = document.getElementById("markerText").value;
+    addMarker(latlng.lat, latlng.lng, color, note, currentImage);
+}
+
 function startMapAtUserLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(pos) {
@@ -246,12 +258,7 @@ function startMapAtUserLocation() {
                 color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
             }).addTo(map);
 
-            map.on("click", function(e) {
-                const latlng = e.latlng;
-                const color = document.getElementById("markerColor").value;
-                const note = document.getElementById("markerText").value;
-                addMarker(latlng.lat, latlng.lng, color, note, currentImage);
-            });
+            map.on("click", handleMapClick);
         }, fallbackMap);
     } else {
         fallbackMap();
@@ -264,12 +271,7 @@ function fallbackMap() {
         maxZoom: 19,
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
-    map.on("click", function(e) {
-        const latlng = e.latlng;
-        const color = document.getElementById("markerColor").value;
-        const note = document.getElementById("markerText").value;
-        addMarker(latlng.lat, latlng.lng, color, note, currentImage);
-    });
+    map.on("click", handleMapClick);
 }
 
 startMapAtUserLocation();
