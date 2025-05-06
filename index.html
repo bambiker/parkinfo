@@ -41,7 +41,9 @@
             color: white;
             cursor: pointer;
         }
+
     </style>
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-591SDPD6H2"></script>
 <script>
@@ -74,15 +76,15 @@
     <label><input type="checkbox" id="enableMarkers"> אפשר הוספת סימונים</label><br><br>
 
     <label for="markerColor">בחר צבע סימון:</label>
-    <select id="markerColor">
-        <option value="green">ירוק</option>
-        <option value="blue">כחול</option>
-        <option value="red">אדום</option>
-        <option value="gold">אפור</option>
+    <select id="markerColor" style="margin: 10px; font-weight: bold;" >
+        <option value="grey">אפור - חניה חופשית ברחוב</option>
+        <option value="blue">כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה</option>
+        <option value="orange">כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה</option>
+        <option value="red">אדום - חניה אסורה</option>
+        <option value="black"> שחור - חניון בחינם</option>
+        <option value="violet"> סגול - חניון בתשלום</option>
+        <option value="green">ירוק - חניה מיוחדת</option>
         <option value="yellow">צהוב</option>
-        <option value="white">לבן</option>
-        <option value="purple">סגול</option>
-        <option value="orange">כתום</option>
     </select><br>
 
     <label for="markerText">הוסף הערה:</label>
@@ -96,6 +98,13 @@
     <button onclick="downloadMarkers()">גיבוי הסימונים</button><br>
     טען קובץ סימונים:
     <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" /><br>
+</div>
+
+<div >
+<br>
+אתר זה נועד לתת מידע לנהגים בנוגע להסדרי החניה, אנחנו לא מעלים מידע אודות חניונים בתשלום אשר מסתירים את המחיר.<br>
+האתר לא אחראי לאמינות המידע, היות והסדרי החניה יכולים להשתנות מעת לעת והיות שהאתר מסתמך על מידע המגיע מהגולשים באתר.<br>
+תודתנו לגולשים המעלים תמונות לאתר, האתר מעבד את המידע המועלה ולכן כל הזכויות לתוכן האתר הם לבעלי האתר.<br>
 </div>
 
 <script>
@@ -117,13 +126,13 @@ function getIcon(color) {
 
 function colorDescription(color) {
     const desc = {
-        green: "חניון חינמי",
+     green: "חניון חינמי",
         blue: "חניון בתשלום",
         red: "אזור אסור לחניה",
-        gold: "רחוב חניה עם קו אפור",
+        grey: "רחוב חניה עם קו אפור",
         yellow: "בתשלום ביום, חינם בלילה",
-        white: "בתשלום ביום, בלילה לתושבים בלבד",
-        purple: "שימוש מותאם אישית",
+        black: "בתשלום ביום, בלילה לתושבים בלבד",
+        violet: "שימוש מותאם אישית",
         orange: "שימוש מותאם אישית"
     };
     return desc[color] || "לא ידוע";
@@ -137,13 +146,13 @@ function addMarker(lat, lng, color, note, imageUrl = null) {
 
     const dateTime = new Date().toISOString();
 
-    let popupHTML = `<b>${note}</b><br>קו: ${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך: ${dateTime}`;
+    let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>קו: ${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך: ${dateTime}`;
     if (imageUrl) {
         popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
     }
 
     const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
-    popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a>`;
+    popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
 
     marker.bindPopup(popupHTML);
 
@@ -267,6 +276,7 @@ function startMapAtUserLocation() {
             L.circle([lat, lng], {
                 color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
             }).addTo(map);
+			map.attributionControl.setPrefix('Leaflet')
 
             map.on("click", function(e) {
                 if (!document.getElementById("enableMarkers").checked) return;
