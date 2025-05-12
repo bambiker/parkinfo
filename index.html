@@ -89,7 +89,8 @@
 
     <label for="markerText">הוסף הערה:</label>
     <input type="text" id="markerText" placeholder="כתוב משהו..." /><br>
-
+    <label for="markerHourly"> מחיר שעתי:</label>
+    <label for="markerDaily">מחיר יומי:</label>
     <label for="markerImage">צרף תמונה:</label>
     <input type="file" id="markerImage" accept="image/*" capture="environment" /><br><br>
 
@@ -126,19 +127,20 @@ function getIcon(color) {
 
 function colorDescription(color) {
     const desc = {
-     green: "חניון חינמי",
-        blue: "חניון בתשלום",
-        red: "אזור אסור לחניה",
-        grey: "רחוב חניה עם קו אפור",
-        yellow: "בתשלום ביום, חינם בלילה",
-        black: "בתשלום ביום, בלילה לתושבים בלבד",
-        violet: "שימוש מותאם אישית",
-        orange: "שימוש מותאם אישית"
+        grey: "אפור - חניה חופשית ברחוב",
+        blue: "כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה",
+        orange: "כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה",
+        red: "אדום - חניה אסורה",
+        black: "שחור - חניון בחינם",
+        violet: " סגול - חניון בתשלום",
+        green: "ירוק - חניה מיוחדת",
+        yellow: "צהוב"
     };
     return desc[color] || "לא ידוע";
 }
 
-function addMarker(lat, lng, color, note, imageUrl = null) {
+
+function addMarker(lat, lng, color, note, hourly, daily imageUrl = null) {
     const marker = L.marker([lat, lng], {
         icon: getIcon(color),
         draggable: true
@@ -150,7 +152,12 @@ function addMarker(lat, lng, color, note, imageUrl = null) {
     if (imageUrl) {
         popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
     }
-
+    if (hourly) {
+        popupHTML += `<br> מחיר לשעה ${hourly} `;
+    }
+    if (daily) {
+        popupHTML += `<br> מחיר לשעה ${daily} `;
+    }
     const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
     popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
 
@@ -162,11 +169,13 @@ function addMarker(lat, lng, color, note, imageUrl = null) {
         updateMarkerCount();
     });
 
-    markers.push({ marker, data: { lat, lng, color, note, imageUrl, dateTime } });
+    markers.push({ marker, data: { lat, lng, color, note, hourly, daily, imageUrl, dateTime } });
     updateMarkerCount();
 
     // Clear inputs
     document.getElementById("markerText").value = "";
+    document.getElementById("markerHourly").value = "";
+    document.getElementById("markerDaily").value = "";	
     document.getElementById("markerImage").value = "";
 }
 
@@ -183,7 +192,7 @@ function clearMarkers() {
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
-        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
+        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, hourly: m.data.hourly, daily: m.data.daily, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -202,7 +211,7 @@ function uploadMarkers(event) {
         try {
             const data = JSON.parse(e.target.result);
             clearMarkers();
-            data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.imageUrl));
+            data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl));
         } catch (err) {
             alert("הקובץ לא תקין");
         }
@@ -284,14 +293,16 @@ function startMapAtUserLocation() {
                 const latlng = e.latlng;
                 const color = document.getElementById("markerColor").value;
                 const note = document.getElementById("markerText").value;
+                const hourly = document.getElementById("markerHourly").value;
+                const daily = document.getElementById("markerDaily").value;
                 const file = document.getElementById("markerImage").files[0];
 
                 if (file) {
                     uploadToImgur(file, (imgUrl) => {
-                        addMarker(latlng.lat, latlng.lng, color, note, imgUrl);
+                        addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, imgUrl);
                     });
                 } else {
-                    addMarker(latlng.lat, latlng.lng, color, note, null);
+                    addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, null);
                 }
             });
         }, fallbackMap);
@@ -313,14 +324,16 @@ function fallbackMap() {
         const latlng = e.latlng;
         const color = document.getElementById("markerColor").value;
         const note = document.getElementById("markerText").value;
+        const hourly = document.getElementById("markerHourly").value;
+        const daily = document.getElementById("markerDaily").value;
         const file = document.getElementById("markerImage").files[0];
 
         if (file) {
             uploadToImgur(file, (imgUrl) => {
-                addMarker(latlng.lat, latlng.lng, color, note, imgUrl);
+                addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, imgUrl);
             });
         } else {
-            addMarker(latlng.lat, latlng.lng, color, note, null);
+            addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, null);
         }
     });
 }
