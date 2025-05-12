@@ -140,7 +140,7 @@ function colorDescription(color) {
 }
 
 
-function addMarker(lat, lng, color, note, hourly, daily imageUrl = null) {
+function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null) {
     const marker = L.marker([lat, lng], {
         icon: getIcon(color),
         draggable: true
