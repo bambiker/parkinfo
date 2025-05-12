@@ -158,7 +158,7 @@ function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null) {
         popupHTML += `<br> מחיר לשעה ${hourly} `;
     }
     if (daily) {
-        popupHTML += `<br> מחיר לשעה ${daily} `;
+        popupHTML += `<br> מחיר ליממה ${daily} `;
     }
     const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
     popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
