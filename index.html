@@ -355,6 +355,20 @@ function fallbackMap() {
 }
 
 startMapAtUserLocation();
+	
+fetch('marker.json')
+  .then(res => res.json())
+  .then(data => {
+      if (Array.isArray(data)) {
+          data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl));
+      } else {
+          console.error("Invalid marker data");
+      }
+  })
+  .catch(err => {
+      console.warn("No auto-load file found or invalid JSON:", err);
+  });
+	
 </script>
 
 </body>
