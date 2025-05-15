@@ -244,7 +244,7 @@ function showImageModal(imageSrc) {
 function searchLocation() {
     const query = document.getElementById("searchBox").value;
     if (!query) return;
-    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`)
+    ch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`)
         .then(res => res.json())
         .then(data => {
             if (data && data.length > 0) {
@@ -263,7 +263,7 @@ function searchLocation() {
 function uploadToImgur(file, callback) {
     const formData = new FormData();
     formData.append("image", file);
-    fetch("https://api.imgur.com/3/image", {
+    ch("https://api.imgur.com/3/image", {
         method: "POST",
         headers: {
             Authorization: `Client-ID ${IMGUR_CLIENT_ID}`
@@ -320,7 +320,7 @@ function startMapAtUserLocation() {
                     addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, null);
                 }
             });
-		fetch('marker.json')
+		fetch('marker.json')  // onload start
 		  .then(res => res.json())
 		  .then(data => {
 		      if (Array.isArray(data)) {
@@ -333,7 +333,7 @@ function startMapAtUserLocation() {
 		      console.warn("No auto-load file found or invalid JSON:", err);
 		  });
 		    		
-        }, fallbackMap);
+        }, fallbackMap);   // onload end
 
     } else {
         fallbackMap();
