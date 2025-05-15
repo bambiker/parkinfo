@@ -1,0 +1,160 @@
+[
+  {
+    "lat": 32.062782474655876,
+    "lng": 34.76225282222763,
+    "color": "violet",
+    "note": "שנקר 2",
+    "hourly": "15",
+    "daily": "35",
+    "imageUrl": "https://i.imgur.com/lP1GBYD.jpeg",
+    "dateTime": "2025-05-13T15:49:38.559Z"
+  },
+  {
+    "lat": 32.10061509832794,
+    "lng": 34.775476772168545,
+    "color": "violet",
+    "note": "נמל תל אביב ",
+    "hourly": "16",
+    "daily": "60",
+    "imageUrl": "https://i.imgur.com/9qDLpUQ.jpeg",
+    "dateTime": "2025-05-13T15:49:38.563Z"
+  },
+  {
+    "lat": 32.10033140441717,
+    "lng": 34.77548162013034,
+    "color": "violet",
+    "note": "Sky jump 35 שח",
+    "hourly": "35",
+    "daily": "35",
+    "imageUrl": "https://i.imgur.com/ttJJbkF.jpeg",
+    "dateTime": "2025-05-13T15:49:38.565Z"
+  },
+  {
+    "lat": 32.09867758928678,
+    "lng": 34.77866699816437,
+    "color": "violet",
+    "note": "רידינג",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/5LWKdLg.jpeg",
+    "dateTime": "2025-05-13T15:49:38.566Z"
+  },
+  {
+    "lat": 31.896647024396483,
+    "lng": 34.8114620005939,
+    "color": "violet",
+    "note": "חניון בית פז",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/hGQHIkk.jpeg",
+    "dateTime": "2025-05-13T15:49:38.570Z"
+  },
+  {
+    "lat": 31.89651494655929,
+    "lng": 34.81143520912382,
+    "color": "violet",
+    "note": "הפנימי",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/yKP5q5j.jpeg",
+    "dateTime": "2025-05-13T15:49:38.570Z"
+  },
+  {
+    "lat": 31.897833764601078,
+    "lng": 34.81133398947012,
+    "color": "violet",
+    "note": "יוחננוף ",
+    "hourly": "12",
+    "daily": "40+",
+    "imageUrl": "https://i.imgur.com/iFhtacI.jpeg",
+    "dateTime": "2025-05-13T15:49:38.571Z"
+  },
+  {
+    "lat": 31.89730936283228,
+    "lng": 34.81205582822697,
+    "color": "violet",
+    "note": "אחד העם",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/NhVn0tV.jpeg",
+    "dateTime": "2025-05-13T15:49:38.571Z"
+  },
+  {
+    "lat": 31.900543617020645,
+    "lng": 34.82436493592501,
+    "color": "black",
+    "note": "חניון ציבורי חינמי",
+    "imageUrl": "https://i.imgur.com/vlQjRn0.jpeg",
+    "dateTime": "2025-05-13T15:49:38.572Z"
+  },
+  {
+    "lat": 31.906029275298632,
+    "lng": 34.81999811695342,
+    "color": "violet",
+    "note": "אחוזת הנשיא",
+    "hourly": "10",
+    "daily": "70",
+    "imageUrl": "https://i.imgur.com/Tw2j2f6.jpeg",
+    "dateTime": "2025-05-13T15:49:38.572Z"
+  },
+  {
+    "lat": 31.89940543436071,
+    "lng": 34.80974819560542,
+    "color": "violet",
+    "note": "אלון 48",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/L17gAQN.jpeg",
+    "dateTime": "2025-05-13T15:49:38.573Z"
+  },
+  {
+    "lat": 31.909506139169984,
+    "lng": 34.80298165170159,
+    "color": "violet",
+    "note": "קלין קאר",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/I28GBwl.jpeg",
+    "dateTime": "2025-05-13T15:49:38.573Z"
+  },
+  {
+    "lat": 31.90328796368529,
+    "lng": 34.789628623059464,
+    "color": "black",
+    "note": "מגרש עפר ",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/4fWdJh6.jpeg",
+    "dateTime": "2025-05-13T15:50:38.678Z"
+  },
+  {
+    "lat": 31.900668385503707,
+    "lng": 34.78923024220632,
+    "color": "violet",
+    "note": "מכללת פרס",
+    "hourly": "כחול לבן",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/HzqTDl3.jpeg",
+    "dateTime": "2025-05-13T15:55:57.816Z"
+  },
+  {
+    "lat": 31.901532795253097,
+    "lng": 34.7897071788224,
+    "color": "black",
+    "note": "ליד מכללת פרס",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/2tHMCzQ.jpeg",
+    "dateTime": "2025-05-13T15:58:00.695Z"
+  },
+  {
+    "lat": 31.898347088312455,
+    "lng": 34.78883557556707,
+    "color": "violet",
+    "note": "חניון אמיליה",
+    "hourly": "12",
+    "daily": "50",
+    "imageUrl": "https://i.imgur.com/hlx10M0.jpeg",
+    "dateTime": "2025-05-13T16:01:11.205Z"
+  }
+]
