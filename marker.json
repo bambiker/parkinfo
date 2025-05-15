@@ -1,0 +1,42 @@
+[
+  {
+    "lat": 31.892044336292862,
+    "lng": 34.809366542584876,
+    "color": "grey",
+    "note": "",
+    "hourly": "22",
+    "daily": "44",
+    "imageUrl": null,
+    "dateTime": "2025-05-12T19:01:11.770Z"
+  },
+  {
+    "lat": 31.892408706179783,
+    "lng": 34.81180248803115,
+    "color": "blue",
+    "note": "",
+    "hourly": "22",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-12T19:01:22.610Z"
+  },
+  {
+    "lat": 31.891998789955625,
+    "lng": 34.810654267049856,
+    "color": "blue",
+    "note": "",
+    "hourly": "",
+    "daily": "77",
+    "imageUrl": null,
+    "dateTime": "2025-05-12T19:01:32.378Z"
+  },
+  {
+    "lat": 31.892763965431254,
+    "lng": 34.8076281145571,
+    "color": "blue",
+    "note": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-12T19:01:34.250Z"
+  }
+]
