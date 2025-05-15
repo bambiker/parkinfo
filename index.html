@@ -263,7 +263,7 @@ function searchLocation() {
 function uploadToImgur(file, callback) {
     const formData = new FormData();
     formData.append("image", file);
-    ch("https://api.imgur.com/3/image", {
+    fetch("https://api.imgur.com/3/image", {
         method: "POST",
         headers: {
             Authorization: `Client-ID ${IMGUR_CLIENT_ID}`
