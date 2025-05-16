@@ -285,7 +285,7 @@ function showImageModal(imageSrc) {
 function searchLocation() {
     const query = document.getElementById("searchBox").value;
     if (!query) return;
-    ch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`)
+    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`)
         .then(res => res.json())
         .then(data => {
             if (data && data.length > 0) {
