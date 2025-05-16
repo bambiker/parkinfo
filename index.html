@@ -57,9 +57,9 @@
 <body>
 
 <header style="background-color:#f5f5f5; padding: 20px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px;">
-    <h1 style="margin: 0; font-size: 1.8em; color: #333;">🅿️ מידע על חניות וחניונים בישראל</h1>
+    <h1 style="margin: 0; font-size: 1.4em; color: #333;">🅿️ מידע על חניות וחניונים בישראל</h1>
     <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
-        <input type="text" id="searchBox" placeholder="לדוגמה: תל אביב" 
+        <input type="text" id="searchBox" placeholder="לדוגמה: עיריית תל אביב" 
                style="flex: 1; min-width: 180px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 1em;" />
         <button onclick="searchLocation()" 
                 style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em;">
@@ -75,42 +75,78 @@
     <img id="modalImage" src="" alt="תמונה מוגדלת">
 </div>
 
-<div id="controls">
-    <br>
-    <label><input type="checkbox" id="enableMarkers"> אפשר הוספת סימונים</label><br><br>
+<div id="controls" style="background-color: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 20px;">
+    <div style="margin-bottom: 15px;">
+        <label style="font-weight: bold;">
+            <input type="checkbox" id="enableMarkers" style="transform: scale(1.2); margin-left: 5px;">
+            אפשר הוספת סימונים
+        </label>
+    </div>
 
-    <label for="markerColor">בחר צבע סימון:</label>
-    <select id="markerColor" style="margin: 10px; font-weight: bold;" >
-        <option value="grey">אפור - חניה חופשית ברחוב</option>
-        <option value="blue">כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה</option>
-        <option value="orange">כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה</option>
-        <option value="red">אדום - חניה אסורה</option>
-        <option value="black"> שחור - חניון בחינם</option>
-        <option value="violet"> סגול - חניון בתשלום</option>
-        <option value="green">ירוק - חניה מיוחדת</option>
-        <option value="yellow">צהוב</option>
-    </select><br>
+    <div style="margin-bottom: 15px;">
+        <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">בחר צבע סימון:</label>
+        <select id="markerColor" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+            <option value="grey">אפור - חניה חופשית ברחוב</option>
+            <option value="blue">כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה</option>
+            <option value="orange">כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה</option>
+            <option value="red">אדום - חניה אסורה</option>
+            <option value="black">שחור - חניון בחינם</option>
+            <option value="violet">סגול - חניון בתשלום</option>
+            <option value="green">ירוק - חניה מיוחדת</option>
+            <option value="yellow">צהוב</option>
+        </select>
+    </div>
 
-    <label for="markerText">הוסף הערה:</label>
-    <input type="text" id="markerText" placeholder="כתוב משהו..." /><br>
-    <label for="markerHourly"> מחיר שעתי:</label>
-    <input type="text" id="markerHourly" placeholder="" /><br>
-    <label for="markerDaily">מחיר יומי:</label>
-    <input type="text" id="markerDaily" placeholder="" /><br>
-    <label for="markerImage">צרף תמונה:</label>
-    <input type="file" id="markerImage" accept="image/*" capture="environment" /><br><br>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+        <div style="flex: 1; min-width: 180px;">
+            <label for="markerText" style="font-weight: bold;">הוסף הערה:</label>
+            <input type="text" id="markerText" placeholder="כתוב משהו..." style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+        <div style="flex: 1; min-width: 120px;">
+            <label for="markerHourly" style="font-weight: bold;">מחיר שעתי:</label>
+            <input type="text" id="markerHourly" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+        <div style="flex: 1; min-width: 120px;">
+            <label for="markerDaily" style="font-weight: bold;">מחיר יומי:</label>
+            <input type="text" id="markerDaily" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+    </div>
 
-    <div id="markerCount">סימונים: 0</div>
+    <div style="margin-bottom: 15px;">
+        <label for="markerImage" style="font-weight: bold;">צרף תמונה:</label>
+        <input type="file" id="markerImage" accept="image/*" capture="environment" style="display: block; margin-top: 5px;">
+    </div>
 
-    <button onclick="downloadMarkers()">גיבוי הסימונים</button><br>
-    טען קובץ סימונים:
-    <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" /><br>
+    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">סימונים: 0</div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <button onclick="downloadMarkers()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
+            💾 גיבוי הסימונים
+        </button>
+
+        <label for="uploadFile" style="display: flex; align-items: center; gap: 10px; background-color: #ffc107; padding: 10px 15px; border-radius: 8px; cursor: pointer;">
+            📂 טען קובץ סימונים
+            <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" style="display: none;">
+        </label>
+    </div>
 </div>
 
-<div >
-<br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScJ_xLvKoVq3hQDqrJ06KrMifxZ-lqTE6dZ4zDnANBZC53Bug/viewform?usp=sharing&ouid=111833292316340372069" target="blank">צור קשר</a><br>
-<a href="terms.html" target="_blank">תנאי שימוש באתר</a>.<br>
+<div style="margin-top: 30px; text-align: center; font-size: 16px; color: #444;">
+  <hr style="margin-bottom: 20px; border: none; border-top: 1px solid #ddd; width: 60%;">
+  
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ_xLvKoVq3hQDqrJ06KrMifxZ-lqTE6dZ4zDnANBZC53Bug/viewform?usp=sharing&ouid=111833292316340372069" 
+       target="_blank"
+       style="text-decoration: none; padding: 10px 20px; background-color: #007bff; color: white; border-radius: 8px; transition: background-color 0.3s;">
+      📬 צור קשר
+    </a>
+
+    <a href="terms.html" 
+       target="_blank"
+       style="text-decoration: none; padding: 10px 20px; background-color: #6c757d; color: white; border-radius: 8px; transition: background-color 0.3s;">
+      📄 תנאי שימוש באתר
+    </a>
+  </div>
 </div>
 
 <script>
