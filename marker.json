@@ -7,7 +7,7 @@
     "hourly": "15",
     "daily": "35",
     "imageUrl": "https://i.imgur.com/lP1GBYD.jpeg",
-    "dateTime": "2025-05-13T15:49:38.559Z"
+    "dateTime": "2025-05-16T11:46:51.034Z"
   },
   {
     "lat": 32.10061509832794,
@@ -17,7 +17,7 @@
     "hourly": "16",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/9qDLpUQ.jpeg",
-    "dateTime": "2025-05-13T15:49:38.563Z"
+    "dateTime": "2025-05-16T11:46:51.035Z"
   },
   {
     "lat": 32.10033140441717,
@@ -27,7 +27,7 @@
     "hourly": "35",
     "daily": "35",
     "imageUrl": "https://i.imgur.com/ttJJbkF.jpeg",
-    "dateTime": "2025-05-13T15:49:38.565Z"
+    "dateTime": "2025-05-16T11:46:51.035Z"
   },
   {
     "lat": 32.09867758928678,
@@ -37,7 +37,7 @@
     "hourly": "30",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/5LWKdLg.jpeg",
-    "dateTime": "2025-05-13T15:49:38.566Z"
+    "dateTime": "2025-05-16T11:46:51.036Z"
   },
   {
     "lat": 31.896647024396483,
@@ -47,7 +47,7 @@
     "hourly": "20",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/hGQHIkk.jpeg",
-    "dateTime": "2025-05-13T15:49:38.570Z"
+    "dateTime": "2025-05-16T11:46:51.036Z"
   },
   {
     "lat": 31.89651494655929,
@@ -57,7 +57,7 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/yKP5q5j.jpeg",
-    "dateTime": "2025-05-13T15:49:38.570Z"
+    "dateTime": "2025-05-16T11:46:51.036Z"
   },
   {
     "lat": 31.897833764601078,
@@ -67,7 +67,7 @@
     "hourly": "12",
     "daily": "40+",
     "imageUrl": "https://i.imgur.com/iFhtacI.jpeg",
-    "dateTime": "2025-05-13T15:49:38.571Z"
+    "dateTime": "2025-05-16T11:46:51.037Z"
   },
   {
     "lat": 31.89730936283228,
@@ -77,7 +77,7 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/NhVn0tV.jpeg",
-    "dateTime": "2025-05-13T15:49:38.571Z"
+    "dateTime": "2025-05-16T11:46:51.037Z"
   },
   {
     "lat": 31.900543617020645,
@@ -85,7 +85,7 @@
     "color": "black",
     "note": "חניון ציבורי חינמי",
     "imageUrl": "https://i.imgur.com/vlQjRn0.jpeg",
-    "dateTime": "2025-05-13T15:49:38.572Z"
+    "dateTime": "2025-05-16T11:46:51.038Z"
   },
   {
     "lat": 31.906029275298632,
@@ -95,7 +95,7 @@
     "hourly": "10",
     "daily": "70",
     "imageUrl": "https://i.imgur.com/Tw2j2f6.jpeg",
-    "dateTime": "2025-05-13T15:49:38.572Z"
+    "dateTime": "2025-05-16T11:46:51.038Z"
   },
   {
     "lat": 31.89940543436071,
@@ -105,7 +105,7 @@
     "hourly": "30",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/L17gAQN.jpeg",
-    "dateTime": "2025-05-13T15:49:38.573Z"
+    "dateTime": "2025-05-16T11:46:51.038Z"
   },
   {
     "lat": 31.909506139169984,
@@ -115,7 +115,7 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/I28GBwl.jpeg",
-    "dateTime": "2025-05-13T15:49:38.573Z"
+    "dateTime": "2025-05-16T11:46:51.039Z"
   },
   {
     "lat": 31.90328796368529,
@@ -125,7 +125,7 @@
     "hourly": "",
     "daily": "",
     "imageUrl": "https://i.imgur.com/4fWdJh6.jpeg",
-    "dateTime": "2025-05-13T15:50:38.678Z"
+    "dateTime": "2025-05-16T11:46:51.039Z"
   },
   {
     "lat": 31.900668385503707,
@@ -135,7 +135,7 @@
     "hourly": "כחול לבן",
     "daily": "",
     "imageUrl": "https://i.imgur.com/HzqTDl3.jpeg",
-    "dateTime": "2025-05-13T15:55:57.816Z"
+    "dateTime": "2025-05-16T11:46:51.039Z"
   },
   {
     "lat": 31.901532795253097,
@@ -145,7 +145,7 @@
     "hourly": "",
     "daily": "",
     "imageUrl": "https://i.imgur.com/2tHMCzQ.jpeg",
-    "dateTime": "2025-05-13T15:58:00.695Z"
+    "dateTime": "2025-05-16T11:46:51.040Z"
   },
   {
     "lat": 31.898347088312455,
@@ -155,6 +155,136 @@
     "hourly": "12",
     "daily": "50",
     "imageUrl": "https://i.imgur.com/hlx10M0.jpeg",
-    "dateTime": "2025-05-13T16:01:11.205Z"
+    "dateTime": "2025-05-16T11:46:51.040Z"
+  },
+  {
+    "lat": 32.08098438100123,
+    "lng": 34.7801221988149,
+    "color": "black",
+    "note": "חינם רק בערב, ביום חניה אסורה",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/E24YzeB.jpeg",
+    "dateTime": "2025-05-16T11:46:51.041Z"
+  },
+  {
+    "lat": 32.08194948650254,
+    "lng": 34.77992674863059,
+    "color": "violet",
+    "note": "חניון גן עופר",
+    "hourly": "30",
+    "daily": "120",
+    "imageUrl": "https://i.imgur.com/pR9Rrul.jpeg",
+    "dateTime": "2025-05-16T11:46:51.041Z"
+  },
+  {
+    "lat": 31.941372444974363,
+    "lng": 34.834157542848,
+    "color": "black",
+    "note": "קניון באר יעקב",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-16T11:46:51.041Z"
+  },
+  {
+    "lat": 32.08460212145339,
+    "lng": 34.76984616008141,
+    "color": "violet",
+    "note": "חניון בנקון",
+    "hourly": "25",
+    "daily": "140",
+    "imageUrl": "https://i.imgur.com/YfRx873.jpeg",
+    "dateTime": "2025-05-16T11:46:51.042Z"
+  },
+  {
+    "lat": 32.08555896440299,
+    "lng": 34.76990637707456,
+    "color": "violet",
+    "note": "חניון אתרים",
+    "hourly": "28",
+    "daily": "120",
+    "imageUrl": "https://i.imgur.com/5OT4ZMg.jpeg",
+    "dateTime": "2025-05-16T11:46:51.042Z"
+  },
+  {
+    "lat": 32.07730156248861,
+    "lng": 34.77167893356183,
+    "color": "violet",
+    "note": "חניון הכיכר",
+    "hourly": "20",
+    "daily": "75",
+    "imageUrl": "https://i.imgur.com/hVyRomK.jpeg",
+    "dateTime": "2025-05-16T11:46:51.043Z"
+  },
+  {
+    "lat": 32.07147346676346,
+    "lng": 34.7716200637018,
+    "color": "violet",
+    "note": "חניון בצלאל",
+    "hourly": "25",
+    "daily": "85",
+    "imageUrl": "https://i.imgur.com/vEPfEgK.jpeg",
+    "dateTime": "2025-05-16T11:46:51.043Z"
+  },
+  {
+    "lat": 32.06857757136378,
+    "lng": 34.76604680897277,
+    "color": "violet",
+    "note": "חניון הכרמל",
+    "hourly": "70",
+    "daily": "70",
+    "imageUrl": "https://i.imgur.com/onN7o9x.jpeg",
+    "dateTime": "2025-05-16T11:46:51.043Z"
+  },
+  {
+    "lat": 32.06851024907023,
+    "lng": 34.76580566124598,
+    "color": "violet",
+    "note": "אחוזת החוף הכרמל 2",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/CKe49ZR.jpeg",
+    "dateTime": "2025-05-16T11:46:51.044Z"
+  },
+  {
+    "lat": 32.06691831058792,
+    "lng": 34.76651803671679,
+    "color": "violet",
+    "note": "חניון עירוני הכרמל",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/adFZN70.jpeg",
+    "dateTime": "2025-05-16T11:48:03.810Z"
+  },
+  {
+    "lat": 32.065847622283165,
+    "lng": 34.76441529920036,
+    "color": "violet",
+    "note": "גן הכובשים 1",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/J2oH0pO.jpeg",
+    "dateTime": "2025-05-16T11:53:19.921Z"
+  },
+  {
+    "lat": 32.065984219195926,
+    "lng": 34.763718465842864,
+    "color": "violet",
+    "note": "גן הכובשים 2",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/UOj2TFU.jpeg",
+    "dateTime": "2025-05-16T11:54:42.691Z"
+  },
+  {
+    "lat": 32.064745531921716,
+    "lng": 34.76450256286038,
+    "color": "violet",
+    "note": "חניון נתקומה",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/mGJg2QA.jpeg",
+    "dateTime": "2025-05-16T11:56:56.285Z"
   }
 ]
