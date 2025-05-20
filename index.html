@@ -189,7 +189,9 @@ function colorDescription(color) {
 }
 
 
-function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null) {
+function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null, dateTime = null) {
+    dateTime = dateTime || new Date().toISOString();
+
     let svgText = 'חניון';  
     if (color==='black')
 	{svgText = 'חינם';}
@@ -276,7 +278,8 @@ function uploadMarkers(event) {
         try {
             const data = JSON.parse(e.target.result);
             clearMarkers();
-            data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl));
+  	    data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl, d.dateTime));
+
         } catch (err) {
             alert("הקובץ לא תקין");
         }
