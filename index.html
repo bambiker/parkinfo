@@ -211,9 +211,6 @@ function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null, dateTi
         draggable: true
     }).addTo(map);
 
-
-    const dateTime = new Date().toISOString();
-
     let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך: ${dateTime}`;
     if (imageUrl) {
         popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
