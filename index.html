@@ -207,7 +207,10 @@ document.getElementById("enableMarkers").addEventListener("change", function () 
 });
 	
 function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null, dateTime = null) {
-    dateTime = dateTime || new Date().toISOString();
+    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
+        dateTime = new Date().toISOString();
+}
+	
 
     let svgText = 'חניון';  
     if (color==='black')
@@ -295,7 +298,10 @@ function uploadMarkers(event) {
         try {
             const data = JSON.parse(e.target.result);
             clearMarkers();
-  	    data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl, d.dateTime));
+            data.forEach(d => {
+                 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
+                 addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl, dt);
+            });
 
         } catch (err) {
             alert("הקובץ לא תקין");
