@@ -189,7 +189,13 @@ function colorDescription(color) {
     return desc[color] || "לא ידוע";
 }
 
-
+document.getElementById("enableMarkers").addEventListener("change", function () {
+    const isEnabled = this.checked;
+    markers.forEach(m => {
+        m.marker.dragging[isEnabled ? "enable" : "disable"]();
+    });
+});
+	
 function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null, dateTime = null) {
     dateTime = dateTime || new Date().toISOString();
 
@@ -227,9 +233,11 @@ function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null, dateTi
     marker.bindPopup(popupHTML);
 
     marker.on("contextmenu", () => {
-        map.removeLayer(marker);
-        markers = markers.filter(m => m.marker !== marker);
-        updateMarkerCount();
+        if (document.getElementById("enableMarkers").checked) {
+            map.removeLayer(marker);
+            markers = markers.filter(m => m.marker !== marker);
+            updateMarkerCount();
+        }
     });
 
     markers.push({ marker, data: { lat, lng, color, note, hourly, daily, imageUrl, dateTime } });
