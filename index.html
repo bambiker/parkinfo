@@ -80,7 +80,7 @@
     <div style="margin-bottom: 15px;">
         <label style="font-weight: bold;">
             <input type="checkbox" id="enableMarkers" style="transform: scale(1.2); margin-left: 5px;">
-            סמן כדי לאפשר הוספת סימונים
+            סמן כדי לאפשר הוספת/עריכת סימונים
         </label>
     </div>
 
@@ -212,9 +212,10 @@ function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null, dateTi
         iconUrl: iconURL,
         iconSize: [40, 40]
     });
+	
     const marker = L.marker([lat, lng], {
         icon: circleIcon,
-        draggable: true
+        draggable: document.getElementById("enableMarkers").checked
     }).addTo(map);
 
     let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך: ${dateTime}`;
