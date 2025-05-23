@@ -416,5 +416,65 @@
     "daily": "60",
     "imageUrl": "https://i.imgur.com/GrApMke.jpeg",
     "dateTime": "2025-05-23T09:19:34.525Z"
+  },
+  {
+    "lat": 31.9207747251808,
+    "lng": 34.79149964157403,
+    "color": "black",
+    "note": "גולדןקייר חניון גג",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/4t406mT.jpeg",
+    "dateTime": "2025-05-23T10:43:52.342Z"
+  },
+  {
+    "lat": 31.921396127496934,
+    "lng": 34.793557736828845,
+    "color": "black",
+    "note": "צוואר סנטר",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/Cwscqrv.jpeg",
+    "dateTime": "2025-05-23T10:44:58.349Z"
+  },
+  {
+    "lat": 31.922170598733597,
+    "lng": 34.79379016642833,
+    "color": "blue",
+    "note": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:49:49.021Z"
+  },
+  {
+    "lat": 31.921647203050885,
+    "lng": 34.79178840160007,
+    "color": "blue",
+    "note": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:50:00.604Z"
+  },
+  {
+    "lat": 31.920707294042046,
+    "lng": 34.79382980359732,
+    "color": "black",
+    "note": "חניון גג, לרוב פנוי",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:50:45.869Z"
+  },
+  {
+    "lat": 31.921969393291512,
+    "lng": 34.79094338739914,
+    "color": "black",
+    "note": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:51:38.769Z"
   }
 ]
