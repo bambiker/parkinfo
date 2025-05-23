@@ -231,7 +231,7 @@ function addMarker(lat, lng, color, note, hourly, daily, imageUrl = null, dateTi
         draggable: document.getElementById("enableMarkers").checked
     }).addTo(map);
 
-    let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך: ${dateTime}`;
+    let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>${colorDescription(color)}<br>מיקום: ${lat.toFixed(5)}, ${lng.toFixed(5)}<br>תאריך עדכון: ${dateTime}`;
     if (imageUrl) {
         popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
     }
@@ -403,7 +403,7 @@ function startMapAtUserLocation() {
 		  .then(res => res.json())
 		  .then(data => {
 		      if (Array.isArray(data)) {
-		          data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl));
+		          data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl, d.dateTime));
 		      } else {
 		          console.error("Invalid marker data");
 		      }
