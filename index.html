@@ -300,7 +300,10 @@ function uploadMarkers(event) {
             clearMarkers();
             data.forEach(d => {
 		 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
+     		 console.log("Loaded marker dateTime:", d.dateTime);
+
                  addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl, d.dateTime); //dt
+
             });
 
         } catch (err) {
