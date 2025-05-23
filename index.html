@@ -299,8 +299,8 @@ function uploadMarkers(event) {
             const data = JSON.parse(e.target.result);
             clearMarkers();
             data.forEach(d => {
-                 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
-                 addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl, dt);
+		 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
+                 addMarker(d.lat, d.lng, d.color, d.note, d.hourly, d.daily, d.imageUrl, d.dateTime); //dt
             });
 
         } catch (err) {
