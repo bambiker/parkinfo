@@ -390,13 +390,13 @@ function startMapAtUserLocation() {
                 const hourly = document.getElementById("markerHourly").value;
                 const daily = document.getElementById("markerDaily").value;
                 const file = document.getElementById("markerImage").files[0];
-
+                const dateTime = new Date().toISOString();
                 if (file) {
                     uploadToImgur(file, (imgUrl) => {
-                        addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, imgUrl);
+                        addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, imgUrl, dateTime);
                     });
                 } else {
-                    addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, null);
+                    addMarker(latlng.lat, latlng.lng, color, note, hourly, daily, null, dateTime);
                 }
             });
 		fetch('marker.json')  // onload start
