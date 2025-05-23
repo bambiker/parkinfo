@@ -396,5 +396,25 @@
     "daily": "20",
     "imageUrl": "https://i.imgur.com/ieX7OU8.jpeg",
     "dateTime": "2025-05-22T16:48:21.174Z"
+  },
+  {
+    "lat": 31.894918628855766,
+    "lng": 34.81165143578344,
+    "color": "violet",
+    "note": "קאזה ויטל",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/cu7tpnc.jpeg",
+    "dateTime": "2025-05-23T09:18:44.821Z"
+  },
+  {
+    "lat": 31.89451546447937,
+    "lng": 34.80776730987997,
+    "color": "violet",
+    "note": "קניון רחובות",
+    "hourly": "16",
+    "daily": "60",
+    "imageUrl": "https://i.imgur.com/GrApMke.jpeg",
+    "dateTime": "2025-05-23T09:19:34.525Z"
   }
 ]
