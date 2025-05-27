@@ -476,5 +476,75 @@
     "daily": "",
     "imageUrl": null,
     "dateTime": "2025-05-23T10:51:38.769Z"
+  },
+  {
+    "lat": 31.91086076679857,
+    "lng": 34.80509278290884,
+    "color": "violet",
+    "note": "חניון עירוני פיקריס",
+    "hourly": "5.40",
+    "daily": "19",
+    "imageUrl": "https://i.imgur.com/YKiA9Wu.jpeg",
+    "dateTime": "2025-05-27T05:27:51.047Z"
+  },
+  {
+    "lat": 31.91131830424193,
+    "lng": 34.804889167736235,
+    "color": "violet",
+    "note": "פיקריס 3",
+    "hourly": "18",
+    "daily": "63",
+    "imageUrl": "https://i.imgur.com/KTInuwV.jpeg",
+    "dateTime": "2025-05-27T05:29:09.712Z"
+  },
+  {
+    "lat": 31.911917219817113,
+    "lng": 34.804148192185835,
+    "color": "violet",
+    "note": "חניון רוטברג",
+    "hourly": "18",
+    "daily": "63",
+    "imageUrl": "https://i.imgur.com/UUSYnjz.jpeg",
+    "dateTime": "2025-05-27T05:31:27.010Z"
+  },
+  {
+    "lat": 31.915349739661025,
+    "lng": 34.80184463598897,
+    "color": "red",
+    "note": "חניון פרטי",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-27T05:37:16.370Z"
+  },
+  {
+    "lat": 31.914453784027135,
+    "lng": 34.80206151926758,
+    "color": "red",
+    "note": "חניון פרטי",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-27T05:37:29.913Z"
+  },
+  {
+    "lat": 31.917376666289137,
+    "lng": 34.80309550885142,
+    "color": "black",
+    "note": "חניון עפר",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/d5prAmF.jpeg",
+    "dateTime": "2025-05-27T05:38:15.419Z"
+  },
+  {
+    "lat": 31.91884154204445,
+    "lng": 34.80366706011777,
+    "color": "black",
+    "note": "חניון עפר",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/ALyORDL.jpeg",
+    "dateTime": "2025-05-27T05:40:25.452Z"
   }
 ]
