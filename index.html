@@ -80,7 +80,9 @@
 </header>
 
 <div id="map"></div>
-
+<a href="https://land.pango.co.il/FastPark/ParkingRates/ParkingRates" target="_blank">מחירי החניה בכחול לבן בערים השונות</a><br>
+<br>
+	
 <div id="imageModal">
     <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
     <img id="modalImage" src="" alt="תמונה מוגדלת">
@@ -136,8 +138,9 @@
 אחרי הסימון יש ללחוץ על כפתור שמירה<br>
 	    </div>
 
-    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">כמות הסימונים במפה : 0</div>
-
+    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">כמות החניות והחניונים המסומנים במפה : 0</div>
+    <div id="lastUpdated" style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #666;">עודכן לאחרונה: לא ידוע</div>
+	
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="downloadMarkers()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
             💾 שמירת הסימונים
@@ -311,6 +314,15 @@ function uploadMarkers(event) {
         }
     };
     reader.readAsText(file);
+
+let latestDate = data.reduce((latest, item) => {
+    const dt = new Date(item.dateTime);
+    return dt > latest ? dt : latest;
+}, new Date(0));
+
+document.getElementById("lastUpdated").innerText =
+    "עודכן לאחרונה: " + formatDateTime(latestDate.toISOString());
+	
 }
 
 function showImageModal(imageSrc) {
