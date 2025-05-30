@@ -1,4 +1,4 @@
-{"markers":[{"lat":32.062782474655876,"lng":34.76225282222763,"color":"violet","note":"שנקר 
+[{"lat":32.062782474655876,"lng":34.76225282222763,"color":"violet","note":"שנקר 
 2","hourly":"15","daily":"35","imageUrl":"https://i.imgur.com/lP1GBYD.jpeg","dateTime":"2025-05-22T16:46:19.439Z"},{"lat":32.10061509832794,"lng":34.775476772168545,"color":"violet","note":"נמל 
 תל 
 אביב ","hourly":"16","daily":"60","imageUrl":"https://i.imgur.com/9qDLpUQ.jpeg","dateTime":"2025-05-22T16:46:19.441Z"},{"lat":32.10033140441717,"lng":34.77548162013034,"color":"violet","note":"Sky 
@@ -75,4 +75,4 @@ jump
 פרטי","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-27T05:37:16.370Z"},{"lat":31.914453784027135,"lng":34.80206151926758,"color":"red","note":"חניון 
 פרטי","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-27T05:37:29.913Z"},{"lat":31.917376666289137,"lng":34.80309550885142,"color":"black","note":"חניון 
 עפר","hourly":"","daily":"","imageUrl":"https://i.imgur.com/d5prAmF.jpeg","dateTime":"2025-05-27T05:38:15.419Z"},{"lat":31.91884154204445,"lng":34.80366706011777,"color":"black","note":"חניון 
-עפר","hourly":"","daily":"","imageUrl":"https://i.imgur.com/ALyORDL.jpeg","dateTime":"2025-05-27T05:40:25.452Z"}]}
+עפר","hourly":"","daily":"","imageUrl":"https://i.imgur.com/ALyORDL.jpeg","dateTime":"2025-05-27T05:40:25.452Z"}]
