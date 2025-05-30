@@ -290,10 +290,11 @@ function sendMarkersToServer(data) {
     // Remove line breaks in the 'note' field
     const sanitizedData = data.map(marker => ({
         ...marker,
-  note: marker.note?.replace(/[\s\uFEFF\xA0]+/g, ' ').trim()
+        note: marker.note?.replace(/[\s\uFEFF\xA0]+/g, ' ').trim()
     }));
 
-    const compactJsonArray = JSON.stringify(sanitizedData); // Compact JSON for sending
+    // Pretty-format JSON with 2-space indentation
+    const prettyJson = JSON.stringify(sanitizedData, null, 2);
 
     fetch('https://script.google.com/macros/s/AKfycbyOsg285CrSACA0Ygx0COr-Zyrn-nYWV4b00QH4OcovPWrKHzc7dHdL3SGrIhUQkKA/exec', {
         method: 'POST',
@@ -301,7 +302,7 @@ function sendMarkersToServer(data) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: compactJsonArray
+        body: prettyJson
     })
     .then(() => {
         console.warn("Email request sent (no-cors). Note: response is opaque and can't be validated.");
