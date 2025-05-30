@@ -288,7 +288,9 @@ function clearMarkers() {
 }
 
 function sendMarkersToServer(data) {
-    const prettyJson = JSON.stringify({ markers: data }, null, 2); // formatted
+    //const prettyJson = JSON.stringify({ markers: data }, null, 2); // formatted
+    const compactJson = JSON.stringify({ markers: data }); // no formatting
+
 
     fetch('https://script.google.com/macros/s/AKfycbxYmOh9yPbVxPOBBnDR3OUW6oPveB5b4EFvaR_pskTQrobobq6k7HHu5dCZAVzMPvNL/exec', {
         method: 'POST',
@@ -296,7 +298,7 @@ function sendMarkersToServer(data) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: prettyJson
+        body: compactJson
     })
     .then(() => {
         console.warn("Email request sent (no-cors). Note: response is opaque and can't be validated.");
@@ -344,7 +346,7 @@ function uploadMarkers(event) {
             alert("הקובץ לא תקין");
         }
     };
-    reader.readAsText(file);
+    reader.readAsText(file, "utf-8");
 
 }
 
