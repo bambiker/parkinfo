@@ -290,11 +290,12 @@ function clearMarkers() {
 function sendMarkersToServer(data) {
     fetch('https://script.google.com/macros/s/AKfycbxvBDCMTy2mtUA5v_FNzn7FVvL9RHHKxRVxhUGuE5regmYvizKMI2ODUZV5X-ZS7Q/exec', {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ markers: data }) // wrap data in an object if your script expects it this way
-    })
+    })	    
     .then(response => {
         if (!response.ok) throw new Error("Network response was not ok");
         return response.text(); // or .json() if your script returns JSON
