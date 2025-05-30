@@ -290,7 +290,7 @@ function sendMarkersToServer(data) {
     // Remove line breaks in the 'note' field
     const sanitizedData = data.map(marker => ({
         ...marker,
-        note: marker.note?.replace(/[\r\n]+/g, ' ') // Replace all newline types with space
+  note: marker.note?.replace(/[\s\uFEFF\xA0]+/g, ' ').trim()
     }));
 
     const compactJsonArray = JSON.stringify(sanitizedData); // Compact JSON for sending
