@@ -287,18 +287,41 @@ function clearMarkers() {
     updateMarkerCount();
 }
 
+function sendMarkersToServer(data) {
+    fetch('https://script.google.com/macros/s/AKfycbxvBDCMTy2mtUA5v_FNzn7FVvL9RHHKxRVxhUGuE5regmYvizKMI2ODUZV5X-ZS7Q/exec', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ markers: data }) // wrap data in an object if your script expects it this way
+    })
+    .then(response => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.text(); // or .json() if your script returns JSON
+    })
+    .then(responseText => {
+        console.log("Email sent successfully:", responseText);
+    })
+    .catch(error => {
+        console.error("Error sending email:", error);
+    });
+}
+
+	
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
         return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
     a.download = "markers.json";
     a.click();
     URL.revokeObjectURL(url);
+    // 📤 Also send the marker data to your server
+    sendMarkersToServer(data);
 }
 
 function uploadMarkers(event) {
