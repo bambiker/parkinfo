@@ -286,9 +286,14 @@ function clearMarkers() {
     markers = [];
     updateMarkerCount();
 }
-
 function sendMarkersToServer(data) {
-    const compactJsonArray = JSON.stringify(data); // Just the array, no formatting
+    // Remove line breaks in the 'note' field
+    const sanitizedData = data.map(marker => ({
+        ...marker,
+        note: marker.note?.replace(/[\r\n]+/g, ' ') // Replace all newline types with space
+    }));
+
+    const compactJsonArray = JSON.stringify(sanitizedData); // Compact JSON for sending
 
     fetch('https://script.google.com/macros/s/AKfycbxYmOh9yPbVxPOBBnDR3OUW6oPveB5b4EFvaR_pskTQrobobq6k7HHu5dCZAVzMPvNL/exec', {
         method: 'POST',
@@ -305,6 +310,7 @@ function sendMarkersToServer(data) {
         console.error("Fetch failed to send email request:", error);
     });
 }
+
 
 
 	
