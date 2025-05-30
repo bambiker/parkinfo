@@ -290,7 +290,7 @@ function clearMarkers() {
 function sendMarkersToServer(data) {
     const prettyJson = JSON.stringify({ markers: data }, null, 2); // formatted
 
-    fetch('https://script.google.com/macros/s/AKfycbxvBDCMTy2mtUA5v_FNzn7FVvL9RHHKxRVxhUGuE5regmYvizKMI2ODUZV5X-ZS7Q/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxYmOh9yPbVxPOBBnDR3OUW6oPveB5b4EFvaR_pskTQrobobq6k7HHu5dCZAVzMPvNL/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
