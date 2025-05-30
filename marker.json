@@ -1,78 +1,550 @@
-[{"lat":32.062782474655876,"lng":34.76225282222763,"color":"violet","note":"שנקר 
-2","hourly":"15","daily":"35","imageUrl":"https://i.imgur.com/lP1GBYD.jpeg","dateTime":"2025-05-22T16:46:19.439Z"},{"lat":32.10061509832794,"lng":34.775476772168545,"color":"violet","note":"נמל 
-תל 
-אביב ","hourly":"16","daily":"60","imageUrl":"https://i.imgur.com/9qDLpUQ.jpeg","dateTime":"2025-05-22T16:46:19.441Z"},{"lat":32.10033140441717,"lng":34.77548162013034,"color":"violet","note":"Sky 
-jump 
-35 
-שח","hourly":"35","daily":"35","imageUrl":"https://i.imgur.com/ttJJbkF.jpeg","dateTime":"2025-05-22T16:46:19.442Z"},{"lat":32.09867758928678,"lng":34.77866699816437,"color":"violet","note":"רידינג","hourly":"30","daily":"30","imageUrl":"https://i.imgur.com/5LWKdLg.jpeg","dateTime":"2025-05-22T16:46:19.443Z"},{"lat":31.896647024396483,"lng":34.8114620005939,"color":"violet","note":"חניון 
-בית 
-פז","hourly":"20","daily":"30","imageUrl":"https://i.imgur.com/hGQHIkk.jpeg","dateTime":"2025-05-22T16:46:19.443Z"},{"lat":31.89651494655929,"lng":34.81143520912382,"color":"violet","note":"הפנימי","hourly":"20","daily":"20","imageUrl":"https://i.imgur.com/yKP5q5j.jpeg","dateTime":"2025-05-22T16:46:19.443Z"},{"lat":31.89786293395349,"lng":34.8114374484125,"color":"violet","note":"יוחננוף ","hourly":"12","daily":"40+","imageUrl":"https://i.imgur.com/iFhtacI.jpeg","dateTime":"2025-05-22T16:46:19.444Z"},{"lat":31.89730936283228,"lng":34.81205582822697,"color":"violet","note":"אחד 
-העם","hourly":"20","daily":"20","imageUrl":"https://i.imgur.com/NhVn0tV.jpeg","dateTime":"2025-05-22T16:46:19.444Z"},{"lat":31.900543617020645,"lng":34.82436493592501,"color":"black","note":"חניון 
-ציבורי 
-חינמי","imageUrl":"https://i.imgur.com/vlQjRn0.jpeg","dateTime":"2025-05-22T16:46:19.445Z"},{"lat":31.906029275298632,"lng":34.81999811695342,"color":"violet","note":"אחוזת 
-הנשיא","hourly":"10","daily":"70","imageUrl":"https://i.imgur.com/Tw2j2f6.jpeg","dateTime":"2025-05-22T16:46:19.447Z"},{"lat":31.89940543436071,"lng":34.80974819560542,"color":"violet","note":"אלון 
-48","hourly":"30","daily":"30","imageUrl":"https://i.imgur.com/L17gAQN.jpeg","dateTime":"2025-05-22T16:46:19.447Z"},{"lat":31.909506139169984,"lng":34.80298165170159,"color":"violet","note":"קלין 
-קאר","hourly":"20","daily":"20","imageUrl":"https://i.imgur.com/I28GBwl.jpeg","dateTime":"2025-05-22T16:46:19.448Z"},{"lat":31.90328796368529,"lng":34.789628623059464,"color":"black","note":"מגרש 
-עפר ","hourly":"","daily":"","imageUrl":"https://i.imgur.com/4fWdJh6.jpeg","dateTime":"2025-05-22T16:46:19.448Z"},{"lat":31.900668385503707,"lng":34.78923024220632,"color":"violet","note":"מכללת 
-פרס","hourly":"כחול 
-לבן","daily":"","imageUrl":"https://i.imgur.com/HzqTDl3.jpeg","dateTime":"2025-05-22T16:46:19.449Z"},{"lat":31.901532795253097,"lng":34.7897071788224,"color":"black","note":"ליד 
-מכללת 
-פרס","hourly":"","daily":"","imageUrl":"https://i.imgur.com/2tHMCzQ.jpeg","dateTime":"2025-05-22T16:46:19.449Z"},{"lat":31.898347088312455,"lng":34.78883557556707,"color":"violet","note":"חניון 
-אמיליה","hourly":"12","daily":"50","imageUrl":"https://i.imgur.com/hlx10M0.jpeg","dateTime":"2025-05-22T16:46:19.450Z"},{"lat":32.08098438100123,"lng":34.7801221988149,"color":"black","note":"חינם 
-רק בערב, ביום חניה 
-אסורה","hourly":"","daily":"","imageUrl":"https://i.imgur.com/E24YzeB.jpeg","dateTime":"2025-05-22T16:46:19.450Z"},{"lat":32.08194948650254,"lng":34.77992674863059,"color":"violet","note":"חניון 
-גן 
-עופר","hourly":"30","daily":"120","imageUrl":"https://i.imgur.com/pR9Rrul.jpeg","dateTime":"2025-05-22T16:46:19.451Z"},{"lat":31.941372444974363,"lng":34.834157542848,"color":"black","note":"קניון 
-באר 
-יעקב","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-22T16:46:19.452Z"},{"lat":32.08460212145339,"lng":34.76984616008141,"color":"violet","note":"חניון 
-בנקון","hourly":"25","daily":"140","imageUrl":"https://i.imgur.com/YfRx873.jpeg","dateTime":"2025-05-22T16:46:19.452Z"},{"lat":32.08555896440299,"lng":34.76990637707456,"color":"violet","note":"חניון 
-אתרים","hourly":"28","daily":"120","imageUrl":"https://i.imgur.com/5OT4ZMg.jpeg","dateTime":"2025-05-22T16:46:19.453Z"},{"lat":32.07730156248861,"lng":34.77167893356183,"color":"violet","note":"חניון 
-הכיכר","hourly":"20","daily":"75","imageUrl":"https://i.imgur.com/hVyRomK.jpeg","dateTime":"2025-05-22T16:46:19.453Z"},{"lat":32.07147346676346,"lng":34.7716200637018,"color":"violet","note":"חניון 
-בצלאל","hourly":"25","daily":"85","imageUrl":"https://i.imgur.com/vEPfEgK.jpeg","dateTime":"2025-05-22T16:46:19.454Z"},{"lat":32.06857757136378,"lng":34.76604680897277,"color":"violet","note":"חניון 
-הכרמל","hourly":"70","daily":"70","imageUrl":"https://i.imgur.com/onN7o9x.jpeg","dateTime":"2025-05-22T16:46:19.454Z"},{"lat":32.06851024907023,"lng":34.76580566124598,"color":"violet","note":"אחוזת 
-החוף הכרמל 
-2","hourly":"30","daily":"30","imageUrl":"https://i.imgur.com/CKe49ZR.jpeg","dateTime":"2025-05-22T16:46:19.455Z"},{"lat":32.06691831058792,"lng":34.76651803671679,"color":"violet","note":"חניון 
-עירוני 
-הכרמל","hourly":"20","daily":"30","imageUrl":"https://i.imgur.com/adFZN70.jpeg","dateTime":"2025-05-22T16:46:19.455Z"},{"lat":32.065847622283165,"lng":34.76441529920036,"color":"violet","note":"גן 
-הכובשים 
-1","hourly":"20","daily":"30","imageUrl":"https://i.imgur.com/J2oH0pO.jpeg","dateTime":"2025-05-22T16:46:19.455Z"},{"lat":32.065984219195926,"lng":34.763718465842864,"color":"violet","note":"גן 
-הכובשים 
-2","hourly":"20","daily":"30","imageUrl":"https://i.imgur.com/UOj2TFU.jpeg","dateTime":"2025-05-22T16:46:19.456Z"},{"lat":32.064745531921716,"lng":34.76450256286038,"color":"violet","note":"חניון 
-נתקומה","hourly":"30","daily":"30","imageUrl":"https://i.imgur.com/mGJg2QA.jpeg","dateTime":"2025-05-22T16:46:19.458Z"},{"lat":31.923783264322562,"lng":34.795585294885655,"color":"black","note":"תרמג 
-פינת 
-רבין","hourly":"","daily":"","imageUrl":"https://i.imgur.com/9P9fKMJ.jpeg","dateTime":"2025-05-22T16:46:19.459Z"},{"lat":31.92219705055747,"lng":34.79530774147776,"color":"black","note":"נחלת 
-ראובן ","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-22T16:46:19.460Z"},{"lat":31.898071782557675,"lng":34.79031023898629,"color":"black","note":"גד 
-פיינשטיין פינת יעקב 
-פרי","hourly":"","daily":"","imageUrl":"https://i.imgur.com/EmVyVbN.jpeg","dateTime":"2025-05-22T16:46:19.460Z"},{"lat":31.895216387966773,"lng":34.785909742477344,"color":"black","note":"ספורטק 
-רחובות ","hourly":"","daily":"","imageUrl":"https://i.imgur.com/qXK9zzc.jpeg","dateTime":"2025-05-22T16:46:19.460Z"},{"lat":31.896055925765754,"lng":34.81030300053034,"color":"violet","note":"הקניון 
-הקטן","hourly":"15","daily":"25","imageUrl":"https://i.imgur.com/MMfeQRc.jpeg","dateTime":"2025-05-22T16:46:19.460Z"},{"lat":31.895811504153286,"lng":34.81039944982262,"color":"violet","note":"אפשטיין 
-פינת 
-טלר","hourly":"20","daily":"20","imageUrl":"https://i.imgur.com/ChAkAQe.jpeg","dateTime":"2025-05-22T16:46:19.461Z"},{"lat":31.89594206480674,"lng":34.81233022180047,"color":"violet","note":"שף 
-בשר","hourly":"15","daily":"30","imageUrl":"https://i.imgur.com/wxH4gkP.jpeg","dateTime":"2025-05-22T16:46:19.461Z"},{"lat":31.99974566488033,"lng":34.86899478947701,"color":"violet","note":"חניה 
-קצרת טווח - תעריף לשעה ראשונה ₪22. כל רבע שעה נוספת ₪6.  תעריף מקסימום ליום 
-₪100 22 ₪ לכל שעה נוספת (תעריף מקסימום ליממה-100 ₪).  בעונת השיא מהתאריך 
-15.06 ועד התאריך 31.10 תעריף מקסימום ליממה- 135 
-₪.","hourly":"22","daily":"100+","imageUrl":null,"dateTime":"2025-05-22T16:46:19.461Z"},{"lat":31.989201607510083,"lng":34.889268060608586,"color":"violet","note":"חניון 
-15 - חניה באזור לא מקורה: 50 ₪ ליממה. כל שעה נוספת מעבר לכך 12 ₪. (תעריף 
-מקסימום ליממה 50 ₪). חניה באזור מקורה: 90 ₪ ליממה. כל שעה נוספת מעבר 16 ₪. 
-(תעריף מקסימום ליממה 90 
-₪).","hourly":"12","daily":"50","imageUrl":null,"dateTime":"2025-05-22T16:46:19.461Z"},{"lat":32.00611809869853,"lng":34.86483128518336,"color":"violet","note":"חניונים 
-26, 28 - 50 ₪ ליממה. כל שעה נוספת מעבר לכך 12 ₪. (תעריף מקסימום ליממה 50 
-₪).","hourly":"12","daily":"50","imageUrl":null,"dateTime":"2025-05-22T16:46:19.461Z"},{"lat":31.896736485745272,"lng":34.81581731806929,"color":"violet","note":"חניון 
-ראשית המושבה 1, פתוח רק בזמן הצגות בהיכל 
-התרבות ","hourly":"20","daily":"20","imageUrl":"https://i.imgur.com/ieX7OU8.jpeg","dateTime":"2025-05-22T16:48:21.174Z"},{"lat":31.894918628855766,"lng":34.81165143578344,"color":"violet","note":"קאזה 
-ויטל","hourly":"20","daily":"20","imageUrl":"https://i.imgur.com/cu7tpnc.jpeg","dateTime":"2025-05-23T09:18:44.821Z"},{"lat":31.89451546447937,"lng":34.80776730987997,"color":"violet","note":"קניון 
-רחובות","hourly":"16","daily":"60","imageUrl":"https://i.imgur.com/GrApMke.jpeg","dateTime":"2025-05-23T09:19:34.525Z"},{"lat":31.9207747251808,"lng":34.79149964157403,"color":"black","note":"גולדןקייר 
-חניון 
-גג","hourly":"","daily":"","imageUrl":"https://i.imgur.com/4t406mT.jpeg","dateTime":"2025-05-23T10:43:52.342Z"},{"lat":31.921396127496934,"lng":34.793557736828845,"color":"black","note":"צוואר 
-סנטר","hourly":"","daily":"","imageUrl":"https://i.imgur.com/Cwscqrv.jpeg","dateTime":"2025-05-23T10:44:58.349Z"},{"lat":31.922170598733597,"lng":34.79379016642833,"color":"blue","note":"","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-23T10:49:49.021Z"},{"lat":31.921647203050885,"lng":34.79178840160007,"color":"blue","note":"","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-23T10:50:00.604Z"},{"lat":31.920707294042046,"lng":34.79382980359732,"color":"black","note":"חניון 
-גג, לרוב 
-פנוי","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-23T10:50:45.869Z"},{"lat":31.921969393291512,"lng":34.79094338739914,"color":"black","note":"","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-23T10:51:38.769Z"},{"lat":31.91086076679857,"lng":34.80509278290884,"color":"violet","note":"חניון 
-עירוני 
-פיקריס","hourly":"5.40","daily":"19","imageUrl":"https://i.imgur.com/YKiA9Wu.jpeg","dateTime":"2025-05-27T05:27:51.047Z"},{"lat":31.91131830424193,"lng":34.804889167736235,"color":"violet","note":"פיקריס 
-3","hourly":"18","daily":"63","imageUrl":"https://i.imgur.com/KTInuwV.jpeg","dateTime":"2025-05-27T05:29:09.712Z"},{"lat":31.911917219817113,"lng":34.804148192185835,"color":"violet","note":"חניון 
-רוטברג","hourly":"18","daily":"63","imageUrl":"https://i.imgur.com/UUSYnjz.jpeg","dateTime":"2025-05-27T05:31:27.010Z"},{"lat":31.915349739661025,"lng":34.80184463598897,"color":"red","note":"חניון 
-פרטי","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-27T05:37:16.370Z"},{"lat":31.914453784027135,"lng":34.80206151926758,"color":"red","note":"חניון 
-פרטי","hourly":"","daily":"","imageUrl":null,"dateTime":"2025-05-27T05:37:29.913Z"},{"lat":31.917376666289137,"lng":34.80309550885142,"color":"black","note":"חניון 
-עפר","hourly":"","daily":"","imageUrl":"https://i.imgur.com/d5prAmF.jpeg","dateTime":"2025-05-27T05:38:15.419Z"},{"lat":31.91884154204445,"lng":34.80366706011777,"color":"black","note":"חניון 
-עפר","hourly":"","daily":"","imageUrl":"https://i.imgur.com/ALyORDL.jpeg","dateTime":"2025-05-27T05:40:25.452Z"}]
+[
+  {
+    "lat": 32.062782474655876,
+    "lng": 34.76225282222763,
+    "color": "violet",
+    "note": "שנקר 2",
+    "hourly": "15",
+    "daily": "35",
+    "imageUrl": "https://i.imgur.com/lP1GBYD.jpeg",
+    "dateTime": "2025-05-22T16:46:19.439Z"
+  },
+  {
+    "lat": 32.10061509832794,
+    "lng": 34.775476772168545,
+    "color": "violet",
+    "note": "נמל תל אביב",
+    "hourly": "16",
+    "daily": "60",
+    "imageUrl": "https://i.imgur.com/9qDLpUQ.jpeg",
+    "dateTime": "2025-05-22T16:46:19.441Z"
+  },
+  {
+    "lat": 32.10033140441717,
+    "lng": 34.77548162013034,
+    "color": "violet",
+    "note": "Sky jump 35 שח",
+    "hourly": "35",
+    "daily": "35",
+    "imageUrl": "https://i.imgur.com/ttJJbkF.jpeg",
+    "dateTime": "2025-05-22T16:46:19.442Z"
+  },
+  {
+    "lat": 32.09867758928678,
+    "lng": 34.77866699816437,
+    "color": "violet",
+    "note": "רידינג",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/5LWKdLg.jpeg",
+    "dateTime": "2025-05-22T16:46:19.443Z"
+  },
+  {
+    "lat": 31.896647024396483,
+    "lng": 34.8114620005939,
+    "color": "violet",
+    "note": "חניון בית פז",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/hGQHIkk.jpeg",
+    "dateTime": "2025-05-22T16:46:19.443Z"
+  },
+  {
+    "lat": 31.89651494655929,
+    "lng": 34.81143520912382,
+    "color": "violet",
+    "note": "הפנימי",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/yKP5q5j.jpeg",
+    "dateTime": "2025-05-22T16:46:19.443Z"
+  },
+  {
+    "lat": 31.89786293395349,
+    "lng": 34.8114374484125,
+    "color": "violet",
+    "note": "יוחננוף",
+    "hourly": "12",
+    "daily": "40+",
+    "imageUrl": "https://i.imgur.com/iFhtacI.jpeg",
+    "dateTime": "2025-05-22T16:46:19.444Z"
+  },
+  {
+    "lat": 31.89730936283228,
+    "lng": 34.81205582822697,
+    "color": "violet",
+    "note": "אחד העם",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/NhVn0tV.jpeg",
+    "dateTime": "2025-05-22T16:46:19.444Z"
+  },
+  {
+    "lat": 31.900543617020645,
+    "lng": 34.82436493592501,
+    "color": "black",
+    "note": "חניון ציבורי חינמי",
+    "imageUrl": "https://i.imgur.com/vlQjRn0.jpeg",
+    "dateTime": "2025-05-22T16:46:19.445Z"
+  },
+  {
+    "lat": 31.906029275298632,
+    "lng": 34.81999811695342,
+    "color": "violet",
+    "note": "אחוזת הנשיא",
+    "hourly": "10",
+    "daily": "70",
+    "imageUrl": "https://i.imgur.com/Tw2j2f6.jpeg",
+    "dateTime": "2025-05-22T16:46:19.447Z"
+  },
+  {
+    "lat": 31.89940543436071,
+    "lng": 34.80974819560542,
+    "color": "violet",
+    "note": "אלון 48",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/L17gAQN.jpeg",
+    "dateTime": "2025-05-22T16:46:19.447Z"
+  },
+  {
+    "lat": 31.909506139169984,
+    "lng": 34.80298165170159,
+    "color": "violet",
+    "note": "קלין קאר",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/I28GBwl.jpeg",
+    "dateTime": "2025-05-22T16:46:19.448Z"
+  },
+  {
+    "lat": 31.90328796368529,
+    "lng": 34.789628623059464,
+    "color": "black",
+    "note": "מגרש עפר",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/4fWdJh6.jpeg",
+    "dateTime": "2025-05-22T16:46:19.448Z"
+  },
+  {
+    "lat": 31.900668385503707,
+    "lng": 34.78923024220632,
+    "color": "violet",
+    "note": "מכללת פרס",
+    "hourly": "כחול לבן",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/HzqTDl3.jpeg",
+    "dateTime": "2025-05-22T16:46:19.449Z"
+  },
+  {
+    "lat": 31.901532795253097,
+    "lng": 34.7897071788224,
+    "color": "black",
+    "note": "ליד מכללת פרס",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/2tHMCzQ.jpeg",
+    "dateTime": "2025-05-22T16:46:19.449Z"
+  },
+  {
+    "lat": 31.898347088312455,
+    "lng": 34.78883557556707,
+    "color": "violet",
+    "note": "חניון אמיליה",
+    "hourly": "12",
+    "daily": "50",
+    "imageUrl": "https://i.imgur.com/hlx10M0.jpeg",
+    "dateTime": "2025-05-22T16:46:19.450Z"
+  },
+  {
+    "lat": 32.08098438100123,
+    "lng": 34.7801221988149,
+    "color": "black",
+    "note": "חינם רק בערב, ביום חניה אסורה",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/E24YzeB.jpeg",
+    "dateTime": "2025-05-22T16:46:19.450Z"
+  },
+  {
+    "lat": 32.08194948650254,
+    "lng": 34.77992674863059,
+    "color": "violet",
+    "note": "חניון גן עופר",
+    "hourly": "30",
+    "daily": "120",
+    "imageUrl": "https://i.imgur.com/pR9Rrul.jpeg",
+    "dateTime": "2025-05-22T16:46:19.451Z"
+  },
+  {
+    "lat": 31.941372444974363,
+    "lng": 34.834157542848,
+    "color": "black",
+    "note": "קניון באר יעקב",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-22T16:46:19.452Z"
+  },
+  {
+    "lat": 32.08460212145339,
+    "lng": 34.76984616008141,
+    "color": "violet",
+    "note": "חניון בנקון",
+    "hourly": "25",
+    "daily": "140",
+    "imageUrl": "https://i.imgur.com/YfRx873.jpeg",
+    "dateTime": "2025-05-22T16:46:19.452Z"
+  },
+  {
+    "lat": 32.08555896440299,
+    "lng": 34.76990637707456,
+    "color": "violet",
+    "note": "חניון אתרים",
+    "hourly": "28",
+    "daily": "120",
+    "imageUrl": "https://i.imgur.com/5OT4ZMg.jpeg",
+    "dateTime": "2025-05-22T16:46:19.453Z"
+  },
+  {
+    "lat": 32.07730156248861,
+    "lng": 34.77167893356183,
+    "color": "violet",
+    "note": "חניון הכיכר",
+    "hourly": "20",
+    "daily": "75",
+    "imageUrl": "https://i.imgur.com/hVyRomK.jpeg",
+    "dateTime": "2025-05-22T16:46:19.453Z"
+  },
+  {
+    "lat": 32.07147346676346,
+    "lng": 34.7716200637018,
+    "color": "violet",
+    "note": "חניון בצלאל",
+    "hourly": "25",
+    "daily": "85",
+    "imageUrl": "https://i.imgur.com/vEPfEgK.jpeg",
+    "dateTime": "2025-05-22T16:46:19.454Z"
+  },
+  {
+    "lat": 32.06857757136378,
+    "lng": 34.76604680897277,
+    "color": "violet",
+    "note": "חניון הכרמל",
+    "hourly": "70",
+    "daily": "70",
+    "imageUrl": "https://i.imgur.com/onN7o9x.jpeg",
+    "dateTime": "2025-05-22T16:46:19.454Z"
+  },
+  {
+    "lat": 32.06851024907023,
+    "lng": 34.76580566124598,
+    "color": "violet",
+    "note": "אחוזת החוף הכרמל 2",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/CKe49ZR.jpeg",
+    "dateTime": "2025-05-22T16:46:19.455Z"
+  },
+  {
+    "lat": 32.06691831058792,
+    "lng": 34.76651803671679,
+    "color": "violet",
+    "note": "חניון עירוני הכרמל",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/adFZN70.jpeg",
+    "dateTime": "2025-05-22T16:46:19.455Z"
+  },
+  {
+    "lat": 32.065847622283165,
+    "lng": 34.76441529920036,
+    "color": "violet",
+    "note": "גן הכובשים 1",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/J2oH0pO.jpeg",
+    "dateTime": "2025-05-22T16:46:19.455Z"
+  },
+  {
+    "lat": 32.065984219195926,
+    "lng": 34.763718465842864,
+    "color": "violet",
+    "note": "גן הכובשים 2",
+    "hourly": "20",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/UOj2TFU.jpeg",
+    "dateTime": "2025-05-22T16:46:19.456Z"
+  },
+  {
+    "lat": 32.064745531921716,
+    "lng": 34.76450256286038,
+    "color": "violet",
+    "note": "חניון נתקומה",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/mGJg2QA.jpeg",
+    "dateTime": "2025-05-22T16:46:19.458Z"
+  },
+  {
+    "lat": 31.923783264322562,
+    "lng": 34.795585294885655,
+    "color": "black",
+    "note": "תרמג פינת רבין",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/9P9fKMJ.jpeg",
+    "dateTime": "2025-05-22T16:46:19.459Z"
+  },
+  {
+    "lat": 31.92219705055747,
+    "lng": 34.79530774147776,
+    "color": "black",
+    "note": "נחלת ראובן",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-22T16:46:19.460Z"
+  },
+  {
+    "lat": 31.898071782557675,
+    "lng": 34.79031023898629,
+    "color": "black",
+    "note": "גד פיינשטיין פינת יעקב פרי",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/EmVyVbN.jpeg",
+    "dateTime": "2025-05-22T16:46:19.460Z"
+  },
+  {
+    "lat": 31.895216387966773,
+    "lng": 34.785909742477344,
+    "color": "black",
+    "note": "ספורטק רחובות",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/qXK9zzc.jpeg",
+    "dateTime": "2025-05-22T16:46:19.460Z"
+  },
+  {
+    "lat": 31.896055925765754,
+    "lng": 34.81030300053034,
+    "color": "violet",
+    "note": "הקניון הקטן",
+    "hourly": "15",
+    "daily": "25",
+    "imageUrl": "https://i.imgur.com/MMfeQRc.jpeg",
+    "dateTime": "2025-05-22T16:46:19.460Z"
+  },
+  {
+    "lat": 31.895811504153286,
+    "lng": 34.81039944982262,
+    "color": "violet",
+    "note": "אפשטיין פינת טלר",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/ChAkAQe.jpeg",
+    "dateTime": "2025-05-22T16:46:19.461Z"
+  },
+  {
+    "lat": 31.89594206480674,
+    "lng": 34.81233022180047,
+    "color": "violet",
+    "note": "שף בשר",
+    "hourly": "15",
+    "daily": "30",
+    "imageUrl": "https://i.imgur.com/wxH4gkP.jpeg",
+    "dateTime": "2025-05-22T16:46:19.461Z"
+  },
+  {
+    "lat": 31.99974566488033,
+    "lng": 34.86899478947701,
+    "color": "violet",
+    "note": "חניה קצרת טווח - תעריף לשעה ראשונה ₪22. כל רבע שעה נוספת ₪6. תעריף מקסימום ליום ₪100 22 ₪ לכל שעה נוספת (תעריף מקסימום ליממה-100 ₪). בעונת השיא מהתאריך 15.06 ועד התאריך 31.10 תעריף מקסימום ליממה- 135 ₪.",
+    "hourly": "22",
+    "daily": "100+",
+    "imageUrl": null,
+    "dateTime": "2025-05-22T16:46:19.461Z"
+  },
+  {
+    "lat": 31.989201607510083,
+    "lng": 34.889268060608586,
+    "color": "violet",
+    "note": "חניון 15 - חניה באזור לא מקורה: 50 ₪ ליממה. כל שעה נוספת מעבר לכך 12 ₪. (תעריף מקסימום ליממה 50 ₪). חניה באזור מקורה: 90 ₪ ליממה. כל שעה נוספת מעבר 16 ₪. (תעריף מקסימום ליממה 90 ₪).",
+    "hourly": "12",
+    "daily": "50",
+    "imageUrl": null,
+    "dateTime": "2025-05-22T16:46:19.461Z"
+  },
+  {
+    "lat": 32.00611809869853,
+    "lng": 34.86483128518336,
+    "color": "violet",
+    "note": "חניונים 26, 28 - 50 ₪ ליממה. כל שעה נוספת מעבר לכך 12 ₪. (תעריף מקסימום ליממה 50 ₪).",
+    "hourly": "12",
+    "daily": "50",
+    "imageUrl": null,
+    "dateTime": "2025-05-22T16:46:19.461Z"
+  },
+  {
+    "lat": 31.896736485745272,
+    "lng": 34.81581731806929,
+    "color": "violet",
+    "note": "חניון ראשית המושבה 1, פתוח רק בזמן הצגות בהיכל התרבות",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/ieX7OU8.jpeg",
+    "dateTime": "2025-05-22T16:48:21.174Z"
+  },
+  {
+    "lat": 31.894918628855766,
+    "lng": 34.81165143578344,
+    "color": "violet",
+    "note": "קאזה ויטל",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": "https://i.imgur.com/cu7tpnc.jpeg",
+    "dateTime": "2025-05-23T09:18:44.821Z"
+  },
+  {
+    "lat": 31.89451546447937,
+    "lng": 34.80776730987997,
+    "color": "violet",
+    "note": "קניון רחובות",
+    "hourly": "16",
+    "daily": "60",
+    "imageUrl": "https://i.imgur.com/GrApMke.jpeg",
+    "dateTime": "2025-05-23T09:19:34.525Z"
+  },
+  {
+    "lat": 31.9207747251808,
+    "lng": 34.79149964157403,
+    "color": "black",
+    "note": "גולדןקייר חניון גג",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/4t406mT.jpeg",
+    "dateTime": "2025-05-23T10:43:52.342Z"
+  },
+  {
+    "lat": 31.921396127496934,
+    "lng": 34.793557736828845,
+    "color": "black",
+    "note": "צוואר סנטר",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/Cwscqrv.jpeg",
+    "dateTime": "2025-05-23T10:44:58.349Z"
+  },
+  {
+    "lat": 31.922170598733597,
+    "lng": 34.79379016642833,
+    "color": "blue",
+    "note": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:49:49.021Z"
+  },
+  {
+    "lat": 31.921647203050885,
+    "lng": 34.79178840160007,
+    "color": "blue",
+    "note": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:50:00.604Z"
+  },
+  {
+    "lat": 31.920707294042046,
+    "lng": 34.79382980359732,
+    "color": "black",
+    "note": "חניון גג, לרוב פנוי",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:50:45.869Z"
+  },
+  {
+    "lat": 31.921969393291512,
+    "lng": 34.79094338739914,
+    "color": "black",
+    "note": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-23T10:51:38.769Z"
+  },
+  {
+    "lat": 31.91086076679857,
+    "lng": 34.80509278290884,
+    "color": "violet",
+    "note": "חניון עירוני פיקריס",
+    "hourly": "5.40",
+    "daily": "19",
+    "imageUrl": "https://i.imgur.com/YKiA9Wu.jpeg",
+    "dateTime": "2025-05-27T05:27:51.047Z"
+  },
+  {
+    "lat": 31.91131830424193,
+    "lng": 34.804889167736235,
+    "color": "violet",
+    "note": "פיקריס 3",
+    "hourly": "18",
+    "daily": "63",
+    "imageUrl": "https://i.imgur.com/KTInuwV.jpeg",
+    "dateTime": "2025-05-27T05:29:09.712Z"
+  },
+  {
+    "lat": 31.911917219817113,
+    "lng": 34.804148192185835,
+    "color": "violet",
+    "note": "חניון רוטברג",
+    "hourly": "18",
+    "daily": "63",
+    "imageUrl": "https://i.imgur.com/UUSYnjz.jpeg",
+    "dateTime": "2025-05-27T05:31:27.010Z"
+  },
+  {
+    "lat": 31.915349739661025,
+    "lng": 34.80184463598897,
+    "color": "red",
+    "note": "חניון פרטי",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-27T05:37:16.370Z"
+  },
+  {
+    "lat": 31.914453784027135,
+    "lng": 34.80206151926758,
+    "color": "red",
+    "note": "חניון פרטי",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-05-27T05:37:29.913Z"
+  },
+  {
+    "lat": 31.917376666289137,
+    "lng": 34.80309550885142,
+    "color": "black",
+    "note": "חניון עפר",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/d5prAmF.jpeg",
+    "dateTime": "2025-05-27T05:38:15.419Z"
+  },
+  {
+    "lat": 31.91884154204445,
+    "lng": 34.80366706011777,
+    "color": "black",
+    "note": "חניון עפר",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/ALyORDL.jpeg",
+    "dateTime": "2025-05-27T05:40:25.452Z"
+  }
+]
