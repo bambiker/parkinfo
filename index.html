@@ -415,15 +415,13 @@ function startMapAtUserLocation() {
             const lng = pos.coords.longitude;
             currentLatLng = { lat, lng };
             map = L.map('map').setView([lat, lng], 15);
-	    const measureControl = new L.Control.Measure({
-                  primaryLengthUnit: 'meters',
-                  secondaryLengthUnit: 'kilometers',
-                  primaryAreaUnit: 'sqmeters',
-                  secondaryAreaUnit: 'hectares',
-                  activeColor: '#db4a29',
-                  completedColor: '#9b2d14'
-                  });
-measureControl.addTo(map);
+// Add measure tool
+L.control.measure({
+    primaryLengthUnit: 'meters',
+    secondaryLengthUnit: 'kilometers',
+    activeColor: '#db4a29',
+    completedColor: '#9b2d14'
+}).addTo(map);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
