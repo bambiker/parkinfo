@@ -1,3 +1,21 @@
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+
+1 of 90
+Markers Data
+Inbox
+
+bambiker@gmail.com
+Attachments
+7:52 AM (0 minutes ago)
+to me
+
+Markers attached as a JSON file.
+ One attachment
+  •  Scanned by Gmail
+Got them, thanks!Thank you!Looks great!
 [
   {
     "lat": 32.062782474655876,
@@ -546,5 +564,18 @@
     "daily": "",
     "imageUrl": "https://i.imgur.com/ALyORDL.jpeg",
     "dateTime": "2025-05-27T05:40:25.452Z"
+  },
+  {
+    "lat": 32.830424604391915,
+    "lng": 34.982734480224124,
+    "color": "violet",
+    "note": "רכבת בת גלים",
+    "url": "",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": "https://i.imgur.com/72Nfn01.jpeg",
+    "dateTime": "2025-06-01T04:51:54.573Z"
   }
 ]
+markers.json
+Displaying markers.json. 
