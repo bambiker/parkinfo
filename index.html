@@ -17,6 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -412,7 +414,17 @@ function startMapAtUserLocation() {
             const lat = pos.coords.latitude;
             const lng = pos.coords.longitude;
             currentLatLng = { lat, lng };
-            map = L.map('map').setView([lat, lng], 17);
+            map = L.map('map').setView([lat, lng], 15);
+	    const measureControl = new L.Control.Measure({
+                  primaryLengthUnit: 'meters',
+                  secondaryLengthUnit: 'kilometers',
+                  primaryAreaUnit: 'sqmeters',
+                  secondaryAreaUnit: 'hectares',
+                  activeColor: '#db4a29',
+                  completedColor: '#9b2d14'
+                  });
+measureControl.addTo(map);
+
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '© OpenStreetMap contributors'
