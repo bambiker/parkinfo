@@ -436,12 +436,12 @@ function startMapAtUserLocation() {
             }).addTo(map);
 	    map.attributionControl.setPrefix('Leaflet')
 // Add measure tool
-L.control.measure({
-  primaryLengthUnit: "meters",
-  secondaryLengthUnit: "kilometers",
-  primaryAreaUnit: "sqmeters",
-  secondaryAreaUnit: "hectares"
-}).addTo(map);
+//L.control.measure({
+//  primaryLengthUnit: "meters",
+//  secondaryLengthUnit: "kilometers",
+//  primaryAreaUnit: "sqmeters",
+//  secondaryAreaUnit: "hectares"
+//}).addTo(map);
             map.on("click", function(e) {
                 if (!document.getElementById("enableMarkers").checked) return;
 
