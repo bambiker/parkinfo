@@ -15,10 +15,20 @@
 	
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.css" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.min.js"></script>
+
+    <!-- Leaflet core -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Leaflet.Measure plugin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.1/dist/leaflet-measure.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.1/dist/leaflet-measure.min.js"></script>
+
+	
+    <!link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <!script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"><!/script>
+    <!link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.css" />
+    <!script src="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.min.js"><!/script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -415,13 +425,6 @@ function startMapAtUserLocation() {
             const lng = pos.coords.longitude;
             currentLatLng = { lat, lng };
             map = L.map('map').setView([lat, lng], 15);
-// Add measure tool
-L.control.measure({
-    primaryLengthUnit: 'meters',
-    secondaryLengthUnit: 'kilometers',
-    activeColor: '#db4a29',
-    completedColor: '#9b2d14'
-}).addTo(map);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
@@ -431,8 +434,14 @@ L.control.measure({
             L.circle([lat, lng], {
                 color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
             }).addTo(map);
-			map.attributionControl.setPrefix('Leaflet')
-
+	    map.attributionControl.setPrefix('Leaflet')
+// Add measure tool
+L.control.measure({
+  primaryLengthUnit: "meters",
+  secondaryLengthUnit: "kilometers",
+  primaryAreaUnit: "sqmeters",
+  secondaryAreaUnit: "hectares"
+}).addTo(map);
             map.on("click", function(e) {
                 if (!document.getElementById("enableMarkers").checked) return;
 
