@@ -557,5 +557,49 @@
     "daily": "25",
     "imageUrl": "https://i.imgur.com/72Nfn01.jpeg",
     "dateTime": "2025-06-01T04:51:54.573Z"
+  },
+  {
+    "lat": 31.775832695554325,
+    "lng": 35.187796764530056,
+    "color": "violet",
+    "note": "מרכז מסחרי בית הכרם",
+    "url": "",
+    "hourly": "24",
+    "daily": "150",
+    "imageUrl": "https://i.imgur.com/KTRtEOG.jpeg",
+    "dateTime": "2025-06-02T18:19:20.584Z"
+  },
+  {
+    "lat": 31.77639340239642,
+    "lng": 35.187053778134654,
+    "color": "black",
+    "note": "",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-06-02T18:21:46.982Z"
+  },
+  {
+    "lat": 31.77448433569549,
+    "lng": 35.18537767128034,
+    "color": "violet",
+    "note": "שערי צדק תת קרקעי",
+    "url": "https://www.szmc.org.il/services/chanaya/",
+    "hourly": "35",
+    "daily": "35",
+    "imageUrl": null,
+    "dateTime": "2025-06-02T19:33:50.915Z"
+  },
+  {
+    "lat": 31.770937332958603,
+    "lng": 35.186454951669276,
+    "color": "violet",
+    "note": "שערי צדק דרומי",
+    "url": "https://www.szmc.org.il/services/chanaya/",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": null,
+    "dateTime": "2025-06-02T19:34:48.224Z"
   }
 ]
