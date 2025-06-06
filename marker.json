@@ -601,5 +601,38 @@
     "daily": "30",
     "imageUrl": null,
     "dateTime": "2025-06-02T19:34:48.224Z"
+  },
+  {
+    "lat": 31.898338987620413,
+    "lng": 34.810723141633886,
+    "color": "violet",
+    "note": "הרצל מול גאולה",
+    "url": "",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": "https://i.imgur.com/aaOzWwD.jpeg",
+    "dateTime": "2025-06-06T05:58:49.860Z"
+  },
+  {
+    "lat": 31.91312331283779,
+    "lng": 34.802951154259055,
+    "color": "violet",
+    "note": "חניון עירוני נס ציונה",
+    "url": "",
+    "hourly": "4.6",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-06-06T06:00:16.644Z"
+  },
+  {
+    "lat": 32.09198696672762,
+    "lng": 34.82507369944959,
+    "color": "violet",
+    "note": "מצדה בני ברק",
+    "url": "",
+    "hourly": "30",
+    "daily": "90",
+    "imageUrl": "https://i.imgur.com/bavPl11.jpeg",
+    "dateTime": "2025-06-06T06:01:38.446Z"
   }
 ]
