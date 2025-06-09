@@ -156,7 +156,8 @@
 	    </div>
 
     <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">כמות החניות והחניונים המסומנים במפה : 0</div>
-	
+    <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לא ידוע</div>
+
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="downloadMarkers()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
             💾 שמירת החניונים
@@ -278,6 +279,7 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
 
     markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime } });
     updateMarkerCount();
+    updateLastUpdatedDate();
 
     // Clear inputs
     document.getElementById("markerText").value = "";
@@ -325,6 +327,29 @@ function sendMarkersToServer(data) {
 }
 
 
+function updateLastUpdatedDate() {
+    if (markers.length === 0) {
+        document.getElementById("lastUpdated").innerText = "המפה עודכנה לאחרונה בתאריך: לא ידוע";
+        return;
+    }
+
+    const dates = markers
+        .map(m => m.data.dateTime)
+        .filter(d => !!d)
+        .map(d => new Date(d))
+        .filter(d => !isNaN(d.getTime()));
+
+    if (dates.length === 0) {
+        document.getElementById("lastUpdated").innerText = "המפה עודכנה לאחרונה בתאריך: לא ידוע";
+        return;
+    }
+
+    const latestDate = new Date(Math.max(...dates));
+    const formattedDate = latestDate.toLocaleDateString('he-IL', {
+        year: 'numeric', month: 'long', day: 'numeric'
+    });
+    document.getElementById("lastUpdated").innerText = `המפה עודכנה לאחרונה בתאריך: ${formattedDate}`;
+}
 
 	
 function downloadMarkers() {
