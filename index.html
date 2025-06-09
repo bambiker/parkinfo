@@ -92,6 +92,11 @@
 </header>
 
 <div id="map"></div>
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 15px;">
+    <label style="font-weight: bold;">הצג מחיר:</label>
+    <label><input type="radio" name="priceDisplay" value="daily" checked onchange="updateAllMarkerIcons()"> יומי</label>
+    <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"> שעתי</label>
+</div>
 <a href="https://land.pango.co.il/FastPark/ParkingRates/ParkingRates" target="_blank">מחירי החניה בכחול לבן בערים השונות</a>
 	
 <div id="imageModal">
@@ -232,15 +237,22 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
 //}
 	
 
-    let svgText = 'חניון';  
-    if (color==='black')
-	{svgText = 'חינם';}
-    else 
-	{svgText = daily;}
-	
-    let circleSVGString = '<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="250" height="250"><circle cx="125" cy="125" r="100" fill="'+color+'"/><text x="50%" y="50%" text-anchor="middle" fill="white" font-size="100px" font-family="Arial" dy=".3em">'+svgText+'</text></svg>'
+       const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
+    let svgText = 'חניון';
+
+    if (color === 'black') {
+        svgText = 'חינם';
+    } else {
+        svgText = selectedType === "hourly" ? hourly : daily;
+    }
+
+    let circleSVGString = `
+        <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="250" height="250">
+            <circle cx="125" cy="125" r="100" fill="${color}" />
+            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="100px" font-family="Arial" dy=".3em">${svgText}</text>
+        </svg>`;
     let iconURL = "data:image/svg+xml," + encodeURIComponent(circleSVGString);
-   
+
     var circleIcon = L.icon({
         iconUrl: iconURL,
         iconSize: [40, 40]
@@ -504,6 +516,34 @@ function startMapAtUserLocation() {
     } else {
         fallbackMap();
     }
+}
+function updateAllMarkerIcons() {
+    const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
+
+    markers.forEach(m => {
+        let svgText = 'חניון';
+        const { color, hourly, daily } = m.data;
+
+        if (color === 'black') {
+            svgText = 'חינם';
+        } else {
+            svgText = selectedType === "hourly" ? hourly : daily;
+        }
+
+        let circleSVGString = `
+            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="250" height="250">
+                <circle cx="125" cy="125" r="100" fill="${color}" />
+                <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="100px" font-family="Arial" dy=".3em">${svgText}</text>
+            </svg>`;
+        let iconURL = "data:image/svg+xml," + encodeURIComponent(circleSVGString);
+
+        const newIcon = L.icon({
+            iconUrl: iconURL,
+            iconSize: [40, 40]
+        });
+
+        m.marker.setIcon(newIcon);
+    });
 }
 
 function fallbackMap() {
