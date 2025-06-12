@@ -920,5 +920,60 @@
     "daily": "",
     "imageUrl": "https://i.imgur.com/rT7FHF0.jpeg",
     "dateTime": "2025-06-11T18:42:28.639Z"
+  },
+  {
+    "lat": 31.925235792295954,
+    "lng": 34.69855929765237,
+    "color": "violet",
+    "note": "חוף פלמחים",
+    "url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%97%D7%95%D7%A3-%D7%A4%D7%9C%D7%9E%D7%97%D7%99%D7%9D/",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": null,
+    "dateTime": "2025-06-12T19:24:15.560Z"
+  },
+  {
+    "lat": 31.96305425204088,
+    "lng": 34.80505714496496,
+    "color": "violet",
+    "note": "חניון זד\"ל",
+    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "hourly": "15",
+    "daily": "20",
+    "imageUrl": null,
+    "dateTime": "2025-06-12T19:27:21.408Z"
+  },
+  {
+    "lat": 31.961194829027747,
+    "lng": 34.80098854766222,
+    "color": "violet",
+    "note": "חניון הבנים",
+    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": null,
+    "dateTime": "2025-06-12T19:28:54.232Z"
+  },
+  {
+    "lat": 31.96233262416829,
+    "lng": 34.801181706331995,
+    "color": "violet",
+    "note": "חניון היכל התרבות",
+    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "hourly": "15",
+    "daily": "15",
+    "imageUrl": null,
+    "dateTime": "2025-06-12T19:30:02.136Z"
+  },
+  {
+    "lat": 31.948694447654876,
+    "lng": 34.80509027653461,
+    "color": "violet",
+    "note": "רכבת ראשונים",
+    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "hourly": "20",
+    "daily": "20",
+    "imageUrl": null,
+    "dateTime": "2025-06-12T19:31:38.400Z"
   }
 ]
