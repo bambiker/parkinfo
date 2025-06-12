@@ -848,7 +848,7 @@
     "lat": 32.11114111273817,
     "lng": 34.841787815094,
     "color": "violet",
-    "note": "הארד 2 ",
+    "note": "הארד 2",
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=16",
     "hourly": "20",
     "daily": "480",
@@ -887,5 +887,38 @@
     "daily": "33",
     "imageUrl": null,
     "dateTime": "2025-06-09T14:47:52.475Z"
+  },
+  {
+    "lat": 32.07363699448728,
+    "lng": 34.79209623104189,
+    "color": "grey",
+    "note": "עזריאלי תל אביב",
+    "url": "",
+    "hourly": "24",
+    "daily": "100",
+    "imageUrl": "https://i.imgur.com/dTFGkOu.jpeg",
+    "dateTime": "2025-06-11T14:04:50.641Z"
+  },
+  {
+    "lat": 32.071109374487186,
+    "lng": 34.78761619690322,
+    "color": "grey",
+    "note": "חניון שרונה",
+    "url": "",
+    "hourly": "24",
+    "daily": "110",
+    "imageUrl": "https://i.imgur.com/wsv943p.jpeg",
+    "dateTime": "2025-06-11T16:44:04.630Z"
+  },
+  {
+    "lat": 31.909316832161107,
+    "lng": 34.80801748080954,
+    "color": "black",
+    "note": "רכבת רחובות דרום, חניון קטן",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/rT7FHF0.jpeg",
+    "dateTime": "2025-06-11T18:42:28.639Z"
   }
 ]
