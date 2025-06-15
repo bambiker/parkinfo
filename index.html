@@ -88,6 +88,7 @@
                 style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em;">
             🔍 חפש
         </button>
+	    האתר בבניה והרצה
     </div>
 </header>
 
@@ -96,6 +97,7 @@
     <label style="font-weight: bold;">הצג מחיר:</label>
     <label><input type="radio" name="priceDisplay" value="daily" checked onchange="updateAllMarkerIcons()"> יומי</label>
     <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"> שעתי</label>
+    פרטים מלאים בלחיצה על החניון
 </div>
 <a href="https://land.pango.co.il/FastPark/ParkingRates/ParkingRates" target="_blank">מחירי החניה בכחול לבן בערים השונות</a>
 	
@@ -112,9 +114,10 @@
         </label>
     </div>
 <div id="markerFields" style="display: none;">
+    <div  style="font-weight: bold; margin-bottom: 15px;">תודה על העזרה!</div>
 
     <div style="margin-bottom: 15px;">
-        <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">בחר צבע סימון:</label>
+        <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">בחר את סוג החניה:</label>
         <select id="markerColor" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
             <option value="violet">סגול - חניון בתשלום</option>
             <option value="black">שחור - חניון בחינם</option>
@@ -162,7 +165,7 @@
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="downloadMarkers()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
-            💾 שמירת החניונים
+            💾 שמירה 
         </button>
 
         <label for="uploadFile" style="display: flex; align-items: center; gap: 10px; background-color: #ffc107; padding: 10px 15px; border-radius: 8px; cursor: pointer;">
@@ -180,7 +183,7 @@ document.getElementById("enableMarkers").addEventListener("change", function () 
 });
 </script>
 
-    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">כמות החניות והחניונים המסומנים במפה : 0</div>
+    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">מספר החניות והחניונים המסומנים במפה : 0</div>
     <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לא ידוע</div>
 	
 <div style="margin-top: 30px; text-align: center; font-size: 16px; color: #444;">
