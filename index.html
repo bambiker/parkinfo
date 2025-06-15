@@ -97,7 +97,7 @@
     <label style="font-weight: bold;">הצג מחיר:</label>
     <label><input type="radio" name="priceDisplay" value="daily" checked onchange="updateAllMarkerIcons()"> יומי</label>
     <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"> שעתי</label>
-    פרטים מלאים בלחיצה על החניון
+    (פרטים מלאים בלחיצה על החניון)
 </div>
 <a href="https://land.pango.co.il/FastPark/ParkingRates/ParkingRates" target="_blank">מחירי החניה בכחול לבן בערים השונות</a>
 	
@@ -314,7 +314,7 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
 }
 
 function updateMarkerCount() {
-    document.getElementById("markerCount").innerText = `כמות החניות והחניונים המסומנים במפה : ${markers.length}`;
+    document.getElementById("markerCount").innerText = `מספר החניות והחניונים המסומנים במפה : ${markers.length}`;
 }
 
 function clearMarkers() {
