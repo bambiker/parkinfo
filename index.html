@@ -111,6 +111,7 @@
             סמן כדי לאפשר הוספת/עריכת חניונים
         </label>
     </div>
+<div id="markerFields" style="display: none;">
 
     <div style="margin-bottom: 15px;">
         <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">בחר צבע סימון:</label>
@@ -127,7 +128,7 @@
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
         <div style="flex: 1; min-width: 240px;">
-            <label for="markerText" style="font-weight: bold;">הוסף הערה:</label>
+            <label for="markerText" style="font-weight: bold;">שם החניון והערות:</label>
             <input type="text" id="markerText" placeholder="כתוב משהו..." style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
         </div>
     </div>    
@@ -159,9 +160,6 @@
 אחרי הסימון יש ללחוץ על כפתור שמירה<br>
 	    </div>
 
-    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">כמות החניות והחניונים המסומנים במפה : 0</div>
-    <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לא ידוע</div>
-
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="downloadMarkers()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
             💾 שמירת החניונים
@@ -173,7 +171,18 @@
         </label>
     </div>
 </div>
+</div>
 
+<script>
+document.getElementById("enableMarkers").addEventListener("change", function () {
+    const markerFields = document.getElementById("markerFields");
+    markerFields.style.display = this.checked ? "block" : "none";
+});
+</script>
+
+    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">כמות החניות והחניונים המסומנים במפה : 0</div>
+    <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לא ידוע</div>
+	
 <div style="margin-top: 30px; text-align: center; font-size: 16px; color: #444;">
   <hr style="margin-bottom: 20px; border: none; border-top: 1px solid #ddd; width: 60%;">
   
