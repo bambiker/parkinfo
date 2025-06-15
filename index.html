@@ -115,14 +115,13 @@
     <div style="margin-bottom: 15px;">
         <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">בחר צבע סימון:</label>
         <select id="markerColor" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
-            <option value="grey">אפור - חניה חופשית ברחוב</option>
+            <option value="violet">סגול - חניון בתשלום</option>
+            <option value="black">שחור - חניון בחינם</option>
+	    <option value="grey">אפור - חניה חופשית ברחוב</option>
             <option value="blue">כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה</option>
             <option value="orange">כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה</option>
             <option value="red">אדום - חניה אסורה</option>
-            <option value="black">שחור - חניון בחינם</option>
-            <option value="violet">סגול - חניון בתשלום</option>
             <option value="green">ירוק - חניה מיוחדת</option>
-            <option value="yellow">צהוב</option>
         </select>
     </div>
 
@@ -212,14 +211,13 @@ function getIcon(color) {
 
 function colorDescription(color) {
     const desc = {
-        grey: "אפור - חניה חופשית ברחוב",
+        violet: " סגול - חניון בתשלום",
+        black: "שחור - חניון בחינם",
+	grey: "אפור - חניה חופשית ברחוב",
         blue: "כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה",
         orange: "כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה",
         red: "אדום - חניה אסורה",
-        black: "שחור - חניון בחינם",
-        violet: " סגול - חניון בתשלום",
-        green: "ירוק - חניה מיוחדת",
-        yellow: "צהוב"
+        green: "ירוק - חניה מיוחדת"
     };
     return desc[color] || "לא ידוע";
 }
