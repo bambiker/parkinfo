@@ -1052,5 +1052,16 @@
     "daily": "109",
     "imageUrl": null,
     "dateTime": "2025-06-22T07:52:31.537Z"
+  },
+  {
+    "lat": 31.965526749442382,
+    "lng": 34.82649240407266,
+    "color": "violet",
+    "note": "גן בעברית",
+    "url": "https://www.rlz-bitachon.co.il/?CategoryID=171",
+    "hourly": "6.4",
+    "daily": "24",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T15:32:22.119Z"
   }
 ]
