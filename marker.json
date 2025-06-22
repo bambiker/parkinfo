@@ -1041,5 +1041,16 @@
     "daily": "",
     "imageUrl": null,
     "dateTime": "2025-06-22T06:43:03.479Z"
+  },
+  {
+    "lat": 31.99884089620132,
+    "lng": 34.73482542832878,
+    "color": "violet",
+    "note": "חוף הים ראשון לציון",
+    "url": "https://www.rlz-bitachon.co.il/?CategoryID=171",
+    "hourly": "6.4",
+    "daily": "109",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T07:52:31.537Z"
   }
 ]
