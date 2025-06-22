@@ -468,68 +468,7 @@ function uploadToImgur(file, callback) {
     });
 }
 
-function startMapAtUserLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(pos) {
-            const lat = pos.coords.latitude;
-            const lng = pos.coords.longitude;
-            currentLatLng = { lat, lng };
-            map = L.map('map').setView([lat, lng], 15);
 
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-
-            L.circle([lat, lng], {
-                color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
-            }).addTo(map);
-	    map.attributionControl.setPrefix('Leaflet')
-// Add measure tool
-//L.control.measure({
-//  primaryLengthUnit: "meters",
-//  secondaryLengthUnit: "kilometers",
-//  primaryAreaUnit: "sqmeters",
-//  secondaryAreaUnit: "hectares"
-//}).addTo(map);
-            map.on("click", function(e) {
-                if (!document.getElementById("enableMarkers").checked) return;
-
-                const latlng = e.latlng;
-                const color = document.getElementById("markerColor").value;
-                const note = document.getElementById("markerText").value;
-                const url = document.getElementById("markerURL").value;
-                const hourly = document.getElementById("markerHourly").value;
-                const daily = document.getElementById("markerDaily").value;
-                const file = document.getElementById("markerImage").files[0];
-                const dateTime = new Date().toISOString();
-                if (file) {
-                    uploadToImgur(file, (imgUrl) => {
-                        addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, imgUrl, dateTime);
-                    });
-                } else {
-                    addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, null, dateTime);
-                }
-            });
-		fetch('marker.json')  // onload start
-		  .then(res => res.json())
-		  .then(data => {
-		      if (Array.isArray(data)) {
-		          data.forEach(d => addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime));
-		      } else {
-		          console.error("Invalid marker data");
-		      }
-		  })
-		  .catch(err => {
-		      console.warn("No auto-load file found or invalid JSON:", err);
-		  });
-		    		
-        }, fallbackMap);   // onload end
-
-    } else {
-        fallbackMap();
-    }
-}
 function updateAllMarkerIcons() {
     const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
 
@@ -558,13 +497,41 @@ function updateAllMarkerIcons() {
         m.marker.setIcon(newIcon);
     });
 }
+function startMapAtUserLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(pos) {
+            const lat = pos.coords.latitude;
+            const lng = pos.coords.longitude;
+            currentLatLng = { lat, lng };
+            initMap(lat, lng);
+            loadMarkers();  // Load markers regardless of location
+        }, function(error) {
+            console.warn("Geolocation failed:", error);
+            fallbackMap();  // fallback if geolocation fails
+        });
+    } else {
+        fallbackMap();
+    }
+}
 
 function fallbackMap() {
-    map = L.map('map').setView([32.075, 34.774], 15);
+    initMap(32.07772414661008, 34.774192597121115);
+    loadMarkers();  // Load markers also here
+}
+
+function initMap(lat, lng) {
+    map = L.map('map').setView([lat, lng], 15);
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
+
+    L.circle([lat, lng], {
+        color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
+    }).addTo(map);
+
+    map.attributionControl.setPrefix('Leaflet');
 
     map.on("click", function(e) {
         if (!document.getElementById("enableMarkers").checked) return;
@@ -576,15 +543,33 @@ function fallbackMap() {
         const hourly = document.getElementById("markerHourly").value;
         const daily = document.getElementById("markerDaily").value;
         const file = document.getElementById("markerImage").files[0];
+        const dateTime = new Date().toISOString();
 
         if (file) {
             uploadToImgur(file, (imgUrl) => {
-                addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, imgUrl);
+                addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, imgUrl, dateTime);
             });
         } else {
-            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, null);
+            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, null, dateTime);
         }
     });
+}
+
+function loadMarkers() {
+    fetch('marker.json')
+        .then(res => res.json())
+        .then(data => {
+            if (Array.isArray(data)) {
+                data.forEach(d => {
+                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime);
+                });
+            } else {
+                console.error("Invalid marker data");
+            }
+        })
+        .catch(err => {
+            console.warn("No auto-load file found or invalid JSON:", err);
+        });
 }
 
 startMapAtUserLocation();
