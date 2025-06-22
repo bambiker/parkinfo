@@ -975,5 +975,71 @@
     "daily": "20",
     "imageUrl": null,
     "dateTime": "2025-06-12T19:31:38.400Z"
+  },
+  {
+    "lat": 31.778955637446106,
+    "lng": 35.21927959684403,
+    "color": "violet",
+    "note": "חניון העצמאות - בית הספר הניסויי",
+    "url": "https://www.jerusalem.muni.il/he/residents/map/place?cid=2506&id=39734",
+    "hourly": "18",
+    "daily": "108",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T05:42:01.988Z"
+  },
+  {
+    "lat": 31.76090562959393,
+    "lng": 35.20923521886688,
+    "color": "black",
+    "note": "חניון דוסתאי",
+    "url": "https://www.jerusalem.muni.il/he/residents/map/place?cid=2506&id=39717",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T05:44:40.860Z"
+  },
+  {
+    "lat": 31.780867443339478,
+    "lng": 35.1864735875257,
+    "color": "black",
+    "note": "רחל המשוררת",
+    "url": "https://www.jerusalem.muni.il/he/residents/map/place?cid=2506&id=39711",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T05:57:59.931Z"
+  },
+  {
+    "lat": 31.786068573852628,
+    "lng": 35.18517865820968,
+    "color": "violet",
+    "note": "בית הדפוס",
+    "url": "https://www.jerusalem.muni.il/he/residents/map/place?cid=2506&id=39710",
+    "hourly": "12",
+    "daily": "18",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T06:04:24.914Z"
+  },
+  {
+    "lat": 31.775909726745997,
+    "lng": 35.21829582069373,
+    "color": "violet",
+    "note": "אגרון",
+    "url": "https://www.jerusalem.muni.il/he/residents/map/place?cid=2506&id=39703",
+    "hourly": "12",
+    "daily": "72",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T06:05:31.402Z"
+  },
+  {
+    "lat": 31.899452785717433,
+    "lng": 34.82799146751228,
+    "color": "black",
+    "note": "בית העלמין רחובות",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-06-22T06:43:03.479Z"
   }
 ]
