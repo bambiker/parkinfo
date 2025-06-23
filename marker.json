@@ -1063,5 +1063,93 @@
     "daily": "24",
     "imageUrl": null,
     "dateTime": "2025-06-22T15:32:22.119Z"
+  },
+  {
+    "lat": 31.872092884619867,
+    "lng": 34.81242434838712,
+    "color": "violet",
+    "note": "בית חולים קפלן",
+    "url": "https://hospitals.clalit.co.il/kaplan/he/gen_info/Pages/parking.aspx",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T07:02:12.370Z"
+  },
+  {
+    "lat": 32.18197265909828,
+    "lng": 34.89751729551571,
+    "color": "violet",
+    "note": "בית חולים מאיר ",
+    "url": "https://hospitals.clalit.co.il/meir/he/info/Pages/nav.aspx",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T07:04:29.762Z"
+  },
+  {
+    "lat": 32.08695782876354,
+    "lng": 34.86767928037928,
+    "color": "violet",
+    "note": "בית חולים שניידר",
+    "url": "https://www.schneider.org.il/?CategoryID=1358&ArticleID=4398",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T07:11:15.393Z"
+  },
+  {
+    "lat": 31.259352877563327,
+    "lng": 34.79908922953185,
+    "color": "violet",
+    "note": "בית חולים סורוקה",
+    "url": "https://hospitals.clalit.co.il/soroka/he/patients-info/Pages/directions.aspx",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T07:15:02.665Z"
+  },
+  {
+    "lat": 32.75299347552061,
+    "lng": 35.54120069015812,
+    "color": "violet",
+    "note": "בית חולים פוריה",
+    "url": "https://www.poria.org.il/?CategoryID=2139",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T08:13:18.091Z"
+  },
+  {
+    "lat": 32.04707015316132,
+    "lng": 34.84148982190132,
+    "color": "violet",
+    "note": "שיבא תל השומר",
+    "url": "https://www.sheba.co.il/%D7%A9%D7%A8%D7%95%D7%AA%D7%99%D7%9D_%D7%9C%D7%A0%D7%95%D7%97%D7%95%D7%AA_%D7%94%D7%9E%D7%98%D7%95%D7%A4%D7%9C#%D7%AA%D7%97%D7%91%D7%95%D7%A8%D7%94",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T08:48:01.984Z"
+  },
+  {
+    "lat": 32.83203434636288,
+    "lng": 34.98470236516732,
+    "color": "violet",
+    "note": "בית חולים רמב\"ם",
+    "url": "https://www.rambam.org.il/maps/#{A87E0C64-090F-4D27-B591-9DFCAA26A229}",
+    "hourly": "20",
+    "daily": "49",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T08:52:43.840Z"
+  },
+  {
+    "lat": 33.009924875495905,
+    "lng": 35.11582534866292,
+    "color": "violet",
+    "note": "בית חולים הגליל בנהריה",
+    "url": "https://www.gmc.org.il/?CategoryID=476&ArticleID=353&dbsAuthToken=&rnd=7084577",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": null,
+    "dateTime": "2025-06-23T08:56:19.607Z"
   }
 ]
