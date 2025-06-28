@@ -519,7 +519,7 @@ function fallbackMap() {
 }
 
 function initMap(lat, lng) {
-    map = L.map('map').setView([lat, lng], 15);
+    map = L.map('map').setView([lat, lng], 14);
     L.control.scale({ metric: true, imperial: false }).addTo(map);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -572,7 +572,8 @@ function loadMarkers() {
         });
 }
 
-startMapAtUserLocation();
+//startMapAtUserLocation();
+fallbackMap();
 	
 </script>
 
