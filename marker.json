@@ -1613,5 +1613,126 @@
     "daily": "",
     "imageUrl": null,
     "dateTime": "2025-06-24T08:19:28.654Z"
+  },
+  {
+    "lat": 31.89816738072291,
+    "lng": 35.00750349432544,
+    "color": "black",
+    "note": "",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-06-29T07:31:08.370Z"
+  },
+  {
+    "lat": 32.107910440999774,
+    "lng": 34.80566358015495,
+    "color": "violet",
+    "note": "חניון הנדסה אחוזת החוף",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=47",
+    "hourly": "33",
+    "daily": "33",
+    "imageUrl": null,
+    "dateTime": "2025-06-29T07:40:55.975Z"
+  },
+  {
+    "lat": 32.06130699345574,
+    "lng": 34.78170040367011,
+    "color": "violet",
+    "note": "הצפירה אחוזת החוף",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=20",
+    "hourly": "20",
+    "daily": "480",
+    "imageUrl": null,
+    "dateTime": "2025-06-29T07:46:12.947Z"
+  },
+  {
+    "lat": 32.060007668812524,
+    "lng": 34.76102117765143,
+    "color": "violet",
+    "note": "התחנה - אחוזת החוף",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=28",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": null,
+    "dateTime": "2025-06-29T07:49:21.910Z"
+  },
+  {
+    "lat": 32.0721241322729,
+    "lng": 34.780096656295285,
+    "color": "violet",
+    "note": "חניון הבימה - התרבות",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=94",
+    "hourly": "20",
+    "daily": "480",
+    "imageUrl": null,
+    "dateTime": "2025-06-29T07:53:27.139Z"
+  },
+  {
+    "lat": 32.08481894330278,
+    "lng": 34.79018148723274,
+    "color": "violet",
+    "note": "חברה חדשה",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=4",
+    "hourly": "20",
+    "daily": "480",
+    "imageUrl": null,
+    "dateTime": "2025-06-30T06:29:35.157Z"
+  },
+  {
+    "lat": 32.12286144791001,
+    "lng": 34.7849663462759,
+    "color": "violet",
+    "note": "תל ברוך",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=134",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": null,
+    "dateTime": "2025-06-30T08:09:47.565Z"
+  },
+  {
+    "lat": 32.05767811258954,
+    "lng": 34.77490113913159,
+    "color": "violet",
+    "note": "כיכר עליה אחוזת החוף",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=132",
+    "hourly": "20",
+    "daily": "480",
+    "imageUrl": null,
+    "dateTime": "2025-06-30T08:13:12.709Z"
+  },
+  {
+    "lat": 32.114428919541346,
+    "lng": 34.824405772793774,
+    "color": "violet",
+    "note": "חניון כיתן אחוזת החוף",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=137",
+    "hourly": "20",
+    "daily": "480",
+    "imageUrl": null,
+    "dateTime": "2025-06-30T12:36:41.240Z"
+  },
+  {
+    "lat": 32.109627118779635,
+    "lng": 34.80371598969788,
+    "color": "violet",
+    "note": "חניון כלכלה",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=96",
+    "hourly": "44",
+    "daily": "44",
+    "imageUrl": null,
+    "dateTime": "2025-06-30T12:48:03.465Z"
+  },
+  {
+    "lat": 32.08168006323586,
+    "lng": 34.79957708112413,
+    "color": "violet",
+    "note": "חניון לולאה",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=26",
+    "hourly": "30",
+    "daily": "30",
+    "imageUrl": null,
+    "dateTime": "2025-06-30T12:51:01.842Z"
   }
 ]
