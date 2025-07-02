@@ -145,7 +145,11 @@
         </div>
     </div>    
 	    <br>
-	<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+    <div style="margin-bottom: 15px;">
+        <label for="markerImage" style="font-weight: bold;"> (צרף תמונה של שלט המחיר (או החניה עצמה בחניון חינמי:</label>
+        <input type="file" id="markerImage" accept="image/*" capture="environment" style="display: block; margin-top: 5px;">
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
         <div style="flex: 1; min-width: 60px;">
             <label for="markerHourly" style="font-weight: bold;">מחיר שעתי:</label>
             <input type="text" id="markerHourly" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
@@ -154,12 +158,9 @@
             <label for="markerDaily" style="font-weight: bold;">מחיר יומי:</label>
             <input type="text" id="markerDaily" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
         </div>
+		
     </div>
-
-    <div style="margin-bottom: 15px;">
-        <label for="markerImage" style="font-weight: bold;"> צרף תמונה של שלט המחיר או החניה עצמה בחניון חינמי:</label>
-        <input type="file" id="markerImage" accept="image/*" capture="environment" style="display: block; margin-top: 5px;">
-    </div>
+אם צילמתם את שלט המחיר, או שהמידע קיים באתר האינטרנט של החניון (וצירפתם את כתובת האתר), אנו נמלא את המחיר לשעה ומחיר יומי<br>
 	
 	    <div style="margin-bottom: 15px;">
 <b>לחץ על המפה</b> במקום המתאים כדי להוסיף חניון<br>
