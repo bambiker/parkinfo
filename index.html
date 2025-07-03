@@ -432,7 +432,7 @@ function searchLocation() {
             if (data && data.length > 0) {
                 const lat = parseFloat(data[0].lat);
                 const lon = parseFloat(data[0].lon);
-                map.setView([lat, lon], 17);
+                map.setView([lat, lon], 16);
                 L.circle([lat, lon], {
                     color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
                 }).addTo(map);
