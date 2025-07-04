@@ -285,10 +285,10 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
         popupHTML += `<br> מחיר ליממה ${daily} `;
     }
     if (url) {
-        popupHTML += `<br> URL: <a href="${url}" target="_blank">${url}</a> `;
+        popupHTML += `<br> פרטים נוספים: <a href="${url}" target="_blank">${url}</a> `;
     }
     const wazeUrl = `https://waze.com/ul?ll=${lat}%2C${lng}&navigate=yes`;
-    popupHTML += `<br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
+    popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
 
     marker.bindPopup(popupHTML);
 
