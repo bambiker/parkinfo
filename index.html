@@ -287,7 +287,7 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
     if (url) {
         popupHTML += `<br> פרטים נוספים: <a href="${url}" target="_blank">${url}</a> `;
     }
-    popupHTML += 'תאריך עדכון:${dateTime.split("T")[0]} `;	
+    popupHTML += `תאריך עדכון:${dateTime.split("T")[0]}`;	
     const wazeUrl = `https://waze.com/ul?ll=${lat}%2C${lng}&navigate=yes`;
     popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
 
