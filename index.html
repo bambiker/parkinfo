@@ -275,18 +275,18 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
         draggable: document.getElementById("enableMarkers").checked
     }).addTo(map);
 
-  let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>${colorDescription(color)}`;
+  let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b> - ${colorDescription(color)}`;
 
 if (imageUrl) {
     popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
 }
 
 if (hourly) {
-    popupHTML += `<br> מחיר לשעה ${hourly} `;
+    popupHTML += `<br> מחיר לשעה: ${hourly} `;
 }
 
 if (daily) {
-    popupHTML += `<br> מחיר ליממה ${daily} `;
+    popupHTML += `<br> מחיר ליממה: ${daily} `;
 }
 
 if (url) {
