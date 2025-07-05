@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -274,7 +275,7 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
         draggable: document.getElementById("enableMarkers").checked
     }).addTo(map);
 
-    let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>${colorDescription(color)}<br>';
+    let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b><br>${colorDescription(color)}<br>תאריך עדכון:${dateTime.split("T")[0]} `;
     if (imageUrl) {
         popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
     }
@@ -287,7 +288,6 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
     if (url) {
         popupHTML += `<br> פרטים נוספים: <a href="${url}" target="_blank">${url}</a> `;
     }
-    popupHTML += `תאריך עדכון:${dateTime.split("T")[0]}`;	
     const wazeUrl = `https://waze.com/ul?ll=${lat}%2C${lng}&navigate=yes`;
     popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
 
