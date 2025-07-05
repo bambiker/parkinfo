@@ -275,7 +275,7 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
         draggable: document.getElementById("enableMarkers").checked
     }).addTo(map);
 
-  let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b> - ${colorDescription(color)}`;
+  let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b> <br> ${colorDescription(color)}`;
 
 if (imageUrl) {
     popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
