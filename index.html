@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -102,7 +101,27 @@
     <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"> שעתי</label>
     (פרטים מלאים וניווט עם Waze בלחיצה על החניון)
 </div>
-<a href="https://land.pango.co.il/FastPark/ParkingRates/ParkingRates" target="_blank">מחירי החניה בכחול לבן בערים השונות</a>
+
+<div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+
+    <button id="toggleAddModeBtn" 
+            onclick="toggleAddMode()" 
+            title="הפעל מצב הוספת סימון"
+            style="padding: 10px; background-color: #17a2b8; color: white; border: none; border-radius: 10px; cursor: pointer; font-size: 18px;">
+        ➕ 
+    </button>
+
+    <button onclick="flyToUserLocation()" 
+            title="מעבר למיקום הנוכחי"
+            style="padding: 10px; background-color: #17a2b8; color: white; border: none; border-radius: 50%; cursor: pointer; font-size: 18px; width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+        🧭
+    </button>
+    <a href="https://land.pango.co.il/FastPark/ParkingRates/ParkingRates" target="_blank"
+       style="text-decoration: none; color: #007bff; font-weight: bold;">
+        מחירי החניה בכחול לבן בערים השונות
+    </a>
+</div>
+
 	
 <div id="imageModal">
     <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
@@ -110,12 +129,7 @@
 </div>
 
 <div id="controls" style="background-color: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 20px;">
-    <div style="margin-bottom: 15px;">
-        <label style="font-weight: bold;">
-            <input type="checkbox" id="enableMarkers" style="transform: scale(1.2); margin-left: 5px;">
-            סמן כדי לאפשר הוספת/עריכת חניונים
-        </label>
-    </div>
+
 <div id="markerFields" style="display: none;">
     <div  style="font-weight: bold; margin-bottom: 15px;">תודה על העזרה!</div>
 
@@ -163,27 +177,42 @@
 	
 	    <div style="margin-bottom: 15px;">
 <b>לחץ על המפה</b> במקום המתאים כדי להוסיף חניון<br>
-אחרי הסימון יש ללחוץ על כפתור שמירה וההוספה תאושר תוך שני ימי עבודה<br>
+אחרי הסימון יש ללחוץ על כפתור האישור וההוספה תאושר תוך שני ימי עבודה<br>
 	    </div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="downloadMarkers()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
-            💾 שמירה 
+            💾 אישור 
+        </button>
+        <button onclick="cancelsave()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
+            ביטול 
         </button>
 
-        <label for="uploadFile" style="display: flex; align-items: center; gap: 10px; background-color: #ffc107; padding: 10px 15px; border-radius: 8px; cursor: pointer;">
-            📂 טען קובץ חניונים
-            <input type="file" id="uploadFile" accept=".json" onchange="uploadMarkers(event)" style="display: none;">
-        </label>
     </div>
 </div>
 </div>
 
 <script>
-document.getElementById("enableMarkers").addEventListener("change", function () {
-    const markerFields = document.getElementById("markerFields");
-    markerFields.style.display = this.checked ? "block" : "none";
-});
+
+
+let addMode = false;
+
+function toggleAddMode() {
+    addMode = !addMode;
+    
+    document.getElementById("markerFields").style.display = addMode ? "block" : "none";
+
+    markers.forEach(m => {
+        m.marker.dragging["disable"]();
+    });
+}
+
+// החלפת isAddModeEnabled()
+
+function isAddModeEnabled() {
+    return addMode;
+}
+
 </script>
 
     <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">מספר החניות והחניונים המסומנים במפה : 0</div>
@@ -236,12 +265,6 @@ function colorDescription(color) {
     return desc[color] || "לא ידוע";
 }
 
-document.getElementById("enableMarkers").addEventListener("change", function () {
-    const isEnabled = this.checked;
-    markers.forEach(m => {
-        m.marker.dragging[isEnabled ? "enable" : "disable"]();
-    });
-});
 	
 function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, dateTime = null) {
 //    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
@@ -272,7 +295,8 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
 	
     const marker = L.marker([lat, lng], {
         icon: circleIcon,
-        draggable: document.getElementById("enableMarkers").checked
+        draggable: isAddModeEnabled()
+
     }).addTo(map);
 
   let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b> <br> ${colorDescription(color)}`;
@@ -303,7 +327,8 @@ popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a
     marker.bindPopup(popupHTML);
 
     marker.on("contextmenu", () => {
-        if (document.getElementById("enableMarkers").checked) {
+        if (isAddModeEnabled()
+) {
             map.removeLayer(marker);
             markers = markers.filter(m => m.marker !== marker);
             updateMarkerCount();
@@ -320,7 +345,7 @@ popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a
     document.getElementById("markerHourly").value = "";
     document.getElementById("markerDaily").value = "";	
     document.getElementById("markerImage").value = "";
-    document.getElementById("enableMarkers").checked = false;
+    addMode = false;
 
 }
 
@@ -383,13 +408,17 @@ function updateLastUpdatedDate() {
     });
     document.getElementById("lastUpdated").innerText = `המפה עודכנה לאחרונה בתאריך: ${formattedDate}`;
 }
-
+function cancelsave() {
+    document.getElementById("markerFields").style.display = "none";
+}
 	
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
         return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
+//    toggleAddMode()    
+    document.getElementById("markerFields").style.display = "none";
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -527,6 +556,33 @@ function fallbackMap() {
     loadMarkers();  // Load markers also here
 }
 
+function flyToUserLocation() {
+    if (!map) return;
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            function (pos) {
+                const lat = pos.coords.latitude;
+                const lng = pos.coords.longitude;
+                map.flyTo([lat, lng], 16);
+                L.circle([lat, lng], {
+                    color: 'blue',
+                    fillColor: '#30f',
+                    fillOpacity: 0.5,
+                    radius: 10
+                }).addTo(map);
+            },
+            function (err) {
+                alert("לא הצלחנו לאתר את מיקומך");
+                console.warn(err);
+            }
+        );
+    } else {
+        alert("הדפדפן שלך לא תומך במיקום");
+    }
+}
+
+
 function initMap(lat, lng) {
     map = L.map('map').setView([lat, lng], 14);
     L.control.scale({ metric: true, imperial: false }).addTo(map);
@@ -541,7 +597,7 @@ function initMap(lat, lng) {
     map.attributionControl.setPrefix('Leaflet');
 
     map.on("click", function(e) {
-        if (!document.getElementById("enableMarkers").checked) return;
+        if (!isAddModeEnabled()) return;
 
         const latlng = e.latlng;
         const color = document.getElementById("markerColor").value;
