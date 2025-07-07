@@ -2009,5 +2009,93 @@
     "daily": "480",
     "imageUrl": null,
     "dateTime": "2025-07-03T10:16:53.825Z"
+  },
+  {
+    "lat": 31.862953859314047,
+    "lng": 34.81713294982911,
+    "color": "black",
+    "note": "ביל\"ו סנטר",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/IivTGt4.jpeg",
+    "dateTime": "2025-07-06T11:25:57.132Z"
+  },
+  {
+    "lat": 31.929767180545554,
+    "lng": 34.7974455356598,
+    "color": "black",
+    "note": "ליד הקניותר",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-06T11:26:29.377Z"
+  },
+  {
+    "lat": 31.930686834608046,
+    "lng": 34.79818046092988,
+    "color": "black",
+    "note": "קניותר - החניון פתוח בשעות הפתיחה של הקניון",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-06T11:26:57.723Z"
+  },
+  {
+    "lat": 31.935699242807832,
+    "lng": 34.831450581550605,
+    "color": "black",
+    "note": "מרכז בריאות הנפש באר יעקב 1",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-06T11:29:08.056Z"
+  },
+  {
+    "lat": 31.936869220637554,
+    "lng": 34.83157396316529,
+    "color": "black",
+    "note": "מרכז בריאות הנפש באר יעקב 2",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-06T11:29:16.657Z"
+  },
+  {
+    "lat": 31.942625112567,
+    "lng": 34.84614372253419,
+    "color": "black",
+    "note": "לאה גולדברג",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-06T11:29:47.081Z"
+  },
+  {
+    "lat": 32.00060092867991,
+    "lng": 34.76233005523682,
+    "color": "black",
+    "note": "רכבת קוממיות",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-06T11:30:32.039Z"
+  },
+  {
+    "lat": 31.999563692745696,
+    "lng": 34.76592421531678,
+    "color": "black",
+    "note": "לנדאו חולון",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-06T11:30:49.247Z"
   }
 ]
