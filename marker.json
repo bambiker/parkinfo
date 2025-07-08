@@ -1981,7 +1981,7 @@
     "lat": 32.117462175181316,
     "lng": 34.80364680290223,
     "color": "violet",
-    "note": "בית הספר רפואת שיניים ",
+    "note": "בית הספר רפואת שיניים",
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=53",
     "hourly": "26",
     "daily": "26",
@@ -2097,5 +2097,27 @@
     "daily": "",
     "imageUrl": null,
     "dateTime": "2025-07-06T11:30:49.247Z"
+  },
+  {
+    "lat": 31.894367733390354,
+    "lng": 34.80298642832332,
+    "color": "violet",
+    "note": "חניון דותן, מול מס הכנסה, בית המשפט",
+    "url": "",
+    "hourly": "25",
+    "daily": "25",
+    "imageUrl": "https://i.imgur.com/QyihArH.jpeg",
+    "dateTime": "2025-07-08T17:22:14.192Z"
+  },
+  {
+    "lat": 31.89717826167142,
+    "lng": 34.80800705817415,
+    "color": "black",
+    "note": "חניון עפר",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/PsE23n5.jpeg",
+    "dateTime": "2025-07-08T17:28:11.613Z"
   }
 ]
