@@ -2119,5 +2119,27 @@
     "daily": "",
     "imageUrl": "https://i.imgur.com/PsE23n5.jpeg",
     "dateTime": "2025-07-08T17:28:11.613Z"
+  },
+  {
+    "lat": 32.187427313255746,
+    "lng": 34.8888254858517,
+    "color": "black",
+    "note": "חניון האוניברסיטה הפתוחה ברעננה, פתוח בשעות הפעילות",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-08T19:27:21.885Z"
+  },
+  {
+    "lat": 32.11918975918187,
+    "lng": 34.80537197362111,
+    "color": "black",
+    "note": "יד אבנר",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2025-07-08T19:28:49.156Z"
   }
 ]
