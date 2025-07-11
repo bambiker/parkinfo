@@ -182,6 +182,14 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
             <label for="markerDaily" style="font-weight: bold;">מחיר יומי:</label>
             <input type="text" id="markerDaily" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
         </div>
+        <div style="flex: 1; min-width: 60px;">
+            <label for="marker4day" style="font-weight: bold;">מחיר 4 שעות ביום:</label>
+            <input type="text" id="markerday4" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+        <div style="flex: 1; min-width: 60px;">
+            <label for="marker4night" style="font-weight: bold;">מחיר 4 שעות בלילה:</label>
+            <input type="text" id="markernight4" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
 		
     </div>
 אם צילמתם את שלט המחיר, או שהמידע קיים באתר האינטרנט של החניון (וצירפתם את כתובת האתר), אנו נמלא את המחיר לשעה ומחיר יומי<br><br>
@@ -279,13 +287,13 @@ function colorDescription(color) {
 }
 
 	
-function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, dateTime = null) {
+function addMarker(lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl = null, dateTime = null) {
 //    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
 //        dateTime = new Date().toISOString();
 //}
 	
 
-       const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
+    const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
     let svgText = 'חניון';
 
     if (color === 'black') {
@@ -326,6 +334,14 @@ if (daily) {
     popupHTML += `<br> מחיר ליממה: ${daily} `;
 }
 
+if (day4) {
+    popupHTML += `<br> מחיר ל 4 שעות ביום: ${day4} `;
+}
+
+if (night4) {
+    popupHTML += `<br> מחיר ל 4 שעות בלילה: ${night4} `;
+}
+
 if (url) {
     popupHTML += `<br> פרטים נוספים: <a href="${url}" target="_blank">${url}</a> `;
 }
@@ -350,7 +366,7 @@ popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a
         }
     });
 
-    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime } });
+    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl, dateTime } });
     updateMarkerCount();
     updateLastUpdatedDate();
 
@@ -359,6 +375,8 @@ popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a
     document.getElementById("markerURL").value = "";
     document.getElementById("markerHourly").value = "";
     document.getElementById("markerDaily").value = "";	
+    document.getElementById("markerday4").value = "";
+    document.getElementById("markernight4").value = "";	
     document.getElementById("markerImage").value = "";
     addMode = false;
 
@@ -441,6 +459,8 @@ function editMarker(lat, lng) {
     document.getElementById("markerURL").value = markerData.data.url;
     document.getElementById("markerHourly").value = markerData.data.hourly;
     document.getElementById("markerDaily").value = markerData.data.daily;
+    document.getElementById("markerday4").value = markerData.data.day4;
+    document.getElementById("markernight4").value = markerData.data.night4;
 
     // Show the input panel
     document.getElementById("markerFields").style.display = "block";
@@ -471,6 +491,8 @@ function submitForm() {
     const url = document.getElementById("markerURL").value;
     const hourly = document.getElementById("markerHourly").value;
     const daily = document.getElementById("markerDaily").value;
+    const day4 = document.getElementById("markerday4").value;
+    const night4 = document.getElementById("markernight4").value;
     const file = document.getElementById("markerImage").files[0];
     const dateTime = new Date().toISOString();
 
@@ -484,7 +506,7 @@ function submitForm() {
             markers = markers.filter(m => m !== window.markerBeingEdited); // Remove from array
 
             // Add new one with updated data
-            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, imgUrl, dateTime);
+            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
             window.markerBeingEdited = null;
             document.getElementById("markerFields").style.display = "none";
         };
@@ -504,7 +526,7 @@ function submitForm() {
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
-        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
+        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, hourly: m.data.day4, daily: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
 //    toggleAddMode()    
     document.getElementById("markerFields").style.display = "none";
@@ -531,7 +553,7 @@ function uploadMarkers(event) {
 		 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
      		 console.log("Loaded marker dateTime:", d.dateTime);
 
-                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime); //dt
+                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.day4, d.night4, d.imageUrl, d.dateTime); //dt
 
             });
 
@@ -694,15 +716,17 @@ function initMap(lat, lng) {
         const url = document.getElementById("markerURL").value;
         const hourly = document.getElementById("markerHourly").value;
         const daily = document.getElementById("markerDaily").value;
+        const day4 = document.getElementById("markerday4").value;
+        const night4 = document.getElementById("markernight4").value;
         const file = document.getElementById("markerImage").files[0];
         const dateTime = new Date().toISOString();
 
         if (file) {
             uploadToImgur(file, (imgUrl) => {
-                addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, imgUrl, dateTime);
+                addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
             });
         } else {
-            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, null, dateTime);
+            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, null, dateTime);
         }
     });
 }
@@ -713,7 +737,7 @@ function loadMarkers() {
         .then(data => {
             if (Array.isArray(data)) {
                 data.forEach(d => {
-                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime);
+                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.day4, d.night4, d.imageUrl, d.dateTime);
                 });
             } else {
                 console.error("Invalid marker data");
