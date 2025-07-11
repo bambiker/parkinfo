@@ -190,8 +190,10 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="downloadMarkers()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
-            💾 אישור 
+            💾  אישור הוספה
         </button>
+	<button onclick="submitForm()" ...>💾 עדכן</button>
+
         <button onclick="cancelsave()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
             ביטול 
         </button>
@@ -328,6 +330,8 @@ if (url) {
 const [year, month, day] = dateTime.split("T")[0].split("-");
 const formattedDate = `${day}/${month}/${year}`;
 popupHTML += ` <br>תאריך עדכון: ${formattedDate} `;
+popupHTML += `<br><button onclick="editMarker('${lat}', '${lng}')" style="margin-top: 8px; background:#ffc107; color:black; padding:5px 10px; border:none; border-radius:5px; cursor:pointer;">✏️ ערוך</button>`;
+
 
 const wazeUrl = `https://waze.com/ul?ll=${lat}%2C${lng}&navigate=yes`;
 popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
@@ -419,7 +423,61 @@ function updateLastUpdatedDate() {
 function cancelsave() {
     document.getElementById("markerFields").style.display = "none";
 }
-	
+
+
+function editMarker(lat, lng) {
+    const markerData = markers.find(m => m.marker.getLatLng().lat == lat && m.marker.getLatLng().lng == lng);
+    if (!markerData) return;
+
+    // Prefill the form
+    document.getElementById("markerColor").value = markerData.data.color;
+    document.getElementById("markerText").value = markerData.data.note;
+    document.getElementById("markerURL").value = markerData.data.url;
+    document.getElementById("markerHourly").value = markerData.data.hourly;
+    document.getElementById("markerDaily").value = markerData.data.daily;
+
+    // Show the input panel
+    document.getElementById("markerFields").style.display = "block";
+    addMode = false; // Disable adding to avoid confusion
+
+    // Temporarily store the marker to update
+    window.markerBeingEdited = markerData;
+}
+
+function submitForm() {
+    const color = document.getElementById("markerColor").value;
+    const note = document.getElementById("markerText").value;
+    const url = document.getElementById("markerURL").value;
+    const hourly = document.getElementById("markerHourly").value;
+    const daily = document.getElementById("markerDaily").value;
+    const file = document.getElementById("markerImage").files[0];
+    const dateTime = new Date().toISOString();
+
+    // If editing existing marker:
+    if (window.markerBeingEdited) {
+        const latlng = window.markerBeingEdited.marker.getLatLng();
+        const updateMarker = (imgUrl) => {
+            map.removeLayer(window.markerBeingEdited.marker); // Remove old marker
+            markers = markers.filter(m => m !== window.markerBeingEdited); // Remove from array
+
+            // Add new one with updated data
+            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, imgUrl, dateTime);
+            window.markerBeingEdited = null;
+            document.getElementById("markerFields").style.display = "none";
+        };
+
+        if (file) {
+            uploadToImgur(file, updateMarker);
+        } else {
+            updateMarker(window.markerBeingEdited.data.imageUrl || null);
+        }
+
+    } else {
+        alert("לא בוצעה עריכה של אף חניון. נסה שוב.");
+    }
+}
+
+
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
