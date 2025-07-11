@@ -526,7 +526,7 @@ function submitForm() {
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
-        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, hourly: m.data.day4, daily: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
+        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, day4: m.data.day4, night4: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
 //    toggleAddMode()    
     document.getElementById("markerFields").style.display = "none";
