@@ -432,7 +432,6 @@ function editMarker(lat, lng) {
     const markerData = markers.find(m => m.marker.getLatLng().lat == lat && m.marker.getLatLng().lng == lng);
     if (!markerData) return;
 
-    document.getElementById("markerFields").scrollIntoView({ behavior: "smooth" });
     document.getElementById("editNotice").style.display = "block";
 
 
@@ -449,6 +448,21 @@ function editMarker(lat, lng) {
 
     // Temporarily store the marker to update
     window.markerBeingEdited = markerData;
+
+    setTimeout(() => {    
+        const form = document.getElementById("markerFields");
+        form.scrollIntoView({ behavior: "smooth", block: "start" });
+        location.hash = "#markerFields";
+
+        // הדגשה זמנית של הטופס
+        form.style.boxShadow = "0 0 15px 4px #ffc107";
+        form.style.transition = "box-shadow 0.6s ease-in-out";
+
+        setTimeout(() => {
+            form.style.boxShadow = ""; // מחזיר למצב רגיל
+        }, 1500);
+    }, 100);  // מוודא שהדף הספיק לעבד את ההצגה של הטופס
+
 }
 
 function submitForm() {
