@@ -140,6 +140,9 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 
 <div id="markerFields" style="display: none;">
     <div  style="font-weight: bold; margin-bottom: 15px;">תודה על העזרה!</div>
+    <div id="editNotice" style="display: none; background: #ffc107; padding: 10px; border-radius: 8px; font-weight: bold; color: black;">
+        אתה עורך חניון קיים – לאחר השינויים לחץ על 'עדכן'
+    </div>
 
     <div style="margin-bottom: 15px;">
         <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">בחר את סוג החניה:</label>
@@ -429,6 +432,10 @@ function editMarker(lat, lng) {
     const markerData = markers.find(m => m.marker.getLatLng().lat == lat && m.marker.getLatLng().lng == lng);
     if (!markerData) return;
 
+    document.getElementById("markerFields").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("editNotice").style.display = "block";
+
+
     // Prefill the form
     document.getElementById("markerColor").value = markerData.data.color;
     document.getElementById("markerText").value = markerData.data.note;
@@ -452,6 +459,8 @@ function submitForm() {
     const daily = document.getElementById("markerDaily").value;
     const file = document.getElementById("markerImage").files[0];
     const dateTime = new Date().toISOString();
+
+    document.getElementById("editNotice").style.display = "none";
 
     // If editing existing marker:
     if (window.markerBeingEdited) {
