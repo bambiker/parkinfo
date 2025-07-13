@@ -205,10 +205,8 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="submitForm()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
-            💾  אישור הוספה
+            💾 אישור 
         </button>
-	<button onclick="submitForm()" ...>💾 עדכן</button>
-
         <button onclick="cancelsave()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
             ביטול 
         </button>
@@ -503,6 +501,12 @@ function submitForm() {
     const day4 = "9999";
     const night4 = "8888";
 
+    // ❌ אם לא הוזן שום מידע רלוונטי – לא נאשר
+    if (color === "violet" && !note && !url && !hourly && !daily && !file) {
+        alert("לא הוזן מידע על החניון בתשלום. יש למלא לפחות שדה אחד: תיאור, קישור, מחיר או תמונה.");
+        return;
+    }
+	
     const finishUpdate = (latlng, imgUrl) => {
         addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
         document.getElementById("markerFields").style.display = "none";
