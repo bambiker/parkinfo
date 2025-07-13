@@ -2141,5 +2141,18 @@
     "daily": "",
     "imageUrl": null,
     "dateTime": "2025-07-08T19:28:49.156Z"
+  },
+  {
+    "lat": 32.19274490515423,
+    "lng": 34.8842755237716,
+    "color": "violet",
+    "note": "בית עופר - בית המילניום רעננה",
+    "url": "",
+    "hourly": "16",
+    "daily": "54",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/YOHFZES.jpeg",
+    "dateTime": "2025-07-13T16:37:28.637Z"
   }
 ]
