@@ -770,27 +770,45 @@ function loadMarkers() {
 let smallMap, smallMapMarker;
 
 function initSmallMap() {
-    smallMap = L.map('smallMap', {
-        center: map.getCenter(), // התחלה לפי המרכז של המפה הראשית
-        zoom: 16,
-        zoomControl: false,
-        attributionControl: false
-    });
+    // ברירת מחדל: מרכז המפה הראשית
+    let center = map.getCenter();
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19
-    }).addTo(smallMap);
+    // ננסה להשיג את המיקום הנוכחי
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                center = [position.coords.latitude, position.coords.longitude];
+                setupMap(center);
+            },
+            () => {
+                setupMap(center); // במקרה של כישלון – נשתמש בברירת מחדל
+            }
+        );
+    } else {
+        setupMap(center); // הדפדפן לא תומך
+    }
 
-    // לא מוסיפים מרקר – רק נציג מרקר באמצע עם CSS
+    function setupMap(centerCoords) {
+        smallMap = L.map('smallMap', {
+            center: centerCoords,
+            zoom: 16,
+            zoomControl: false,
+            attributionControl: false
+        });
 
-    // נשתול מרקר קבוע באמצע עם overlay
-    const markerOverlay = document.createElement("div");
-    markerOverlay.innerHTML = `<div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -100%); z-index:999;">
-        <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png" style="width:25px; height:auto;">
-    </div>`;
-    document.getElementById("smallMap").appendChild(markerOverlay);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19
+        }).addTo(smallMap);
+
+        // נשתול מרקר קבוע באמצע עם overlay
+        const markerOverlay = document.createElement("div");
+        markerOverlay.innerHTML = `<div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -100%); z-index:999;">
+            <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png" style="width:25px; height:auto;">
+        </div>`;
+        document.getElementById("smallMap").appendChild(markerOverlay);
+    }
 }
-	
+
 //startMapAtUserLocation();
 fallbackMap();
 	
