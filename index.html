@@ -197,9 +197,10 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 	
 	 <div style="margin-bottom: 15px;">
     <label style="font-weight: bold;">בחר מיקום על המפה:</label>
-    <div id="smallMap" style="height: 200px; border: 1px solid #ccc; border-radius: 8px;"></div>
-<small>הזז את המפה כך שהמרקר האדום יהיה במקום החניה</small>
-
+    <div id="smallMapContainer" style="height: 200px; margin-top: 10px;">
+        <div id="smallMap" style="height: 100%;border: 1px solid #ccc; border-radius: 8px;"></div>
+	<small>הזז את המפה כך שהמרקר האדום יהיה במקום החניה</small>
+    </div>
 אחרי הסימון יש ללחוץ על כפתור האישור וההוספה תאושר תוך שני ימי עבודה<br>
 	    </div>
 
@@ -225,8 +226,15 @@ function toggleAddMode() {
     
     document.getElementById("markerFields").style.display = addMode ? "block" : "none";
 	
-    if (addMode && !smallMap) {
-        setTimeout(initSmallMap, 100); // דיחוי כדי לוודא שה־div גלוי
+    const isEditing = getComputedStyle(document.getElementById("editNotice")).display === "block";
+    const smallMapContainer = document.getElementById("smallMapContainer");
+
+    if (smallMapContainer) {
+        smallMapContainer.style.display = (addMode && !isEditing) ? "block" : "none";
+    }
+
+    if (addMode && !isEditing && !smallMap) {
+        setTimeout(initSmallMap, 100);
     }
     markers.forEach(m => {
         m.marker.dragging["disable"]();
