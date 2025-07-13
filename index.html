@@ -195,8 +195,11 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
     </div>
 אם צילמתם את שלט המחיר, או שהמידע קיים באתר האינטרנט של החניון (וצירפתם את כתובת האתר), אנו נמלא את המחיר לשעה ומחיר יומי<br><br>
 	
-	    <div style="margin-bottom: 15px;">
-<b>לחץ על המפה</b> במקום המתאים כדי להוסיף חניון<br>
+	 <div style="margin-bottom: 15px;">
+    <label style="font-weight: bold;">בחר מיקום על המפה:</label>
+    <div id="smallMap" style="height: 200px; border: 1px solid #ccc; border-radius: 8px;"></div>
+<small>הזז את המפה כך שהמרקר האדום יהיה במקום החניה</small>
+
 אחרי הסימון יש ללחוץ על כפתור האישור וההוספה תאושר תוך שני ימי עבודה<br>
 	    </div>
 
@@ -223,7 +226,10 @@ function toggleAddMode() {
     addMode = !addMode;
     
     document.getElementById("markerFields").style.display = addMode ? "block" : "none";
-
+	
+    if (addMode && !smallMap) {
+        setTimeout(initSmallMap, 100); // דיחוי כדי לוודא שה־div גלוי
+    }
     markers.forEach(m => {
         m.marker.dragging["disable"]();
     });
@@ -492,36 +498,44 @@ function submitForm() {
     const url = document.getElementById("markerURL").value;
     const hourly = document.getElementById("markerHourly").value;
     const daily = document.getElementById("markerDaily").value;
-//    const day4 = document.getElementById("markerday4").value;
-//    const night4 = document.getElementById("markernight4").value;
-    const day4 = "9999";
-    const night4 = "8888";
     const file = document.getElementById("markerImage").files[0];
     const dateTime = new Date().toISOString();
+    const day4 = "9999";
+    const night4 = "8888";
 
-    document.getElementById("editNotice").style.display = "none";
+    const finishUpdate = (latlng, imgUrl) => {
+        addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
+        document.getElementById("markerFields").style.display = "none";
+        document.getElementById("editNotice").style.display = "none";
+        addMode = false;
+        window.markerBeingEdited = null;
+        downloadMarkers();
+    };
 
-    // If editing an existing marker:
+    // עריכת חניון קיים
     if (window.markerBeingEdited) {
         const latlng = window.markerBeingEdited.marker.getLatLng();
-        const updateMarker = (imgUrl) => {
-            map.removeLayer(window.markerBeingEdited.marker); // Remove old marker
-            markers = markers.filter(m => m !== window.markerBeingEdited); // Remove from array
-
-            // Add new one with updated data
-            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
-            window.markerBeingEdited = null;
-            document.getElementById("markerFields").style.display = "none";
-        };
+        map.removeLayer(window.markerBeingEdited.marker);
+        markers = markers.filter(m => m !== window.markerBeingEdited);
 
         if (file) {
-            uploadToImgur(file, updateMarker);
+            uploadToImgur(file, (imgUrl) => finishUpdate(latlng, imgUrl));
         } else {
-            updateMarker(window.markerBeingEdited.data.imageUrl || null);
+            finishUpdate(latlng, window.markerBeingEdited.data.imageUrl || null);
         }
-        downloadMarkers()
-    } else {
-        alert("לא בוצעה עריכה של אף חניון. נסה שוב.");
+    }
+    // הוספת חניון חדש
+    else if (typeof smallMap !== 'undefined') {
+        const latlng = smallMap.getCenter();
+
+        if (file) {
+            uploadToImgur(file, (imgUrl) => finishUpdate(latlng, imgUrl));
+        } else {
+            finishUpdate(latlng, null);
+        }
+    }
+    else {
+        alert("לא בוצעה הוספה או עריכה. נסה שוב.");
     }
 }
 
@@ -710,30 +724,30 @@ function initMap(lat, lng) {
 
     map.attributionControl.setPrefix('Leaflet');
 
-    map.on("click", function(e) {
-        if (!isAddModeEnabled()) return;
-
-        const latlng = e.latlng;
-        const color = document.getElementById("markerColor").value;
-        const note = document.getElementById("markerText").value;
-        const url = document.getElementById("markerURL").value;
-        const hourly = document.getElementById("markerHourly").value;
-        const daily = document.getElementById("markerDaily").value;
-    //    const day4 = document.getElementById("markerday4").value;
-    //    const night4 = document.getElementById("markernight4").value;
-	const day4 = "9999";
-        const night4 = "8888";
-        const file = document.getElementById("markerImage").files[0];
-        const dateTime = new Date().toISOString();
-
-        if (file) {
-            uploadToImgur(file, (imgUrl) => {
-                addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
-            });
-        } else {
-            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, null, dateTime);
-        }
-    });
+//    map.on("click", function(e) {
+//        if (!isAddModeEnabled()) return;
+//
+//        const latlng = e.latlng;
+//        const color = document.getElementById("markerColor").value;
+//        const note = document.getElementById("markerText").value;
+//        const url = document.getElementById("markerURL").value;
+//        const hourly = document.getElementById("markerHourly").value;
+//        const daily = document.getElementById("markerDaily").value;
+//    //    const day4 = document.getElementById("markerday4").value;
+//    //    const night4 = document.getElementById("markernight4").value;
+//	const day4 = "9999";
+//        const night4 = "8888";
+//        const file = document.getElementById("markerImage").files[0];
+//        const dateTime = new Date().toISOString();
+//
+//        if (file) {
+//            uploadToImgur(file, (imgUrl) => {
+//                addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
+//            });
+//       } else {
+//            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, null, dateTime);
+//        }
+//    });
 }
 
 function loadMarkers() {
@@ -753,6 +767,30 @@ function loadMarkers() {
         });
 }
 
+let smallMap, smallMapMarker;
+
+function initSmallMap() {
+    smallMap = L.map('smallMap', {
+        center: map.getCenter(), // התחלה לפי המרכז של המפה הראשית
+        zoom: 16,
+        zoomControl: false,
+        attributionControl: false
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19
+    }).addTo(smallMap);
+
+    // לא מוסיפים מרקר – רק נציג מרקר באמצע עם CSS
+
+    // נשתול מרקר קבוע באמצע עם overlay
+    const markerOverlay = document.createElement("div");
+    markerOverlay.innerHTML = `<div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -100%); z-index:999;">
+        <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png" style="width:25px; height:auto;">
+    </div>`;
+    document.getElementById("smallMap").appendChild(markerOverlay);
+}
+	
 //startMapAtUserLocation();
 fallbackMap();
 	
