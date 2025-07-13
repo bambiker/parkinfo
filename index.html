@@ -499,7 +499,7 @@ function submitForm() {
 
     document.getElementById("editNotice").style.display = "none";
 
-    // If editing existing marker:
+    // If editing an existing marker:
     if (window.markerBeingEdited) {
         const latlng = window.markerBeingEdited.marker.getLatLng();
         const updateMarker = (imgUrl) => {
@@ -517,7 +517,7 @@ function submitForm() {
         } else {
             updateMarker(window.markerBeingEdited.data.imageUrl || null);
         }
-
+        downloadMarkers()
     } else {
         alert("לא בוצעה עריכה של אף חניון. נסה שוב.");
     }
