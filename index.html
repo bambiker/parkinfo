@@ -447,6 +447,17 @@ function updateLastUpdatedDate() {
 }
 function cancelsave() {
     document.getElementById("markerFields").style.display = "none";
+    document.getElementById("editNotice").style.display = "none";
+    addMode = false;
+    window.markerBeingEdited = null;	
+    // Clear inputs
+    document.getElementById("markerText").value = "";
+    document.getElementById("markerURL").value = "";
+    document.getElementById("markerHourly").value = "";
+    document.getElementById("markerDaily").value = "";	
+    //document.getElementById("markerday4").value = "";
+    //document.getElementById("markernight4").value = "";	
+    document.getElementById("markerImage").value = "";	
 }
 
 
