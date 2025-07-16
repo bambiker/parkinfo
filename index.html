@@ -94,7 +94,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 
 <div id="map"></div>
 <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 15px;">
-    <label style="font-weight: bold;">הצג מחיר:</label>
+    <label style="font-weight: bold;">להצגת מחיר:</label>
     <label><input type="radio" name="priceDisplay" value="daily" checked onchange="updateAllMarkerIcons()"> יומי</label>
     <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"> שעתי</label>
     (פרטים מלאים וניווט עם Waze בלחיצה על החניון)
@@ -112,11 +112,11 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
     <button onclick="flyToUserLocation()" 
             title="מעבר למיקום הנוכחי"
             style="padding: 10px; background-color: #17a2b8; color: white; border: none; border-radius: 50%; cursor: pointer; font-size: 18px; width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
-        🧭
+        <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png" style="vertical-align: middle; height: 16px;">
     </button>
     <a href="https://land.pango.co.il/FastPark/ParkingRates/ParkingRates" target="_blank"
        style="text-decoration: none; color: #007bff; font-weight: bold;">
-        מחירי החניה בכחול לבן בערים השונות
+       <u>מחירי החניה בכחול לבן בערים השונות</u>
     </a>
 </div>
 
@@ -131,11 +131,18 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 <div id="markerFields" style="display: none;">
     <div  style="font-weight: bold; margin-bottom: 15px;">תודה על העזרה!</div>
     <div id="editNotice" style="display: none; background: #ffc107; padding: 10px; border-radius: 8px; font-weight: bold; color: black;">
-        אתה עורך חניון קיים – לאחר השינויים לחץ על 'עדכן'
+         עריכת חניון קיים – לאחר השינויים יש ללחוץ על 'עדכן'
     </div>
+	 <div style="margin-bottom: 15px;">
+    <label style="font-weight: bold;">בחר מיקום על המפה:<span style="color:red">*</span></label>
+    <div id="smallMapContainer" style="height: 200px; margin-top: 10px;">
+        <div id="smallMap" style="height: 100%;border: 1px solid #ccc; border-radius: 8px;"></div>
+	<small>הזז את המפה כך שהמרקר האדום יהיה במקום החניה</small>
+    </div>
+	    </div>
 
     <div style="margin-bottom: 15px;">
-        <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">בחר את סוג החניה:</label>
+        <label for="markerColor" style="display: block; font-weight: bold; margin-bottom: 5px;">סוג החניה:<span style="color:red">*</span></label>
         <select id="markerColor" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
             <option value="violet">סגול - חניון בתשלום</option>
             <option value="black">שחור - חניון בחינם</option>
@@ -145,6 +152,10 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
             <option value="red">אדום - חניה אסורה</option>
             <option value="green">ירוק - חניה מיוחדת</option>
         </select>
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="markerImage" style="font-weight: bold;"> לצרף תמונה של שלט המחיר (או של החניון עצמו בחניון חינמי):<span style="color:red">*</span></label>
+        <input type="file" id="markerImage" accept="image/*" capture="environment" style="display: block; margin-top: 5px;">
     </div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
@@ -159,10 +170,6 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
             <input type="text" id="markerURL" placeholder="כתוב משהו..." style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
         </div>
     </div>    
-    <div style="margin-bottom: 15px;">
-        <label for="markerImage" style="font-weight: bold;"> צרף תמונה של שלט המחיר (או החניון עצמו בחניון חינמי):</label>
-        <input type="file" id="markerImage" accept="image/*" capture="environment" style="display: block; margin-top: 5px;">
-    </div>
     <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
         <div style="flex: 1; min-width: 60px;">
             <label for="markerHourly" style="font-weight: bold;">מחיר שעתי:</label>
@@ -185,14 +192,6 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
     </div>
 אם צילמתם את שלט המחיר, או שהמידע קיים באתר האינטרנט של החניון (וצירפתם את כתובת האתר), אנו נמלא את המחיר לשעה ומחיר יומי<br><br>
 	
-	 <div style="margin-bottom: 15px;">
-    <label style="font-weight: bold;">בחר מיקום על המפה:</label>
-    <div id="smallMapContainer" style="height: 200px; margin-top: 10px;">
-        <div id="smallMap" style="height: 100%;border: 1px solid #ccc; border-radius: 8px;"></div>
-	<small>הזז את המפה כך שהמרקר האדום יהיה במקום החניה</small>
-    </div>
-		 <br>אחרי הסימון יש ללחוץ על כפתור האישור וההוספה תאושר תוך שני ימי עבודה<br>
-	    </div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <button onclick="submitForm()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
