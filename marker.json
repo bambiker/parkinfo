@@ -2430,5 +2430,70 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/M3R4Bz0.jpeg",
     "dateTime": "2025-07-16T16:53:23.798Z"
+  },
+  {
+    "lat": 32.89235491410316,
+    "lng": 35.59641122817994,
+    "color": "violet",
+    "note": "חוף אמנון",
+    "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
+    "hourly": "5",
+    "daily": "120",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-17T07:45:31.401Z"
+  },
+  {
+    "lat": 32.85964560969609,
+    "lng": 35.6448519229889,
+    "color": "violet",
+    "note": "חוף כינר",
+    "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
+    "hourly": "5",
+    "daily": "120",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-17T07:47:08.354Z"
+  },
+  {
+    "lat": 32.857389238269064,
+    "lng": 35.64774870872498,
+    "color": "violet",
+    "note": "חוף דוגה",
+    "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
+    "hourly": "5",
+    "daily": "120",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-17T07:48:04.736Z"
+  },
+  {
+    "lat": 32.8641878710774,
+    "lng": 35.537821054458625,
+    "color": "violet",
+    "note": "חוף חוקוק",
+    "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
+    "hourly": "5",
+    "daily": "120",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-17T07:56:28.109Z"
+  },
+  {
+    "lat": 32.7365668695991,
+    "lng": 35.569074153900154,
+    "color": "violet",
+    "note": "חוף צינברי",
+    "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
+    "hourly": "5",
+    "daily": "120",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-17T08:04:07.193Z"
   }
 ]
