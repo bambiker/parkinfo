@@ -2495,5 +2495,70 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-17T08:04:07.193Z"
+  },
+  {
+    "lat": 32.07527796904956,
+    "lng": 34.77514028549195,
+    "color": "violet",
+    "note": "דיזינגוף סנטר",
+    "url": "https://www.dizengof-center.co.il/useful-info/parking",
+    "hourly": "23",
+    "daily": "85",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-21T14:45:15.707Z"
+  },
+  {
+    "lat": 32.16551485226116,
+    "lng": 34.82392430305482,
+    "color": "black",
+    "note": "קניון שבעת הכוכבים",
+    "url": "https://7star.co.il/about/",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-21T14:53:59.255Z"
+  },
+  {
+    "lat": 31.777112793859313,
+    "lng": 35.20255565643311,
+    "color": "violet",
+    "note": "הספרייה הלאומית",
+    "url": "https://www.nli.org.il/he/visit/information/parking",
+    "hourly": "16",
+    "daily": "64",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-21T14:59:29.125Z"
+  },
+  {
+    "lat": 32.001174970461406,
+    "lng": 34.842656850814826,
+    "color": "black",
+    "note": "הנתיב המהיר",
+    "url": "https://fastlane.co.il/park",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-21T15:02:16.957Z"
+  },
+  {
+    "lat": 32.16201972374415,
+    "lng": 34.79666233062745,
+    "color": "violet",
+    "note": "ארנה הרצליה",
+    "url": "https://www.arenamall.co.il/info",
+    "hourly": "16",
+    "daily": "384",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-21T15:14:32.311Z"
   }
 ]
