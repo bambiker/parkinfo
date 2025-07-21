@@ -57,6 +57,20 @@
             color: white;
             cursor: pointer;
         }
+        .spinner {
+         border: 6px solid #f3f3f3;
+         border-top: 6px solid #28a745; /* ירוק */
+         border-radius: 50%;
+         width: 30px;
+         height: 30px;
+         animation: spin 1s linear infinite;
+         margin: 0 auto;
+         }
+
+         @keyframes spin {
+           0% { transform: rotate(0deg); }
+           100% { transform: rotate(360deg); }
+          }
 
     </style>
 
@@ -200,6 +214,10 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
         <button onclick="cancelsave()" style="padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer;">
             ביטול 
         </button>
+        <div id="loadingSpinner" style="display: none; direction: rtl; margin-top: 10px; text-align: center;">
+            <div class="spinner"></div>
+            <div style="margin-top: 5px;">⏳ שולח נתונים, נא להמתין...</div>
+        </div>
 
     </div>
 </div>
@@ -508,7 +526,9 @@ function submitForm() {
     const dateTime = new Date().toISOString();
     const day4 = "9999";
     const night4 = "8888";
-
+    
+    document.getElementById("loadingSpinner").style.display = "block";
+	
     // ❌ אם לא הוזן שום מידע רלוונטי – לא נאשר
     if (color === "violet" && !note && !url && !hourly && !daily && !file) {
         alert("לא הוזן מידע על החניון בתשלום. יש למלא לפחות שדה אחד: תיאור, קישור, מחיר או תמונה.");
@@ -522,6 +542,8 @@ function submitForm() {
         addMode = false;
         window.markerBeingEdited = null;
         downloadMarkers();
+	document.getElementById("loadingSpinner").style.display = "none";
+
     };
 
     // עריכת חניון קיים
