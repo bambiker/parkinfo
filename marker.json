@@ -2599,4 +2599,31 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T04:27:26.698Z"
-  }]
+  },
+  {
+    "lat": 32.81199581380341,
+    "lng": 35.04123687744141,
+    "color": "black",
+    "note": "נמל תעופה חיפה",
+    "url": "https://www.iaa.gov.il/airports/haifa/transportation-and-parking/",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-23T07:14:21.739Z"
+  },
+  {
+    "lat": 29.725710476354237,
+    "lng": 35.00480175018311,
+    "color": "black",
+    "note": "שדה תעופה רמון",
+    "url": "https://www.iaa.gov.il/airports/ramon/parking/",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-23T07:15:34.178Z"
+  }
+]
