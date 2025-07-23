@@ -2560,5 +2560,31 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-21T15:14:32.311Z"
+  },
+  {
+    "lat": 32.05364613534228,
+    "lng": 34.75340366363526,
+    "color": "violet",
+    "note": "חניון הצורפים",
+    "url": "https://www.oldjaffa.co.il/about-oldjaffa-2/",
+    "hourly": "16",
+    "daily": "80",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-22T11:15:05.089Z"
+  },
+  {
+    "lat": 31.26203891889495,
+    "lng": 34.80619490146638,
+    "color": "violet",
+    "note": "חניון מרכז הספורט אוניברסיטת באר שבע",
+    "url": "https://www.bgu.ac.il/u/admin/logistics/public-parking/",
+    "hourly": "8",
+    "daily": "25",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-22T11:28:05.236Z"
   }
 ]
