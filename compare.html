@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>השוואת קובץ JSON + תצוגת מיקום</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-sA+4pskC8QwS+HOJ1DgVfN1sDkKa/hU5+QWvYlZkNd8=" crossorigin="" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -72,11 +71,8 @@
   </div>
 
   <div id="map" style="display: none;"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-o9N1j4bT0bLz2I/H0PZKKkO4zJKat6yx1JkGzjzQF0M=" crossorigin=""></script>
-
-  <script>
     let map, marker;
 
     async function compareFiles() {
