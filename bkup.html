@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>גיבוי תמונות מהחניונים</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+  <h1>📦 יצירת ZIP לתמונות</h1>
+  <button onclick="loadAndZip()">📥 צור והורד ZIP של כל התמונות</button>
+  <div id="status" style="margin-top: 1em;"></div>
+
+  <script>
+    async function loadAndZip() {
+      const statusDiv = document.getElementById('status');
+      statusDiv.innerText = "📡 טוען את הנתונים...";
+
+      try {
+        const response = await fetch('marker.json');
+        if (!response.ok) throw new Error('שגיאה בטעינת marker.json');
+        const markerData = await response.json();
+
+        const zip = new JSZip();
+        let imageCount = 0;
+
+        for (let i = 0; i < markerData.length; i++) {
+          const marker = markerData[i];
+          if (marker.imageUrl) {
+            try {
+              const res = await fetch(marker.imageUrl);
+              const blob = await res.blob();
+              const filename = `image_${i + 1}_${extractFileName(marker.imageUrl)}`;
+              zip.file(filename, blob);
+              imageCount++;
+              statusDiv.innerText = `📦 הוספתי ${imageCount} תמונות ל-ZIP...`;
+            } catch (imgErr) {
+              console.warn("בעיה בתמונה:", marker.imageUrl, imgErr);
+            }
+          }
+        }
+
+        if (imageCount === 0) {
+          statusDiv.innerText = "❌ לא נמצאו תמונות להורדה.";
+          return;
+        }
+
+        statusDiv.innerText = "📦 יוצר את קובץ ה-ZIP...";
+        const content = await zip.generateAsync({ type: "blob" });
+
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(content);
+        a.download = "parking_images_backup.zip";
+        a.click();
+
+        statusDiv.innerText = `✅ הורדה הושלמה (${imageCount} תמונות)`;
+
+      } catch (err) {
+        console.error(err);
+        statusDiv.innerText = "❌ שגיאה בטעינת הקובץ או בהורדה";
+      }
+    }
+
+    function extractFileName(url) {
+      return url.split('/').pop().split('?')[0];
+    }
+  </script>
+</body>
+</html>
