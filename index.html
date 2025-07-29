@@ -29,6 +29,7 @@
             text-align: right;
             padding: 10px;
         }
+	#markerFields {display: none;}
         #map { height: 400px; width: 100%; margin-top: 10px; }
         #controls { margin-bottom: 10px; }
         #colorDescription { font-size: 0.9em; margin-top: 5px; }
@@ -499,6 +500,8 @@ function editMarker(lat, lng) {
 function scrollToForm() {
     setTimeout(() => {
         const form = document.getElementById("markerFields");
+        if (!form || form.style.display === "none") return;  // ביטול אם לא קיים או מוסתר
+
         form.scrollIntoView({ behavior: "smooth", block: "start" });
         location.hash = "#markerFields";
 
@@ -509,9 +512,8 @@ function scrollToForm() {
         setTimeout(() => {
             form.style.boxShadow = "";
         }, 1500);
-    }, 100);
+    }, 150);  // מעט יותר זמן כדי לוודא הצגה
 }
-
 	
 function submitForm() {
     const color = document.getElementById("markerColor").value;
