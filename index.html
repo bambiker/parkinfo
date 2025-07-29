@@ -29,7 +29,6 @@
             text-align: right;
             padding: 10px;
         }
-	#markerFields {display: none;}
         #map { height: 400px; width: 100%; margin-top: 10px; }
         #controls { margin-bottom: 10px; }
         #colorDescription { font-size: 0.9em; margin-top: 5px; }
@@ -241,7 +240,8 @@ function toggleAddMode() {
         smallMapContainer.style.display = (addMode && !isEditing) ? "block" : "none";
     }
 
-    if (addMode && !isEditing && !smallMap) {
+    if (addMode && !isEditing && !smallMap) 
+    {
         scrollToForm();
         //setTimeout(initSmallMap, 100);
     }
