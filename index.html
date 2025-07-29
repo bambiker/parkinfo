@@ -145,7 +145,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 <div id="markerFields">
     <div  style="font-weight: bold; margin-bottom: 15px;">תודה על העזרה!</div>
     <div id="editNotice" style="display: none; background: #ffc107; padding: 10px; border-radius: 8px; font-weight: bold; color: black;">
-         עריכת חניון קיים – לאחר השינויים יש ללחוץ על 'עדכן'
+         עריכת חניון קיים 
     </div>
 	
     <div id="smallMapContainer" style="display:none; margin-bottom: 15px;">
@@ -456,6 +456,7 @@ function updateLastUpdatedDate() {
 }
 function cancelsave() {
     document.getElementById("controls").style.display = "none";
+    document.getElementById("smallMapContainer").style.display = "none";
     document.getElementById("editNotice").style.display = "none";
     addMode = false;
     window.markerBeingEdited = null;	
