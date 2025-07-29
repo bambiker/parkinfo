@@ -229,9 +229,9 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 let addMode = false;
 
 function toggleAddMode() {
-    addMode = !addMode;
+    addMode = True;
     
-    document.getElementById("controls").style.display = addMode ? "block" : "none";
+    document.getElementById("controls").style.display = "block" ;
 	
     const isEditing = getComputedStyle(document.getElementById("editNotice")).display === "block";
     const smallMapContainer = document.getElementById("smallMapContainer");
@@ -249,8 +249,6 @@ function toggleAddMode() {
         m.marker.dragging["disable"]();
     });
 }
-
-// החלפת isAddModeEnabled()
 
 function isAddModeEnabled() {
     return addMode;
@@ -578,7 +576,6 @@ function downloadMarkers() {
         const latlng = m.marker.getLatLng();
         return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, day4: m.data.day4, night4: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
-//    toggleAddMode()    
     document.getElementById("controls").style.display = "none";
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' });
     const url = URL.createObjectURL(blob);
