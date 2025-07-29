@@ -140,9 +140,9 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
     <img id="modalImage" src="" alt="תמונה מוגדלת">
 </div>
 
-<div id="controls" style="background-color: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 20px;">
+<div id="controls" style="background-color: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 20px;display: none;">
 
-<div id="markerFields" style="display: none;">
+<div id="markerFields">
     <div  style="font-weight: bold; margin-bottom: 15px;">תודה על העזרה!</div>
     <div id="editNotice" style="display: none; background: #ffc107; padding: 10px; border-radius: 8px; font-weight: bold; color: black;">
          עריכת חניון קיים – לאחר השינויים יש ללחוץ על 'עדכן'
@@ -231,7 +231,7 @@ let addMode = false;
 function toggleAddMode() {
     addMode = !addMode;
     
-    document.getElementById("markerFields").style.display = addMode ? "block" : "none";
+    document.getElementById("controls").style.display = addMode ? "block" : "none";
 	
     const isEditing = getComputedStyle(document.getElementById("editNotice")).display === "block";
     const smallMapContainer = document.getElementById("smallMapContainer");
@@ -456,7 +456,7 @@ function updateLastUpdatedDate() {
     document.getElementById("lastUpdated").innerText = `המפה עודכנה לאחרונה בתאריך: ${formattedDate}`;
 }
 function cancelsave() {
-    document.getElementById("markerFields").style.display = "none";
+    document.getElementById("controls").style.display = "none";
     document.getElementById("editNotice").style.display = "none";
     addMode = false;
     window.markerBeingEdited = null;	
@@ -488,7 +488,7 @@ function editMarker(lat, lng) {
 //    document.getElementById("markernight4").value = markerData.data.night4;
 
     // Show the input panel
-    document.getElementById("markerFields").style.display = "block";
+    document.getElementById("controls").style.display = "block";
     addMode = false; // Disable adding to avoid confusion
 
     // Temporarily store the marker to update
@@ -499,11 +499,11 @@ function editMarker(lat, lng) {
 
 function scrollToForm() {
     setTimeout(() => {
-        const form = document.getElementById("markerFields");
+        const form = document.getElementById("controls");
         if (!form || form.style.display === "none") return;  // ביטול אם לא קיים או מוסתר
 
         form.scrollIntoView({ behavior: "smooth", block: "start" });
-        location.hash = "#markerFields";
+        location.hash = "#controls";
 
         // הדגשה זמנית של הטופס
         form.style.boxShadow = "0 0 15px 4px #ffc107";
@@ -536,7 +536,7 @@ function submitForm() {
 	
     const finishUpdate = (latlng, imgUrl) => {
         addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
-        document.getElementById("markerFields").style.display = "none";
+        document.getElementById("controls").style.display = "none";
         document.getElementById("editNotice").style.display = "none";
         addMode = false;
         window.markerBeingEdited = null;
@@ -579,7 +579,7 @@ function downloadMarkers() {
         return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, day4: m.data.day4, night4: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
 //    toggleAddMode()    
-    document.getElementById("markerFields").style.display = "none";
+    document.getElementById("controls").style.display = "none";
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
