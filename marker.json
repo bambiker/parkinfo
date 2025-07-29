@@ -2861,5 +2861,31 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-27T07:29:30.906Z"
+  },
+  {
+    "lat": 31.89902918453988,
+    "lng": 34.81123358011701,
+    "color": "violet",
+    "note": "חניון המספרה",
+    "url": "",
+    "hourly": "25",
+    "daily": "25",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/LsbyD30.jpeg",
+    "dateTime": "2025-07-29T13:29:59.553Z"
+  },
+  {
+    "lat": 31.90310579190261,
+    "lng": 34.810888588502856,
+    "color": "black",
+    "note": "",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-07-29T13:39:15.878Z"
   }
 ]
