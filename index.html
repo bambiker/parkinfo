@@ -579,15 +579,21 @@ function downloadMarkers() {
         return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, day4: m.data.day4, night4: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
     });
     document.getElementById("controls").style.display = "none";
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = "markers.json";
-    a.click();
-    URL.revokeObjectURL(url);
+	
     // 📤 Also send the marker data to your server
     sendMarkersToServer(data);
+
+    // רק אם יש ?download בכתובת, תתבצע גם הורדה  https://bambiker.github.io/parkinfo/?download
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("download")) {
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "markers.json";
+        a.click();
+        URL.revokeObjectURL(url);
+    }
 }
 
 function uploadMarkers(event) {
