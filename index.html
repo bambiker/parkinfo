@@ -529,7 +529,7 @@ function submitForm() {
     document.getElementById("loadingSpinner").style.display = "block";
 	
     // ❌ אם לא הוזן שום מידע רלוונטי – לא נאשר
-    if (color === "violet" && !url && !file) {
+    if ( !url && !file) {
         alert("יש לצלם את שלט החניון ובו פירוט המחירים.");
         return;
     }
