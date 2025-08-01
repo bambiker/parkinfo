@@ -529,8 +529,8 @@ function submitForm() {
     document.getElementById("loadingSpinner").style.display = "block";
 	
     // ❌ אם לא הוזן שום מידע רלוונטי – לא נאשר
-    if (color === "violet" && !note && !url && !hourly && !daily && !file) {
-        alert("לא הוזן מידע על החניון בתשלום. יש למלא לפחות שדה אחד: תיאור, קישור, מחיר או תמונה.");
+    if (color === "violet" && !url && !file) {
+        alert("יש לצלם את שלט החניון ובו פירוט המחירים.");
         return;
     }
 	
