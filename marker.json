@@ -2926,5 +2926,18 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-30T19:58:04.514Z"
+  },
+  {
+    "lat": 31.2358058283434,
+    "lng": 34.788108766078956,
+    "color": "black",
+    "note": "כפר דרום",
+    "url": "https://www.beer-sheva.muni.il/Residents/Pikuach/pages/parking.aspx",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-03T12:07:28.988Z"
   }
 ]
