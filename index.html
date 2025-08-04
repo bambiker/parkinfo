@@ -110,7 +110,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 15px;">
     <label style="font-weight: bold;">להצגת מחיר:</label>
     <label><input type="radio" name="priceDisplay" value="daily" checked onchange="updateAllMarkerIcons()"> יומי</label>
-    <label><input type="radio" name="priceDisplay" value="hoy" onchange="updateAllMarkerIcons()"> שעתי</label>
+    <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"> שעתי</label>
     (פרטים מלאים וניווט עם Waze בלחיצה על החניון)
 </div>
 
@@ -148,7 +148,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
          עריכת חניון קיים 
     </div>
 	
-    <div id="smallMapiner" style="display:none; margin-bottom: 15px;">
+    <div id="smallMapContainer" style="display:none; margin-bottom: 15px;">
        <label style="font-weight: bold;">בחירת מיקום על המפה:<span style="color:red">*</span></label>
        <div style="height: 200px; margin-top: 10px;">
            <div id="smallMap" style="height: 100%;border: 1px solid #ccc; border-radius: 8px;"></div> 
