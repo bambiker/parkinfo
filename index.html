@@ -110,7 +110,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 15px;">
     <label style="font-weight: bold;">להצגת מחיר:</label>
     <label><input type="radio" name="priceDisplay" value="daily" checked onchange="updateAllMarkerIcons()"> יומי</label>
-    <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"> שעתי</label>
+    <label><input type="radio" name="priceDisplay" value="hoy" onchange="updateAllMarkerIcons()"> שעתי</label>
     (פרטים מלאים וניווט עם Waze בלחיצה על החניון)
 </div>
 
@@ -206,6 +206,13 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 	-->
     </div>
 אם צילמתם את שלט המחיר, או שהמידע קיים באתר האינטרנט של החניון (וצירפתם את כתובת האתר), אנו נמלא את המחיר לשעה ומחיר יומי<br><br>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+        <div style="flex: 1; min-width: 240px;">
+            <label for="contactInfo" style="font-weight: bold;">פרטי קשר (אימייל, ווטסאפ או משהו אחר, אופציונלי, המידע לא ישמר, הוא נועד כדי שנפנה אליכם אם יהיה לנו משהו לא ברור בתהליך אישור הוספת/עריכת חניון):</label><br>
+            <input type="text" id="contactInfo" placeholder="הכנס כתובת מייל או מספר טלפון" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;" />
+        </div>
+    </div>    
 	
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
@@ -308,7 +315,7 @@ function colorDescription(color) {
 }
 
 	
-function addMarker(lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl = null, dateTime = null) {
+function addMarker(lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl = null, dateTime = null, contactinfo= null) {
 //    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
 //        dateTime = new Date().toISOString();
 //}
@@ -379,7 +386,7 @@ popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a
         }
     });
 
-    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl, dateTime } });
+    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl, dateTime, contactinfo } });
     updateMarkerCount();
     updateLastUpdatedDate();
 
@@ -525,6 +532,7 @@ function submitForm() {
     const dateTime = new Date().toISOString();
     const day4 = "9999";
     const night4 = "8888";
+    const contact = document.getElementById("contactInfo").value;
     
     document.getElementById("loadingSpinner").style.display = "block";
 	
@@ -535,7 +543,7 @@ function submitForm() {
     }
 	
     const finishUpdate = (latlng, imgUrl) => {
-        addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
+        addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime, contactinfo=contact);
         document.getElementById("controls").style.display = "none";
         document.getElementById("editNotice").style.display = "none";
         addMode = false;
@@ -762,31 +770,6 @@ function initMap(lat, lng) {
     //L.circle([lat, lng], {color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10}).addTo(map);
 
     map.attributionControl.setPrefix('Leaflet');
-
-//    map.on("click", function(e) {
-//        if (!isAddModeEnabled()) return;
-//
-//        const latlng = e.latlng;
-//        const color = document.getElementById("markerColor").value;
-//        const note = document.getElementById("markerText").value;
-//        const url = document.getElementById("markerURL").value;
-//        const hourly = document.getElementById("markerHourly").value;
-//        const daily = document.getElementById("markerDaily").value;
-//    //    const day4 = document.getElementById("markerday4").value;
-//    //    const night4 = document.getElementById("markernight4").value;
-//	const day4 = "9999";
-//        const night4 = "8888";
-//        const file = document.getElementById("markerImage").files[0];
-//        const dateTime = new Date().toISOString();
-//
-//        if (file) {
-//            uploadToImgur(file, (imgUrl) => {
-//                addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, imgUrl, dateTime);
-//            });
-//       } else {
-//            addMarker(latlng.lat, latlng.lng, color, note, url, hourly, daily, day4, night4, null, dateTime);
-//        }
-//    });
 }
 
 function loadMarkers() {
