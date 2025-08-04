@@ -548,7 +548,7 @@ function submitForm() {
         document.getElementById("editNotice").style.display = "none";
         addMode = false;
         window.markerBeingEdited = null;
-        downloadMarkers();
+        Markers();
 	document.getElementById("loadingSpinner").style.display = "none";
 
     };
@@ -585,14 +585,34 @@ function submitForm() {
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
-        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, day4: m.data.day4, night4: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime , contact: m.data.contactinfo};
+        const markerObj = {
+            lat: latlng.lat,
+            lng: latlng.lng,
+            color: m.data.color,
+            note: m.data.note,
+            url: m.data.url,
+            hourly: m.data.hourly,
+            daily: m.data.daily,
+            day4: m.data.day4,
+            night4: m.data.night4,
+            imageUrl: m.data.imageUrl || null,
+            dateTime: m.data.dateTime
+        };
+
+        // הוסף רק אם contactinfo לא ריק
+        if (m.data.contactinfo && m.data.contactinfo.trim() !== "") {
+            markerObj.contact = m.data.contactinfo.trim();
+        }
+
+        return markerObj;
     });
+
     document.getElementById("controls").style.display = "none";
-	
-    // 📤 Also send the marker data to your server
+
+    // 📤 שלח את המידע לשרת
     sendMarkersToServer(data);
 
-    // רק אם יש ?download בכתובת, תתבצע גם הורדה  https://bambiker.github.io/parkinfo/?download
+    // הורדה לקובץ רק אם יש ?download בכתובת
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("download")) {
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' });
@@ -604,6 +624,7 @@ function downloadMarkers() {
         URL.revokeObjectURL(url);
     }
 }
+
 
 function uploadMarkers(event) {
     const file = event.target.files[0];
