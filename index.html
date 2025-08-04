@@ -148,7 +148,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
          עריכת חניון קיים 
     </div>
 	
-    <div id="smallMapContainer" style="display:none; margin-bottom: 15px;">
+    <div id="smallMapiner" style="display:none; margin-bottom: 15px;">
        <label style="font-weight: bold;">בחירת מיקום על המפה:<span style="color:red">*</span></label>
        <div style="height: 200px; margin-top: 10px;">
            <div id="smallMap" style="height: 100%;border: 1px solid #ccc; border-radius: 8px;"></div> 
@@ -210,7 +210,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
     <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
         <div style="flex: 1; min-width: 240px;">
             <label for="contactInfo" style="font-weight: bold;">פרטי קשר (אימייל, ווטסאפ או משהו אחר, אופציונלי, המידע לא ישמר, הוא נועד כדי שנפנה אליכם אם יהיה לנו משהו לא ברור בתהליך אישור הוספת/עריכת חניון):</label><br>
-            <input type="text" id="contactInfo" placeholder="הכנס כתובת מייל או מספר טלפון" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;" />
+            <input type="text" id="contactInfo" placeholder="הכנס כתובת מייל או מספר טלפון (לא חובה)" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;" />
         </div>
     </div>    
 	
@@ -585,7 +585,7 @@ function submitForm() {
 function downloadMarkers() {
     const data = markers.map(m => {
         const latlng = m.marker.getLatLng();
-        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, day4: m.data.day4, night4: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime };
+        return { lat: latlng.lat, lng: latlng.lng, color: m.data.color, note: m.data.note, url: m.data.url, hourly: m.data.hourly, daily: m.data.daily, day4: m.data.day4, night4: m.data.night4, imageUrl: m.data.imageUrl || null, dateTime: m.data.dateTime , contact: m.data.contactinfo};
     });
     document.getElementById("controls").style.display = "none";
 	
