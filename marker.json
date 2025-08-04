@@ -2939,5 +2939,18 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-03T12:07:28.988Z"
+  },
+  {
+    "lat": 32.067714323420816,
+    "lng": 34.78240923956037,
+    "color": "violet",
+    "note": "סעדיה גאון",
+    "url": "https://share.google/aSQD6nVndS1NHeT1c",
+    "hourly": "24",
+    "daily": "84",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-04T11:17:12.692Z"
   }
 ]
