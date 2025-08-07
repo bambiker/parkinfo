@@ -2952,5 +2952,70 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-04T11:17:12.692Z"
+  },
+  {
+    "lat": 31.765187795625,
+    "lng": 35.20130038261414,
+    "color": "black",
+    "note": "הגן הבוטני ירושלים",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-07T06:32:14.438Z"
+  },
+  {
+    "lat": 31.767812300926483,
+    "lng": 35.22230744361878,
+    "color": "black",
+    "note": "גן הפעמון",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-07T06:33:11.396Z"
+  },
+  {
+    "lat": 31.768854213112107,
+    "lng": 35.22357344627381,
+    "color": "violet",
+    "note": "גן הפעמון",
+    "url": "",
+    "hourly": "12.4",
+    "daily": "37.2",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/fpuxvlM.jpeg",
+    "dateTime": "2025-08-07T06:35:05.540Z"
+  },
+  {
+    "lat": 31.764047854224504,
+    "lng": 35.22489309310914,
+    "color": "violet",
+    "note": "הזאפה",
+    "url": "",
+    "hourly": "12.4",
+    "daily": "37.2",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/GCOHRX0.jpeg",
+    "dateTime": "2025-08-07T06:35:56.187Z"
+  },
+  {
+    "lat": 31.76705160897185,
+    "lng": 35.2247965335846,
+    "color": "violet",
+    "note": "מתחם התחנה ירושלים",
+    "url": "",
+    "hourly": "25",
+    "daily": "125",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/Zo2Gvoj.jpeg",
+    "dateTime": "2025-08-05T17:05:49.085Z"
   }
 ]
