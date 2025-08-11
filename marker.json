@@ -196,17 +196,6 @@
     "dateTime": "2025-05-22T16:46:19.451Z"
   },
   {
-    "lat": 31.941372444974363,
-    "lng": 34.834157542848,
-    "color": "black",
-    "note": "קניון באר יעקב",
-    "url": "",
-    "hourly": "",
-    "daily": "",
-    "imageUrl": null,
-    "dateTime": "2025-05-22T16:46:19.452Z"
-  },
-  {
     "lat": 32.08460212145339,
     "lng": 34.76984616008141,
     "color": "violet",
@@ -3017,5 +3006,70 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/Zo2Gvoj.jpeg",
     "dateTime": "2025-08-05T17:05:49.085Z"
+  },
+  {
+    "lat": 31.941372444974363,
+    "lng": 34.834157542848,
+    "color": "black",
+    "note": "קניון באר יעקב",
+    "url": "",
+    "hourly": "12",
+    "daily": "60",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/VH3oa3q.jpeg",
+    "dateTime": "2025-08-11T06:16:12.189Z"
+  },
+  {
+    "lat": 31.805315217247003,
+    "lng": 35.23361831903458,
+    "color": "black",
+    "note": "חנה וסע גבעת המבתר - חינם לנוסעי התחבורה הציבורית עד 12 שעות",
+    "url": "https://www.jerusalem.muni.il/he/residents/parking/parktravel_instructions/",
+    "hourly": "57",
+    "daily": "57",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-11T06:19:45.796Z"
+  },
+  {
+    "lat": 31.82368188896799,
+    "lng": 35.24016290903092,
+    "color": "black",
+    "note": "חנה וסע פסגת זאב - חינם לנוסעי התחבורה הציבורית עד 12 שעות",
+    "url": "https://www.jerusalem.muni.il/he/residents/parking/parktravel_instructions/",
+    "hourly": "57",
+    "daily": "57",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-11T06:20:13.427Z"
+  },
+  {
+    "lat": 31.770612678221212,
+    "lng": 35.181033611297615,
+    "color": "black",
+    "note": "חנה וסע הר הרצל - חינם לנוסעי התחבורה הציבורית עד 12 שעות",
+    "url": "https://www.jerusalem.muni.il/he/residents/parking/parktravel_instructions/",
+    "hourly": "57",
+    "daily": "57",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-11T06:21:22.683Z"
+  },
+  {
+    "lat": 31.893212045843832,
+    "lng": 34.80866026884542,
+    "color": "violet",
+    "note": "חניון בילו",
+    "url": "",
+    "hourly": "20",
+    "daily": "20",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/qkaBeNh.jpeg",
+    "dateTime": "2025-08-10T16:45:41.658Z"
   }
 ]
