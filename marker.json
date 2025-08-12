@@ -1648,17 +1648,6 @@
     "dateTime": "2025-06-24T08:19:28.654Z"
   },
   {
-    "lat": 31.89816738072291,
-    "lng": 35.00750349432544,
-    "color": "black",
-    "note": "",
-    "url": "",
-    "hourly": "",
-    "daily": "",
-    "imageUrl": null,
-    "dateTime": "2025-06-29T07:31:08.370Z"
-  },
-  {
     "lat": 32.107910440999774,
     "lng": 34.80566358015495,
     "color": "violet",
@@ -3071,5 +3060,31 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/qkaBeNh.jpeg",
     "dateTime": "2025-08-10T16:45:41.658Z"
+  },
+  {
+    "lat": 31.899329638240758,
+    "lng": 35.007966756820686,
+    "color": "violet",
+    "note": "קניון מודיעין",
+    "url": "",
+    "hourly": "20",
+    "daily": "90",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/xIrsMSn.jpeg",
+    "dateTime": "2025-08-11T18:10:44.813Z"
+  },
+  {
+    "lat": 31.89816738072291,
+    "lng": 35.00750349432544,
+    "color": "black",
+    "note": "אסורה החניה בין 2 בלילה ל 5 לפנות בוקר",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-11T18:15:24.899Z"
   }
 ]
