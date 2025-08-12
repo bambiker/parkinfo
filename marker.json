@@ -3086,5 +3086,31 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-11T18:15:24.899Z"
+  },
+  {
+    "lat": 32.181539253159364,
+    "lng": 34.87199217081071,
+    "color": "violet",
+    "note": "",
+    "url": "https://www.raanana.muni.il/Lists/List17/CustomDispForm.aspx?ID=67",
+    "hourly": "12",
+    "daily": "100",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-12T10:37:55.946Z"
+  },
+  {
+    "lat": 32.18671043835537,
+    "lng": 34.854909181594856,
+    "color": "violet",
+    "note": "חניון גמלא",
+    "url": "https://www.raanana.muni.il/Lists/List17/CustomDispForm.aspx?ID=67",
+    "hourly": "12",
+    "daily": "100",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-12T10:49:56.261Z"
   }
 ]
