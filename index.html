@@ -368,6 +368,7 @@ if (url) {
 
 const [year, month, day] = dateTime.split("T")[0].split("-");
 const formattedDate = `${day}/${month}/${year}`;
+popupHTML += ` <br>המחירים נבדקו מול החניון. המחיר הקובע הוא זה שבכניסה לחניון בפועל. `;
 popupHTML += ` <br>תאריך עדכון: ${formattedDate} `;
 popupHTML += `<br><button onclick="editMarker('${lat}', '${lng}')" style="margin-top: 8px; background:#ffc107; color:black; padding:5px 10px; border:none; border-radius:5px; cursor:pointer;">✏️ ערוך</button>`;
 
