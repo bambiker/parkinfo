@@ -3112,5 +3112,70 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-12T10:49:56.261Z"
+  },
+  {
+    "lat": 32.19844368176343,
+    "lng": 34.88197803497315,
+    "color": "violet",
+    "note": "זרחין 15 רעננה",
+    "url": "https://centralpark.co.il/parking/4-%D7%96%D7%A8%D7%97%D7%99%D7%9F%C2%A0-15%20%D7%A8%D7%A2%D7%A0%D7%A0%D7%94",
+    "hourly": "10",
+    "daily": "30",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-18T06:56:30.640Z"
+  },
+  {
+    "lat": 31.991685407522553,
+    "lng": 34.77358460426331,
+    "color": "violet",
+    "note": "קניון הזהב - שעתיים ראשונות חינם",
+    "url": "https://centralpark.co.il/parking/77-%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8-%D7%9E%D7%96%D7%9C%2018",
+    "hourly": "15",
+    "daily": "30",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-18T06:59:06.567Z"
+  },
+  {
+    "lat": 32.32688850075585,
+    "lng": 34.8562502861023,
+    "color": "violet",
+    "note": "הנוטע 7 נתניה",
+    "url": "https://centralpark.co.il/parking/65-%D7%94%D7%A0%D7%95%D7%98%D7%A2-7",
+    "hourly": "18",
+    "daily": "55",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-18T07:01:45.046Z"
+  },
+  {
+    "lat": 31.779142887002884,
+    "lng": 35.21555900573731,
+    "color": "violet",
+    "note": "המעלות 1 ירושלים",
+    "url": "https://centralpark.co.il/parking/73-%D7%94%D7%9E%D7%A2%D7%9C%D7%95%D7%AA-1,%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+    "hourly": "20",
+    "daily": "75",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-18T07:04:36.893Z"
+  },
+  {
+    "lat": 31.776088257015317,
+    "lng": 35.226695537567146,
+    "color": "violet",
+    "note": "חניון קרתא ירושלים",
+    "url": "https://centralpark.co.il/parking/25-%D7%99%D7%A6%D7%97%D7%A7-%D7%A7%D7%A8%D7%99%D7%91%201%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+    "hourly": "25",
+    "daily": "100",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-18T07:08:37.139Z"
   }
 ]
