@@ -3311,5 +3311,83 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-19T08:04:10.600Z"
+  },
+  {
+    "lat": 31.781452658042742,
+    "lng": 35.22952525694184,
+    "color": "violet",
+    "note": "חניון שער שכם",
+    "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
+    "hourly": "18",
+    "daily": "108",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-21T07:03:37.190Z"
+  },
+  {
+    "lat": 31.780479588495226,
+    "lng": 35.22472417407574,
+    "color": "violet",
+    "note": "חניון ספרא",
+    "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
+    "hourly": "18",
+    "daily": "108",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-21T07:05:49.869Z"
+  },
+  {
+    "lat": 31.779828001474698,
+    "lng": 35.212755282159925,
+    "color": "violet",
+    "note": "חניון מנורה",
+    "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
+    "hourly": "14",
+    "daily": "84",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-21T07:21:56.637Z"
+  },
+  {
+    "lat": 31.775911199084806,
+    "lng": 35.218253305108796,
+    "color": "violet",
+    "note": "חניון אגרון",
+    "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
+    "hourly": "12",
+    "daily": "72",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-21T07:23:23.452Z"
+  },
+  {
+    "lat": 31.908045415797098,
+    "lng": 34.797608982626954,
+    "color": "black",
+    "note": "חניון עפר",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/L95BKFT.jpeg",
+    "dateTime": "2025-08-21T07:26:56.028Z"
+  },
+  {
+    "lat": 31.905928546615247,
+    "lng": 34.79352545563245,
+    "color": "black",
+    "note": "חניון קטן",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/rHKYcg6.jpeg",
+    "dateTime": "2025-08-21T07:28:16.885Z"
   }
 ]
