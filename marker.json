@@ -3389,5 +3389,18 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/rHKYcg6.jpeg",
     "dateTime": "2025-08-21T07:28:16.885Z"
+  },
+  {
+    "lat": 32.162707304537605,
+    "lng": 34.84167540067574,
+    "color": "violet",
+    "note": "חניון שער העיר",
+    "url": "",
+    "hourly": "18",
+    "daily": "72",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/m5PILoE.jpeg",
+    "dateTime": "2025-08-21T13:10:28.889Z"
   }
 ]
