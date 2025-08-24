@@ -846,6 +846,15 @@ function initSmallMap() {
             maxZoom: 19
         }).addTo(smallMap);
 
+	    // להוסיף את כל החניונים הקיימים
+	    markers.forEach(m => {
+	        const pos = m.marker.getLatLng();
+	        L.marker([pos.lat, pos.lng], {
+	            icon: getIcon(m.data.color)
+	        }).addTo(smallMap).bindPopup(m.data.note || "חניון");
+	    });
+
+		
         // נשתול מרקר קבוע באמצע עם overlay
         const markerOverlay = document.createElement("div");
         markerOverlay.innerHTML = `<div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -100%); z-index:999;">
