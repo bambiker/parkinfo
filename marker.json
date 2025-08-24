@@ -3521,5 +3521,57 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T06:09:48.279Z"
+  },
+  {
+    "lat": 32.068737308220186,
+    "lng": 34.783867578918006,
+    "color": "violet",
+    "note": "קניון TLV - שעה שניה בחמישה שקלים, שעתיים ראשונות חינם אם קונים ב200 ש\"ח",
+    "url": "https://www.tlvmall.com/Content/%D7%97%D7%A0%D7%99%D7%94",
+    "hourly": "20",
+    "daily": "110",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-24T07:22:25.424Z"
+  },
+  {
+    "lat": 31.817187824533182,
+    "lng": 35.194900318611175,
+    "color": "black",
+    "note": "קניון רמות",
+    "url": "https://ramot-mall.co.il/",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-24T07:33:26.761Z"
+  },
+  {
+    "lat": 32.27765865156694,
+    "lng": 34.84769331773058,
+    "color": "black",
+    "note": "קניון עיר ימים",
+    "url": "https://www.iryamim-mall.co.il/%d7%90%d7%95%d7%93%d7%95%d7%aa/",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-24T07:37:29.487Z"
+  },
+  {
+    "lat": 31.751197980556366,
+    "lng": 35.187307304777576,
+    "color": "violet",
+    "note": "קניון מלחה - שלוש שעות ראשונות בחמישה שקלים",
+    "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/4/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D/",
+    "hourly": "20",
+    "daily": "90",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-08-24T07:40:53.230Z"
   }
 ]
