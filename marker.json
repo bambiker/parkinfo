@@ -4173,5 +4173,31 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T09:32:51.547Z"
+  },
+  {
+    "lat": 32.78951966103422,
+    "lng": 35.00760334691352,
+    "color": "black",
+    "note": "גרנד קניון חיפה",
+    "url": "https://myofer.co.il/malls/grand-kenyon-haifa/info",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-01T07:36:18.115Z"
+  },
+  {
+    "lat": 31.250471291016677,
+    "lng": 34.770701356630305,
+    "color": "black",
+    "note": "גרנד קניון באר שבע",
+    "url": "https://myofer.co.il/malls/beer-sheva/info",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-01T07:38:54.441Z"
   }
 ]
