@@ -316,6 +316,13 @@ function colorDescription(color) {
     return desc[color] || "לא ידוע";
 }
 
+function getDomain(url) {
+    try {
+        return new URL(url).hostname.replace("www.", "");
+    } catch {
+        return url; // אם לא תקין, תחזיר כמו שהוא
+    }
+}
 	
 function addMarker(lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl = null, dateTime = null, contactinfo= null) {
 //    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
@@ -350,7 +357,7 @@ function addMarker(lat, lng, color, note, url, hourly, daily, day4, night4, imag
 
     }).addTo(map);
 
-  let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b> <br> ${colorDescription(color)}`;
+let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b> <br> ${colorDescription(color)}`;
 
 if (imageUrl) {
     popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
@@ -363,9 +370,10 @@ if (hourly) {
 if (daily) {
     popupHTML += `<br> מחיר ליממה: ${daily} `;
 }
-
+	
 if (url) {
-    popupHTML += `<br> פרטים נוספים: <a href="${url}" target="_blank">${url}</a> `;
+    const displayUrl = getDomain(url);
+    popupHTML += `<br> פרטים נוספים: <a href="${url}" target="_blank">${displayUrl}</a> `;
 }
 
 const [year, month, day] = dateTime.split("T")[0].split("-");
