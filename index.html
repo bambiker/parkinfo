@@ -380,15 +380,13 @@ popupHTML += ` <br>תאריך עדכון: ${formattedDate} `;
 
 const wazeUrl = `https://waze.com/ul?ll=${lat}%2C${lng}&navigate=yes`;
 //popupHTML += `<br><br><a href="${wazeUrl}" target="_blank">נווט עם Waze</a></div>`;
-popupHTML += `
-<br><br><a href="${wazeUrl}" target="_blank" style="display:inline-flex; align-items:center; gap:5px;">
+popupHTML += `<br><br><a href="${wazeUrl}" target="_blank" style="display:inline-flex; align-items:center; gap:5px;">
   <img src="waze-icon.png" alt="Waze" style="width:20px; height:20px;">
   נווט עם Waze
 </a>';
 
 popupHTML += `<br><br><button onclick="editMarker('${lat}', '${lng}')" style="margin-top: 8px; background:#ffc107; color:black; padding:5px 10px; border:none; border-radius:5px; cursor:pointer;">✏️ ערוך</button>`;
-popupHTML += `
-<br><br>
+popupHTML += `<br><br>
 <button onclick="map.closePopup()" 
         style="padding:5px 10px; background:#dc3545; color:white; border:none; border-radius:5px; cursor:pointer;">
     סגור
