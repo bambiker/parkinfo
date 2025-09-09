@@ -4517,5 +4517,83 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T15:16:02.548Z"
+  },
+  {
+    "lat": 32.32625787295535,
+    "lng": 34.861883033310484,
+    "color": "violet",
+    "note": "קניון השרון",
+    "url": "https://myofer.co.il/malls/hasharon/info",
+    "hourly": "8",
+    "daily": "50",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-09T08:02:02.256Z"
+  },
+  {
+    "lat": 32.07988169760019,
+    "lng": 34.90248141766549,
+    "color": "black",
+    "note": "קניון עופר סירקין",
+    "url": "https://myofer.co.il/malls/sirkin/info",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-09T08:04:51.926Z"
+  },
+  {
+    "lat": 32.07557218465941,
+    "lng": 34.8548341895026,
+    "color": "black",
+    "note": "קניון הגבעה",
+    "url": "https://myofer.co.il/malls/ha-givaa/info",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-09T08:06:02.982Z"
+  },
+  {
+    "lat": 32.093209812875685,
+    "lng": 34.8651444422486,
+    "color": "violet",
+    "note": "הקניון הגדול - שעתיים ראשונות חינם",
+    "url": "https://myofer.co.il/malls/grand-mall-petah-tikva/info",
+    "hourly": "16",
+    "daily": "80",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-09T08:08:52.543Z"
+  },
+  {
+    "lat": 32.69341753620157,
+    "lng": 35.304006824187525,
+    "color": "black",
+    "note": "עופר סנטר נוף הגליל",
+    "url": "https://myofer.co.il/malls/ofer-center/info",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-09T08:17:16.170Z"
+  },
+  {
+    "lat": 32.990571680703844,
+    "lng": 35.0951279856089,
+    "color": "black",
+    "note": "קניון עופר נהריה",
+    "url": "https://myofer.co.il/malls/nahariya-mall/info",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-09T08:19:41.144Z"
   }
 ]
