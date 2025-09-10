@@ -693,7 +693,7 @@ function searchLocation() {
                 const lon = parseFloat(data[0].lon);
                 map.setView([lat, lon], 16);
                 L.circle([lat, lon], {
-                    color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 10
+                    color: 'blue', fillColor: '#30f', fillOpacity: 0.5, radius: 15
                 }).addTo(map);
             } else {
                 alert("מיקום לא נמצא");
@@ -790,7 +790,7 @@ function flyToUserLocation() {
                     color: 'blue',
                     fillColor: '#30f',
                     fillOpacity: 0.5,
-                    radius: 10
+                    radius: 15
                 }).addTo(map);
             },
             function (err) {
