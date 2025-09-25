@@ -2816,19 +2816,6 @@
     "dateTime": "2025-07-30T16:09:56.478Z"
   },
   {
-    "lat": 31.908331042326203,
-    "lng": 35.007296109539574,
-    "color": "black",
-    "note": "עיריית מודיעין מכבים רעות",
-    "url": "",
-    "hourly": "",
-    "daily": "",
-    "day4": "9999",
-    "night4": "8888",
-    "imageUrl": null,
-    "dateTime": "2025-07-30T19:58:04.514Z"
-  },
-  {
     "lat": 31.2358058283434,
     "lng": 34.788108766078956,
     "color": "black",
@@ -4608,5 +4595,70 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-15T11:46:33.086Z"
+  },
+  {
+    "lat": 31.90310823311471,
+    "lng": 35.008949769565845,
+    "color": "violet",
+    "note": "חניון השדרה - שעתיים ראשונות חינם",
+    "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792",
+    "hourly": "16",
+    "daily": "88",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-25T05:36:01.451Z"
+  },
+  {
+    "lat": 31.908331042326203,
+    "lng": 35.007296109539574,
+    "color": "violet",
+    "note": "עיריית מודיעין מכבים רעות - חינם לתושבים",
+    "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
+    "hourly": "5",
+    "daily": "60",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-25T05:42:43.739Z"
+  },
+  {
+    "lat": 31.9181206889202,
+    "lng": 34.977866986373904,
+    "color": "black",
+    "note": "פארק הנופש והספורט",
+    "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-25T05:46:28.922Z"
+  },
+  {
+    "lat": 31.920669206277086,
+    "lng": 34.97256635319352,
+    "color": "black",
+    "note": "לב הפארק",
+    "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-25T05:47:59.793Z"
+  },
+  {
+    "lat": 31.891688047537826,
+    "lng": 34.96009961274563,
+    "color": "black",
+    "note": "חניון לילה",
+    "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-25T05:52:23.759Z"
   }
 ]
