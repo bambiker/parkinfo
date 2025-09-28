@@ -4660,5 +4660,18 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-25T05:52:23.759Z"
+  },
+  {
+    "lat": 31.592866070485677,
+    "lng": 34.78341758251191,
+    "color": "black",
+    "note": "חניון במבה",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/imPI3Py.jpeg",
+    "dateTime": "2025-09-28T05:20:57.084Z"
   }
 ]
