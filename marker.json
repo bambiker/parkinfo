@@ -2829,19 +2829,6 @@
     "dateTime": "2025-08-03T12:07:28.988Z"
   },
   {
-    "lat": 32.067714323420816,
-    "lng": 34.78240923956037,
-    "color": "violet",
-    "note": "סעדיה גאון",
-    "url": "https://share.google/aSQD6nVndS1NHeT1c",
-    "hourly": "24",
-    "daily": "84",
-    "day4": "9999",
-    "night4": "8888",
-    "imageUrl": null,
-    "dateTime": "2025-08-04T11:17:12.692Z"
-  },
-  {
     "lat": 31.765187795625,
     "lng": 35.20130038261414,
     "color": "black",
@@ -4673,5 +4660,96 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/imPI3Py.jpeg",
     "dateTime": "2025-09-28T05:20:57.084Z"
+  },
+  {
+    "lat": 32.07107142093565,
+    "lng": 34.792220592498786,
+    "color": "violet",
+    "note": "איסרליש 22",
+    "url": "https://centralpark.co.il/parking/24-%D7%90%D7%99%D7%A1%D7%A8%D7%9C%D7%99%D7%A9-22%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "24*",
+    "daily": "70*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-29T10:57:00.693Z"
+  },
+  {
+    "lat": 32.067714323420816,
+    "lng": 34.78240923956037,
+    "color": "violet",
+    "note": "סעדיה גאון",
+    "url": "https://share.google/aSQD6nVndS1NHeT1c",
+    "hourly": "24*",
+    "daily": "80*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-29T10:57:16.997Z"
+  },
+  {
+    "lat": 32.0655635858983,
+    "lng": 34.76845622062684,
+    "color": "violet",
+    "note": "חניון בית ו.א. מוהליבר 18",
+    "url": "https://centralpark.co.il/parking/6-%D7%9E%D7%95%D7%94%D7%9C%D7%99%D7%91%D7%A8-18%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "29*",
+    "daily": "99*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-29T10:58:13.045Z"
+  },
+  {
+    "lat": 32.076520734618484,
+    "lng": 34.769067764282234,
+    "color": "violet",
+    "note": "בית אל על",
+    "url": "https://centralpark.co.il/parking/48-%D7%A9%D7%9C%D7%95%D7%9D-%D7%A2%D7%9C%D7%99%D7%9B%D7%9D%2015,%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "36*",
+    "daily": "140*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-29T11:00:21.772Z"
+  },
+  {
+    "lat": 32.05013143977133,
+    "lng": 34.76832211017609,
+    "color": "violet",
+    "note": "בית מרס",
+    "url": "https://centralpark.co.il/parking/20-%D7%94%D7%A8%D7%A6%D7%9C-158%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "12*",
+    "daily": "24*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-29T12:14:28.011Z"
+  },
+  {
+    "lat": 32.06988764088482,
+    "lng": 34.785987138748176,
+    "color": "violet",
+    "note": "גבעון - ארניה 32",
+    "url": "https://centralpark.co.il/parking/46-%D7%90%D7%A8%D7%A0%D7%99%D7%94-32%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "25*",
+    "daily": "95*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-29T12:17:04.666Z"
+  },
+  {
+    "lat": 32.06600095976283,
+    "lng": 34.76984560489655,
+    "color": "violet",
+    "note": "גרוזנברג 16",
+    "url": "https://centralpark.co.il/parking/53-%D7%92%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%A8%D7%92-16%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "28*",
+    "daily": "95*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-09-29T12:19:12.153Z"
   }
 ]
