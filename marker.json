@@ -4790,5 +4790,83 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-30T12:15:34.025Z"
+  },
+  {
+    "lat": 32.09015123210762,
+    "lng": 34.77503155877224,
+    "color": "violet",
+    "note": "מוצקין 8",
+    "url": "https://centralpark.co.il/parking/60-%D7%9E%D7%95%D7%A6%D7%A7%D7%99%D7%9F-8",
+    "hourly": "48*",
+    "daily": "160*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-01T06:42:04.347Z"
+  },
+  {
+    "lat": 32.07446190498798,
+    "lng": 34.782567579867475,
+    "color": "violet",
+    "note": "דניאל פריש 3",
+    "url": "https://centralpark.co.il/parking/45-%D7%93%D7%A0%D7%99%D7%90%D7%9C-%D7%A4%D7%A8%D7%99%D7%A9%203%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "36*",
+    "daily": "120*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-01T06:44:37.760Z"
+  },
+  {
+    "lat": 32.10778084892611,
+    "lng": 34.8375260203106,
+    "color": "violet",
+    "note": "הברזל 15",
+    "url": "https://centralpark.co.il/parking/14-%D7%94%D7%91%D7%A8%D7%96%D7%9C-15%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "25*",
+    "daily": "85*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-01T06:46:26.792Z"
+  },
+  {
+    "lat": 32.0497617231567,
+    "lng": 34.76659448842755,
+    "color": "violet",
+    "note": "חניון הזרם",
+    "url": "https://centralpark.co.il/parking/23-%D7%94%D7%A4%D7%9C%D7%9A-9%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "12*",
+    "daily": "30*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-01T06:53:05.620Z"
+  },
+  {
+    "lat": 32.06909684627454,
+    "lng": 34.785359639925346,
+    "color": "violet",
+    "note": "החשמונאים 100",
+    "url": "https://centralpark.co.il/parking/9-%D7%97%D7%A9%D7%9E%D7%95%D7%A0%D7%90%D7%99%D7%9D-100%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "20*",
+    "daily": "70*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-01T06:56:10.639Z"
+  },
+  {
+    "lat": 32.05040114378323,
+    "lng": 34.767828519870825,
+    "color": "violet",
+    "note": "היסוד 8",
+    "url": "https://centralpark.co.il/parking/22-%D7%94%D7%99%D7%A1%D7%95%D7%93-8%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "12*",
+    "daily": "25*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-01T06:58:40.255Z"
   }
 ]
