@@ -8,7 +8,7 @@
 <body>
   <h1>📦 יצירת ZIP לתמונות</h1>
   <button onclick="loadAndZip()">📥 צור והורד ZIP של כל התמונות</button>
-  <div id="status" style="margin-top: 1em;"></div>
+  <div id="status" style="margin-top: 1em; white-space: pre-line;"></div>
 
   <script>
     async function loadAndZip() {
@@ -21,26 +21,33 @@
         const markerData = await response.json();
 
         const zip = new JSZip();
-        let imageCount = 0;
+        let successCount = 0;
+        let failCount = 0;
+        let failedParkings = [];
+        let totalWithImages = 0;
 
         for (let i = 0; i < markerData.length; i++) {
           const marker = markerData[i];
           if (marker.imageUrl) {
+            totalWithImages++;
             try {
               const res = await fetch(marker.imageUrl);
+              if (!res.ok) throw new Error(`סטטוס ${res.status}`);
               const blob = await res.blob();
               const filename = `image_${i + 1}_${extractFileName(marker.imageUrl)}`;
               zip.file(filename, blob);
-              imageCount++;
-              statusDiv.innerText = `📦 הוספתי ${imageCount} תמונות ל-ZIP...`;
+              successCount++;
+              statusDiv.innerText = `📦 הוספתי ${successCount} תמונות ל-ZIP...`;
             } catch (imgErr) {
+              failCount++;
+              failedParkings.push(marker.name || `חניון ${i + 1}`);
               console.warn("בעיה בתמונה:", marker.imageUrl, imgErr);
             }
           }
         }
 
-        if (imageCount === 0) {
-          statusDiv.innerText = "❌ לא נמצאו תמונות להורדה.";
+        if (successCount === 0) {
+          statusDiv.innerText = "❌ לא נמצאו תמונות תקינות להורדה.";
           return;
         }
 
@@ -52,7 +59,11 @@
         a.download = "parking_images_backup.zip";
         a.click();
 
-        statusDiv.innerText = `✅ הורדה הושלמה (${imageCount} תמונות)`;
+        let resultMsg = `✅ הורדה הושלמה (${successCount} מתוך ${totalWithImages} תמונות)\n`;
+        if (failCount > 0) {
+          resultMsg += `⚠️ לא הצלחנו לשמור תמונות של:\n- ${failedParkings.join("\n- ")}`;
+        }
+        statusDiv.innerText = resultMsg;
 
       } catch (err) {
         console.error(err);
