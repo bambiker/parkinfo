@@ -207,17 +207,6 @@
     "dateTime": "2025-05-22T16:46:19.453Z"
   },
   {
-    "lat": 32.07730156248861,
-    "lng": 34.77167893356183,
-    "color": "violet",
-    "note": "חניון הכיכר",
-    "url": "",
-    "hourly": "20",
-    "daily": "75",
-    "imageUrl": "https://i.imgur.com/hVyRomK.jpeg",
-    "dateTime": "2025-05-22T16:46:19.453Z"
-  },
-  {
     "lat": 32.07147346676346,
     "lng": 34.7716200637018,
     "color": "violet",
@@ -4868,5 +4857,96 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-01T06:58:40.255Z"
+  },
+  {
+    "lat": 32.07688962610545,
+    "lng": 34.76727168495569,
+    "color": "violet",
+    "note": "הירקון 78",
+    "url": "https://centralpark.co.il/parking/26-%D7%94%D7%99%D7%A8%D7%A7%D7%95%D7%9F-78%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "35*",
+    "daily": "135*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-03T07:26:21.367Z"
+  },
+  {
+    "lat": 32.06636499156516,
+    "lng": 34.78354322762119,
+    "color": "violet",
+    "note": "המלאכה 4",
+    "url": "https://centralpark.co.il/parking/43-%D7%94%D7%9E%D7%9C%D7%90%D7%9B%D7%94-4%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "20*",
+    "daily": "70*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-03T07:28:36.758Z"
+  },
+  {
+    "lat": 32.05137431236149,
+    "lng": 34.77113249357457,
+    "color": "violet",
+    "note": "הפטיש 8",
+    "url": "https://centralpark.co.il/parking/66-%D7%94%D7%A4%D7%98%D7%99%D7%A9-8",
+    "hourly": "35*",
+    "daily": "100*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-03T07:33:10.590Z"
+  },
+  {
+    "lat": 32.05978962275334,
+    "lng": 34.782538022857835,
+    "color": "violet",
+    "note": "הרכבת 58",
+    "url": "https://centralpark.co.il/parking/15-%D7%94%D7%A8%D7%9B%D7%91%D7%AA-58%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "20*",
+    "daily": "80*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-03T07:37:35.166Z"
+  },
+  {
+    "lat": 32.06508344655839,
+    "lng": 34.76823358540018,
+    "color": "violet",
+    "note": "התבור 2 וויט סיטי",
+    "url": "https://centralpark.co.il/parking/17-%D7%94%D7%AA%D7%91%D7%95%D7%A8-2%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "37*",
+    "daily": "135*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-03T07:39:41.478Z"
+  },
+  {
+    "lat": 32.07730156248861,
+    "lng": 34.77167893356183,
+    "color": "violet",
+    "note": "חניון הכיכר",
+    "url": "https://centralpark.co.il/parking/54-%D7%9C%D7%95%D7%A8%D7%99%D7%90-8,%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "32*",
+    "daily": "100*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/hVyRomK.jpeg",
+    "dateTime": "2025-10-03T07:41:47.013Z"
+  },
+  {
+    "lat": 32.06406990575633,
+    "lng": 34.77886057695412,
+    "color": "violet",
+    "note": "טיומקין 16",
+    "url": "https://centralpark.co.il/parking/12-%D7%98%D7%99%D7%95%D7%9E%D7%A7%D7%99%D7%9F-16%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "20*",
+    "daily": "70*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-03T07:45:10.629Z"
   }
 ]
