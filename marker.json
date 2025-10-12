@@ -5039,5 +5039,70 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-05T05:25:18.164Z"
+  },
+  {
+    "lat": 32.06490170349682,
+    "lng": 34.76199222756358,
+    "color": "violet",
+    "note": "צארלס קלור",
+    "url": "https://centralpark.co.il/parking/49-%D7%A7%D7%95%D7%99%D7%A4%D7%9E%D7%9F-9%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "25*",
+    "daily": "65*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-12T11:44:43.317Z"
+  },
+  {
+    "lat": 32.06655162932645,
+    "lng": 34.79406364426235,
+    "color": "violet",
+    "note": "קידמת אילון קרמניצקי 6",
+    "url": "https://centralpark.co.il/parking/13-%D7%A7%D7%A8%D7%9E%D7%A0%D7%99%D7%A6%D7%A7%D7%99-6%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "15*",
+    "daily": "65*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-12T11:48:37.614Z"
+  },
+  {
+    "lat": 32.06714755207377,
+    "lng": 34.77192830084933,
+    "color": "violet",
+    "note": "רובע לב העיר - מאז\"ה 3",
+    "url": "https://centralpark.co.il/parking/47-%D7%9E%D7%96%D7%90%D7%94-3%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "30*",
+    "daily": "105*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-12T11:52:20.828Z"
+  },
+  {
+    "lat": 32.06337718171759,
+    "lng": 34.76922032131224,
+    "color": "violet",
+    "note": "חניון רוטשילד - אחד העם 14",
+    "url": "https://centralpark.co.il/parking/27-%D7%90%D7%97%D7%93-%D7%94%D7%A2%D7%9D%2014%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "24*",
+    "daily": "80*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-12T11:57:42.102Z"
+  },
+  {
+    "lat": 32.050677937685606,
+    "lng": 34.77243904340066,
+    "color": "violet",
+    "note": "שוקן בתי המשפט",
+    "url": "https://centralpark.co.il/parking/21-%D7%A9%D7%91%D7%99%D7%9C-%D7%94%D7%AA%D7%A0%D7%95%D7%A4%D7%94%209%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
+    "hourly": "30*",
+    "daily": "85*",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-12T12:02:40.228Z"
   }
 ]
