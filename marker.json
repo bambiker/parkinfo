@@ -5117,5 +5117,31 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-16T08:45:18.570Z"
+  },
+  {
+    "lat": 31.780520150202538,
+    "lng": 35.21832168102265,
+    "color": "violet",
+    "note": "חניון שמואל",
+    "url": "",
+    "hourly": "28",
+    "daily": "110",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/PmMBOTu.jpeg",
+    "dateTime": "2025-10-20T06:19:36.147Z"
+  },
+  {
+    "lat": 31.786927884621075,
+    "lng": 35.20331740379334,
+    "color": "violet",
+    "note": "חניון בנייני האומה",
+    "url": "",
+    "hourly": "20",
+    "daily": "70",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/UNRuFoK.jpeg",
+    "dateTime": "2025-10-20T06:21:00.650Z"
   }
 ]
