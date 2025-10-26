@@ -5143,5 +5143,18 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/UNRuFoK.jpeg",
     "dateTime": "2025-10-20T06:21:00.650Z"
+  },
+  {
+    "lat": 31.789729266240293,
+    "lng": 35.201219916343696,
+    "color": "violet",
+    "note": "סנטר 1",
+    "url": "https://center1.co.il/contant/",
+    "hourly": "16",
+    "daily": "70",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-10-26T11:02:25.157Z"
   }
 ]
