@@ -5156,5 +5156,18 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-26T11:02:25.157Z"
+  },
+  {
+    "lat": 31.793099292570545,
+    "lng": 34.63892143434605,
+    "color": "violet",
+    "note": "סי מול - שעתיים ראשונות חינם",
+    "url": "https://seamall.co.il/about/",
+    "hourly": "20",
+    "daily": "55",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-11-03T05:01:10.385Z"
   }
 ]
