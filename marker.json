@@ -5169,5 +5169,70 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-11-03T05:01:10.385Z"
+  },
+  {
+    "lat": 31.894035216895993,
+    "lng": 34.78974151362148,
+    "color": "black",
+    "note": "חניון יוחננוף",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-11-23T12:39:55.111Z"
+  },
+  {
+    "lat": 31.259450903401575,
+    "lng": 35.20674876852717,
+    "color": "black",
+    "note": "",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2025-11-23T12:42:51.214Z"
+  },
+  {
+    "lat": 31.259368197974883,
+    "lng": 35.2084659164344,
+    "color": "blue",
+    "note": "מרכז מסחרי",
+    "url": "",
+    "hourly": "4.94",
+    "daily": "54",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/R97lBz0.jpeg",
+    "dateTime": "2025-11-23T12:44:45.170Z"
+  },
+  {
+    "lat": 31.1958702256603,
+    "lng": 35.36222209118246,
+    "color": "blue",
+    "note": "מלונות ים המלח",
+    "url": "",
+    "hourly": "6.86",
+    "daily": "75",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/nDWTyGl.jpeg",
+    "dateTime": "2025-11-23T12:48:57.516Z"
+  },
+  {
+    "lat": 31.19215200526741,
+    "lng": 35.361857634577404,
+    "color": "black",
+    "note": "",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/4FZj9uL.jpeg",
+    "dateTime": "2025-11-23T12:52:46.644Z"
   }
 ]
