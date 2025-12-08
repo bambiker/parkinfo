@@ -637,6 +637,9 @@ function downloadMarkers() {
     // 📤 שלח את המידע לשרת
     sendMarkersToServer(data);
 
+    // 🆕 📤 שלח גם ISSUE חדש ל-GitHub
+    createGithubIssue(data);
+
     // הורדה לקובץ רק אם יש ?download בכתובת
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("download")) {
@@ -650,6 +653,30 @@ function downloadMarkers() {
     }
 }
 
+async function createGithubIssue(data) {
+    const repoOwner = "bambiker";
+    const repoName = "parkinfo";
+
+    // המרת הקובץ ל-Base64
+    const jsonString = JSON.stringify(data);
+    const base64Data = btoa(unescape(encodeURIComponent(jsonString)));
+
+    const issueTitle = "New markers data " + new Date().toISOString();
+    const issueBody = base64Data;
+
+    await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/issues`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/vnd.github+json"
+        },
+        body: JSON.stringify({
+            title: issueTitle,
+            body: issueBody
+        })
+    }).then(r => console.log("Issue created:", r.status))
+      .catch(err => console.error(err));
+}
 
 function uploadMarkers(event) {
     const file = event.target.files[0];
