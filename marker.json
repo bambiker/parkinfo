@@ -132,11 +132,11 @@
   {
     "lat": 31.900668385503707,
     "lng": 34.78923024220632,
-    "color": "violet",
+    "color": "blue",
     "note": "מכללת פרס",
     "url": "",
-    "hourly": "כחול לבן",
-    "daily": "",
+    "hourly": "5.4",
+    "daily": "23.1",
     "imageUrl": "https://i.imgur.com/HzqTDl3.jpeg",
     "dateTime": "2025-05-22T16:46:19.449Z"
   },
@@ -265,7 +265,7 @@
     "lat": 32.064745531921716,
     "lng": 34.76450256286038,
     "color": "violet",
-    "note": "חניון נתקומה",
+    "note": "חניון תקומה",
     "url": "",
     "hourly": "30",
     "daily": "30",
@@ -594,11 +594,11 @@
   {
     "lat": 31.91312331283779,
     "lng": 34.802951154259055,
-    "color": "violet",
+    "color": "blue",
     "note": "חניון עירוני נס ציונה",
     "url": "",
     "hourly": "4.6",
-    "daily": "16",
+    "daily": "73.6",
     "imageUrl": null,
     "dateTime": "2025-06-06T06:00:16.644Z"
   },
@@ -652,10 +652,10 @@
     "color": "violet",
     "note": "הדסה עין כרם - מגדל אשפוז",
     "url": "https://he.hadassah.org.il/patient-information/private-transportation/",
-    "hourly": "24",
+    "hourly": "36",
     "daily": "54",
     "imageUrl": null,
-    "dateTime": "2025-06-08T11:22:05.636Z"
+    "dateTime": "2025-12-11T11:22:05.636Z"
   },
   {
     "lat": 31.7663528910964,
@@ -1092,10 +1092,10 @@
     "color": "violet",
     "note": "בית חולים רמב\"ם",
     "url": "https://www.rambam.org.il/maps/#{A87E0C64-090F-4D27-B591-9DFCAA26A229}",
-    "hourly": "20",
+    "hourly": "30",
     "daily": "49",
     "imageUrl": null,
-    "dateTime": "2025-06-23T08:52:43.840Z"
+    "dateTime": "2025-12-11T08:52:43.840Z"
   },
   {
     "lat": 33.009924875495905,
