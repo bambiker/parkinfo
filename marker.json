@@ -2616,11 +2616,11 @@
     "note": "חניון בית אמות ביטוח(לשעבר בית כלל)",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%90%d7%9e%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%94%d7%a8%d7%9b%d7%91%d7%aa/",
     "hourly": "28",
-    "daily": "88",
+    "daily": "93",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T06:51:05.712Z"
+    "dateTime": "2026-01-04T10:40:39.749Z"
   },
   {
     "lat": 32.062443441804575,
@@ -4409,12 +4409,12 @@
     "color": "violet",
     "note": "דוד חכמי 16",
     "url": "https://www.greenparking.co.il/parkings/%d7%93%d7%95%d7%93-%d7%97%d7%9b%d7%9e%d7%99-16-%d7%aa%d7%90/",
-    "hourly": "24",
-    "daily": "76",
+    "hourly": "27",
+    "daily": "81",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-09-07T14:57:30.886Z"
+    "dateTime": "2026-01-04T10:40:39.749Z"
   },
   {
     "lat": 32.080240361869414,
@@ -4942,12 +4942,12 @@
     "color": "violet",
     "note": "טיומקין 16",
     "url": "https://centralpark.co.il/parking/12-%D7%98%D7%99%D7%95%D7%9E%D7%A7%D7%99%D7%9F-16%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
-    "hourly": "20*",
-    "daily": "70*",
+    "hourly": "25*",
+    "daily": "75*",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-10-03T07:45:10.629Z"
+    "dateTime": "2026-01-04T10:40:39.749Z"
   },
   {
     "lat": 32.06294463017506,
