@@ -2381,12 +2381,12 @@
     "color": "violet",
     "note": "דיזינגוף סנטר",
     "url": "https://www.dizengof-center.co.il/useful-info/parking",
-    "hourly": "23",
+    "hourly": "24",
     "daily": "85",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-21T14:45:15.707Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.16551485226116,
@@ -2602,12 +2602,12 @@
     "color": "violet",
     "note": "חניון שטמפפר 17 (נתניה)",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a9%d7%98%d7%9e%d7%a4%d7%a4%d7%a8-17/",
-    "hourly": "25",
-    "daily": "70",
+    "hourly": "27",
+    "daily": "75",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T06:48:48.793Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.0628577208664,
@@ -2629,11 +2629,11 @@
     "note": "חניון התלמי (נווה צדק)",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%aa%d7%9c%d7%9e%d7%99/",
     "hourly": "24",
-    "daily": "80",
+    "daily": "87",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T06:52:59.055Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.06153925645033,
@@ -2641,12 +2641,12 @@
     "color": "violet",
     "note": "חניון גינת השרון / גן החשמל",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%92%d7%99%d7%a0%d7%aa-%d7%94%d7%a9%d7%a8%d7%95%d7%9f-%d7%92%d7%9f-%d7%94%d7%97%d7%a9%d7%9e%d7%9c/",
-    "hourly": "28",
-    "daily": "78",
+    "hourly": "33",
+    "daily": "93",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T06:55:12.104Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.06996724674006,
@@ -2654,12 +2654,12 @@
     "color": "violet",
     "note": "חניון סינמטק – קרליבך",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a1%d7%99%d7%a0%d7%99%d7%9e%d7%98%d7%a7-%d7%a7%d7%a8%d7%9c%d7%99%d7%91%d7%9a/",
-    "hourly": "28",
-    "daily": "80",
+    "hourly": "30",
+    "daily": "90",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T07:12:17.135Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.066137159542585,
@@ -2667,12 +2667,12 @@
     "color": "violet",
     "note": "חניון אומנויות הבמה / לויד ג'ורג'",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%9e%d7%a0%d7%95%d7%99%d7%95%d7%aa-%d7%94%d7%91%d7%9e%d7%94-%d7%9c%d7%95%d7%99%d7%93-%d7%92%d7%95%d7%a8%d7%92/",
-    "hourly": "28",
-    "daily": "78",
+    "hourly": "27",
+    "daily": "87",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T07:13:54.071Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.06857757136378,
@@ -2693,12 +2693,12 @@
     "color": "violet",
     "note": "חניון המסגר",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%9e%d7%a1%d7%92%d7%a8/",
-    "hourly": "20",
-    "daily": "48",
+    "hourly": "22.5",
+    "daily": "55",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T07:18:51.701Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.08704251839883,
@@ -2707,11 +2707,11 @@
     "note": "חניון אואזיס",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%90%d7%96%d7%99%d7%a1/",
     "hourly": "24",
-    "daily": "60",
+    "daily": "72",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T07:21:39.140Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.087425547744324,
@@ -2720,11 +2720,11 @@
     "note": "חניון בזארנו",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%96%d7%90%d7%a8%d7%a0%d7%95/",
     "hourly": "24",
-    "daily": "65",
+    "daily": "72",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T07:23:09.855Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.08537400663185,
@@ -2732,12 +2732,12 @@
     "color": "violet",
     "note": "חניון בית גיבור ספורט",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%92%d7%99%d7%91%d7%95%d7%a8-%d7%a1%d7%a4%d7%95%d7%a8%d7%98/",
-    "hourly": "28",
+    "hourly": "30",
     "daily": "98",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T07:25:46.618Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.0844839673095,
@@ -2745,12 +2745,12 @@
     "color": "violet",
     "note": "חניון הבורסה ליהלומים",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%91%d7%95%d7%a8%d7%a1%d7%94-%d7%9c%d7%99%d7%94%d7%9c%d7%95%d7%9e%d7%99%d7%9d/",
-    "hourly": "24",
+    "hourly": "80",
     "daily": "80",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-07-27T07:29:30.906Z"
+    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 31.89902918453988,
