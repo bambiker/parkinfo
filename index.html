@@ -332,11 +332,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     div.querySelector(".plw-map-btn").onclick = () => {
                         if (typeof map !== "undefined" && map.flyTo) {
                             map.flyTo([d.lat, d.lng], 16);
-					        // delay scroll to give the browser a chance to render
-					        setTimeout(() => {
-								form.scrollIntoView({ behavior: "smooth", block: "start" });
-								location.hash = "#controls";
-					        }, 100); // 100 ms usually enough
+							const form = document.getElementById("controls"); // define it first
+							if (form && form.style.display !== "none") {
+							    setTimeout(() => {
+							        form.scrollIntoView({ behavior: "smooth", block: "start" });
+							        location.hash = "#controls";
+							    }, 100); // wait a bit so the element is visible
+							}
+
                         }
                     };
 
