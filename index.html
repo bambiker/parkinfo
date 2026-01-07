@@ -160,7 +160,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
         <select id="markerColor" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
             <option value="violet">סגול - חניון בתשלום</option>
             <option value="black">שחור - חניון בחינם</option>
-	    <option value="grey">אפור - חניה חופשית ברחוב</option>
+	    <option value="">אפור - חניה חופשית ברחוב</option>
             <option value="blue">כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה</option>
             <option value="orange">כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה</option>
             <option value="red">אדום - חניה אסורה</option>
@@ -277,7 +277,17 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("parkingListWidget לא נמצא בדף");
             return;
         }
-
+		// מילון תרגום צבעים לתיאור בעברית
+		const colorTranslations = {
+			violet: "חניון בתשלום",
+			black: "חניון בחינם",
+			grey: "חניה חופשית ברחוב",
+			blue: "חניה בתשלום (חופשית בלילה)",
+			orange: "חניה בתשלום (דיירים בלילה)",
+			red: "חניה אסורה",
+			green: "חניה מיוחדת"
+		};
+		
         container.innerHTML = `
             <style>
                 .plw-btn{padding:12px 18px;font-size:16px;background:#007bff;color:white;border:none;border-radius:10px;cursor:pointer;margin-bottom:15px}
@@ -321,11 +331,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     const div = document.createElement("div");
                     div.className = "plw-item";
 
+					const typeDescription = colorTranslations[d.color] || "חניון";
+					
                     div.innerHTML = `
                         <div class="plw-title">${d.note || "חניון ללא שם"}</div>
-                        <span class="plw-badge ${d.color || ""}">
-                            ${d.color || "חניון"}
-                        </span><br>
+						<span class="plw-badge ${d.color || ""}">
+                            ${typeDescription}
+                        </span><br>						
                         <button class="plw-map-btn">עבור למפה</button>
                     `;
 
