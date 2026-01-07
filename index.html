@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = `
             <style>
                 .plw-btn{padding:12px 18px;font-size:16px;background:#007bff;color:white;border:none;border-radius:10px;cursor:pointer;margin-bottom:15px}
-                .plw-count{font-weight:bold;margin-bottom:10px;display:none}
+               // .plw-count{font-weight:bold;margin-bottom:10px;display:none}
                 .plw-list{display:none}
                 .plw-item{background:white;border-radius:12px;padding:15px;margin-bottom:12px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
                 .plw-title{font-size:18px;font-weight:bold}
@@ -297,20 +297,20 @@ document.addEventListener("DOMContentLoaded", function () {
             </style>
 
             <button class="plw-btn">📋 הצג רשימת חניונים</button>
-            <div class="plw-count"></div>
+      //      <div class="plw-count"></div>
             <div class="plw-list"></div>
         `;
 
         const btn   = container.querySelector(".plw-btn");
         const list  = container.querySelector(".plw-list");
-        const count = container.querySelector(".plw-count");
+  //      const count = container.querySelector(".plw-count");
 
         let visible = false;
 
         btn.onclick = () => {
             visible = !visible;
             list.style.display  = visible ? "block" : "none";
-            count.style.display = visible ? "block" : "none";
+            //count.style.display = visible ? "block" : "none";
             btn.innerText = visible ? "❌ הסתר רשימת חניונים" : "📋 הצג רשימת חניונים";
         };
 
@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(res => res.json())
             .then(data => {
 
-                count.innerText = `מספר חניונים: ${data.length}`;
+               // count.innerText = `מספר חניונים: ${data.length}`;
 
                 data.forEach(d => {
                     const div = document.createElement("div");
@@ -336,6 +336,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     div.querySelector(".plw-map-btn").onclick = () => {
                         if (typeof map !== "undefined" && map.flyTo) {
                             map.flyTo([d.lat, d.lng], 16);
+							scrollToForm();
+        					//setTimeout(initSmallMap, 100);
                         }
                     };
 
