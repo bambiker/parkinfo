@@ -232,7 +232,6 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 
 <script>
 
-
 let addMode = false;
 
 function toggleAddMode() {
@@ -266,7 +265,9 @@ function isAddModeEnabled() {
     <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">מספר החניות והחניונים המסומנים במפה : 422</div>
     <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לפני 4 ימים</div>
 
+	
 <script>
+// list of parking lots start	
 document.addEventListener("DOMContentLoaded", function () {
 
     (function () {
@@ -286,6 +287,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 .plw-title{font-size:18px;font-weight:bold}
                 .plw-badge{padding:3px 8px;border-radius:6px;font-size:12px;color:white;margin-left:6px}
                 .violet{background:#7a3db8}
+                .black{background:#000}
+                .grey{background:#777}
+                .blue{background:#007bff}
+                .orange{background:#ff9800}
+                .red{background:#dc3545}
+                .green{background:#28a745}
                 .plw-map-btn{padding:6px 10px;border-radius:8px;border:none;background:#28a745;color:white;cursor:pointer;margin-top:8px}
             </style>
 
@@ -294,44 +301,59 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="plw-list"></div>
         `;
 
-        const btn = container.querySelector(".plw-btn");
-        const list = container.querySelector(".plw-list");
+        const btn   = container.querySelector(".plw-btn");
+        const list  = container.querySelector(".plw-list");
         const count = container.querySelector(".plw-count");
 
         let visible = false;
 
         btn.onclick = () => {
             visible = !visible;
-            list.style.display = visible ? "block" : "none";
+            list.style.display  = visible ? "block" : "none";
             count.style.display = visible ? "block" : "none";
             btn.innerText = visible ? "❌ הסתר רשימת חניונים" : "📋 הצג רשימת חניונים";
         };
 
-        count.innerText = `מספר חניונים: ${parkingData.length}`;
+        /* ========= כאן ה־fetch ========= */
+        fetch("https://bambiker.github.io/parkinfo/marker.json")
+            .then(res => res.json())
+            .then(data => {
 
-        parkingData.forEach(d => {
-            const div = document.createElement("div");
-            div.className = "plw-item";
-            div.innerHTML = `
-                <div class="plw-title">${d.note}</div>
-                <span class="plw-badge ${d.color}">חניון</span><br>
-                <button class="plw-map-btn">עבור למפה</button>
-            `;
+                count.innerText = `מספר חניונים: ${data.length}`;
 
-            div.querySelector(".plw-map-btn").onclick = () => {
-                if (typeof map !== "undefined" && map.flyTo) {
-                    map.flyTo([d.lat, d.lng], 16);
-                }
-            };
+                data.forEach(d => {
+                    const div = document.createElement("div");
+                    div.className = "plw-item";
 
-            list.appendChild(div);
-        });
+                    div.innerHTML = `
+                        <div class="plw-title">${d.note || "חניון ללא שם"}</div>
+                        <span class="plw-badge ${d.color || ""}">
+                            ${d.color || "חניון"}
+                        </span><br>
+                        <button class="plw-map-btn">עבור למפה</button>
+                    `;
+
+                    div.querySelector(".plw-map-btn").onclick = () => {
+                        if (typeof map !== "undefined" && map.flyTo) {
+                            map.flyTo([d.lat, d.lng], 16);
+                        }
+                    };
+
+                    list.appendChild(div);
+                });
+
+            })
+            .catch(err => {
+                console.error("שגיאה בטעינת JSON", err);
+                list.innerHTML = "שגיאה בטעינת רשימת החניונים";
+            });
 
     })();
 
 });
+// list of parking lots fin	
 </script>
-
+	
 <div id="parkingListWidget"></div>
 	
 <div style="margin-top: 30px; text-align: center; font-size: 16px; color: #444;">
