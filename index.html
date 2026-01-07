@@ -329,20 +329,29 @@ document.addEventListener("DOMContentLoaded", function () {
                         <button class="plw-map-btn">עבור למפה</button>
                     `;
 
-                    div.querySelector(".plw-map-btn").onclick = () => {
-                        if (typeof map !== "undefined" && map.flyTo) {
-                            map.flyTo([d.lat, d.lng], 16);
-							const form = document.getElementById("controls"); // define it first
-							if (form && form.style.display !== "none") {
-							    setTimeout(() => {
-							        form.scrollIntoView({ behavior: "smooth", block: "start" });
-							        location.hash = "#controls";
-							    }, 100); // wait a bit so the element is visible
-							}
-
-                        }
-                    };
-
+					div.querySelector(".plw-map-btn").onclick = () => {
+					    if (typeof map !== "undefined" && map.flyTo) {
+					        // 1. הזזת המפה למיקום החניון
+					        map.flyTo([d.lat, d.lng], 16);
+					        
+					        // 2. גלילה לראש המפה כדי שהמשתמש יראה אותה
+					        document.getElementById("map").scrollIntoView({ 
+					            behavior: "smooth", 
+					            block: "center" 
+					        });
+					
+					        // 3. פתיחת הפופ-אפ באופן אוטומטי (אופציונלי - מומלץ)
+					        // כדי שהמשתמש לא יצטרך לחפש את הנקודה במפה
+					        setTimeout(() => {
+					            markers.forEach(m => {
+					                if(m.data.lat === d.lat && m.data.lng === d.lng) {
+					                    m.marker.openPopup();
+					                }
+					            });
+					        }, 500);
+					    }
+					};
+					
                     list.appendChild(div);
                 });
 
