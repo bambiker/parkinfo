@@ -332,6 +332,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     div.querySelector(".plw-map-btn").onclick = () => {
                         if (typeof map !== "undefined" && map.flyTo) {
                             map.flyTo([d.lat, d.lng], 16);
+					        setTimeout(initSmallMap, 100);		
 							scrollToForm();
                         }
                     };
