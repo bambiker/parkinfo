@@ -266,119 +266,81 @@ function isAddModeEnabled() {
     <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">מספר החניות והחניונים המסומנים במפה : 422</div>
     <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לפני 4 ימים</div>
 
-
 <script>
-(function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-    /* ========= list start ========= */
-    const container = document.getElementById("parkingListWidget");
-    if (!container) return;
+    (function () {
 
-    container.innerHTML = `
-        <style>
-            .plw-btn {
-                padding: 12px 18px;
-                font-size: 16px;
-                background: #007bff;
-                color: white;
-                border: none;
-                border-radius: 10px;
-                cursor: pointer;
-                margin-bottom: 15px;
+        const parkingData = [
+            {
+                lat: 32.0853,
+                lng: 34.7818,
+                note: "חניון דיזנגוף",
+                color: "violet",
+                hourly: 12,
+                daily: 60
             }
-            .plw-count { font-weight: bold; margin-bottom: 10px; display:none; }
-            .plw-list { display:none; }
-            .plw-item {
-                background: white;
-                border-radius: 12px;
-                padding: 15px;
-                margin-bottom: 12px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            }
-            .plw-title { font-size: 18px; font-weight: bold; }
-            .plw-meta { font-size: 14px; color:#555; margin:6px 0; }
-            .plw-badge {
-                padding:3px 8px;
-                border-radius:6px;
-                font-size:12px;
-                color:white;
-                margin-left:6px;
-            }
-            .violet{background:#7a3db8}
-            .black{background:#000}
-            .grey{background:#777}
-            .blue{background:#007bff}
-            .orange{background:#ff9800}
-            .red{background:#dc3545}
-            .green{background:#28a745}
-            .plw-map-btn{
-                padding:6px 10px;
-                border-radius:8px;
-                border:none;
-                background:#28a745;
-                color:white;
-                cursor:pointer;
-                margin-left:10px;
-            }
-        </style>
+        ];
 
-        <button class="plw-btn">📋 הצג רשימת חניונים</button>
-        <div class="plw-count"></div>
-        <div class="plw-list"></div>
-    `;
+        const container = document.getElementById("parkingListWidget");
+        if (!container) {
+            console.error("parkingListWidget לא נמצא בדף");
+            return;
+        }
 
-    const btn   = container.querySelector(".plw-btn");
-    const list  = container.querySelector(".plw-list");
-    const count = container.querySelector(".plw-count");
+        container.innerHTML = `
+            <style>
+                .plw-btn{padding:12px 18px;font-size:16px;background:#007bff;color:white;border:none;border-radius:10px;cursor:pointer;margin-bottom:15px}
+                .plw-count{font-weight:bold;margin-bottom:10px;display:none}
+                .plw-list{display:none}
+                .plw-item{background:white;border-radius:12px;padding:15px;margin-bottom:12px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+                .plw-title{font-size:18px;font-weight:bold}
+                .plw-badge{padding:3px 8px;border-radius:6px;font-size:12px;color:white;margin-left:6px}
+                .violet{background:#7a3db8}
+                .plw-map-btn{padding:6px 10px;border-radius:8px;border:none;background:#28a745;color:white;cursor:pointer;margin-top:8px}
+            </style>
 
-    let visible = false;
-
-    btn.onclick = () => {
-        visible = !visible;
-        list.style.display  = visible ? "block" : "none";
-        count.style.display = visible ? "block" : "none";
-        btn.innerText = visible ? "❌ הסתר רשימת חניונים" : "📋 הצג רשימת חניונים";
-    };
-
-    count.innerText = `מספר חניונים: ${parkingData.length}`;
-
-    const colorText = c => ({
-        violet:"חניון בתשלום",
-        black:"חניון בחינם",
-        grey:"חניה חופשית",
-        blue:"חניה בתשלום ביום",
-        orange:"חניה לדיירים",
-        red:"חניה אסורה",
-        green:"חניה מיוחדת"
-    }[c] || "לא ידוע");
-
-    parkingData.forEach(d => {
-        const div = document.createElement("div");
-        div.className = "plw-item";
-
-        div.innerHTML = `
-            <div class="plw-title">${d.note || "חניון ללא שם"}</div>
-            <div class="plw-meta">
-                <span class="plw-badge ${d.color}">
-                    ${colorText(d.color)}
-                </span>
-                ${d.hourly ? `מחיר שעתי: ${d.hourly} ₪` : ""}
-                ${d.daily ? ` | מחיר יומי: ${d.daily} ₪` : ""}
-            </div>
-            <button class="plw-map-btn">עבור למפה</button>
+            <button class="plw-btn">📋 הצג רשימת חניונים</button>
+            <div class="plw-count"></div>
+            <div class="plw-list"></div>
         `;
 
-        div.querySelector(".plw-map-btn").onclick = () => {
-            if (typeof map !== "undefined" && map.flyTo) {
-                map.flyTo([d.lat, d.lng], 16);
-            }
+        const btn = container.querySelector(".plw-btn");
+        const list = container.querySelector(".plw-list");
+        const count = container.querySelector(".plw-count");
+
+        let visible = false;
+
+        btn.onclick = () => {
+            visible = !visible;
+            list.style.display = visible ? "block" : "none";
+            count.style.display = visible ? "block" : "none";
+            btn.innerText = visible ? "❌ הסתר רשימת חניונים" : "📋 הצג רשימת חניונים";
         };
 
-        list.appendChild(div);
-    });
+        count.innerText = `מספר חניונים: ${parkingData.length}`;
 
-})();
-    /* ========= list fin ========= */	
+        parkingData.forEach(d => {
+            const div = document.createElement("div");
+            div.className = "plw-item";
+            div.innerHTML = `
+                <div class="plw-title">${d.note}</div>
+                <span class="plw-badge ${d.color}">חניון</span><br>
+                <button class="plw-map-btn">עבור למפה</button>
+            `;
+
+            div.querySelector(".plw-map-btn").onclick = () => {
+                if (typeof map !== "undefined" && map.flyTo) {
+                    map.flyTo([d.lat, d.lng], 16);
+                }
+            };
+
+            list.appendChild(div);
+        });
+
+    })();
+
+});
 </script>
 
 <div id="parkingListWidget"></div>
