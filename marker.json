@@ -2953,7 +2953,7 @@
     "lat": 32.181539253159364,
     "lng": 34.87199217081071,
     "color": "violet",
-    "note": "",
+    "note": "היובל",
     "url": "https://www.raanana.muni.il/Lists/List17/CustomDispForm.aspx?ID=67",
     "hourly": "12",
     "daily": "100",
@@ -2968,12 +2968,12 @@
     "color": "violet",
     "note": " גמלא",
     "url": "https://www.raanana.muni.il/Lists/List17/CustomDispForm.aspx?ID=67",
-    "hourly": "12",
+    "hourly": "9",
     "daily": "100",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-12T10:49:56.261Z"
+    "dateTime": "2026-01-19T10:49:56.261Z"
   },
   {
     "lat": 32.19844368176343,
@@ -2981,12 +2981,12 @@
     "color": "violet",
     "note": "זרחין 15 רעננה",
     "url": "https://centralpark.co.il/parking/4-%D7%96%D7%A8%D7%97%D7%99%D7%9F%C2%A0-15%20%D7%A8%D7%A2%D7%A0%D7%A0%D7%94",
-    "hourly": "10",
+    "hourly": "20",
     "daily": "30",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T06:56:30.640Z"
+    "dateTime": "2026-01-19T06:56:30.640Z"
   },
   {
     "lat": 31.991685407522553,
@@ -2994,12 +2994,12 @@
     "color": "violet",
     "note": "קניון הזהב - שעתיים ראשונות חינם",
     "url": "https://centralpark.co.il/parking/77-%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8-%D7%9E%D7%96%D7%9C%2018",
-    "hourly": "15",
-    "daily": "30",
+    "hourly": "25",
+    "daily": "40",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T06:59:06.567Z"
+    "dateTime": "2026-01-19T06:59:06.567Z"
   },
   {
     "lat": 32.32688850075585,
@@ -3007,12 +3007,12 @@
     "color": "violet",
     "note": "הנוטע 7 נתניה",
     "url": "https://centralpark.co.il/parking/65-%D7%94%D7%A0%D7%95%D7%98%D7%A2-7",
-    "hourly": "18",
+    "hourly": "25",
     "daily": "55",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T07:01:45.046Z"
+    "dateTime": "2026-01-19T07:01:45.046Z"
   },
   {
     "lat": 31.779142887002884,
@@ -3020,12 +3020,12 @@
     "color": "violet",
     "note": "המעלות 1 ירושלים",
     "url": "https://centralpark.co.il/parking/73-%D7%94%D7%9E%D7%A2%D7%9C%D7%95%D7%AA-1,%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
-    "hourly": "20",
-    "daily": "75",
+    "hourly": "40",
+    "daily": "65",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T07:04:36.893Z"
+    "dateTime": "2026-01-19T07:04:36.893Z"
   },
   {
     "lat": 31.776088257015317,
@@ -3033,12 +3033,12 @@
     "color": "violet",
     "note": " קרתא ירושלים",
     "url": "https://centralpark.co.il/parking/25-%D7%99%D7%A6%D7%97%D7%A7-%D7%A7%D7%A8%D7%99%D7%91%201%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
-    "hourly": "25",
-    "daily": "100",
+    "hourly": "20",
+    "daily": "80",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T07:08:37.139Z"
+    "dateTime": "2026-01-19T07:08:37.139Z"
   },
   {
     "lat": 32.09503542901996,
