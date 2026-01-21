@@ -3046,12 +3046,12 @@
     "color": "violet",
     "note": "אפעל 23 פתח תקוה",
     "url": "https://centralpark.co.il/parking/52-%D7%90%D7%A4%D7%A2%D7%9C-23%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%94",
-    "hourly": "20",
-    "daily": "50",
+    "hourly": "25",
+    "daily": "55",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T12:03:57.811Z"
+    "dateTime": "2026-01-21T12:03:57.811Z"
   },
   {
     "lat": 32.09035944986255,
@@ -3059,12 +3059,12 @@
     "color": "violet",
     "note": "",
     "url": "https://centralpark.co.il/parking/42-%D7%AA%D7%95%D7%A6%D7%A8%D7%AA-%D7%94%D7%90%D7%A8%D7%A5%202%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%94",
-    "hourly": "25",
-    "daily": "90",
+    "hourly": "35",
+    "daily": "96",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T12:19:59.734Z"
+    "dateTime": "2026-01-21T12:19:59.734Z"
   },
   {
     "lat": 32.089824073151185,
@@ -3072,12 +3072,12 @@
     "color": "violet",
     "note": "שופ טיים",
     "url": "https://centralpark.co.il/parking/56-%D7%94%D7%A9%D7%97%D7%9D-14,%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%95%D7%94",
-    "hourly": "16",
-    "daily": "50",
+    "hourly": "30",
+    "daily": "60",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T12:23:43.299Z"
+    "dateTime": "2026-01-2112:23:43.299Z"
   },
   {
     "lat": 32.820850104621414,
@@ -3085,12 +3085,12 @@
     "color": "violet",
     "note": "עין דור חיפה",
     "url": "https://centralpark.co.il/parking/58-%D7%A2%D7%99%D7%9F-%D7%93%D7%95%D7%A8%2011",
-    "hourly": "20",
-    "daily": "60",
+    "hourly": "40",
+    "daily": "80",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T12:26:04.242Z"
+    "dateTime": "2026-01-21T12:26:04.242Z"
   },
   {
     "lat": 32.816113368195275,
@@ -3098,12 +3098,12 @@
     "color": "violet",
     "note": "חורי 8 חיפה",
     "url": "https://centralpark.co.il/parking/55-%D7%97%D7%95%D7%A8%D7%99-8,%20%D7%97%D7%99%D7%A4%D7%94",
-    "hourly": "20",
-    "daily": "55",
+    "hourly": "35",
+    "daily": "70",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-18T12:28:43.545Z"
+    "dateTime": "2026-01-21T12:28:43.545Z"
   },
   {
     "lat": 32.81565260462523,
@@ -3111,8 +3111,8 @@
     "color": "violet",
     "note": " הנביאים חיפה",
     "url": "https://centralpark.co.il/parking/39-%D7%97%D7%95%D7%A8%D7%99-2%20%D7%97%D7%99%D7%A4%D7%94",
-    "hourly": "25",
-    "daily": "65",
+    "hourly": "40",
+    "daily": "70",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
@@ -3150,12 +3150,12 @@
     "color": "violet",
     "note": "מגדלי התאומים רמת גן",
     "url": "https://centralpark.co.il/parking/28-%D7%96'%D7%91%D7%95%D7%98%D7%99%D7%A0%D7%A1%D7%A7%D7%99-33%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
-    "hourly": "20",
-    "daily": "70",
+    "hourly": "30",
+    "daily": "80",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-19T07:44:37.448Z"
+    "dateTime": "2026-01-21T07:44:37.448Z"
   },
   {
     "lat": 32.087003263972754,
@@ -3163,12 +3163,12 @@
     "color": "violet",
     "note": "תובל 11 רמת גן - בית לז-רום",
     "url": "https://centralpark.co.il/parking/29-%D7%AA%D7%95%D7%91%D7%9C-11%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
-    "hourly": "20",
-    "daily": "70",
+    "hourly": "35",
+    "daily": "80",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-19T07:50:49.885Z"
+    "dateTime": "2026-01-21T07:50:49.885Z"
   },
   {
     "lat": 32.08468209775102,
@@ -3176,12 +3176,12 @@
     "color": "violet",
     "note": "תובל 21 רמת גן - חניון היהלום",
     "url": "https://centralpark.co.il/parking/30-%D7%AA%D7%95%D7%91%D7%9C-21%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
-    "hourly": "20",
+    "hourly": "30",
     "daily": "80",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-19T07:56:55.451Z"
+    "dateTime": "2026-01-21T07:56:55.451Z"
   },
   {
     "lat": 32.084173836693786,
@@ -3189,12 +3189,12 @@
     "color": "violet",
     "note": "סיטי טוואר רמת גן",
     "url": "https://centralpark.co.il/parking/40-%D7%96%D7%99%D7%A1%D7%9E%D7%9F-%D7%A9%D7%9C%D7%95%D7%9D%2014%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
-    "hourly": "20",
-    "daily": "70",
+    "hourly": "35",
+    "daily": "85",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-19T08:04:10.600Z"
+    "dateTime": "2026-01-21T08:04:10.600Z"
   },
   {
     "lat": 31.781452658042742,
@@ -3293,12 +3293,12 @@
     "color": "violet",
     "note": "בית הרופא גולומב חיפה",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%94%d7%a8%d7%95%d7%a4%d7%90/",
-    "hourly": "30",
-    "daily": "130",
+    "hourly": "32",
+    "daily": "140",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T05:01:22.855Z"
+    "dateTime": "2026-01-21T05:01:22.855Z"
   },
   {
     "lat": 32.80389418479394,
