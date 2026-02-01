@@ -5235,7 +5235,71 @@
     "day4": "9999",
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/QSkdsk2.jpeg",
-    "dateTime": "2025-12-11T10:18:49.969Z",
-    "contact": "0509002170"
+    "dateTime": "2025-12-11T10:18:49.969Z"
+  },
+  {
+    "lat": 32.10782686506308,
+    "lng": 34.887406826019294,
+    "color": "black",
+    "note": "גליס - כניסה לרחוב",
+    "url": "https://www.petah-tikva.muni.il/parking/parking",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-02-01T11:36:45.034Z"
+  },
+  {
+    "lat": 32.10921414076334,
+    "lng": 34.8863446712494,
+    "color": "black",
+    "note": "התבור 11",
+    "url": "https://www.petah-tikva.muni.il/parking/parking",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-02-01T11:39:14.840Z"
+  },
+  {
+    "lat": 32.106700920241074,
+    "lng": 34.89325404167176,
+    "color": "black",
+    "note": "רחוב שוולב מול הוטרינריה",
+    "url": "https://www.petah-tikva.muni.il/parking/parking",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-02-01T11:40:58.224Z"
+  },
+  {
+    "lat": 32.10886812175435,
+    "lng": 34.89966988563538,
+    "color": "black",
+    "note": "אלכסנדר ינאי 30",
+    "url": "https://www.petah-tikva.muni.il/parking/parking",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-02-01T11:42:57.615Z"
+  },
+  {
+    "lat": 32.106837510090514,
+    "lng": 34.896397590637214,
+    "color": "black",
+    "note": "נחשון 6 - אולם ונישן",
+    "url": "https://www.petah-tikva.muni.il/parking/parking",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-02-01T11:52:39.475Z"
   }
 ]
