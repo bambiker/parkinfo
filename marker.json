@@ -3501,12 +3501,12 @@
     "color": "violet",
     "note": "הירקון 6 בני ברק סנטרל פארק",
     "url": "https://centralpark.co.il/parking/31-%D7%94%D7%99%D7%A8%D7%A7%D7%95%D7%9F-6%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7",
-    "hourly": "20",
-    "daily": "70",
+    "hourly": "25",
+    "daily": "75",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T09:22:55.500Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.09757102545968,
@@ -3514,12 +3514,12 @@
     "color": "violet",
     "note": "הירקון 51 - סנטרל פארק",
     "url": "https://centralpark.co.il/parking/57-%D7%94%D7%99%D7%A8%D7%A7%D7%95%D7%9F-51",
-    "hourly": "8",
-    "daily": "45",
+    "hourly": "25",
+    "daily": "50",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T09:26:03.157Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.163547113164455,
@@ -3527,12 +3527,12 @@
     "color": "violet",
     "note": "מרפאות הרצליה",
     "url": "https://centralpark.co.il/parking/34-%D7%A8%D7%9E%D7%91%D7%9D-1%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
-    "hourly": "15",
-    "daily": "40",
+    "hourly": "25",
+    "daily": "50",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T09:54:08.866Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.16000145899207,
@@ -3540,12 +3540,12 @@
     "color": "violet",
     "note": "בית אופק",
     "url": "https://centralpark.co.il/parking/32-%D7%94%D7%9E%D7%A0%D7%95%D7%A4%D7%99%D7%9D-8%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
-    "hourly": "15",
-    "daily": "50",
+    "hourly": "35",
+    "daily": "60",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T09:59:54.299Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.16244264261071,
@@ -3592,12 +3592,12 @@
     "color": "violet",
     "note": "משכית 25",
     "url": "https://centralpark.co.il/parking/33-%D7%9E%D7%A9%D7%9B%D7%99%D7%AA-25%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
-    "hourly": "20",
-    "daily": "90",
+    "hourly": "25",
+    "daily": "55",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T10:09:01.705Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.15947647455715,
@@ -3605,12 +3605,12 @@
     "color": "violet",
     "note": "רוגובין ריט",
     "url": "https://centralpark.co.il/parking/35-%D7%94%D7%9E%D7%A0%D7%95%D7%A4%D7%99%D7%9D-10%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
-    "hourly": "18",
-    "daily": "60",
+    "hourly": "30",
+    "daily": "70",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T10:12:14.688Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.161468836862674,
@@ -3618,12 +3618,12 @@
     "color": "violet",
     "note": "תאומי הגליל",
     "url": "https://centralpark.co.il/parking/51-%D7%90%D7%91%D7%90-%D7%90%D7%91%D7%9F%208%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
-    "hourly": "10",
-    "daily": "50",
+    "hourly": "20",
+    "daily": "70",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T10:16:56.016Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.07363699448728,
@@ -3668,14 +3668,14 @@
     "lat": 32.06648222195322,
     "lng": 34.81003479580727,
     "color": "violet",
-    "note": "קניון עזריאלי גבעתיים - שלוש שעות ראשונות בחמישה שקלים",
+    "note": "קניון עזריאלי גבעתיים - שלוש שעות ראשונות בשישה שקלים",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/15/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%92%D7%91%D7%A2%D7%AA%D7%99%D7%99%D7%9D/",
-    "hourly": "20",
+    "hourly": "18",
     "daily": "100",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T11:40:43.912Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.92257747623603,
@@ -3683,12 +3683,12 @@
     "color": "violet",
     "note": "עזריאלי עכו - שעתיים ראשונות חינם",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/2/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A2%D7%9B%D7%95/",
-    "hourly": "12",
+    "hourly": "18",
     "daily": "50",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T11:43:37.976Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.78949564527555,
@@ -3722,12 +3722,12 @@
     "color": "violet",
     "note": "עזריאלי אאוטלט הרצליה",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/8/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%90%D7%90%D7%95%D7%98%D7%9C%D7%98-%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94/",
-    "hourly": "26",
+    "hourly": "36",
     "daily": "100",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T11:51:55.695Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.078105200774196,
@@ -3735,12 +3735,12 @@
     "color": "violet",
     "note": "עזריאלי טאון",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/22/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%98%D7%90%D7%95%D7%9F/",
-    "hourly": "25",
+    "hourly": "30",
     "daily": "100",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T11:53:39.879Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.07200598369323,
@@ -3748,12 +3748,12 @@
     "color": "violet",
     "note": "עזריאלי שרונה",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/17/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A9%D7%A8%D7%95%D7%A0%D7%94/",
-    "hourly": "25",
+    "hourly": "30",
     "daily": "100",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T12:03:19.070Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 32.007783927722315,
@@ -3761,12 +3761,12 @@
     "color": "violet",
     "note": "מרכז העסקים חולון",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/19/%D7%9E%D7%A8%D7%9B%D7%96-%D7%94%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%97%D7%95%D7%9C%D7%95%D7%9F/",
-    "hourly": "25",
+    "hourly": "30",
     "daily": "100",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T12:06:12.710Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 31.949179915552037,
@@ -3800,12 +3800,12 @@
     "color": "violet",
     "note": "קניון עזריאלי הנגב באר שבע - שעה ראשונה חינם, שעה שניה 8 ש\"ח ובהדרגה עולה",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/13/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%94%D7%A0%D7%92%D7%91/",
-    "hourly": "20",
+    "hourly": "12",
     "daily": "75",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T12:16:38.349Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 29.549918980564858,
@@ -3826,12 +3826,12 @@
     "color": "violet",
     "note": "אהליאב 14 ימית",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a8%d7%95%d7%9e%d7%9e%d7%94/",
-    "hourly": "22",
-    "daily": "110",
+    "hourly": "24",
+    "daily": "120",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T07:20:12.451Z"
+    "dateTime": "2026-02-17T09:22:55.500Z"
   },
   {
     "lat": 31.78173682211535,
@@ -5301,5 +5301,18 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-01T11:52:39.475Z"
+  },
+  {
+    "lat": 31.978187299469557,
+    "lng": 34.77004492282959,
+    "color": "violet",
+    "note": "מרכז קארדו",
+    "url": "",
+    "hourly": "20",
+    "daily": "40",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/nV5J3tk.jpeg",
+    "dateTime": "2026-02-12T07:50:22.852Z"
   }
 ]
