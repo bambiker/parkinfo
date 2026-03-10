@@ -3536,7 +3536,7 @@
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T10:03:25.041Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 32.16216507895785,
@@ -3687,12 +3687,12 @@
     "color": "violet",
     "note": "עזריאלי עזריאלי רמלה - שלוש שעות ראשונות בחמישה שקלים",
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/12/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A8%D7%9E%D7%9C%D7%94/",
-    "hourly": "12",
+    "hourly": "18",
     "daily": "50",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-24T11:48:47.303Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 32.16679132979677,
@@ -3817,12 +3817,12 @@
     "color": "violet",
     "note": "רג'ואן ירושלים",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a8%d7%92%d7%95%d7%90%d7%9f/",
-    "hourly": "24",
+    "hourly": "29",
     "daily": "130",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T07:25:11.746Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.789165537153714,
@@ -3830,12 +3830,12 @@
     "color": "violet",
     "note": "סיטי קורט",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a1%d7%99%d7%98%d7%99-%d7%a7%d7%95%d7%a8%d7%98/",
-    "hourly": "20",
+    "hourly": "30",
     "daily": "100",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T07:28:06.546Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.74871439920787,
@@ -3843,12 +3843,12 @@
     "color": "violet",
     "note": "מרכז תלפיות",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a8%d7%9b%d7%96-%d7%aa%d7%9c%d7%a4%d7%99%d7%95%d7%aa/",
-    "hourly": "20",
+    "hourly": "23",
     "daily": "110",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T07:36:18.578Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.784225389040916,
@@ -3856,12 +3856,12 @@
     "color": "violet",
     "note": "מרכז כלל",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a8%d7%9b%d7%96-%d7%9b%d7%9c%d7%9c/",
-    "hourly": "28",
-    "daily": "150",
+    "hourly": "35",
+    "daily": "180",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T07:38:39.065Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.78244210727242,
@@ -3870,11 +3870,11 @@
     "note": "מרכז אשדר",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a8%d7%9b%d7%96-%d7%90%d7%a9%d7%93%d7%a8/",
     "hourly": "30",
-    "daily": "150",
+    "daily": "180",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T07:40:25.697Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.782403446398934,
@@ -3882,12 +3882,12 @@
     "color": "violet",
     "note": "מסילת ישרים",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a1%d7%99%d7%9c%d7%aa-%d7%93%d7%95%d7%93/",
-    "hourly": "26",
-    "daily": "130",
+    "hourly": "29",
+    "daily": "140",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T07:48:26.442Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.777288121307166,
@@ -3895,8 +3895,8 @@
     "color": "violet",
     "note": "וולדורף אסטוריה",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9c%d7%95%d7%9f-%d7%95%d7%95%d7%9c%d7%93%d7%95%d7%a8%d7%a3-%d7%90%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94/",
-    "hourly": "28",
-    "daily": "105",
+    "hourly": "29",
+    "daily": "120",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
@@ -3921,12 +3921,12 @@
     "color": "violet",
     "note": "ירושלים של זהב",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d-%d7%a9%d7%9c-%d7%96%d7%94%d7%91/",
-    "hourly": "28",
-    "daily": "150",
+    "hourly": "30",
+    "daily": "160",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T08:13:43.794Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.78341002169159,
@@ -3934,12 +3934,12 @@
     "color": "violet",
     "note": "חלון לירושלים",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%97%d7%9c%d7%95%d7%9f-%d7%9c%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
-    "hourly": "32",
-    "daily": "160",
+    "hourly": "35",
+    "daily": "180",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T08:18:08.946Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 29.550115368494577,
@@ -3960,12 +3960,12 @@
     "color": "violet",
     "note": "מגדלי ירושלים",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%92%d7%93%d7%9c%d7%99-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
-    "hourly": "25",
-    "daily": "150",
+    "hourly": "27",
+    "daily": "160",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T08:22:45.697Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.780904956469477,
@@ -3973,12 +3973,12 @@
     "color": "violet",
     "note": "אוריון",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%a8%d7%99%d7%95%d7%9f/",
-    "hourly": "28",
-    "daily": "130",
+    "hourly": "29",
+    "daily": "135",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T08:25:26.241Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.8035837123054,
@@ -4000,11 +4000,11 @@
     "note": "העמודים",
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%a2%d7%9e%d7%95%d7%93%d7%99%d7%9d/",
     "hourly": "30",
-    "daily": "150",
+    "daily": "180",
     "day4": "9999",
     "night4": "8888",
     "imageUrl": null,
-    "dateTime": "2025-08-25T08:46:47.575Z"
+    "dateTime": "2026-03-10T10:03:25.041Z"
   },
   {
     "lat": 31.77327544993369,
