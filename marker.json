@@ -5318,5 +5318,18 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/rVXTNA6.jpeg",
     "dateTime": "2026-02-20T08:28:21.492Z"
+  },
+  {
+    "lat": 31.89326990934552,
+    "lng": 34.812157273336204,
+    "color": "violet",
+    "note": "שטיפת מכוניות העיר",
+    "url": "",
+    "hourly": "30",
+    "daily": "30",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/rzKCIZM.jpeg",
+    "dateTime": "2026-03-11T11:02:49.441Z"
   }
 ]
