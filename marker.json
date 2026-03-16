@@ -91,10 +91,12 @@
     "color": "violet",
     "note": "אלון 48",
     "url": "",
-    "hourly": "30",
-    "daily": "30",
-    "imageUrl": "https://i.imgur.com/L17gAQN.jpeg",
-    "dateTime": "2025-05-22T16:46:19.447Z"
+    "hourly": "35",
+    "daily": "35",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/a6bqjLc.jpeg",
+    "dateTime": "2026-03-13T07:14:17.065Z"
   },
   {
     "lat": 31.909506139169984,
@@ -5331,5 +5333,31 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/rzKCIZM.jpeg",
     "dateTime": "2026-03-11T11:02:49.441Z"
+  },
+  {
+    "lat": 31.900422657078085,
+    "lng": 35.00466227531434,
+    "color": "black",
+    "note": "ליד מרכז התחבורה",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/wbbi4ac.jpeg",
+    "dateTime": "2026-03-12T11:38:10.730Z"
+  },
+  {
+    "lat": 31.896453353650706,
+    "lng": 34.811652513868175,
+    "color": "violet",
+    "note": "חניון לב רחובות",
+    "url": "",
+    "hourly": "20",
+    "daily": "20",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/6JdfmnZ.jpeg",
+    "dateTime": "2026-03-16T06:59:36.447Z"
   }
 ]
