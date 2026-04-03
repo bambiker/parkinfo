@@ -5359,5 +5359,83 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/6JdfmnZ.jpeg",
     "dateTime": "2026-03-16T06:59:36.447Z"
+  },
+  {
+    "lat": 32.1135036549591,
+    "lng": 34.84308306132507,
+    "color": "violet",
+    "note": "עתידים",
+    "url": "",
+    "hourly": "24",
+    "daily": "95",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/Uq51rcP.jpeg",
+    "dateTime": "2026-04-03T09:23:51.682Z"
+  },
+  {
+    "lat": 32.11307714555273,
+    "lng": 34.8428737829946,
+    "color": "violet",
+    "note": "רמי לוי עתידים (שעתיים ראשונות חינם)",
+    "url": "",
+    "hourly": "30",
+    "daily": "80",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/v1zT1og.jpeg",
+    "dateTime": "2026-04-03T09:25:52.208Z"
+  },
+  {
+    "lat": 32.11357651125173,
+    "lng": 34.840282681049835,
+    "color": "violet",
+    "note": "טיב טעם - עתידים (שעתיים ראשונות חינם)",
+    "url": "",
+    "hourly": "90",
+    "daily": "120",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/7hrOW7v.jpeg",
+    "dateTime": "2026-04-03T09:28:54.496Z"
+  },
+  {
+    "lat": 32.111000325545014,
+    "lng": 34.83855025845146,
+    "color": "violet",
+    "note": "מגדלי זיו",
+    "url": "",
+    "hourly": "30",
+    "daily": "75",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/BUFKfRD.jpeg",
+    "dateTime": "2026-04-03T09:32:28.712Z"
+  },
+  {
+    "lat": 32.10986355546686,
+    "lng": 34.83851075161638,
+    "color": "violet",
+    "note": "הנחושת 8",
+    "url": "",
+    "hourly": "45",
+    "daily": "60",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/3moT0xB.jpeg",
+    "dateTime": "2026-04-03T09:36:39.201Z"
+  },
+  {
+    "lat": 32.109452745607925,
+    "lng": 34.8370751941709,
+    "color": "violet",
+    "note": "מגדלי CU",
+    "url": "",
+    "hourly": "22",
+    "daily": "482",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/FfMSGcr.jpeg",
+    "dateTime": "2026-04-03T09:43:53.514Z"
   }
 ]
