@@ -5450,5 +5450,57 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/fFPSFd9.jpeg",
     "dateTime": "2026-04-10T05:52:26.080Z"
-  }  
+  },
+  {
+    "lat": 31.94668304561245,
+    "lng": 34.89341914666511,
+    "color": "blue",
+    "note": "ליד בית המשפט המחוזי לוד",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/vn5pk08.jpeg",
+    "dateTime": "2026-04-16T08:28:42.971Z"
+  },
+  {
+    "lat": 31.94643960303944,
+    "lng": 34.89483726031722,
+    "color": "blue",
+    "note": "גבעת המזל",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-04-16T08:31:31.093Z"
+  },
+  {
+    "lat": 31.946181881984568,
+    "lng": 34.89218002552662,
+    "color": "black",
+    "note": "קופ\"ח כללית לוד",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-04-16T09:51:29.767Z"
+  },
+  {
+    "lat": 31.944793148505052,
+    "lng": 34.89137297876823,
+    "color": "black",
+    "note": "רמי לוי לוד",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-04-26T09:52:04.168Z"
+  }
 ]
