@@ -443,7 +443,7 @@
     "lat": 31.91086076679857,
     "lng": 34.80509278290884,
     "color": "violet",
-    "note": "עירוני פיקריס",
+    "note": "עירוני יס",
     "url": "",
     "hourly": "5.40",
     "daily": "19",
@@ -456,10 +456,10 @@
     "color": "violet",
     "note": "פיקריס 3",
     "url": "",
-    "hourly": "18",
+    "hourly": "20",
     "daily": "63",
     "imageUrl": "https://i.imgur.com/KTInuwV.jpeg",
-    "dateTime": "2025-05-27T05:29:09.712Z"
+    "dateTime": "2026-06-15T05:29:09.712Z"
   },
   {
     "lat": 31.911917219817113,
