@@ -5593,5 +5593,18 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/N94aVjl.jpeg",
     "dateTime": "2026-05-24T05:47:11.790Z"
+  },
+  {
+    "lat": 31.893307270000314,
+    "lng": 34.809872746254776,
+    "color": "violet",
+    "note": "גן המייסדים",
+    "url": "",
+    "hourly": "5.4",
+    "daily": "36",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-07-06T19:08:28.093Z"
   }
 ]
