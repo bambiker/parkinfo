@@ -513,6 +513,15 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
     marker.on("popupopen", () => {
         const parkingName = (note && note.trim() !== "") ? note.trim() : "חניון";
         document.title = `${BASE_PAGE_TITLE} - ${parkingName}`;
+
+        // שולח ל-Google Analytics אירוע צפייה נפרד עם הכותרת המעודכנת,
+        // כך שהחניון הזה יופיע בדוח Views by Page title and screen name
+        if (typeof gtag === "function") {
+            gtag('event', 'page_view', {
+                page_title: document.title,
+                page_location: window.location.href + `#parking-${encodeURIComponent(parkingName)}`
+            });
+        }
     });
 
     marker.on("popupclose", () => {
