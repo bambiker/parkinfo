@@ -5619,5 +5619,18 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/ktJVOex.jpeg",
     "dateTime": "2026-07-20T04:44:58.916Z"
+  },
+  {
+    "lat": 31.90704466779233,
+    "lng": 34.823495149612434,
+    "color": "black",
+    "note": "אחוזת הנשיא",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-07-20T06:08:39.883Z"
   }
 ]
