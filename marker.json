@@ -5606,5 +5606,18 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-07-06T19:08:28.093Z"
+  },
+  {
+    "lat": 31.8936457310773,
+    "lng": 34.81261610984803,
+    "color": "violet",
+    "note": "שפע דיל",
+    "url": "",
+    "hourly": "30",
+    "daily": "30",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/ktJVOex.jpeg",
+    "dateTime": "2026-07-20T04:44:58.916Z"
   }
 ]
