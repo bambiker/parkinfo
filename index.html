@@ -403,6 +403,7 @@ const IMGUR_CLIENT_ID = "1531d493c436bc9";
 let map;
 let markers = [];
 let currentLatLng = null;
+const BASE_PAGE_TITLE = document.title;
 
 function getIcon(color) {
     return L.icon({
@@ -508,6 +509,15 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
 	
 
     marker.bindPopup(popupHTML);
+
+    marker.on("popupopen", () => {
+        const parkingName = (note && note.trim() !== "") ? note.trim() : "חניון";
+        document.title = `${BASE_PAGE_TITLE} - ${parkingName}`;
+    });
+
+    marker.on("popupclose", () => {
+        document.title = BASE_PAGE_TITLE;
+    });
 
     marker.on("contextmenu", () => {
         if (isAddModeEnabled()
