@@ -198,17 +198,6 @@
     "dateTime": "2025-05-22T16:46:19.453Z"
   },
   {
-    "lat": 32.07147346676346,
-    "lng": 34.7716200637018,
-    "color": "violet",
-    "note": "בצלאל",
-    "url": "",
-    "hourly": "25",
-    "daily": "85",
-    "imageUrl": "https://i.imgur.com/vEPfEgK.jpeg",
-    "dateTime": "2025-05-22T16:46:19.454Z"
-  },
-  {
     "lat": 32.06851024907023,
     "lng": 34.76580566124598,
     "color": "violet",
@@ -2343,19 +2332,6 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-17T08:04:07.193Z"
-  },
-  {
-    "lat": 32.07527796904956,
-    "lng": 34.77514028549195,
-    "color": "violet",
-    "note": "דיזינגוף סנטר",
-    "url": "https://www.dizengof-center.co.il/useful-info/parking",
-    "hourly": "24",
-    "daily": "85",
-    "day4": "9999",
-    "night4": "8888",
-    "imageUrl": null,
-    "dateTime": "2026-01-05T14:45:15.707Z"
   },
   {
     "lat": 32.16551485226116,
@@ -5645,5 +5621,31 @@
     "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-08-03T14:45:25.503Z"
+  },
+  {
+    "lat": 32.07527796904956,
+    "lng": 34.77514028549195,
+    "color": "violet",
+    "note": "דיזינגוף סנטר",
+    "url": "https://www.dizengof-center.co.il/useful-info/parking",
+    "hourly": "24",
+    "daily": "85",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/5TuY1ng.jpeg",
+    "dateTime": "2026-09-07T10:40:48.966Z",
+  },
+  {
+    "lat": 32.07147346676346,
+    "lng": 34.7716200637018,
+    "color": "violet",
+    "note": "בצלאל",
+    "url": "",
+    "hourly": "30",
+    "daily": "85",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/gFkKL0O.jpeg",
+    "dateTime": "2026-09-07T10:43:39.151Z",
   }
 ]
