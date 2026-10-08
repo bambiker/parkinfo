@@ -3049,32 +3049,6 @@
     "dateTime": "2026-01-21T12:26:04.242Z"
   },
   {
-    "lat": 32.816113368195275,
-    "lng": 34.99684631824494,
-    "color": "violet",
-    "note": "חורי 8 חיפה",
-    "url": "https://centralpark.co.il/parking/55-%D7%97%D7%95%D7%A8%D7%99-8,%20%D7%97%D7%99%D7%A4%D7%94",
-    "hourly": "35",
-    "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
-    "imageUrl": null,
-    "dateTime": "2026-01-21T12:28:43.545Z"
-  },
-  {
-    "lat": 32.81565260462523,
-    "lng": 34.997484683990486,
-    "color": "violet",
-    "note": "הנביאים חיפה",
-    "url": "https://centralpark.co.il/parking/39-%D7%97%D7%95%D7%A8%D7%99-2%20%D7%97%D7%99%D7%A4%D7%94",
-    "hourly": "40",
-    "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
-    "imageUrl": null,
-    "dateTime": "2025-08-18T12:30:48.976Z"
-  },
-  {
     "lat": 32.09867758928678,
     "lng": 34.77866699816437,
     "color": "violet",
@@ -5647,5 +5621,57 @@
     "night4": "8888",
     "imageUrl": "https://i.imgur.com/gFkKL0O.jpeg",
     "dateTime": "2026-09-07T10:43:39.151Z"
+  },
+  {
+    "lat": 32.816113368195275,
+    "lng": 34.99684631824494,
+    "color": "violet",
+    "note": "חורי 8 חיפה",
+    "url": "https://centralpark.co.il/parking/55-%D7%97%D7%95%D7%A8%D7%99-8,%20%D7%97%D7%99%D7%A4%D7%94",
+    "hourly": "20",
+    "daily": "55",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-10-07T15:47:45.369Z"
+  },
+  {
+    "lat": 32.81565260462523,
+    "lng": 34.997484683990486,
+    "color": "violet",
+    "note": "הנביאים חיפה, חורי 2",
+    "url": "https://centralpark.co.il/parking/39-%D7%97%D7%95%D7%A8%D7%99-2%20%D7%97%D7%99%D7%A4%D7%94",
+    "hourly": "25",
+    "daily": "60",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-10-07T15:49:44.015Z"
+  },
+  {
+    "lat": 32.820969846349705,
+    "lng": 34.99856561422349,
+    "color": "green",
+    "note": "ליברטי חיפה - למנויים בלבד (בניגוד לאמור באינטרנט)",
+    "url": "https://www.facebook.com/LibertyHaifaPort",
+    "hourly": "999",
+    "daily": "999",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": null,
+    "dateTime": "2026-10-07T15:52:22.292Z"
+  },
+  {
+    "lat": 32.81726863000016,
+    "lng": 34.99817401170731,
+    "color": "violet",
+    "note": "שיבת ציון 4",
+    "url": "https://www.google.com/maps/place/שיבת+ציון+4+בית+משפט+השלום+חיפה%E2%80%AD/@32.8174123,34.9953082,17z/data=!4m6!3m5!1s0x151dbb103bda28cb:0x6f0f19ccf56736e3!8m2!3d32.8174123!4d34.9982233!16s%2Fg%2F11r7f7gs5v",
+    "hourly": "30",
+    "daily": "60",
+    "day4": "9999",
+    "night4": "8888",
+    "imageUrl": "https://i.imgur.com/AEcw9HG.jpeg",
+    "dateTime": "2026-10-07T16:19:20.168Z"
   }
 ]
