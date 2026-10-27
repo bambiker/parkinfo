@@ -135,7 +135,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
 
 	
 <div id="imageModal">
-    <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
+    <span class="close" onclick="closeImageModal()">&times;</span>
     <img id="modalImage" src="" alt="תמונה מוגדלת">
 </div>
 
@@ -160,7 +160,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
         <select id="markerColor" style="width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
             <option value="violet">סגול - חניון בתשלום</option>
             <option value="black">שחור - חניון בחינם</option>
-	    <option value="">אפור - חניה חופשית ברחוב</option>
+	    <option value="grey">אפור - חניה חופשית ברחוב</option>
             <option value="blue">כחול - חנית רחוב בתשלום במהלך היום וחופשית בלילה</option>
             <option value="orange">כתום - חנית רחוב בתשלום במהלך היום ולדיירים בלילה</option>
             <option value="red">אדום - חניה אסורה</option>
@@ -193,16 +193,6 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
             <label for="markerDaily" style="font-weight: bold;">מחיר יומי:</label>
             <input type="text" id="markerDaily" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
         </div>
-	<!--
-        <div style="flex: 1; min-width: 60px;">
-            <label for="marker4day" style="font-weight: bold;">מחיר 4 שעות ביום:</label>
-            <input type="text" id="markerday4" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
-        </div>
-        <div style="flex: 1; min-width: 60px;">
-            <label for="marker4night" style="font-weight: bold;">מחיר 4 שעות בלילה:</label>
-            <input type="text" id="markernight4" style="width: 40px; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
-        </div>
-	-->
     </div>
 אם צילמתם את שלט המחיר, או שהמידע קיים באתר האינטרנט של החניון (וצירפתם את כתובת האתר), אנו נמלא את המחיר לשעה ומחיר יומי<br><br>
 
@@ -321,8 +311,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         /* ========= כאן ה־fetch ========= */
-        fetch("https://bambiker.github.io/parkinfo/marker.json")
-            .then(res => res.json())
+        markerDataPromise
             .then(data => {
 
                // count.innerText = `מספר חניונים: ${data.length}`;
@@ -416,6 +405,32 @@ function getIcon(color) {
     });
 }
 
+// עיגול צבעוני עם המחיר (יומי או שעתי לפי הבחירה), הגופן קטן כשהטקסט ארוך
+function getPriceIcon(color, hourly, daily) {
+    const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
+    let svgText;
+
+    if (color === 'black') {
+        svgText = 'חינם';
+    } else {
+        svgText = String((selectedType === "hourly" ? hourly : daily) ?? "");
+    }
+
+    const fontSize = svgText.length <= 2 ? 100 : svgText.length === 3 ? 80 : 60;
+    const safeText = svgText.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+
+    const circleSVGString = `
+        <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="250" height="250">
+            <circle cx="125" cy="125" r="100" fill="${color}" />
+            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="${fontSize}px" font-family="Arial" dy=".3em">${safeText}</text>
+        </svg>`;
+
+    return L.icon({
+        iconUrl: "data:image/svg+xml," + encodeURIComponent(circleSVGString),
+        iconSize: [40, 40]
+    });
+}
+
 function colorDescription(color) {
     const desc = {
         violet: " חניון בתשלום",
@@ -437,35 +452,14 @@ function getDomain(url) {
     }
 }
 	
-function addMarker(lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl = null, dateTime = null, contactinfo= null) {
+function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, dateTime = null, contactinfo= null) {
 //    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
 //        dateTime = new Date().toISOString();
 //}
 	
 
-    const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
-    let svgText = 'חניון';
-
-    if (color === 'black') {
-        svgText = 'חינם';
-    } else {
-        svgText = selectedType === "hourly" ? hourly : daily;
-    }
-
-    let circleSVGString = `
-        <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="250" height="250">
-            <circle cx="125" cy="125" r="100" fill="${color}" />
-            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="100px" font-family="Arial" dy=".3em">${svgText}</text>
-        </svg>`;
-    let iconURL = "data:image/svg+xml," + encodeURIComponent(circleSVGString);
-
-    var circleIcon = L.icon({
-        iconUrl: iconURL,
-        iconSize: [40, 40]
-    });
-	
     const marker = L.marker([lat, lng], {
-        icon: circleIcon,
+        icon: getPriceIcon(color, hourly, daily),
         draggable: isAddModeEnabled()
 
     }).addTo(map);
@@ -537,7 +531,7 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
         }
     });
 
-    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, day4, night4, imageUrl, dateTime, contactinfo } });
+    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime, contactinfo } });
     updateMarkerCount();
     updateLastUpdatedDate();
 
@@ -546,8 +540,6 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
     document.getElementById("markerURL").value = "";
     document.getElementById("markerHourly").value = "";
     document.getElementById("markerDaily").value = "";	
-    //document.getElementById("markerday4").value = "";
-    //document.getElementById("markernight4").value = "";	
     document.getElementById("markerImage").value = "";
     addMode = false;
 
@@ -572,7 +564,7 @@ function sendMarkersToServer(data) {
     // Pretty-format JSON with 2-space indentation
     const prettyJson = JSON.stringify(sanitizedData, null, 2);
 
-    fetch('https://script.google.com/macros/s/AKfycbyOsg285CrSACA0Ygx0COr-Zyrn-nYWV4b00QH4OcovPWrKHzc7dHdL3SGrIhUQkKA/exec', {
+    return fetch('https://script.google.com/macros/s/AKfycbyOsg285CrSACA0Ygx0COr-Zyrn-nYWV4b00QH4OcovPWrKHzc7dHdL3SGrIhUQkKA/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
@@ -585,6 +577,7 @@ function sendMarkersToServer(data) {
     })
     .catch(error => {
         console.error("Fetch failed to send email request:", error);
+        throw error;
     });
 }
 
@@ -623,8 +616,6 @@ function cancelsave() {
     document.getElementById("markerURL").value = "";
     document.getElementById("markerHourly").value = "";
     document.getElementById("markerDaily").value = "";	
-    //document.getElementById("markerday4").value = "";
-    //document.getElementById("markernight4").value = "";	
     document.getElementById("markerImage").value = "";	
 }
 
@@ -642,8 +633,6 @@ function editMarker(lat, lng) {
     document.getElementById("markerURL").value = markerData.data.url;
     document.getElementById("markerHourly").value = markerData.data.hourly;
     document.getElementById("markerDaily").value = markerData.data.daily;
-//    document.getElementById("markerday4").value = markerData.data.day4;
-//    document.getElementById("markernight4").value = markerData.data.night4;
 
     // Show the input panel
     document.getElementById("controls").style.display = "block";
@@ -681,17 +670,16 @@ function submitForm() {
     const daily = document.getElementById("markerDaily").value;
     const file = document.getElementById("markerImage").files[0];
     const dateTime = new Date().toISOString();
-    const day4 = "9999";
-    const night4 = "8888";
     const contact = document.getElementById("contactInfo").value;
-    
-    document.getElementById("loadingSpinner").style.display = "block";
+    const spinner = document.getElementById("loadingSpinner");
 	
     // ❌ אם לא הוזן שום מידע רלוונטי – לא נאשר
 	if (!url && !file) {
 	    alert("יש לצלם את שלט החניון ובו פירוט המחירים.");
 	    return;
 	}
+
+    spinner.style.display = "block";
 	
 	// טיפול במקרה מיוחד: אם הוכנס "אאא", ננקה את ה-URL
 	let finalUrl = url;
@@ -701,27 +689,38 @@ function submitForm() {
 
 	
 	
+    const editing = window.markerBeingEdited;
+
     const finishUpdate = (latlng, imgUrl) => {
-        addMarker(latlng.lat, latlng.lng, color, note, finalUrl, hourly, daily, day4, night4, imgUrl, dateTime, contactinfo=contact);
+        // החניון הישן מוסר רק אחרי שהתמונה הועלתה, כדי שלא ילך לאיבוד אם ההעלאה נכשלה
+        if (editing) {
+            map.removeLayer(editing.marker);
+            markers = markers.filter(m => m !== editing);
+        }
+        addMarker(latlng.lat, latlng.lng, color, note, finalUrl, hourly, daily, imgUrl, dateTime, contact);
         document.getElementById("controls").style.display = "none";
         document.getElementById("editNotice").style.display = "none";
         addMode = false;
         window.markerBeingEdited = null;
-        downloadMarkers();
-	document.getElementById("loadingSpinner").style.display = "none";
+        downloadMarkers()
+            .then(() => alert("החניון נשלח"))
+            .catch(() => alert("שליחת החניון נכשלה, נא לנסות שוב מאוחר יותר"))
+            .finally(() => { spinner.style.display = "none"; });
+    };
 
+    // אם העלאת התמונה נכשלה – לא שולחים, הטופס נשאר פתוח לניסיון נוסף
+    const uploadFailed = () => {
+        spinner.style.display = "none";
     };
 
     // עריכת חניון קיים
-    if (window.markerBeingEdited) {
-        const latlng = window.markerBeingEdited.marker.getLatLng();
-        map.removeLayer(window.markerBeingEdited.marker);
-        markers = markers.filter(m => m !== window.markerBeingEdited);
+    if (editing) {
+        const latlng = editing.marker.getLatLng();
 
         if (file) {
-            uploadToImgur(file, (imgUrl) => finishUpdate(latlng, imgUrl));
+            uploadToImgur(file, (imgUrl) => finishUpdate(latlng, imgUrl), uploadFailed);
         } else {
-            finishUpdate(latlng, window.markerBeingEdited.data.imageUrl || null);
+            finishUpdate(latlng, editing.data.imageUrl || null);
         }
     }
     // הוספת חניון חדש
@@ -729,13 +728,13 @@ function submitForm() {
         const latlng = smallMap.getCenter();
 
         if (file) {
-            uploadToImgur(file, (imgUrl) => finishUpdate(latlng, imgUrl));
+            uploadToImgur(file, (imgUrl) => finishUpdate(latlng, imgUrl), uploadFailed);
         } else {
             finishUpdate(latlng, null);
         }
-        alert("החניון נשלח");
     }
     else {
+        spinner.style.display = "none";
         alert("לא בוצעה הוספה או עריכה. נסה שוב.");
     }
 }
@@ -752,8 +751,6 @@ function downloadMarkers() {
             url: m.data.url,
             hourly: m.data.hourly,
             daily: m.data.daily,
-            day4: m.data.day4,
-            night4: m.data.night4,
             imageUrl: m.data.imageUrl || null,
             dateTime: m.data.dateTime
         };
@@ -769,7 +766,7 @@ function downloadMarkers() {
     document.getElementById("controls").style.display = "none";
 
     // 📤 שלח את המידע לשרת
-    sendMarkersToServer(data);
+    const sendPromise = sendMarkersToServer(data);
 
     // הורדה לקובץ רק אם יש ?download בכתובת
     const urlParams = new URLSearchParams(window.location.search);
@@ -782,6 +779,8 @@ function downloadMarkers() {
         a.click();
         URL.revokeObjectURL(url);
     }
+
+    return sendPromise;
 }
 
 function uploadMarkers(event) {
@@ -796,7 +795,7 @@ function uploadMarkers(event) {
 		 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
      		 console.log("Loaded marker dateTime:", d.dateTime);
 
-                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.day4, d.night4, d.imageUrl, d.dateTime); //dt
+                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime); //dt
 
             });
 
@@ -807,6 +806,19 @@ function uploadMarkers(event) {
     reader.readAsText(file, "utf-8");
 
 }
+
+function closeImageModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+// סגירת התמונה המוגדלת בלחיצה על הרקע או במקש Esc
+document.getElementById('imageModal').addEventListener('click', (e) => {
+    if (e.target.id === 'imageModal') closeImageModal();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeImageModal();
+});
 
 function showImageModal(imageSrc) {
     const modal = document.getElementById('imageModal');
@@ -834,7 +846,7 @@ function searchLocation() {
         });
 }
 
-function uploadToImgur(file, callback) {
+function uploadToImgur(file, callback, onError) {
     const formData = new FormData();
     formData.append("image", file);
     fetch("https://api.imgur.com/3/image", {
@@ -849,43 +861,21 @@ function uploadToImgur(file, callback) {
         if (data.success) {
             callback(data.data.link);
         } else {
-            alert("שגיאה בהעלאת התמונה");
-            callback(null);
+            alert("שגיאה בהעלאת התמונה, נא לנסות שוב");
+            onError();
         }
     })
     .catch(() => {
-        alert("בעיה בחיבור ל-Imgur");
-        callback(null);
+        alert("בעיה בחיבור ל-Imgur, נא לנסות שוב");
+        onError();
     });
 }
 
 
 function updateAllMarkerIcons() {
-    const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
-
     markers.forEach(m => {
-        let svgText = 'חניון';
         const { color, hourly, daily } = m.data;
-
-        if (color === 'black') {
-            svgText = 'חינם';
-        } else {
-            svgText = selectedType === "hourly" ? hourly : daily;
-        }
-
-        let circleSVGString = `
-            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="250" height="250">
-                <circle cx="125" cy="125" r="100" fill="${color}" />
-                <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="100px" font-family="Arial" dy=".3em">${svgText}</text>
-            </svg>`;
-        let iconURL = "data:image/svg+xml," + encodeURIComponent(circleSVGString);
-
-        const newIcon = L.icon({
-            iconUrl: iconURL,
-            iconSize: [40, 40]
-        });
-
-        m.marker.setIcon(newIcon);
+        m.marker.setIcon(getPriceIcon(color, hourly, daily));
     });
 }
 function startMapAtUserLocation() {
@@ -951,13 +941,15 @@ function initMap(lat, lng) {
     map.attributionControl.setPrefix('Leaflet');
 }
 
+// marker.json נטען פעם אחת, ומשמש גם את המפה וגם את רשימת החניונים
+const markerDataPromise = fetch('marker.json').then(res => res.json());
+
 function loadMarkers() {
-    fetch('marker.json')
-        .then(res => res.json())
+    markerDataPromise
         .then(data => {
             if (Array.isArray(data)) {
                 data.forEach(d => {
-                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.day4, d.night4, d.imageUrl, d.dateTime);
+                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime);
                 });
             } else {
                 console.error("Invalid marker data");

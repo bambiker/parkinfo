@@ -93,8 +93,6 @@
     "url": "",
     "hourly": "35",
     "daily": "35",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/a6bqjLc.jpeg",
     "dateTime": "2026-03-13T07:14:17.065Z"
   },
@@ -2042,8 +2040,6 @@
     "url": "",
     "hourly": "16",
     "daily": "54",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/YOHFZES.jpeg",
     "dateTime": "2025-07-13T16:37:28.637Z"
   },
@@ -2055,8 +2051,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D/14/",
     "hourly": "20",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:11:44.784Z"
   },
@@ -2068,8 +2062,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D/13/",
     "hourly": "20",
     "daily": "160",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:14:49.229Z"
   },
@@ -2081,8 +2073,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%9B%D7%A4%D7%A8_%D7%A1%D7%91%D7%90/9/",
     "hourly": "40",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:19:04.668Z"
   },
@@ -2094,8 +2084,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%A8%D7%90%D7%A9%D7%95%D7%9F_%D7%9C%D7%A6%D7%99%D7%95%D7%9F/8/",
     "hourly": "8",
     "daily": "25",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:21:44.426Z"
   },
@@ -2107,8 +2095,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%A8%D7%90%D7%A9_%D7%94%D7%A2%D7%99%D7%9F/5/",
     "hourly": "10",
     "daily": "25",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:25:36.322Z"
   },
@@ -2120,8 +2106,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%A8%D7%90%D7%A9_%D7%94%D7%A2%D7%99%D7%9F/4/",
     "hourly": "10",
     "daily": "25",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:27:32.760Z"
   },
@@ -2133,8 +2117,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94/3/",
     "hourly": "16",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:31:12.447Z"
   },
@@ -2146,8 +2128,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%AA%D7%9C_%D7%90%D7%91%D7%99%D7%91_-_%D7%99%D7%A4%D7%95/2/",
     "hourly": "15",
     "daily": "63",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:34:29.494Z"
   },
@@ -2159,8 +2139,6 @@
     "url": "https://www.mivnegroup.co.il/parking/%D7%AA%D7%9C_%D7%90%D7%91%D7%99%D7%91_-_%D7%99%D7%A4%D7%95/1/",
     "hourly": "25",
     "daily": "65",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T06:39:54.948Z"
   },
@@ -2172,8 +2150,6 @@
     "url": "מגרש עפר",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-14T14:42:25.614Z"
   },
@@ -2185,8 +2161,6 @@
     "url": "",
     "hourly": "60",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/Pqympvu.jpeg",
     "dateTime": "2025-07-14T14:47:36.434Z"
   },
@@ -2198,8 +2172,6 @@
     "url": "",
     "hourly": "5.4",
     "daily": "23.1",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/EUzbJ76.jpeg",
     "dateTime": "2025-07-14T14:50:42.529Z"
   },
@@ -2211,8 +2183,6 @@
     "url": "",
     "hourly": "60",
     "daily": "250",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/HU8CEBw.jpeg",
     "dateTime": "2025-07-14T14:54:16.596Z"
   },
@@ -2224,8 +2194,6 @@
     "url": "",
     "hourly": "60",
     "daily": "250",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/Ew8zAyg.jpeg",
     "dateTime": "2025-07-14T14:54:33.896Z"
   },
@@ -2237,8 +2205,6 @@
     "url": "",
     "hourly": "5.4",
     "daily": "23.1",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/RR5FFMo.jpeg",
     "dateTime": "2025-07-14T14:58:57.370Z"
   },
@@ -2250,8 +2216,6 @@
     "url": "",
     "hourly": "20",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/fFZh7ZX.jpeg",
     "dateTime": "2025-07-14T15:03:49.496Z"
   },
@@ -2263,8 +2227,6 @@
     "url": "",
     "hourly": "10",
     "daily": "90",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/M3R4Bz0.jpeg",
     "dateTime": "2025-07-16T16:53:23.798Z"
   },
@@ -2276,8 +2238,6 @@
     "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
     "hourly": "5",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-17T07:45:31.401Z"
   },
@@ -2289,8 +2249,6 @@
     "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
     "hourly": "5",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-17T07:47:08.354Z"
   },
@@ -2302,8 +2260,6 @@
     "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
     "hourly": "5",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-17T07:48:04.736Z"
   },
@@ -2315,8 +2271,6 @@
     "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
     "hourly": "5",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-17T07:56:28.109Z"
   },
@@ -2328,8 +2282,6 @@
     "url": "https://ikinneret.org.il/%d7%90%d7%99%d7%92%d7%95%d7%93-%d7%a2%d7%a8%d7%99%d7%9d-%d7%9b%d7%99%d7%a0%d7%a8%d7%aa/%d7%aa%d7%a2%d7%a8%d7%99%d7%a4%d7%99-%d7%97%d7%a0%d7%99%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%9d/",
     "hourly": "5",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-17T08:04:07.193Z"
   },
@@ -2341,8 +2293,6 @@
     "url": "https://7star.co.il/about/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-21T14:53:59.255Z"
   },
@@ -2354,8 +2304,6 @@
     "url": "https://www.nli.org.il/he/visit/information/parking",
     "hourly": "16",
     "daily": "64",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-21T14:59:29.125Z"
   },
@@ -2367,8 +2315,6 @@
     "url": "https://fastlane.co.il/park",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-21T15:02:16.957Z"
   },
@@ -2380,8 +2326,6 @@
     "url": "https://www.arenamall.co.il/info",
     "hourly": "16",
     "daily": "384",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-21T15:14:32.311Z"
   },
@@ -2393,8 +2337,6 @@
     "url": "https://www.oldjaffa.co.il/about-oldjaffa-2/",
     "hourly": "16",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-22T11:15:05.089Z"
   },
@@ -2406,8 +2348,6 @@
     "url": "https://www.bgu.ac.il/u/admin/logistics/public-parking/",
     "hourly": "8",
     "daily": "25",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-22T11:28:05.236Z"
   },
@@ -2419,8 +2359,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T04:27:26.698Z"
   },
@@ -2432,8 +2370,6 @@
     "url": "https://www.iaa.gov.il/airports/haifa/transportation-and-parking/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:14:21.739Z"
   },
@@ -2445,8 +2381,6 @@
     "url": "https://www.iaa.gov.il/airports/ramon/parking/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:15:34.178Z"
   },
@@ -2458,8 +2392,6 @@
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
     "hourly": "24",
     "daily": "96",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:32:20.323Z"
   },
@@ -2471,8 +2403,6 @@
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
     "hourly": "24",
     "daily": "96",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:32:42.739Z"
   },
@@ -2484,8 +2414,6 @@
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
     "hourly": "16",
     "daily": "48",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:34:38.370Z"
   },
@@ -2497,8 +2425,6 @@
     "url": "סן מרטין",
     "hourly": "16",
     "daily": "48",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:35:27.682Z"
   },
@@ -2510,8 +2436,6 @@
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
     "hourly": "16",
     "daily": "48",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:35:59.809Z"
   },
@@ -2523,8 +2447,6 @@
     "url": "http://www.yaadg.co.il/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D",
     "hourly": "20",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:50:07.172Z"
   },
@@ -2536,8 +2458,6 @@
     "url": "http://www.yaadg.co.il/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D",
     "hourly": "20",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-23T07:55:35.762Z"
   },
@@ -2549,8 +2469,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a9%d7%98%d7%9e%d7%a4%d7%a4%d7%a8-17/",
     "hourly": "27",
     "daily": "75",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2562,8 +2480,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%90%d7%9e%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%94%d7%a8%d7%9b%d7%91%d7%aa/",
     "hourly": "28",
     "daily": "93",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-04T10:40:39.749Z"
   },
@@ -2575,8 +2491,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%aa%d7%9c%d7%9e%d7%99/",
     "hourly": "24",
     "daily": "87",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2588,8 +2502,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%92%d7%99%d7%a0%d7%aa-%d7%94%d7%a9%d7%a8%d7%95%d7%9f-%d7%92%d7%9f-%d7%94%d7%97%d7%a9%d7%9e%d7%9c/",
     "hourly": "33",
     "daily": "93",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2601,8 +2513,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a1%d7%99%d7%a0%d7%99%d7%9e%d7%98%d7%a7-%d7%a7%d7%a8%d7%9c%d7%99%d7%91%d7%9a/",
     "hourly": "30",
     "daily": "90",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2614,8 +2524,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%9e%d7%a0%d7%95%d7%99%d7%95%d7%aa-%d7%94%d7%91%d7%9e%d7%94-%d7%9c%d7%95%d7%99%d7%93-%d7%92%d7%95%d7%a8%d7%92/",
     "hourly": "27",
     "daily": "87",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2627,8 +2535,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%9b%d7%a8%d7%9e%d7%9c/",
     "hourly": "70",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/onN7o9x.jpeg",
     "dateTime": "2025-07-27T07:16:05.542Z"
   },
@@ -2640,8 +2546,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%9e%d7%a1%d7%92%d7%a8/",
     "hourly": "22.5",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2653,8 +2557,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%90%d7%96%d7%99%d7%a1/",
     "hourly": "24",
     "daily": "72",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2666,8 +2568,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%96%d7%90%d7%a8%d7%a0%d7%95/",
     "hourly": "24",
     "daily": "72",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2679,8 +2579,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%92%d7%99%d7%91%d7%95%d7%a8-%d7%a1%d7%a4%d7%95%d7%a8%d7%98/",
     "hourly": "30",
     "daily": "98",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2692,8 +2590,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%91%d7%95%d7%a8%d7%a1%d7%94-%d7%9c%d7%99%d7%94%d7%9c%d7%95%d7%9e%d7%99%d7%9d/",
     "hourly": "80",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -2705,8 +2601,6 @@
     "url": "",
     "hourly": "30",
     "daily": "30",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/LsbyD30.jpeg",
     "dateTime": "2026-06-01T04:29:59.553Z"
   },
@@ -2718,8 +2612,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-29T13:39:15.878Z"
   },
@@ -2731,8 +2623,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-30T16:09:32.796Z"
   },
@@ -2744,8 +2634,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-07-30T16:09:56.478Z"
   },
@@ -2757,8 +2645,6 @@
     "url": "https://www.beer-sheva.muni.il/Residents/Pikuach/pages/parking.aspx",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-03T12:07:28.988Z"
   },
@@ -2770,8 +2656,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-07T06:32:14.438Z"
   },
@@ -2783,8 +2667,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-07T06:33:11.396Z"
   },
@@ -2796,8 +2678,6 @@
     "url": "",
     "hourly": "12.4",
     "daily": "37.2",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/fpuxvlM.jpeg",
     "dateTime": "2025-08-07T06:35:05.540Z"
   },
@@ -2809,8 +2689,6 @@
     "url": "",
     "hourly": "12.4",
     "daily": "37.2",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/GCOHRX0.jpeg",
     "dateTime": "2025-08-07T06:35:56.187Z"
   },
@@ -2822,8 +2700,6 @@
     "url": "",
     "hourly": "25",
     "daily": "125",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/Zo2Gvoj.jpeg",
     "dateTime": "2025-08-05T17:05:49.085Z"
   },
@@ -2835,8 +2711,6 @@
     "url": "",
     "hourly": "12",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/VH3oa3q.jpeg",
     "dateTime": "2025-08-11T06:16:12.189Z"
   },
@@ -2848,8 +2722,6 @@
     "url": "https://www.jerusalem.muni.il/he/residents/parking/parktravel_instructions/",
     "hourly": "57",
     "daily": "57",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-11T06:19:45.796Z"
   },
@@ -2861,8 +2733,6 @@
     "url": "https://www.jerusalem.muni.il/he/residents/parking/parktravel_instructions/",
     "hourly": "57",
     "daily": "57",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-11T06:20:13.427Z"
   },
@@ -2874,8 +2744,6 @@
     "url": "https://www.jerusalem.muni.il/he/residents/parking/parktravel_instructions/",
     "hourly": "57",
     "daily": "57",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-11T06:21:22.683Z"
   },
@@ -2887,8 +2755,6 @@
     "url": "",
     "hourly": "20",
     "daily": "20",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/qkaBeNh.jpeg",
     "dateTime": "2025-08-10T16:45:41.658Z"
   },
@@ -2900,8 +2766,6 @@
     "url": "",
     "hourly": "20",
     "daily": "90",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/xIrsMSn.jpeg",
     "dateTime": "2025-08-11T18:10:44.813Z"
   },
@@ -2913,8 +2777,6 @@
     "url": "https://www.raanana.muni.il/Lists/List17/CustomDispForm.aspx?ID=67",
     "hourly": "12",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-12T10:37:55.946Z"
   },
@@ -2926,8 +2788,6 @@
     "url": "https://www.raanana.muni.il/Lists/List17/CustomDispForm.aspx?ID=67",
     "hourly": "9",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-19T10:49:56.261Z"
   },
@@ -2939,8 +2799,6 @@
     "url": "https://centralpark.co.il/parking/4-%D7%96%D7%A8%D7%97%D7%99%D7%9F%C2%A0-15%20%D7%A8%D7%A2%D7%A0%D7%A0%D7%94",
     "hourly": "20",
     "daily": "30",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-19T06:56:30.640Z"
   },
@@ -2952,8 +2810,6 @@
     "url": "https://centralpark.co.il/parking/77-%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8-%D7%9E%D7%96%D7%9C%2018",
     "hourly": "25",
     "daily": "40",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-19T06:59:06.567Z"
   },
@@ -2965,8 +2821,6 @@
     "url": "https://centralpark.co.il/parking/65-%D7%94%D7%A0%D7%95%D7%98%D7%A2-7",
     "hourly": "25",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-19T07:01:45.046Z"
   },
@@ -2978,8 +2832,6 @@
     "url": "https://centralpark.co.il/parking/73-%D7%94%D7%9E%D7%A2%D7%9C%D7%95%D7%AA-1,%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
     "hourly": "40",
     "daily": "65",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-19T07:04:36.893Z"
   },
@@ -2991,8 +2843,6 @@
     "url": "https://centralpark.co.il/parking/25-%D7%99%D7%A6%D7%97%D7%A7-%D7%A7%D7%A8%D7%99%D7%91%201%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
     "hourly": "20",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-19T07:08:37.139Z"
   },
@@ -3004,8 +2854,6 @@
     "url": "https://centralpark.co.il/parking/52-%D7%90%D7%A4%D7%A2%D7%9C-23%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%94",
     "hourly": "25",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T12:03:57.811Z"
   },
@@ -3017,8 +2865,6 @@
     "url": "https://centralpark.co.il/parking/42-%D7%AA%D7%95%D7%A6%D7%A8%D7%AA-%D7%94%D7%90%D7%A8%D7%A5%202%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%94",
     "hourly": "35",
     "daily": "96",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T12:19:59.734Z"
   },
@@ -3030,8 +2876,6 @@
     "url": "https://centralpark.co.il/parking/56-%D7%94%D7%A9%D7%97%D7%9D-14,%20%D7%A4%D7%AA%D7%97%20%D7%AA%D7%A7%D7%95%D7%95%D7%94",
     "hourly": "30",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-2112:23:43.299Z"
   },
@@ -3043,8 +2887,6 @@
     "url": "https://centralpark.co.il/parking/58-%D7%A2%D7%99%D7%9F-%D7%93%D7%95%D7%A8%2011",
     "hourly": "40",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T12:26:04.242Z"
   },
@@ -3056,8 +2898,6 @@
     "url": "https://www.tel-aviv.gov.il/Residents/Transportation/Pages/reading.aspx",
     "hourly": "30",
     "daily": "30",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/5LWKdLg.jpeg",
     "dateTime": "2025-08-18T13:33:23.151Z"
   },
@@ -3069,8 +2909,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=126",
     "hourly": "30",
     "daily": "30",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-18T13:34:15.807Z"
   },
@@ -3082,8 +2920,6 @@
     "url": "https://centralpark.co.il/parking/28-%D7%96'%D7%91%D7%95%D7%98%D7%99%D7%A0%D7%A1%D7%A7%D7%99-33%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
     "hourly": "30",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T07:44:37.448Z"
   },
@@ -3095,8 +2931,6 @@
     "url": "https://centralpark.co.il/parking/29-%D7%AA%D7%95%D7%91%D7%9C-11%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
     "hourly": "35",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T07:50:49.885Z"
   },
@@ -3108,8 +2942,6 @@
     "url": "https://centralpark.co.il/parking/30-%D7%AA%D7%95%D7%91%D7%9C-21%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
     "hourly": "30",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T07:56:55.451Z"
   },
@@ -3121,8 +2953,6 @@
     "url": "https://centralpark.co.il/parking/40-%D7%96%D7%99%D7%A1%D7%9E%D7%9F-%D7%A9%D7%9C%D7%95%D7%9D%2014%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F",
     "hourly": "35",
     "daily": "85",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T08:04:10.600Z"
   },
@@ -3134,8 +2964,6 @@
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
     "hourly": "18",
     "daily": "108",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-21T07:03:37.190Z"
   },
@@ -3147,8 +2975,6 @@
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
     "hourly": "18",
     "daily": "108",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-21T07:05:49.869Z"
   },
@@ -3160,8 +2986,6 @@
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
     "hourly": "14",
     "daily": "84",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-21T07:21:56.637Z"
   },
@@ -3173,8 +2997,6 @@
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
     "hourly": "12",
     "daily": "72",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-21T07:23:23.452Z"
   },
@@ -3186,8 +3008,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/L95BKFT.jpeg",
     "dateTime": "2025-08-21T07:26:56.028Z"
   },
@@ -3199,8 +3019,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/rHKYcg6.jpeg",
     "dateTime": "2025-08-21T07:28:16.885Z"
   },
@@ -3212,8 +3030,6 @@
     "url": "",
     "hourly": "18",
     "daily": "72",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/m5PILoE.jpeg",
     "dateTime": "2025-08-21T13:10:28.889Z"
   },
@@ -3225,8 +3041,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%94%d7%a8%d7%95%d7%a4%d7%90/",
     "hourly": "32",
     "daily": "140",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-21T05:01:22.855Z"
   },
@@ -3238,8 +3052,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9c%d7%90%d7%95%d7%a0%d7%a8%d7%93%d7%95-%d7%97%d7%95%d7%a3-%d7%94%d7%99%d7%9d/",
     "hourly": "20",
     "daily": "40",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T05:17:10.732Z"
   },
@@ -3251,8 +3063,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9c%d7%95%d7%9f-%d7%91%d7%95%d7%98%d7%a0%d7%99%d7%a7%d7%94/",
     "hourly": "17",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3264,8 +3074,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a9%d7%a8%d7%95%d7%a0%d7%94/",
     "hourly": "32",
     "daily": "115",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/wsv943p.jpeg",
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3277,8 +3085,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9c%d7%95%d7%9f-%d7%a8%d7%95%d7%99%d7%90%d7%9c-%d7%91%d7%99%d7%a5-%d7%99%d7%a9%d7%a8%d7%95%d7%98%d7%9c/",
     "hourly": "26",
     "daily": "130",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-09-02T05:41:21.090Z"
   },
@@ -3290,8 +3096,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%92%d7%93%d7%9c-%d7%94%d7%90%d7%95%d7%a4%d7%a8%d7%94/",
     "hourly": "25",
     "daily": "90",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T05:55:17.792Z"
   },
@@ -3303,8 +3107,6 @@
     "url": "https://yamit.org.il/park/%d7%91%d7%a7%d7%a8%d7%95%d7%91-%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%95%d7%a0%d7%98%d7%99%d7%a4%d7%99%d7%95%d7%a8%d7%99-%d7%99%d7%a9%d7%a8%d7%95%d7%98%d7%9c/",
     "hourly": "20",
     "daily": "90",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3316,8 +3118,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%99%d7%a8%d7%a7%d7%95%d7%9f/",
     "hourly": "30",
     "daily": "150",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3329,8 +3129,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%a4%d7%9c%d7%93%d7%94-%d7%9e%d7%9c%d7%95%d7%9f-%d7%a4%d7%90%d7%91%d7%9c%d7%99%d7%a7%d7%94-%d7%99%d7%a9%d7%a8%d7%95%d7%98%d7%9c/",
     "hourly": "23",
     "daily": "75",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3342,8 +3140,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9c%d7%95%d7%9f-nyx-%d7%99%d7%a9%d7%a8%d7%95%d7%98%d7%9c/",
     "hourly": "20",
     "daily": "65",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3355,8 +3151,6 @@
     "url": "https://www.tlvmall.com/Content/%D7%97%D7%A0%D7%99%D7%94",
     "hourly": "30",
     "daily": "126",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3368,8 +3162,6 @@
     "url": "https://ramot-mall.co.il/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T07:33:26.761Z"
   },
@@ -3381,8 +3173,6 @@
     "url": "https://www.iryamim-mall.co.il/%d7%90%d7%95%d7%93%d7%95%d7%aa/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T07:37:29.487Z"
   },
@@ -3394,8 +3184,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/4/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D/",
     "hourly": "18",
     "daily": "90",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T07:40:53.230Z"
   },
@@ -3407,8 +3195,6 @@
     "url": "https://centralpark.co.il/parking/64-%D7%91%D7%A8-%D7%9B%D7%95%D7%9B%D7%91%D7%90%208",
     "hourly": "30",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3420,8 +3206,6 @@
     "url": "https://centralpark.co.il/parking/72-%D7%9B%D7%A0%D7%A8%D7%AA-5,%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7",
     "hourly": "30",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -3433,8 +3217,6 @@
     "url": "https://centralpark.co.il/parking/31-%D7%94%D7%99%D7%A8%D7%A7%D7%95%D7%9F-6%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7",
     "hourly": "25",
     "daily": "75",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3446,8 +3228,6 @@
     "url": "https://centralpark.co.il/parking/57-%D7%94%D7%99%D7%A8%D7%A7%D7%95%D7%9F-51",
     "hourly": "25",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3459,8 +3239,6 @@
     "url": "https://centralpark.co.il/parking/34-%D7%A8%D7%9E%D7%91%D7%9D-1%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "25",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3472,8 +3250,6 @@
     "url": "https://centralpark.co.il/parking/32-%D7%94%D7%9E%D7%A0%D7%95%D7%A4%D7%99%D7%9D-8%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "35",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3485,8 +3261,6 @@
     "url": "https://centralpark.co.il/parking/36-%D7%9E%D7%A9%D7%9B%D7%99%D7%AA-32%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "10",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3498,8 +3272,6 @@
     "url": "https://centralpark.co.il/parking/37-%D7%90%D7%91%D7%90-%D7%90%D7%91%D7%9F%205%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "10",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T10:04:10.369Z"
   },
@@ -3511,8 +3283,6 @@
     "url": "https://centralpark.co.il/parking/38-%D7%90%D7%91%D7%90-%D7%90%D7%91%D7%9F%201%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "25",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T10:06:27.041Z"
   },
@@ -3524,8 +3294,6 @@
     "url": "https://centralpark.co.il/parking/33-%D7%9E%D7%A9%D7%9B%D7%99%D7%AA-25%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "25",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3537,8 +3305,6 @@
     "url": "https://centralpark.co.il/parking/35-%D7%94%D7%9E%D7%A0%D7%95%D7%A4%D7%99%D7%9D-10%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "30",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3550,8 +3316,6 @@
     "url": "https://centralpark.co.il/parking/51-%D7%90%D7%91%D7%90-%D7%90%D7%91%D7%9F%208%20%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     "hourly": "20",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3563,8 +3327,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/1/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91/",
     "hourly": "24",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/dTFGkOu.jpeg",
     "dateTime": "2025-08-24T11:31:24.697Z"
   },
@@ -3576,8 +3338,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/5/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%97%D7%95%D7%9C%D7%95%D7%9F/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T11:34:39.393Z"
   },
@@ -3589,8 +3349,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/6/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%94%D7%95%D7%93-%D7%94%D7%A9%D7%A8%D7%95%D7%9F/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T11:37:18.368Z"
   },
@@ -3602,8 +3360,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/15/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%92%D7%91%D7%A2%D7%AA%D7%99%D7%99%D7%9D/",
     "hourly": "18",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3615,8 +3371,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/2/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A2%D7%9B%D7%95/",
     "hourly": "18",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3628,8 +3382,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/9/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%97%D7%99%D7%A4%D7%94/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T11:45:04.488Z"
   },
@@ -3641,8 +3393,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/12/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A8%D7%9E%D7%9C%D7%94/",
     "hourly": "18",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3654,8 +3404,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/8/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%90%D7%90%D7%95%D7%98%D7%9C%D7%98-%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94/",
     "hourly": "36",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3667,8 +3415,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/22/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%98%D7%90%D7%95%D7%9F/",
     "hourly": "30",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3680,8 +3426,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/17/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A9%D7%A8%D7%95%D7%A0%D7%94/",
     "hourly": "30",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3693,8 +3437,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/19/%D7%9E%D7%A8%D7%9B%D7%96-%D7%94%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%97%D7%95%D7%9C%D7%95%D7%9F/",
     "hourly": "30",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3706,8 +3448,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/18/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%9D/",
     "hourly": "12",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T12:07:34.829Z"
   },
@@ -3719,8 +3459,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/16/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A8%D7%A2%D7%A0%D7%A0%D7%94/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T12:13:24.189Z"
   },
@@ -3732,8 +3470,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/13/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%94%D7%A0%D7%92%D7%91/",
     "hourly": "12",
     "daily": "75",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3745,8 +3481,6 @@
     "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/20/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%9E%D7%95%D7%9C-%D7%94%D7%99%D7%9D/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-24T12:19:48.965Z"
   },
@@ -3758,8 +3492,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a8%d7%95%d7%9e%d7%9e%d7%94/",
     "hourly": "24",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-17T09:22:55.500Z"
   },
@@ -3771,8 +3503,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a8%d7%92%d7%95%d7%90%d7%9f/",
     "hourly": "29",
     "daily": "130",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3784,8 +3514,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a1%d7%99%d7%98%d7%99-%d7%a7%d7%95%d7%a8%d7%98/",
     "hourly": "30",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3797,8 +3525,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a8%d7%9b%d7%96-%d7%aa%d7%9c%d7%a4%d7%99%d7%95%d7%aa/",
     "hourly": "23",
     "daily": "110",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3810,8 +3536,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a8%d7%9b%d7%96-%d7%9b%d7%9c%d7%9c/",
     "hourly": "35",
     "daily": "180",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3823,8 +3547,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a8%d7%9b%d7%96-%d7%90%d7%a9%d7%93%d7%a8/",
     "hourly": "30",
     "daily": "180",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3836,8 +3558,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%a1%d7%99%d7%9c%d7%aa-%d7%93%d7%95%d7%93/",
     "hourly": "29",
     "daily": "140",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3849,8 +3569,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9c%d7%95%d7%9f-%d7%95%d7%95%d7%9c%d7%93%d7%95%d7%a8%d7%a3-%d7%90%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94/",
     "hourly": "29",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T07:54:36.320Z"
   },
@@ -3862,8 +3580,6 @@
     "url": "https://www.alrovmamilla.com/he/articles/item/7/",
     "hourly": "20",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T08:09:44.819Z"
   },
@@ -3875,8 +3591,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d-%d7%a9%d7%9c-%d7%96%d7%94%d7%91/",
     "hourly": "30",
     "daily": "160",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3888,8 +3602,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%97%d7%9c%d7%95%d7%9f-%d7%9c%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
     "hourly": "35",
     "daily": "180",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3901,8 +3613,6 @@
     "url": "",
     "hourly": "6",
     "daily": "28",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T08:18:32.178Z"
   },
@@ -3914,8 +3624,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%92%d7%93%d7%9c%d7%99-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d/",
     "hourly": "27",
     "daily": "160",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3927,8 +3635,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%a8%d7%99%d7%95%d7%9f/",
     "hourly": "29",
     "daily": "135",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3940,8 +3646,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%a8%d7%98%d7%95%d7%9d-%d7%94%d7%a8-%d7%97%d7%95%d7%a6%d7%91%d7%99%d7%9d/",
     "hourly": "20",
     "daily": "20",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T08:40:58.928Z"
   },
@@ -3953,8 +3657,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%a2%d7%9e%d7%95%d7%93%d7%99%d7%9d/",
     "hourly": "30",
     "daily": "180",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-10T10:03:25.041Z"
   },
@@ -3966,8 +3668,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%97%d7%93-%d7%94%d7%a2%d7%9d/",
     "hourly": "24",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T09:19:56.452Z"
   },
@@ -3979,8 +3679,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%99%d7%9b%d7%9c-%d7%a9%d7%9c%d7%9e%d7%94/",
     "hourly": "26",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T09:21:17.972Z"
   },
@@ -3992,8 +3690,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%9c%d7%95%d7%9f-%d7%90%d7%95%d7%a8%d7%99%d7%99%d7%a0%d7%98-%d7%99%d7%a9%d7%a8%d7%95%d7%98%d7%9c/",
     "hourly": "20",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T09:23:21.468Z"
   },
@@ -4005,8 +3701,6 @@
     "url": "https://yamit.org.il/park/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%9b%d7%93%d7%95%d7%a8%d7%99-%d7%aa%d7%9c%d7%a4%d7%99%d7%95%d7%aa/",
     "hourly": "24",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-08-25T09:32:51.547Z"
   },
@@ -4018,8 +3712,6 @@
     "url": "https://myofer.co.il/malls/grand-kenyon-haifa/info",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-01T07:36:18.115Z"
   },
@@ -4031,8 +3723,6 @@
     "url": "https://myofer.co.il/malls/beer-sheva/info",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-01T07:38:54.441Z"
   },
@@ -4044,8 +3734,6 @@
     "url": "",
     "hourly": "20",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/cFdvrlh.jpeg",
     "dateTime": "2025-09-03T08:34:01.778Z"
   },
@@ -4057,8 +3745,6 @@
     "url": "",
     "hourly": "30",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/IQv1GUx.jpeg",
     "dateTime": "2025-09-03T08:39:46.969Z"
   },
@@ -4070,8 +3756,6 @@
     "url": "",
     "hourly": "30",
     "daily": "30*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/AR8Sw78.jpeg",
     "dateTime": "2025-09-03T08:42:36.008Z"
   },
@@ -4083,8 +3767,6 @@
     "url": "",
     "hourly": "30",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/KduVvzm.jpeg",
     "dateTime": "2025-09-03T08:44:04.444Z"
   },
@@ -4096,8 +3778,6 @@
     "url": "",
     "hourly": "20",
     "daily": "100",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/kM1vYMP.jpeg",
     "dateTime": "2025-09-03T08:44:50.141Z"
   },
@@ -4109,8 +3789,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/jxI2lGY.jpeg",
     "dateTime": "2025-09-03T16:14:36.951Z"
   },
@@ -4122,8 +3800,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/anSawZF.jpeg",
     "dateTime": "2025-09-03T16:15:17.278Z"
   },
@@ -4135,8 +3811,6 @@
     "url": "",
     "hourly": "4.6",
     "daily": "50.6",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/dbPCMIx.jpeg",
     "dateTime": "2025-09-03T16:17:31.655Z"
   },
@@ -4148,8 +3822,6 @@
     "url": "",
     "hourly": "4",
     "daily": "48",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/Jt5GG8B.png",
     "dateTime": "2025-09-03T16:40:28.380Z"
   },
@@ -4161,8 +3833,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-03T16:43:38.938Z"
   },
@@ -4174,8 +3844,6 @@
     "url": "https://www.iaa.gov.il/airports/ben-gurion/parking-at-ben-gurion-airport/",
     "hourly": "12",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-03T16:45:22.746Z"
   },
@@ -4187,8 +3855,6 @@
     "url": "https://www.iaa.gov.il/airports/ben-gurion/parking-at-ben-gurion-airport/",
     "hourly": "22",
     "daily": "100+",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-03T16:45:30.410Z"
   },
@@ -4200,8 +3866,6 @@
     "url": "https://www.iaa.gov.il/airports/ben-gurion/parking-at-ben-gurion-airport/",
     "hourly": "12",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-03T16:45:46.930Z"
   },
@@ -4213,8 +3877,6 @@
     "url": "https://yamit.org.il/park/%D7%97%D7%A0%D7%99%D7%95%D7%9F-%D7%9E%D7%9C%D7%95%D7%9F-%D7%A8%D7%95%D7%99%D7%90%D7%9C-%D7%92%D7%90%D7%A8%D7%93%D7%9F-%D7%99%D7%A9%D7%A8%D7%95%D7%98%D7%9C/",
     "hourly": "35",
     "daily": "35",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-04T07:30:17.648Z"
   },
@@ -4226,8 +3888,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T13:39:02.105Z"
   },
@@ -4239,8 +3899,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T13:40:02.568Z"
   },
@@ -4252,8 +3910,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T13:40:22.088Z"
   },
@@ -4265,8 +3921,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a8%d7%95%d7%9e%d7%9e%d7%94-2-%d7%94%d7%a8%d7%9b%d7%91%d7%aa-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d-2/",
     "hourly": "24",
     "daily": "64",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T14:41:56.472Z"
   },
@@ -4278,8 +3932,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%a6%d7%95%d7%9e%d7%aa-%d7%a2%d7%9c%d7%99%d7%aa-%d7%a8%d7%9e%d7%aa-%d7%92%d7%9f/",
     "hourly": "24",
     "daily": "64",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T14:47:35.303Z"
   },
@@ -4291,8 +3943,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%a8-%d7%9b%d7%95%d7%9b%d7%91%d7%90/",
     "hourly": "24",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T14:49:07.095Z"
   },
@@ -4304,8 +3954,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%91%d7%9c%d7%95%d7%9e%d7%a4%d7%99%d7%9c%d7%93-%d7%9e%d7%a9%d7%98%d7%a8%d7%94/",
     "hourly": "24",
     "daily": "54",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T14:50:57.839Z"
   },
@@ -4317,8 +3965,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%91%d7%99%d7%aa-%d7%92%d7%90%d7%95%d7%9f/",
     "hourly": "24",
     "daily": "54",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T14:52:47.895Z"
   },
@@ -4330,8 +3976,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%93%d7%95%d7%93-%d7%97%d7%9b%d7%9e%d7%99-16-%d7%aa%d7%90/",
     "hourly": "27",
     "daily": "81",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-04T10:40:39.749Z"
   },
@@ -4343,8 +3987,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%92%d7%93%d7%9c-%d7%94%d7%a9%d7%97%d7%a8-%d7%a1%d7%99%d7%98%d7%99-%d7%92%d7%91%d7%a2%d7%aa%d7%99%d7%99%d7%9d/",
     "hourly": "24",
     "daily": "75",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T14:59:27.030Z"
   },
@@ -4356,8 +3998,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%91%d7%9f-%d7%99%d7%94%d7%95%d7%93%d7%94-11-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
     "hourly": "24",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T15:01:19.310Z"
   },
@@ -4369,8 +4009,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%a8%d7%91%d7%a7%d7%94-%d7%92%d7%95%d7%91%d7%a8-6-%d7%a8%d7%a2%d7%a0%d7%a0%d7%94/",
     "hourly": "16",
     "daily": "42",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T15:13:15.877Z"
   },
@@ -4382,8 +4020,6 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a4%d7%90%d7%a8%d7%a7-%d7%92%d7%91-%d7%99%d7%9d-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
     "hourly": "24",
     "daily": "74",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-07T15:16:02.548Z"
   },
@@ -4395,8 +4031,6 @@
     "url": "https://myofer.co.il/malls/hasharon/info",
     "hourly": "8",
     "daily": "50",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-09T08:02:02.256Z"
   },
@@ -4408,8 +4042,6 @@
     "url": "https://myofer.co.il/malls/sirkin/info",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-09T08:04:51.926Z"
   },
@@ -4421,8 +4053,6 @@
     "url": "https://myofer.co.il/malls/ha-givaa/info",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-09T08:06:02.982Z"
   },
@@ -4434,8 +4064,6 @@
     "url": "https://myofer.co.il/malls/grand-mall-petah-tikva/info",
     "hourly": "16",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-09T08:08:52.543Z"
   },
@@ -4447,8 +4075,6 @@
     "url": "https://myofer.co.il/malls/ofer-center/info",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-09T08:17:16.170Z"
   },
@@ -4460,8 +4086,6 @@
     "url": "https://myofer.co.il/malls/nahariya-mall/info",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-09T08:19:41.144Z"
   },
@@ -4473,8 +4097,6 @@
     "url": "https://www.eilat.muni.il/%D7%9E%D7%A8%D7%97%D7%99%D7%91%D7%99%D7%9D-%D7%90%D7%AA-%D7%9E%D7%AA%D7%97%D7%9E%D7%99-%D7%94%D7%97%D7%A0%D7%99%D7%94/",
     "hourly": "6",
     "daily": "28",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-15T11:46:33.086Z"
   },
@@ -4486,8 +4108,6 @@
     "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792",
     "hourly": "16",
     "daily": "88",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-25T05:36:01.451Z"
   },
@@ -4499,8 +4119,6 @@
     "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
     "hourly": "5",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-25T05:42:43.739Z"
   },
@@ -4512,8 +4130,6 @@
     "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-25T05:46:28.922Z"
   },
@@ -4525,8 +4141,6 @@
     "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-25T05:47:59.793Z"
   },
@@ -4538,8 +4152,6 @@
     "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-25T05:52:23.759Z"
   },
@@ -4551,8 +4163,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/imPI3Py.jpeg",
     "dateTime": "2025-09-28T05:20:57.084Z"
   },
@@ -4564,8 +4174,6 @@
     "url": "https://centralpark.co.il/parking/24-%D7%90%D7%99%D7%A1%D7%A8%D7%9C%D7%99%D7%A9-22%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "24*",
     "daily": "70*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-29T10:57:00.693Z"
   },
@@ -4577,8 +4185,6 @@
     "url": "https://share.google/aSQD6nVndS1NHeT1c",
     "hourly": "24*",
     "daily": "80*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-29T10:57:16.997Z"
   },
@@ -4590,8 +4196,6 @@
     "url": "https://centralpark.co.il/parking/6-%D7%9E%D7%95%D7%94%D7%9C%D7%99%D7%91%D7%A8-18%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "29*",
     "daily": "99*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-29T10:58:13.045Z"
   },
@@ -4603,8 +4207,6 @@
     "url": "https://centralpark.co.il/parking/48-%D7%A9%D7%9C%D7%95%D7%9D-%D7%A2%D7%9C%D7%99%D7%9B%D7%9D%2015,%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "36*",
     "daily": "140*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-29T11:00:21.772Z"
   },
@@ -4616,8 +4218,6 @@
     "url": "https://centralpark.co.il/parking/20-%D7%94%D7%A8%D7%A6%D7%9C-158%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "12*",
     "daily": "24*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-29T12:14:28.011Z"
   },
@@ -4629,8 +4229,6 @@
     "url": "https://centralpark.co.il/parking/46-%D7%90%D7%A8%D7%A0%D7%99%D7%94-32%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "25*",
     "daily": "95*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-29T12:17:04.666Z"
   },
@@ -4642,8 +4240,6 @@
     "url": "https://centralpark.co.il/parking/53-%D7%92%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%A8%D7%92-16%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "28*",
     "daily": "95*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-29T12:19:12.153Z"
   },
@@ -4655,8 +4251,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-30T12:11:01.283Z"
   },
@@ -4668,8 +4262,6 @@
     "url": "https://www.congreshaifa.co.il/",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-30T12:11:48.178Z"
   },
@@ -4681,8 +4273,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-30T12:14:08.905Z"
   },
@@ -4694,8 +4284,6 @@
     "url": "https://mnews.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/%D7%94%D7%97%D7%9C-%D7%9E%D7%94%D7%99%D7%95%D7%9D-%D7%97%D7%A0%D7%99%D7%95%D7%9F-%D7%94%D7%A8%D7%9B%D7%91%D7%AA-%D7%91%D7%97%D7%99%D7%A0%D7%9D-%D7%9C%D7%A0%D7%95%D7%A1%D7%A2%D7%99%D7%9D/",
     "hourly": "70",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-09-30T12:15:34.025Z"
   },
@@ -4707,8 +4295,6 @@
     "url": "https://centralpark.co.il/parking/60-%D7%9E%D7%95%D7%A6%D7%A7%D7%99%D7%9F-8",
     "hourly": "48*",
     "daily": "160*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-01T06:42:04.347Z"
   },
@@ -4720,8 +4306,6 @@
     "url": "https://centralpark.co.il/parking/45-%D7%93%D7%A0%D7%99%D7%90%D7%9C-%D7%A4%D7%A8%D7%99%D7%A9%203%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "36*",
     "daily": "120*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-01T06:44:37.760Z"
   },
@@ -4733,8 +4317,6 @@
     "url": "https://centralpark.co.il/parking/14-%D7%94%D7%91%D7%A8%D7%96%D7%9C-15%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "25*",
     "daily": "85*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-01T06:46:26.792Z"
   },
@@ -4746,8 +4328,6 @@
     "url": "https://centralpark.co.il/parking/23-%D7%94%D7%A4%D7%9C%D7%9A-9%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "12*",
     "daily": "30*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-01T06:53:05.620Z"
   },
@@ -4759,8 +4339,6 @@
     "url": "https://centralpark.co.il/parking/9-%D7%97%D7%A9%D7%9E%D7%95%D7%A0%D7%90%D7%99%D7%9D-100%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "20*",
     "daily": "70*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-01T06:56:10.639Z"
   },
@@ -4772,8 +4350,6 @@
     "url": "https://centralpark.co.il/parking/22-%D7%94%D7%99%D7%A1%D7%95%D7%93-8%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "12*",
     "daily": "25*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-01T06:58:40.255Z"
   },
@@ -4785,8 +4361,6 @@
     "url": "https://centralpark.co.il/parking/26-%D7%94%D7%99%D7%A8%D7%A7%D7%95%D7%9F-78%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "35*",
     "daily": "135*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-03T07:26:21.367Z"
   },
@@ -4798,8 +4372,6 @@
     "url": "https://centralpark.co.il/parking/43-%D7%94%D7%9E%D7%9C%D7%90%D7%9B%D7%94-4%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "20*",
     "daily": "70*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-03T07:28:36.758Z"
   },
@@ -4811,8 +4383,6 @@
     "url": "https://centralpark.co.il/parking/66-%D7%94%D7%A4%D7%98%D7%99%D7%A9-8",
     "hourly": "35*",
     "daily": "100*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-03T07:33:10.590Z"
   },
@@ -4824,8 +4394,6 @@
     "url": "https://centralpark.co.il/parking/15-%D7%94%D7%A8%D7%9B%D7%91%D7%AA-58%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "20*",
     "daily": "80*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-03T07:37:35.166Z"
   },
@@ -4837,8 +4405,6 @@
     "url": "https://centralpark.co.il/parking/17-%D7%94%D7%AA%D7%91%D7%95%D7%A8-2%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "37*",
     "daily": "135*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-03T07:39:41.478Z"
   },
@@ -4850,8 +4416,6 @@
     "url": "https://centralpark.co.il/parking/54-%D7%9C%D7%95%D7%A8%D7%99%D7%90-8,%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "32*",
     "daily": "100*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/hVyRomK.jpeg",
     "dateTime": "2025-10-03T07:41:47.013Z"
   },
@@ -4863,8 +4427,6 @@
     "url": "https://centralpark.co.il/parking/12-%D7%98%D7%99%D7%95%D7%9E%D7%A7%D7%99%D7%9F-16%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "25*",
     "daily": "75*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-01-04T10:40:39.749Z"
   },
@@ -4876,8 +4438,6 @@
     "url": "https://centralpark.co.il/parking/41-%D7%99%D7%91%D7%A0%D7%94-31%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "27*",
     "daily": "95*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-05T05:08:00.693Z"
   },
@@ -4889,8 +4449,6 @@
     "url": "https://centralpark.co.il/parking/18-%D7%99%D7%A6%D7%97%D7%A7-%D7%90%D7%9C%D7%97%D7%A0%D7%9F%207%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "40*",
     "daily": "160*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-05T05:11:07.541Z"
   },
@@ -4902,8 +4460,6 @@
     "url": "https://centralpark.co.il/parking/10-%D7%99%D7%91%D7%A0%D7%94-11,%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91",
     "hourly": "32*",
     "daily": "130*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-05T05:13:15.628Z"
   },
@@ -4915,8 +4471,6 @@
     "url": "https://centralpark.co.il/parking/8-%D7%9E%D7%A0%D7%97%D7%9D-%D7%91%D7%92%D7%99%D7%9F%2086%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "25*",
     "daily": "75*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-05T05:16:46.916Z"
   },
@@ -4928,8 +4482,6 @@
     "url": "https://centralpark.co.il/parking/16-%D7%99%D7%91%D7%A0%D7%94-38%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "24*",
     "daily": "70*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-05T05:18:26.508Z"
   },
@@ -4941,8 +4493,6 @@
     "url": "https://centralpark.co.il/parking/11-%D7%A0%D7%97%D7%9E%D7%A0%D7%99-16%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "29*",
     "daily": "105*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-05T05:20:16.484Z"
   },
@@ -4954,8 +4504,6 @@
     "url": "https://centralpark.co.il/parking/44-%D7%99%D7%A6%D7%97%D7%A7-%D7%A9%D7%93%D7%94%208%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "20*",
     "daily": "80*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-16T12:02:40.228Z"
   },
@@ -4967,8 +4515,6 @@
     "url": "https://centralpark.co.il/parking/49-%D7%A7%D7%95%D7%99%D7%A4%D7%9E%D7%9F-9%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "25*",
     "daily": "55*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-16T12:02:40.228Z"
   },
@@ -4980,8 +4526,6 @@
     "url": "https://centralpark.co.il/parking/13-%D7%A7%D7%A8%D7%9E%D7%A0%D7%99%D7%A6%D7%A7%D7%99-6%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "20*",
     "daily": "65*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-16T12:02:40.228Z"
   },
@@ -4993,8 +4537,6 @@
     "url": "https://centralpark.co.il/parking/47-%D7%9E%D7%96%D7%90%D7%94-3%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "25*",
     "daily": "75*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-16T12:02:40.228Z"
   },
@@ -5006,8 +4548,6 @@
     "url": "https://centralpark.co.il/parking/27-%D7%90%D7%97%D7%93-%D7%94%D7%A2%D7%9D%2014%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "25*",
     "daily": "87*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-16T12:02:40.228Z"
   },
@@ -5019,8 +4559,6 @@
     "url": "https://centralpark.co.il/parking/21-%D7%A9%D7%91%D7%99%D7%9C-%D7%94%D7%AA%D7%A0%D7%95%D7%A4%D7%94%209%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%99%D7%A4%D7%95",
     "hourly": "35*",
     "daily": "100*",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-16T12:02:40.228Z"
   },
@@ -5032,8 +4570,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-16T08:45:18.570Z"
   },
@@ -5045,8 +4581,6 @@
     "url": "",
     "hourly": "28",
     "daily": "110",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/PmMBOTu.jpeg",
     "dateTime": "2025-10-20T06:19:36.147Z"
   },
@@ -5058,8 +4592,6 @@
     "url": "",
     "hourly": "20",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/UNRuFoK.jpeg",
     "dateTime": "2025-10-20T06:21:00.650Z"
   },
@@ -5071,8 +4603,6 @@
     "url": "https://center1.co.il/contant/",
     "hourly": "16",
     "daily": "70",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-10-26T11:02:25.157Z"
   },
@@ -5084,8 +4614,6 @@
     "url": "https://seamall.co.il/about/",
     "hourly": "21",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-03-16T05:01:10.385Z"
   },
@@ -5097,8 +4625,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-11-23T12:39:55.111Z"
   },
@@ -5110,8 +4636,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2025-11-23T12:42:51.214Z"
   },
@@ -5123,8 +4647,6 @@
     "url": "",
     "hourly": "4.94",
     "daily": "54",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/R97lBz0.jpeg",
     "dateTime": "2025-11-23T12:44:45.170Z"
   },
@@ -5136,8 +4658,6 @@
     "url": "",
     "hourly": "6.86",
     "daily": "75",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/nDWTyGl.jpeg",
     "dateTime": "2025-11-23T12:48:57.516Z"
   },
@@ -5149,8 +4669,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/4FZj9uL.jpeg",
     "dateTime": "2025-11-23T12:52:46.644Z"
   },
@@ -5162,8 +4680,6 @@
     "url": "",
     "hourly": "27",
     "daily": "135",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/QSkdsk2.jpeg",
     "dateTime": "2025-12-11T10:18:49.969Z"
   },
@@ -5175,8 +4691,6 @@
     "url": "https://www.petah-tikva.muni.il/parking/parking",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-01T11:36:45.034Z"
   },
@@ -5188,8 +4702,6 @@
     "url": "https://www.petah-tikva.muni.il/parking/parking",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-01T11:39:14.840Z"
   },
@@ -5201,8 +4713,6 @@
     "url": "https://www.petah-tikva.muni.il/parking/parking",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-01T11:40:58.224Z"
   },
@@ -5214,8 +4724,6 @@
     "url": "https://www.petah-tikva.muni.il/parking/parking",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-01T11:42:57.615Z"
   },
@@ -5227,8 +4735,6 @@
     "url": "https://www.petah-tikva.muni.il/parking/parking",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-02-01T11:52:39.475Z"
   },
@@ -5240,8 +4746,6 @@
     "url": "",
     "hourly": "20",
     "daily": "40",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/nV5J3tk.jpeg",
     "dateTime": "2026-02-12T07:50:22.852Z"
   },
@@ -5253,8 +4757,6 @@
     "url": "",
     "hourly": "30",
     "daily": "174",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/WWxUIjz.jpeg",
     "dateTime": "2026-02-20T08:25:57.832Z"
   },
@@ -5266,8 +4768,6 @@
     "url": "",
     "hourly": "24",
     "daily": "306",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/rVXTNA6.jpeg",
     "dateTime": "2026-02-20T08:28:21.492Z"
   },
@@ -5279,8 +4779,6 @@
     "url": "",
     "hourly": "30",
     "daily": "30",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/rzKCIZM.jpeg",
     "dateTime": "2026-03-11T11:02:49.441Z"
   },
@@ -5292,8 +4790,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/wbbi4ac.jpeg",
     "dateTime": "2026-03-12T11:38:10.730Z"
   },
@@ -5305,8 +4801,6 @@
     "url": "",
     "hourly": "20",
     "daily": "20",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/6JdfmnZ.jpeg",
     "dateTime": "2026-03-16T06:59:36.447Z"
   },
@@ -5318,8 +4812,6 @@
     "url": "",
     "hourly": "24",
     "daily": "95",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/Uq51rcP.jpeg",
     "dateTime": "2026-04-03T09:23:51.682Z"
   },
@@ -5331,8 +4823,6 @@
     "url": "",
     "hourly": "30",
     "daily": "80",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/v1zT1og.jpeg",
     "dateTime": "2026-04-03T09:25:52.208Z"
   },
@@ -5344,8 +4834,6 @@
     "url": "",
     "hourly": "90",
     "daily": "120",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/7hrOW7v.jpeg",
     "dateTime": "2026-04-03T09:28:54.496Z"
   },
@@ -5357,8 +4845,6 @@
     "url": "",
     "hourly": "30",
     "daily": "75",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/BUFKfRD.jpeg",
     "dateTime": "2026-04-03T09:32:28.712Z"
   },
@@ -5370,8 +4856,6 @@
     "url": "",
     "hourly": "45",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/3moT0xB.jpeg",
     "dateTime": "2026-04-03T09:36:39.201Z"
   },
@@ -5383,8 +4867,6 @@
     "url": "",
     "hourly": "22",
     "daily": "482",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/FfMSGcr.jpeg",
     "dateTime": "2026-04-03T09:43:53.514Z"
   },
@@ -5396,8 +4878,6 @@
     "url": "",
     "hourly": "5.6",
     "daily": "61.6",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/fFPSFd9.jpeg",
     "dateTime": "2026-04-10T05:52:26.080Z"
   },
@@ -5409,8 +4889,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/vn5pk08.jpeg",
     "dateTime": "2026-04-16T08:28:42.971Z"
   },
@@ -5422,8 +4900,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-04-16T08:31:31.093Z"
   },
@@ -5435,8 +4911,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-04-16T09:51:29.767Z"
   },
@@ -5448,8 +4922,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-04-26T09:52:04.168Z"
   },
@@ -5461,8 +4933,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-05-02T19:07:45.242Z"
   },
@@ -5474,8 +4944,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-05-02T19:07:45.242Z"
   },
@@ -5487,8 +4955,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-05-02T19:07:45.242Z"
   },
@@ -5500,8 +4966,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-05-02T19:07:45.242Z"
   },
@@ -5513,8 +4977,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-05-02T19:07:45.242Z"
   },
@@ -5526,8 +4988,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/jshMqmu.jpeg",
     "dateTime": "2026-05-24T05:44:50.784Z"
   },
@@ -5539,8 +4999,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/N94aVjl.jpeg",
     "dateTime": "2026-05-24T05:47:11.790Z"
   },
@@ -5552,8 +5010,6 @@
     "url": "",
     "hourly": "5.4",
     "daily": "36",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-07-06T19:08:28.093Z"
   },
@@ -5565,8 +5021,6 @@
     "url": "",
     "hourly": "30",
     "daily": "30",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/ktJVOex.jpeg",
     "dateTime": "2026-07-20T04:44:58.916Z"
   },
@@ -5578,8 +5032,6 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-07-20T06:08:39.883Z"
   },
@@ -5591,8 +5043,6 @@
     "url": "אאאא",
     "hourly": "",
     "daily": "",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-08-03T14:45:25.503Z"
   },
@@ -5604,8 +5054,6 @@
     "url": "https://www.dizengof-center.co.il/useful-info/parking",
     "hourly": "24",
     "daily": "85",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/5TuY1ng.jpeg",
     "dateTime": "2026-09-07T10:40:48.966Z"
   },
@@ -5617,8 +5065,6 @@
     "url": "",
     "hourly": "30",
     "daily": "85",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/gFkKL0O.jpeg",
     "dateTime": "2026-09-07T10:43:39.151Z"
   },
@@ -5630,8 +5076,6 @@
     "url": "https://centralpark.co.il/parking/55-%D7%97%D7%95%D7%A8%D7%99-8,%20%D7%97%D7%99%D7%A4%D7%94",
     "hourly": "20",
     "daily": "55",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-10-07T15:47:45.369Z"
   },
@@ -5643,8 +5087,6 @@
     "url": "https://centralpark.co.il/parking/39-%D7%97%D7%95%D7%A8%D7%99-2%20%D7%97%D7%99%D7%A4%D7%94",
     "hourly": "25",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-10-07T15:49:44.015Z"
   },
@@ -5656,8 +5098,6 @@
     "url": "https://www.facebook.com/LibertyHaifaPort",
     "hourly": "999",
     "daily": "999",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": null,
     "dateTime": "2026-10-07T15:52:22.292Z"
   },
@@ -5669,8 +5109,6 @@
     "url": "https://www.google.com/maps/place/שיבת+ציון+4+בית+משפט+השלום+חיפה%E2%80%AD/@32.8174123,34.9953082,17z/data=!4m6!3m5!1s0x151dbb103bda28cb:0x6f0f19ccf56736e3!8m2!3d32.8174123!4d34.9982233!16s%2Fg%2F11r7f7gs5v",
     "hourly": "30",
     "daily": "60",
-    "day4": "9999",
-    "night4": "8888",
     "imageUrl": "https://i.imgur.com/AEcw9HG.jpeg",
     "dateTime": "2026-10-07T16:19:20.168Z"
   }
