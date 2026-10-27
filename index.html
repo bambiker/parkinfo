@@ -48,7 +48,7 @@
             position: absolute; width: 1px; height: 1px; overflow: hidden;
             clip: rect(0 0 0 0); white-space: nowrap;
         }
-        .page-content, #controls, #lastUpdated, #parkingListWidget {
+        .page-content, #controls, #parkingListWidget {
             margin-left: 10px; margin-right: 10px;
         }
 
@@ -205,7 +205,7 @@
         <div class="search-bar">
             <div class="logo-badge" aria-hidden="true">P</div>
             <label for="searchBox" class="visually-hidden">חיפוש כתובת או חניון</label>
-            <input type="search" id="searchBox" placeholder="חיפוש כתובת, לדוגמה: נמל תל אביב">
+            <input type="search" id="searchBox" placeholder="חיפוש כתובת, למשל הבימה">
             <button id="installBtn" onclick="installApp()" title="התקנת האתר כאפליקציה בטלפון או במחשב">התקנה</button>
             <button class="icon-btn" onclick="searchLocation()" aria-label="חיפוש">
                 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -447,7 +447,6 @@ function isAddModeEnabled() {
 
 </script>
 
-    <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לפני 3 ימים</div>
 
 	
 <script>
@@ -829,7 +828,6 @@ function sendMarkersToServer(data) {
 
 function updateLastUpdatedDate() {
     if (markers.length === 0) {
-        document.getElementById("lastUpdated").innerText = "המפה עודכנה לאחרונה בתאריך: לא ידוע";
         document.getElementById("lastUpdatedPill").innerText = "עודכן לאחרונה: לא ידוע";
         return;
     }
@@ -841,16 +839,11 @@ function updateLastUpdatedDate() {
         .filter(d => !isNaN(d.getTime()));
 
     if (dates.length === 0) {
-        document.getElementById("lastUpdated").innerText = "המפה עודכנה לאחרונה בתאריך: לא ידוע";
         document.getElementById("lastUpdatedPill").innerText = "עודכן לאחרונה: לא ידוע";
         return;
     }
 
     const latestDate = new Date(Math.max(...dates));
-    const formattedDate = latestDate.toLocaleDateString('he-IL', {
-        year: 'numeric', month: 'long', day: 'numeric'
-    });
-    document.getElementById("lastUpdated").innerText = `המפה עודכנה לאחרונה בתאריך: ${formattedDate}`;
     document.getElementById("lastUpdatedPill").innerText = `עודכן לאחרונה: ${latestDate.toLocaleDateString('he-IL')}`;
 }
 function cancelsave() {
