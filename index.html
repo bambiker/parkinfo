@@ -16,6 +16,9 @@
      <meta name="twitter:description" content="מצאו והוסיפו מידע על חניונים בישראל.">
 	
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="theme-color" content="#007bff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Leaflet core -->
@@ -86,7 +89,13 @@
 </head>
 <body>
 <header style="background-color:#f5f5f5; padding: 20px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px;">
-    <h1 style="margin: 0; font-size: 1.4em; color: #333;">🅿️ מחירי חניונים בישראל</h1>
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+        <h1 style="margin: 0; font-size: 1.4em; color: #333;">🅿️ מחירי חניונים בישראל</h1>
+        <button id="installBtn" onclick="installApp()" title="התקנת האתר כאפליקציה בטלפון או במחשב"
+                style="display: none; padding: 5px 10px; background-color: white; color: #007bff; border: 1px solid #007bff; border-radius: 8px; cursor: pointer; font-size: 0.85em; white-space: nowrap;">
+            📲 התקנה
+        </button>
+    </div>
     <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
         <input type="text" id="searchBox" placeholder="לדוגמה: נמל תל אביב" 
                style="flex: 1; min-width: 180px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 1em;" />
@@ -97,6 +106,43 @@
     </div>
 </header>
 <script>
+// כפתור התקנה (PWA): מוצג רק כשהדפדפן מאפשר התקנה, או באייפון שבו ההתקנה ידנית
+let deferredInstallPrompt = null;
+const installBtn = document.getElementById("installBtn");
+const isStandalone = window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").catch(err => console.warn("Service worker registration failed:", err));
+}
+
+window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    installBtn.style.display = "inline-block";
+});
+
+window.addEventListener("appinstalled", () => {
+    deferredInstallPrompt = null;
+    installBtn.style.display = "none";
+});
+
+if (isIOS && !isStandalone) {
+    installBtn.style.display = "inline-block";
+}
+
+function installApp() {
+    if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        deferredInstallPrompt.userChoice.finally(() => {
+            deferredInstallPrompt = null;
+            installBtn.style.display = "none";
+        });
+    } else if (isIOS) {
+        alert("להתקנה באייפון: לחצו על כפתור השיתוף ⬆️ בתחתית המסך, ואז על \"הוסף למסך הבית\".");
+    }
+}
+
 document.getElementById("searchBox").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
