@@ -48,7 +48,7 @@
             position: absolute; width: 1px; height: 1px; overflow: hidden;
             clip: rect(0 0 0 0); white-space: nowrap;
         }
-        .page-content, #controls, #markerCount, #lastUpdated, #parkingListWidget {
+        .page-content, #controls, #lastUpdated, #parkingListWidget {
             margin-left: 10px; margin-right: 10px;
         }
 
@@ -143,7 +143,6 @@
         #moreInfo { height: 12px; }
         #controls { margin-bottom: 10px; }
         #colorDescription { font-size: 0.9em; margin-top: 5px; }
-        #markerCount { font-weight: bold; margin-top: 5px; }
         #imageModal {
             display: none;
             position: fixed;
@@ -448,7 +447,6 @@ function isAddModeEnabled() {
 
 </script>
 
-    <div id="markerCount" style="font-weight: bold; margin-bottom: 15px;">מספר החניות והחניונים המסומנים במפה : 460</div>
     <div id="lastUpdated" style="font-size: 0.9em; color: #666;">המפה עודכנה לאחרונה בתאריך: לפני 3 ימים</div>
 
 	
@@ -729,7 +727,6 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
 }
 
 function updateMarkerCount() {
-    document.getElementById("markerCount").innerText = `מספר החניות והחניונים המסומנים במפה : ${markers.length}`;
     // סופרים רק חניונים שעוברים את הסינון ונמצאים בתחום המפה שעל המסך
     const bounds = map ? map.getBounds() : null;
     const shown = markers.filter(m => passesFilter(m.data) && (!bounds || bounds.contains(m.marker.getLatLng()))).length;
