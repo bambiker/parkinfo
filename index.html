@@ -134,6 +134,8 @@
             border-top: 1px solid #e3e6ea; background: #f7f8fa; font-size: 14px;
         }
         .under-map a { color: var(--primary); font-weight: 500; padding: 4px 0; }
+        .more-handle svg { transition: transform 0.2s; }
+        .more-handle[aria-expanded="true"] svg { transform: rotate(180deg); }
         .more-handle {
             display: flex; align-items: center; gap: 4px; padding: 4px 0;
             border: none; background: transparent; color: var(--text); font-size: 14px; font-weight: 500; cursor: pointer;
@@ -257,7 +259,7 @@
 </div>
 
 <nav class="under-map" aria-label="קישורים">
-    <button class="more-handle" onclick="openParkingList()">
+    <button id="listToggle" class="more-handle" onclick="toggleParkingList()" aria-expanded="false" aria-controls="parkingListWidget">
         <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
         רשימת חניונים
     </button>
@@ -268,13 +270,16 @@
 
 <div id="moreInfo"></div>
 <script>
-// פותח את רשימת כל החניונים וגולל אליה
-function openParkingList() {
+// פותח/סוגר את רשימת כל החניונים, ובפתיחה גולל אליה
+function toggleParkingList() {
     const list = document.querySelector("#parkingListWidget .plw-list");
-    if (list && list.style.display !== "block") {
-        document.querySelector("#parkingListWidget .plw-btn").click();
+    if (!list) return;
+    const open = list.style.display !== "block";
+    list.style.display = open ? "block" : "none";
+    document.getElementById("listToggle").setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) {
+        document.getElementById("parkingListWidget").scrollIntoView({ behavior: "smooth" });
     }
-    document.getElementById("parkingListWidget").scrollIntoView({ behavior: "smooth" });
 }
 </script>
 
@@ -471,7 +476,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		
         container.innerHTML = `
             <style>
-                .plw-btn{padding:12px 18px;font-size:16px;background:#007bff;color:white;border:none;border-radius:10px;cursor:pointer;margin-bottom:15px}
                 .plw-list{display:none}
                 .plw-item{background:white;border-radius:12px;padding:15px;margin-bottom:12px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
                 .plw-title{font-size:18px;font-weight:bold}
@@ -486,20 +490,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 .plw-map-btn{padding:6px 10px;border-radius:8px;border:none;background:#28a745;color:white;cursor:pointer;margin-top:8px}
             </style>
 
-            <button class="plw-btn">📋 הצג רשימת חניונים</button>
             <div class="plw-list"></div>
         `;
 
-        const btn   = container.querySelector(".plw-btn");
         const list  = container.querySelector(".plw-list");
-
-        let visible = false;
-
-        btn.onclick = () => {
-            visible = !visible;
-            list.style.display  = visible ? "block" : "none";
-            btn.innerText = visible ? "❌ הסתר רשימת חניונים" : "📋 הצג רשימת חניונים";
-        };
 
         /* ========= כאן ה־fetch ========= */
         markerDataPromise
@@ -561,23 +555,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 <div id="parkingListWidget"></div>
 	
-<div style="margin-top: 30px; text-align: center; font-size: 16px; color: #444;">
-  
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ_xLvKoVq3hQDqrJ06KrMifxZ-lqTE6dZ4zDnANBZC53Bug/viewform?usp=sharing&ouid=111833292316340372069" 
-       target="_blank"
-       style="text-decoration: none; padding: 10px 20px; background-color: #007bff; color: white; border-radius: 8px; transition: background-color 0.3s;">
-      📬 צור קשר
-    </a>
-
-    <a href="terms.html" 
-       target="_blank"
-       style="text-decoration: none; padding: 10px 20px; background-color: #6c757d; color: white; border-radius: 8px; transition: background-color 0.3s;">
-      📄 תנאי שימוש באתר
-    </a>
-  </div>
-</div>
-
 <script>
 const IMGUR_CLIENT_ID = "1531d493c436bc9";
 let map;
@@ -753,10 +730,10 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
 
 function updateMarkerCount() {
     document.getElementById("markerCount").innerText = `מספר החניות והחניונים המסומנים במפה : ${markers.length}`;
-    const shown = markers.filter(m => passesFilter(m.data)).length;
-    document.getElementById("shownCount").innerText = currentFilter === "all"
-        ? `${markers.length} חניונים במפה`
-        : `מוצגים ${shown} מתוך ${markers.length}`;
+    // סופרים רק חניונים שעוברים את הסינון ונמצאים בתחום המפה שעל המסך
+    const bounds = map ? map.getBounds() : null;
+    const shown = markers.filter(m => passesFilter(m.data) && (!bounds || bounds.contains(m.marker.getLatLng()))).length;
+    document.getElementById("shownCount").innerText = `מוצגים ${shown} מתוך ${markers.length}`;
 }
 
 // סינון: הכל / בתשלום / חינם / עד 60 ₪ ליום
@@ -790,7 +767,7 @@ function setFilter(filter) {
     updateMarkerCount();
 }
 
-// מקרא: פתוח בביקור הראשון, וזוכר אם המשתמש סגר אותו
+// מקרא: סגור כברירת מחדל, וזוכר אם המשתמש פתח אותו
 const LEGEND_ITEMS = [
     ["violet", "חניון בתשלום"],
     ["black", "חניון בחינם"],
@@ -816,7 +793,7 @@ function initLegend() {
     let saved = null;
     try { saved = localStorage.getItem("legendOpen"); } catch (e) {}
     const legend = document.getElementById("legend");
-    legend.hidden = saved === "0";
+    legend.hidden = saved !== "1";
     document.getElementById("legendBtn").setAttribute("aria-pressed", legend.hidden ? "false" : "true");
 }
 
@@ -1208,6 +1185,7 @@ function initMap(lat, lng) {
         L.control.zoom({ position: 'bottomleft' }).addTo(map);
     }
     L.control.scale({ metric: true, imperial: false, position: 'bottomleft' }).addTo(map);
+    map.on('moveend', updateMarkerCount);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
