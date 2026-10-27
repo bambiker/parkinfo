@@ -5111,5 +5111,16 @@
     "daily": "60",
     "imageUrl": "https://i.imgur.com/AEcw9HG.jpeg",
     "dateTime": "2026-10-07T16:19:20.168Z"
+  },
+  {
+    "lat": 32.10363364004325,
+    "lng": 34.82919698115439,
+    "color": "black",
+    "note": "ID design",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": null,
+    "dateTime": "2026-10-27T17:12:48.739Z"
   }
 ]
