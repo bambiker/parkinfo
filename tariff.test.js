@@ -3,7 +3,7 @@ process.env.TZ = "Asia/Jerusalem";
 const test = require("node:test");
 const assert = require("node:assert");
 const fs = require("node:fs");
-const { calcCost, estimateCost, validateTariff, parseDays } = require("./tariff.js");
+const { calcCost, estimateCost, validateTariff, parseDays, validateDiscounts, bestCost } = require("./tariff.js");
 
 // 8.11.2026 הוא יום ראשון
 const at = (day, hour, minute = 0) => new Date(2026, 10, 8 + day, hour, minute);
@@ -164,4 +164,34 @@ test("הערכה לחניון בלי תעריף מפורט", () => {
     assert.strictEqual(estimateCost({ color: "black", hourly: "", daily: "" }, at(SUN, 10), 600).total, 0);
     assert.strictEqual(estimateCost({ ...simple, hourly: "24*", daily: "80*" }, at(SUN, 10), 60).total, 24);
     assert.strictEqual(estimateCost({ tariff: tariffOf("ברוריה") }, at(SUN, 10), 180).approximate, false);
+});
+
+test("כל ההנחות ב-marker.json תקינות", () => {
+    for (const m of markers.filter(m => m.discounts)) {
+        assert.deepStrictEqual(validateDiscounts(m.discounts), [], m.note);
+    }
+    assert.ok(validateDiscounts([{ who: "pilot", percent: 50 }]).length > 0);
+    assert.ok(validateDiscounts([{ who: "app", percent: 50, free: true }]).length > 0);
+});
+
+test("הנחות: הזולה מבין אלה שמתאימות לפרופיל", () => {
+    const lot = {
+        color: "violet", hourly: "24", daily: "576", tariff: tariffOf("ברוריה"),
+        discounts: [
+            { who: "resident:תל אביב-יפו", percent: 75 },
+            { who: "wheelchair", free: true },
+            { who: "disabled", free_minutes: 120 },
+            { who: "app", tariff: [{ hour: 10 }] }
+        ]
+    };
+    const start = at(SUN, 10), three = 180;
+    assert.strictEqual(bestCost(lot, start, three, {}).total, 72);                                  // בלי הנחות
+    assert.strictEqual(bestCost(lot, start, three, {}).discount, null);
+    assert.strictEqual(bestCost(lot, start, three, { city: "תל אביב-יפו" }).total, 18);            // 75% הנחה
+    assert.strictEqual(bestCost(lot, start, three, { city: "חיפה" }).total, 72);
+    assert.strictEqual(bestCost(lot, start, three, { app: true }).total, 30);                       // מחירון אפליקציה
+    assert.strictEqual(bestCost(lot, start, three, { app: true, city: "תל אביב-יפו" }).total, 18);  // הזולה מבין השתיים
+    assert.strictEqual(bestCost(lot, start, three, { disabled: true }).total, 24);                  // שעתיים חינם, משלמים על השלישית
+    assert.strictEqual(bestCost(lot, start, three, { wheelchair: true }).total, 0);                 // כסא גלגלים: חינם
+    assert.strictEqual(bestCost(lot, start, three, { wheelchair: true }).base, 72);
 });

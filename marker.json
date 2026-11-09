@@ -91,6 +91,12 @@
         "until": "05:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
+      }
     ]
   },
   {
@@ -238,6 +244,12 @@
         ],
         "max": 70
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
+      }
     ]
   },
   {
@@ -364,6 +376,12 @@
         "entry": "23:00-06:00",
         "flat": 50,
         "hours": 24
+      }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "free": true
       }
     ]
   },
@@ -552,6 +570,17 @@
         "hours": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 50
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -588,6 +617,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 50
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -614,6 +654,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -633,6 +684,17 @@
         "until": "06:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -651,6 +713,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1131,6 +1204,12 @@
         ],
         "max": 150
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 180
+      }
     ]
   },
   {
@@ -1332,6 +1411,17 @@
         "hour": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1351,6 +1441,17 @@
         "hours": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1368,6 +1469,17 @@
         "label": "שעתי",
         "hour": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1387,6 +1499,17 @@
         "hour": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 50
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1405,6 +1528,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1441,6 +1575,17 @@
         "flat": 36,
         "until": "07:00",
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1489,6 +1634,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 50
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1524,6 +1680,17 @@
         "flat": 36,
         "until": "07:00",
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1576,6 +1743,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 50
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1594,6 +1772,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1614,6 +1803,17 @@
         "hours": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1632,6 +1832,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1669,6 +1880,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1704,6 +1926,17 @@
         "flat": 36,
         "until": "07:00",
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1741,6 +1974,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -1759,6 +2003,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -1793,6 +2048,43 @@
         "entry": "08:00-18:00",
         "flat": 44,
         "hours": 24
+      }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      },
+      {
+        "who": [
+          "student",
+          "resident:תל אביב-יפו"
+        ],
+        "label": "סטודנט / תושב תל אביב-יפו",
+        "tariff": [
+          {
+            "label": "ראשון–חמישי (פתוח 07:00–23:00)",
+            "days": "א-ה",
+            "entry": "07:00-23:00",
+            "flat": 20,
+            "hours": 24
+          },
+          {
+            "label": "שישי (פתוח 07:00–14:00)",
+            "days": "ו",
+            "entry": "07:00-14:00",
+            "flat": 20,
+            "hours": 24
+          },
+          {
+            "label": "שבת (פתוח 08:00–18:00)",
+            "days": "ש",
+            "entry": "08:00-18:00",
+            "flat": 20,
+            "hours": 24
+          }
+        ]
       }
     ]
   },
@@ -2517,6 +2809,17 @@
         "hours": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2535,6 +2838,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -2572,6 +2886,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2608,6 +2933,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2626,6 +2962,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -2663,6 +3010,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2680,6 +3038,17 @@
         "label": "שעתי",
         "hour": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -2699,6 +3068,27 @@
         "flat": 49,
         "hours": 24
       }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      },
+      {
+        "who": [
+          "student",
+          "resident:תל אביב-יפו"
+        ],
+        "label": "סטודנט / תושב תל אביב-יפו",
+        "tariff": [
+          {
+            "label": "כניסה חד פעמית, ל־24 שעות",
+            "flat": 22,
+            "hours": 24
+          }
+        ]
+      }
     ]
   },
   {
@@ -2717,6 +3107,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -2769,6 +3170,17 @@
         "hour": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2787,6 +3199,28 @@
         "hour": 20,
         "max": 44,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      },
+      {
+        "who": [
+          "student",
+          "resident:תל אביב-יפו"
+        ],
+        "label": "סטודנט / תושב תל אביב-יפו",
+        "tariff": [
+          {
+            "label": "שעתי, מקסימום ליום",
+            "hour": 6.5,
+            "max": 44,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -2824,6 +3258,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2842,6 +3287,28 @@
         "hour": 20,
         "max": 52,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      },
+      {
+        "who": [
+          "student",
+          "resident:תל אביב-יפו"
+        ],
+        "label": "סטודנט / תושב תל אביב-יפו",
+        "tariff": [
+          {
+            "label": "שעתי, מקסימום ליום",
+            "hour": 6.5,
+            "max": 52,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -2879,6 +3346,17 @@
         "until": "06:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2915,6 +3393,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2933,6 +3422,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -2970,6 +3470,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -2987,6 +3498,27 @@
         "label": "כניסה חד פעמית, ל־24 שעות",
         "flat": 49,
         "hours": 24
+      }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      },
+      {
+        "who": [
+          "student",
+          "resident:תל אביב-יפו"
+        ],
+        "label": "סטודנט / תושב תל אביב-יפו",
+        "tariff": [
+          {
+            "label": "כניסה חד פעמית, ל־24 שעות",
+            "flat": 22,
+            "hours": 24
+          }
+        ]
       }
     ]
   },
@@ -3006,6 +3538,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -3033,6 +3576,36 @@
         "entry": "07:00-14:00",
         "flat": 49,
         "hours": 24
+      }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      },
+      {
+        "who": [
+          "student",
+          "resident:תל אביב-יפו"
+        ],
+        "label": "סטודנט / תושב תל אביב-יפו",
+        "tariff": [
+          {
+            "label": "ראשון–חמישי (פתוח 07:00–23:00)",
+            "days": "א-ה",
+            "entry": "07:00-23:00",
+            "flat": 22,
+            "hours": 24
+          },
+          {
+            "label": "שישי (פתוח 07:00–14:00)",
+            "days": "ו",
+            "entry": "07:00-14:00",
+            "flat": 22,
+            "hours": 24
+          }
+        ]
       }
     ]
   },
@@ -3070,6 +3643,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -3088,6 +3672,17 @@
         "flat": 36,
         "until": "07:00",
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -3125,6 +3720,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -3143,6 +3749,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -3180,6 +3797,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -3216,6 +3844,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -3242,6 +3881,17 @@
         "until": "06:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 50
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -3259,6 +3909,27 @@
         "label": "כניסה חד פעמית, עד 07:00 למחרת",
         "flat": 44,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      },
+      {
+        "who": [
+          "student",
+          "resident:תל אביב-יפו"
+        ],
+        "label": "סטודנט / תושב תל אביב-יפו",
+        "tariff": [
+          {
+            "label": "כניסה חד פעמית, עד 07:00 למחרת",
+            "flat": 19,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -3311,6 +3982,17 @@
         "until": "07:00",
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -3346,6 +4028,17 @@
         "flat": 36,
         "until": "07:00",
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 50
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -3495,6 +4188,12 @@
           }
         ],
         "max": 54
+      }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free": true
       }
     ]
   },
@@ -4477,6 +5176,12 @@
         "max": 90,
         "grace": 20
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
+      }
     ]
   },
   {
@@ -4588,6 +5293,90 @@
         "flat": 10,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד שלישי, 06:00–16:00",
+            "days": "א-ג",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 10
+              },
+              {
+                "hour": 8
+              }
+            ],
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד שלישי, 16:00–06:00",
+            "days": "א-ג",
+            "entry": "16:00-06:00",
+            "flat": 5,
+            "until": "06:00"
+          },
+          {
+            "label": "רביעי, 06:00–16:00",
+            "days": "ד",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 10
+              },
+              {
+                "hour": 8
+              }
+            ],
+            "max": 24,
+            "until": "06:00"
+          },
+          {
+            "label": "רביעי, 16:00–06:00",
+            "days": "ד",
+            "entry": "16:00-06:00",
+            "flat": 5,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 06:00–16:00",
+            "days": "ה",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 10
+              },
+              {
+                "hour": 8
+              }
+            ],
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 16:00–06:00",
+            "days": "ה",
+            "entry": "16:00-06:00",
+            "flat": 5,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 5,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -4608,6 +5397,22 @@
         "hour": 25,
         "max": 40,
         "until": "08:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד שבת",
+            "days": "א-ש",
+            "entry": "08:00-08:00",
+            "hour": 20,
+            "max": 32,
+            "until": "08:00"
+          }
+        ]
       }
     ]
   },
@@ -4675,6 +5480,67 @@
         "flat": 20,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד שני, 07:00–16:00",
+            "days": "א-ב",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 12
+              },
+              {
+                "hour": 10
+              }
+            ],
+            "max": 32,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד שני, 16:00–07:00",
+            "days": "א-ב",
+            "entry": "16:00-07:00",
+            "flat": 10,
+            "until": "07:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 07:00–14:00",
+            "days": "ג-ה",
+            "entry": "07:00-14:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 12
+              },
+              {
+                "hour": 10
+              }
+            ],
+            "max": 32,
+            "until": "07:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 14:00–07:00",
+            "days": "ג-ה",
+            "entry": "14:00-07:00",
+            "flat": 10,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 10,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -4702,6 +5568,29 @@
         "entry": "18:00-08:00",
         "flat": 30,
         "until": "08:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד שבת, 08:00–18:00",
+            "days": "א-ש",
+            "entry": "08:00-18:00",
+            "hour": 14,
+            "max": 42,
+            "until": "08:00"
+          },
+          {
+            "label": "ראשון עד שבת, 18:00–08:00",
+            "days": "א-ש",
+            "entry": "18:00-08:00",
+            "flat": 15,
+            "until": "08:00"
+          }
+        ]
       }
     ]
   },
@@ -4756,6 +5645,54 @@
         "max": 100,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי",
+            "days": "א-ה",
+            "entry": "07:00-07:00",
+            "hour": 15,
+            "max": 65,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי, 07:00–16:00",
+            "days": "ו",
+            "entry": "07:00-16:00",
+            "hour": 15,
+            "max": 75,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי, 16:00–07:00",
+            "days": "ו",
+            "entry": "16:00-07:00",
+            "hour": 10,
+            "max": 50,
+            "until": "07:00"
+          },
+          {
+            "label": "שבת, 07:00–16:00",
+            "days": "ש",
+            "entry": "07:00-16:00",
+            "hour": 10,
+            "max": 50,
+            "until": "07:00"
+          },
+          {
+            "label": "שבת, 16:00–07:00",
+            "days": "ש",
+            "entry": "16:00-07:00",
+            "hour": 15,
+            "max": 75,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -4790,6 +5727,36 @@
         "entry": "06:00-06:00",
         "flat": 10,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 12,
+            "max": 26,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 0,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 0,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -4834,6 +5801,44 @@
         "flat": 25,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–19:00",
+            "days": "א-ה",
+            "entry": "06:00-19:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 30
+              },
+              {
+                "hour": 25
+              }
+            ],
+            "max": 95,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 19:00–06:00",
+            "days": "א-ה",
+            "entry": "19:00-06:00",
+            "flat": 16,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 20,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -4868,6 +5873,36 @@
         "entry": "06:00-06:00",
         "flat": 20,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–19:00",
+            "days": "א-ה",
+            "entry": "06:00-19:00",
+            "hour": 20,
+            "max": 45,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 19:00–06:00",
+            "days": "א-ה",
+            "entry": "19:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -4930,6 +5965,62 @@
         "max": 70,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 18
+              },
+              {
+                "hour": 30
+              }
+            ],
+            "max": 60,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 15
+              },
+              {
+                "hour": 20
+              }
+            ],
+            "max": 40,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 15
+              },
+              {
+                "hour": 20
+              }
+            ],
+            "max": 40,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -4949,6 +6040,17 @@
         "hours": 24,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
+      }
     ]
   },
   {
@@ -4967,6 +6069,17 @@
         "flat": 36,
         "hours": 24,
         "grace": 15
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:תל אביב-יפו",
+        "percent": 75
+      },
+      {
+        "who": "wheelchair",
+        "label": "תג נכה – כסא גלגלים, חינם",
+        "free": true
       }
     ]
   },
@@ -5003,6 +6116,36 @@
         "flat": 20,
         "until": "05:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 05:00–16:00",
+            "days": "א-ה",
+            "entry": "05:00-16:00",
+            "hour": 20,
+            "max": 56,
+            "until": "05:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–05:00",
+            "days": "א-ה",
+            "entry": "16:00-05:00",
+            "flat": 10,
+            "until": "05:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "05:00-05:00",
+            "flat": 10,
+            "until": "05:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5038,6 +6181,36 @@
         "flat": 15,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 18,
+            "max": 54,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5072,6 +6245,36 @@
         "entry": "06:00-06:00",
         "flat": 20,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 20,
+            "max": 60,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -5115,6 +6318,44 @@
         "entry": "05:00-05:00",
         "flat": 30,
         "until": "05:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 05:00–18:00",
+            "days": "א-ה",
+            "entry": "05:00-18:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 10
+              },
+              {
+                "hour": 14
+              }
+            ],
+            "max": 40,
+            "until": "05:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 18:00–05:00",
+            "days": "א-ה",
+            "entry": "18:00-05:00",
+            "flat": 20,
+            "until": "05:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "05:00-05:00",
+            "flat": 20,
+            "until": "05:00"
+          }
+        ]
       }
     ]
   },
@@ -5210,6 +6451,12 @@
         ],
         "max": 72,
         "until": "05:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:הרצליה",
+        "percent": 50
       }
     ]
   },
@@ -5450,6 +6697,12 @@
         ],
         "max": 90
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
+      }
     ]
   },
   {
@@ -5500,6 +6753,51 @@
         "flat": 20,
         "until": "05:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 05:00–16:00",
+            "days": "א-ד",
+            "entry": "05:00-16:00",
+            "hour": 24,
+            "max": 70,
+            "until": "05:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–05:00",
+            "days": "א-ד",
+            "entry": "16:00-05:00",
+            "flat": 10,
+            "until": "05:00"
+          },
+          {
+            "label": "חמישי, 05:00–16:00",
+            "days": "ה",
+            "entry": "05:00-16:00",
+            "hour": 24,
+            "max": 65,
+            "until": "05:00"
+          },
+          {
+            "label": "חמישי, 16:00–05:00",
+            "days": "ה",
+            "entry": "16:00-05:00",
+            "flat": 10,
+            "until": "05:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "05:00-05:00",
+            "flat": 10,
+            "until": "05:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5535,6 +6833,37 @@
         "entry": "06:00-06:00",
         "flat": 20,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 20,
+            "max": 60,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "hour": 10,
+            "max": 20,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -5593,6 +6922,58 @@
         "flat": 24,
         "until": "05:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 05:00–16:00",
+            "days": "א-ד",
+            "entry": "05:00-16:00",
+            "hour": 18,
+            "max": 58,
+            "until": "05:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–05:00",
+            "days": "א-ד",
+            "entry": "16:00-05:00",
+            "flat": 12,
+            "until": "05:00"
+          },
+          {
+            "label": "חמישי, 05:00–16:00",
+            "days": "ה",
+            "entry": "05:00-16:00",
+            "hour": 18,
+            "max": 58,
+            "until": "05:00"
+          },
+          {
+            "label": "חמישי, 16:00–18:00",
+            "days": "ה",
+            "entry": "16:00-18:00",
+            "flat": 12,
+            "until": "05:00"
+          },
+          {
+            "label": "חמישי, 18:00–05:00",
+            "days": "ה",
+            "entry": "18:00-05:00",
+            "flat": 12,
+            "until": "05:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "05:00-05:00",
+            "flat": 12,
+            "until": "05:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5636,6 +7017,44 @@
         "flat": 15,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 8
+              },
+              {
+                "hour": 12
+              }
+            ],
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 7,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 7,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5670,6 +7089,36 @@
         "entry": "06:00-06:00",
         "flat": 15,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–17:00",
+            "days": "א-ה",
+            "entry": "06:00-17:00",
+            "hour": 18,
+            "max": 36,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 17:00–06:00",
+            "days": "א-ה",
+            "entry": "17:00-06:00",
+            "flat": 12,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -5714,6 +7163,44 @@
         "flat": 10,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 12
+              },
+              {
+                "hour": 17
+              }
+            ],
+            "max": 30,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 0,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 0,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5756,6 +7243,44 @@
         "entry": "07:00-07:00",
         "flat": 15,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 10
+              },
+              {
+                "hour": 6
+              }
+            ],
+            "max": 50,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 11,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 11,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -5800,6 +7325,44 @@
         "flat": 15,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 10
+              },
+              {
+                "hour": 6
+              }
+            ],
+            "max": 50,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 11,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 11,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5843,6 +7406,44 @@
         "flat": 15,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 10
+              },
+              {
+                "hour": 16
+              }
+            ],
+            "max": 55,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 8,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 5,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5877,6 +7478,36 @@
         "entry": "07:00-07:00",
         "flat": 10,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "hour": 20,
+            "max": 40,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 5,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 9,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -5913,6 +7544,36 @@
         "flat": 15,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "hour": 18,
+            "max": 50,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 8,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 11,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5948,6 +7609,36 @@
         "flat": 15,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "hour": 10,
+            "max": 35,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 8,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 8,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -5977,6 +7668,12 @@
         "label": "יום",
         "minute": 0.4,
         "max": 100
+      }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
       }
     ]
   },
@@ -6053,6 +7750,12 @@
         ],
         "max": 100
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
+      }
     ]
   },
   {
@@ -6083,6 +7786,12 @@
           }
         ],
         "max": 50
+      }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
       }
     ]
   },
@@ -6132,6 +7841,12 @@
           }
         ],
         "max": 50
+      }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
       }
     ]
   },
@@ -6242,6 +7957,12 @@
         "minute": 0.5,
         "max": 100
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
+      }
     ]
   },
   {
@@ -6267,6 +7988,12 @@
           }
         ],
         "max": 80
+      }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 300
       }
     ]
   },
@@ -6933,6 +8660,12 @@
         "free": true,
         "until": "08:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "resident:נס ציונה",
+        "free_minutes": 120
+      }
     ]
   },
   {
@@ -7345,6 +9078,36 @@
         "flat": 20,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "hour": 15,
+            "max": 60,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 12,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 12,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -7379,6 +9142,36 @@
         "entry": "06:00-06:00",
         "flat": 25,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 20,
+            "max": 64,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -7446,6 +9239,67 @@
         "flat": 40,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 06:00–15:00",
+            "days": "א-ד",
+            "entry": "06:00-15:00",
+            "hour": 15,
+            "max": 54,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 15:00–06:00",
+            "days": "א-ד",
+            "entry": "15:00-06:00",
+            "flat": 20,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 06:00–15:00",
+            "days": "ה",
+            "entry": "06:00-15:00",
+            "hour": 15,
+            "max": 54,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 15:00–06:00",
+            "days": "ה",
+            "entry": "15:00-06:00",
+            "hour": 22,
+            "max": 80,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי, 06:00–17:00",
+            "days": "ו",
+            "entry": "06:00-17:00",
+            "hour": 22,
+            "max": 80,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי, 17:00–06:00",
+            "days": "ו",
+            "entry": "17:00-06:00",
+            "flat": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "שבת",
+            "days": "ש",
+            "entry": "06:00-06:00",
+            "flat": 25,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -7474,6 +9328,30 @@
         "hour": 45,
         "max": 160,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי",
+            "days": "א-ד",
+            "entry": "07:00-07:00",
+            "hour": 30,
+            "max": 95,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי עד שבת",
+            "days": "ה-ש",
+            "entry": "07:00-07:00",
+            "hour": 35,
+            "max": 135,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -7544,6 +9422,70 @@
         "flat": 15,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון, 07:00–14:00",
+            "days": "א",
+            "entry": "07:00-14:00",
+            "flat": 25,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון, 14:00–07:00",
+            "days": "א",
+            "entry": "14:00-07:00",
+            "flat": 8,
+            "until": "07:00"
+          },
+          {
+            "label": "שני, 07:00–14:00",
+            "days": "ב",
+            "entry": "07:00-14:00",
+            "flat": 25,
+            "until": "07:00"
+          },
+          {
+            "label": "שני, 14:00–07:00",
+            "days": "ב",
+            "entry": "14:00-07:00",
+            "flat": 40,
+            "until": "07:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 07:00–14:00",
+            "days": "ג-ה",
+            "entry": "07:00-14:00",
+            "flat": 25,
+            "until": "07:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 14:00–07:00",
+            "days": "ג-ה",
+            "entry": "14:00-07:00",
+            "flat": 8,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי",
+            "days": "ו",
+            "entry": "07:00-07:00",
+            "flat": 40,
+            "until": "07:00"
+          },
+          {
+            "label": "שבת",
+            "days": "ש",
+            "entry": "07:00-07:00",
+            "flat": 8,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -7579,6 +9521,37 @@
         "hour": 20,
         "max": 55,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–18:00",
+            "days": "א-ה",
+            "entry": "06:00-18:00",
+            "hour": 25,
+            "max": 80,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 18:00–06:00",
+            "days": "א-ה",
+            "entry": "18:00-06:00",
+            "flat": 26,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "hour": 15,
+            "max": 45,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -7656,6 +9629,86 @@
         "hour": 30,
         "max": 100,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 07:00–16:00",
+            "days": "א-ד",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 27
+              },
+              {
+                "hour": 23
+              }
+            ],
+            "max": 72,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–07:00",
+            "days": "א-ד",
+            "entry": "16:00-07:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 15
+              },
+              {
+                "hour": 12
+              }
+            ],
+            "max": 35,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 07:00–16:00",
+            "days": "ה",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 27
+              },
+              {
+                "hour": 23
+              }
+            ],
+            "max": 72,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 16:00–07:00",
+            "days": "ה",
+            "entry": "16:00-07:00",
+            "hour": 27,
+            "max": 75,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת, 07:00–16:00",
+            "days": "ו-ש",
+            "entry": "07:00-16:00",
+            "hour": 27,
+            "max": 75,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת, 16:00–07:00",
+            "days": "ו-ש",
+            "entry": "16:00-07:00",
+            "hour": 27,
+            "max": 75,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -7818,6 +9871,126 @@
         "max": 160,
         "until": "08:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 08:00–18:00",
+            "days": "א-ד",
+            "entry": "08:00-18:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 19
+              },
+              {
+                "hour": 15
+              }
+            ],
+            "max": 63,
+            "until": "08:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 18:00–08:00",
+            "days": "א-ד",
+            "entry": "18:00-08:00",
+            "hour": 20,
+            "max": 75,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 08:00–18:00",
+            "days": "ה",
+            "entry": "08:00-18:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 19
+              },
+              {
+                "hour": 15
+              }
+            ],
+            "max": 63,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 18:00–08:00",
+            "days": "ה",
+            "entry": "18:00-08:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 30
+              },
+              {
+                "hour": 35
+              }
+            ],
+            "max": 120,
+            "until": "08:00"
+          },
+          {
+            "label": "שישי, 08:00–18:00",
+            "days": "ו",
+            "entry": "08:00-18:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 30
+              },
+              {
+                "hour": 35
+              }
+            ],
+            "max": 120,
+            "until": "08:00"
+          },
+          {
+            "label": "שישי, 18:00–08:00",
+            "days": "ו",
+            "entry": "18:00-08:00",
+            "hour": 20,
+            "max": 99,
+            "until": "08:00"
+          },
+          {
+            "label": "שבת, 08:00–18:00",
+            "days": "ש",
+            "entry": "08:00-18:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 20
+              },
+              {
+                "hour": 25
+              }
+            ],
+            "max": 110,
+            "until": "08:00"
+          },
+          {
+            "label": "שבת, 18:00–08:00",
+            "days": "ש",
+            "entry": "18:00-08:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 20
+              },
+              {
+                "hour": 25
+              }
+            ],
+            "max": 110,
+            "until": "08:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -7855,6 +10028,38 @@
         "max": 80,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 25,
+            "max": 85,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "hour": 17,
+            "max": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "hour": 12,
+            "max": 40,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -7889,6 +10094,36 @@
         "entry": "06:00-06:00",
         "flat": 25,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–18:00",
+            "days": "א-ה",
+            "entry": "06:00-18:00",
+            "hour": 26,
+            "max": 76,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 18:00–06:00",
+            "days": "א-ה",
+            "entry": "18:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -7962,6 +10197,73 @@
         "flat": 20,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון, 06:00–16:00",
+            "days": "א",
+            "entry": "06:00-16:00",
+            "hour": 12,
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון, 16:00–06:00",
+            "days": "א",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "שני, 06:00–16:00",
+            "days": "ב",
+            "entry": "06:00-16:00",
+            "hour": 12,
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "שני, 16:00–06:00",
+            "days": "ב",
+            "entry": "16:00-06:00",
+            "flat": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 06:00–16:00",
+            "days": "ג-ה",
+            "entry": "06:00-16:00",
+            "hour": 12,
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 16:00–06:00",
+            "days": "ג-ה",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי",
+            "days": "ו",
+            "entry": "06:00-06:00",
+            "flat": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "שבת",
+            "days": "ש",
+            "entry": "06:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8004,6 +10306,44 @@
         "entry": "06:00-06:00",
         "flat": 20,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 16
+              },
+              {
+                "hour": 18
+              }
+            ],
+            "max": 45,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -8077,6 +10417,73 @@
         "flat": 15,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון, 06:00–16:00",
+            "days": "א",
+            "entry": "06:00-16:00",
+            "hour": 10,
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון, 16:00–06:00",
+            "days": "א",
+            "entry": "16:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          },
+          {
+            "label": "שני, 06:00–16:00",
+            "days": "ב",
+            "entry": "06:00-16:00",
+            "hour": 10,
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "שני, 16:00–06:00",
+            "days": "ב",
+            "entry": "16:00-06:00",
+            "flat": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 06:00–16:00",
+            "days": "ג-ה",
+            "entry": "06:00-16:00",
+            "hour": 10,
+            "max": 25,
+            "until": "06:00"
+          },
+          {
+            "label": "שלישי עד חמישי, 16:00–06:00",
+            "days": "ג-ה",
+            "entry": "16:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי",
+            "days": "ו",
+            "entry": "06:00-06:00",
+            "flat": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "שבת",
+            "days": "ש",
+            "entry": "06:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8128,6 +10535,52 @@
         "max": 125,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 07:00–21:00",
+            "days": "א-ד",
+            "entry": "07:00-21:00",
+            "hour": 19,
+            "max": 55,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 21:00–07:00",
+            "days": "א-ד",
+            "entry": "21:00-07:00",
+            "flat": 25,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 07:00–21:00",
+            "days": "ה",
+            "entry": "07:00-21:00",
+            "hour": 19,
+            "max": 55,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 21:00–07:00",
+            "days": "ה",
+            "entry": "21:00-07:00",
+            "flat": 30,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "hour": 24,
+            "max": 100,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8162,6 +10615,36 @@
         "entry": "06:00-06:00",
         "flat": 20,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 18,
+            "max": 50,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -8213,6 +10696,51 @@
         "flat": 20,
         "until": "08:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 08:00–16:00",
+            "days": "א-ד",
+            "entry": "08:00-16:00",
+            "hour": 21,
+            "max": 60,
+            "until": "08:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–08:00",
+            "days": "א-ד",
+            "entry": "16:00-08:00",
+            "flat": 8,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 08:00–16:00",
+            "days": "ה",
+            "entry": "08:00-16:00",
+            "hour": 21,
+            "max": 60,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 16:00–08:00",
+            "days": "ה",
+            "entry": "16:00-08:00",
+            "flat": 17,
+            "until": "08:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "08:00-08:00",
+            "flat": 10,
+            "until": "08:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8256,6 +10784,44 @@
         "flat": 20,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 24
+              },
+              {
+                "hour": 18
+              }
+            ],
+            "max": 64,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8291,6 +10857,37 @@
         "hour": 35,
         "max": 120,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 14,
+            "max": 45,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "hour": 25,
+            "max": 90,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -8377,6 +10974,86 @@
         "max": 105,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 07:00–16:00",
+            "days": "א-ד",
+            "entry": "07:00-16:00",
+            "hour": 20,
+            "max": 65,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–07:00",
+            "days": "א-ד",
+            "entry": "16:00-07:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 12
+              },
+              {
+                "hour": 22
+              }
+            ],
+            "max": 36,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 07:00–16:00",
+            "days": "ה",
+            "entry": "07:00-16:00",
+            "hour": 20,
+            "max": 65,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 16:00–07:00",
+            "days": "ה",
+            "entry": "16:00-07:00",
+            "hour": 22,
+            "max": 50,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי, 07:00–16:00",
+            "days": "ו",
+            "entry": "07:00-16:00",
+            "hour": 22,
+            "max": 84,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי, 16:00–07:00",
+            "days": "ו",
+            "entry": "16:00-07:00",
+            "hour": 20,
+            "max": 65,
+            "until": "07:00"
+          },
+          {
+            "label": "שבת, 07:00–16:00",
+            "days": "ש",
+            "entry": "07:00-16:00",
+            "hour": 20,
+            "max": 65,
+            "until": "07:00"
+          },
+          {
+            "label": "שבת, 16:00–07:00",
+            "days": "ש",
+            "entry": "16:00-07:00",
+            "hour": 22,
+            "max": 70,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8444,6 +11121,69 @@
         ],
         "max": 70,
         "until": "08:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 08:00–16:00",
+            "days": "א-ד",
+            "entry": "08:00-16:00",
+            "hour": 15,
+            "max": 40,
+            "until": "08:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–08:00",
+            "days": "א-ד",
+            "entry": "16:00-08:00",
+            "flat": 12,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 08:00–16:00",
+            "days": "ה",
+            "entry": "08:00-16:00",
+            "hour": 15,
+            "max": 40,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 16:00–08:00",
+            "days": "ה",
+            "entry": "16:00-08:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 18
+              },
+              {
+                "hour": 21
+              }
+            ],
+            "max": 50,
+            "until": "08:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "08:00-08:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 18
+              },
+              {
+                "hour": 21
+              }
+            ],
+            "max": 50,
+            "until": "08:00"
+          }
+        ]
       }
     ]
   },
@@ -8513,6 +11253,69 @@
         "max": 120,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 06:00–16:00",
+            "days": "א-ד",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 22
+              },
+              {
+                "hour": 24
+              }
+            ],
+            "max": 65,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–06:00",
+            "days": "א-ד",
+            "entry": "16:00-06:00",
+            "flat": 20,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 06:00–16:00",
+            "days": "ה",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 22
+              },
+              {
+                "hour": 24
+              }
+            ],
+            "max": 65,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 16:00–06:00",
+            "days": "ה",
+            "entry": "16:00-06:00",
+            "hour": 16,
+            "max": 60,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "hour": 16,
+            "max": 60,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8564,6 +11367,53 @@
         "hour": 40,
         "max": 150,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 06:00–16:00",
+            "days": "א-ד",
+            "entry": "06:00-16:00",
+            "hour": 17,
+            "max": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–06:00",
+            "days": "א-ד",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 06:00–16:00",
+            "days": "ה",
+            "entry": "06:00-16:00",
+            "hour": 17,
+            "max": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 16:00–06:00",
+            "days": "ה",
+            "entry": "16:00-06:00",
+            "hour": 31,
+            "max": 115,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "hour": 31,
+            "max": 115,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -8672,6 +11522,108 @@
         "max": 140,
         "until": "08:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד שני, 08:00–16:00",
+            "days": "א-ב",
+            "entry": "08:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 30
+              },
+              {
+                "hour": 28
+              }
+            ],
+            "max": 100,
+            "until": "08:00"
+          },
+          {
+            "label": "ראשון עד שני, 16:00–08:00",
+            "days": "א-ב",
+            "entry": "16:00-08:00",
+            "flat": 20,
+            "until": "08:00"
+          },
+          {
+            "label": "שלישי עד רביעי, 08:00–16:00",
+            "days": "ג-ד",
+            "entry": "08:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 35
+              },
+              {
+                "hour": 32
+              }
+            ],
+            "max": 120,
+            "until": "08:00"
+          },
+          {
+            "label": "שלישי עד רביעי, 16:00–08:00",
+            "days": "ג-ד",
+            "entry": "16:00-08:00",
+            "flat": 20,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 08:00–16:00",
+            "days": "ה",
+            "entry": "08:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 35
+              },
+              {
+                "hour": 32
+              }
+            ],
+            "max": 120,
+            "until": "08:00"
+          },
+          {
+            "label": "חמישי, 16:00–08:00",
+            "days": "ה",
+            "entry": "16:00-08:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 17
+              },
+              {
+                "hour": 19
+              }
+            ],
+            "max": 70,
+            "until": "08:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "08:00-08:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 17
+              },
+              {
+                "hour": 19
+              }
+            ],
+            "max": 70,
+            "until": "08:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8714,6 +11666,44 @@
         "entry": "06:00-06:00",
         "flat": 15,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–15:00",
+            "days": "א-ה",
+            "entry": "06:00-15:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 30
+              },
+              {
+                "hour": 28
+              }
+            ],
+            "max": 75,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 15:00–06:00",
+            "days": "א-ה",
+            "entry": "15:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -8783,6 +11773,69 @@
         "max": 95,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 07:00–16:00",
+            "days": "א-ד",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 15
+              },
+              {
+                "hour": 20
+              }
+            ],
+            "max": 58,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–07:00",
+            "days": "א-ד",
+            "entry": "16:00-07:00",
+            "flat": 20,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 07:00–16:00",
+            "days": "ה",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 15
+              },
+              {
+                "hour": 20
+              }
+            ],
+            "max": 58,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 16:00–07:00",
+            "days": "ה",
+            "entry": "16:00-07:00",
+            "hour": 25,
+            "max": 60,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "hour": 25,
+            "max": 60,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8842,6 +11895,60 @@
         "flat": 30,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 06:00–16:00",
+            "days": "א-ד",
+            "entry": "06:00-16:00",
+            "hour": 25,
+            "max": 75,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–06:00",
+            "days": "א-ד",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 06:00–16:00",
+            "days": "ה",
+            "entry": "06:00-16:00",
+            "hour": 25,
+            "max": 75,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 16:00–06:00",
+            "days": "ה",
+            "entry": "16:00-06:00",
+            "hour": 25,
+            "max": 100,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי",
+            "days": "ו",
+            "entry": "06:00-06:00",
+            "hour": 25,
+            "max": 100,
+            "until": "06:00"
+          },
+          {
+            "label": "שבת",
+            "days": "ש",
+            "entry": "06:00-06:00",
+            "flat": 21,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8876,6 +11983,36 @@
         "entry": "06:00-06:00",
         "flat": 20,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 22,
+            "max": 80,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 10,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -8930,6 +12067,54 @@
         "max": 100,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון",
+            "days": "א",
+            "entry": "06:00-06:00",
+            "hour": 19,
+            "max": 45,
+            "until": "06:00"
+          },
+          {
+            "label": "שני",
+            "days": "ב",
+            "entry": "06:00-06:00",
+            "hour": 19,
+            "max": 60,
+            "until": "06:00"
+          },
+          {
+            "label": "שלישי עד חמישי",
+            "days": "ג-ה",
+            "entry": "06:00-06:00",
+            "hour": 19,
+            "max": 45,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת, 06:00–09:00",
+            "days": "ו-ש",
+            "entry": "06:00-09:00",
+            "hour": 19,
+            "max": 65,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת, 09:00–06:00",
+            "days": "ו-ש",
+            "entry": "09:00-06:00",
+            "hour": 24,
+            "max": 75,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -8964,6 +12149,36 @@
         "entry": "07:00-07:00",
         "flat": 20,
         "until": "07:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 07:00–16:00",
+            "days": "א-ה",
+            "entry": "07:00-16:00",
+            "hour": 12,
+            "max": 30,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–07:00",
+            "days": "א-ה",
+            "entry": "16:00-07:00",
+            "flat": 20,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "07:00-07:00",
+            "flat": 10,
+            "until": "07:00"
+          }
+        ]
       }
     ]
   },
@@ -9057,6 +12272,133 @@
         "max": 120,
         "until": "07:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 07:00–16:00",
+            "days": "א-ד",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 22
+              },
+              {
+                "hour": 24
+              }
+            ],
+            "max": 66,
+            "until": "07:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–07:00",
+            "days": "א-ד",
+            "entry": "16:00-07:00",
+            "flat": 15,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 07:00–16:00",
+            "days": "ה",
+            "entry": "07:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 22
+              },
+              {
+                "hour": 24
+              }
+            ],
+            "max": 66,
+            "until": "07:00"
+          },
+          {
+            "label": "חמישי, 16:00–07:00",
+            "days": "ה",
+            "entry": "16:00-07:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 20
+              },
+              {
+                "hour": 23
+              }
+            ],
+            "max": 90,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי, 07:00–18:00",
+            "days": "ו",
+            "entry": "07:00-18:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 20
+              },
+              {
+                "hour": 23
+              }
+            ],
+            "max": 90,
+            "until": "07:00"
+          },
+          {
+            "label": "שישי, 18:00–07:00",
+            "days": "ו",
+            "entry": "18:00-07:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 18
+              },
+              {
+                "hour": 23
+              }
+            ],
+            "max": 60,
+            "until": "07:00"
+          },
+          {
+            "label": "שבת, 07:00–18:00",
+            "days": "ש",
+            "entry": "07:00-18:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 18
+              },
+              {
+                "hour": 23
+              }
+            ],
+            "max": 60,
+            "until": "07:00"
+          },
+          {
+            "label": "שבת, 18:00–07:00",
+            "days": "ש",
+            "entry": "18:00-07:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 18
+              },
+              {
+                "hour": 23
+              }
+            ],
+            "max": 90,
+            "until": "07:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -9109,6 +12451,53 @@
         "max": 100,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד רביעי, 06:00–16:00",
+            "days": "א-ד",
+            "entry": "06:00-16:00",
+            "hour": 18,
+            "max": 67,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד רביעי, 16:00–06:00",
+            "days": "א-ד",
+            "entry": "16:00-06:00",
+            "flat": 17,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 06:00–16:00",
+            "days": "ה",
+            "entry": "06:00-16:00",
+            "hour": 18,
+            "max": 67,
+            "until": "06:00"
+          },
+          {
+            "label": "חמישי, 16:00–06:00",
+            "days": "ה",
+            "entry": "16:00-06:00",
+            "hour": 15,
+            "max": 65,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "hour": 15,
+            "max": 50,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -9151,6 +12540,44 @@
         "entry": "06:00-06:00",
         "flat": 30,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "rates": [
+              {
+                "minutes": 60,
+                "hour": 26
+              },
+              {
+                "hour": 22
+              }
+            ],
+            "max": 85,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 15,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },
@@ -9604,6 +13031,12 @@
         "max": 95,
         "grace": 15
       }
+    ],
+    "discounts": [
+      {
+        "who": "disabled",
+        "free_minutes": 720
+      }
     ]
   },
   {
@@ -9796,6 +13229,12 @@
         "label": "מחוץ לשעות התשלום",
         "free": true,
         "until": "08:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "resident:רחובות",
+        "free_minutes": 120
       }
     ]
   },
@@ -10105,6 +13544,36 @@
         "flat": 25,
         "until": "06:00"
       }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 12,
+            "max": 36,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 12,
+            "until": "06:00"
+          }
+        ]
+      }
     ]
   },
   {
@@ -10139,6 +13608,36 @@
         "entry": "06:00-06:00",
         "flat": 25,
         "until": "06:00"
+      }
+    ],
+    "discounts": [
+      {
+        "who": "app",
+        "label": "תשלום באפליקציית סנטרל פארק",
+        "tariff": [
+          {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 12,
+            "max": 40,
+            "until": "06:00"
+          },
+          {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 8,
+            "until": "06:00"
+          },
+          {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "flat": 12,
+            "until": "06:00"
+          }
+        ]
       }
     ]
   },

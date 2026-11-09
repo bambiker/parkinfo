@@ -178,7 +178,74 @@
         return { total: Math.round(total * 100) / 100, parts: [], approximate: true };
     }
 
-    const api = { parseDays, parseClock, parseWindow, validateTariff, findRule, calcCost, estimateCost };
+    // הנחות ("discounts" ב-marker.json): למי ההנחה, ומה היא נותנת
+    const DISCOUNT_KINDS = ["percent", "tariff", "free", "free_minutes"];
+    const WHO_LABELS = { app: "תשלום באפליקציה", student: "סטודנט", disabled: "תג נכה", wheelchair: "תג נכה – כסא גלגלים" };
+
+    function whoList(who) {
+        return Array.isArray(who) ? who : [who];
+    }
+
+    function whoLabel(who) {
+        return whoList(who).map(w => w.startsWith("resident:") ? "תושב " + w.slice(9) : WHO_LABELS[w] || w).join(" / ");
+    }
+
+    // profile: {app, student, disabled, wheelchair, city}. בעל תג כסא גלגלים הוא גם בעל תג נכה
+    function matchesProfile(who, profile) {
+        if (!profile) return false;
+        return whoList(who).some(w =>
+            w === "app" ? !!profile.app :
+            w === "student" ? !!profile.student :
+            w === "disabled" ? !!(profile.disabled || profile.wheelchair) :
+            w === "wheelchair" ? !!profile.wheelchair :
+            w.startsWith("resident:") ? profile.city === w.slice(9) : false);
+    }
+
+    function validateDiscounts(discounts) {
+        const errors = [];
+        if (!Array.isArray(discounts)) return ["discounts צריך להיות רשימה"];
+        discounts.forEach((d, i) => {
+            const at = `הנחה ${i + 1}: `;
+            if (!d || typeof d !== "object") { errors.push(at + "לא אובייקט"); return; }
+            const who = whoList(d.who);
+            if (!who.length || who.some(w => !(w in WHO_LABELS) && !/^resident:.+/.test(String(w)))) {
+                errors.push(at + `who לא תקין "${d.who}" (app, student, disabled, wheelchair, resident:עיר)`);
+            }
+            const kinds = DISCOUNT_KINDS.filter(k => d[k] !== undefined);
+            if (kinds.length !== 1) errors.push(at + "צריך בדיוק אחד מ: percent, tariff, free, free_minutes");
+            if (d.percent !== undefined && !(d.percent > 0 && d.percent <= 100)) errors.push(at + "percent צריך להיות בין 1 ל-100");
+            if (d.free_minutes !== undefined && !(d.free_minutes > 0)) errors.push(at + "free_minutes צריך להיות מספר חיובי");
+            if (d.free !== undefined && d.free !== true) errors.push(at + "free צריך להיות true");
+            if (d.tariff !== undefined) validateTariff(d.tariff).forEach(e => errors.push(at + e));
+        });
+        return errors;
+    }
+
+    // העלות הזולה ביותר לפי ההנחות שמתאימות לפרופיל. מחזיר כמו estimateCost, ועוד discount (שם ההנחה) ו-base (העלות בלי הנחה)
+    function bestCost(markerData, start, minutes, profile) {
+        const base = estimateCost(markerData, start, minutes);
+        let best = { ...base, discount: null, base: base.error ? null : base.total };
+        const discounts = Array.isArray(markerData.discounts) && validateDiscounts(markerData.discounts).length === 0 ? markerData.discounts : [];
+        for (const d of discounts) {
+            if (!matchesProfile(d.who, profile)) continue;
+            let r = null;
+            if (d.free) r = { total: 0, parts: [], approximate: false };
+            else if (d.tariff) r = { ...calcCost(d.tariff, start, minutes), approximate: false };
+            else if (d.percent !== undefined && !base.error) r = { ...base, total: Math.round(base.total * (100 - d.percent)) / 100 };
+            else if (d.free_minutes !== undefined) {
+                if (minutes <= d.free_minutes) r = { total: 0, parts: [], approximate: false };
+                else r = estimateCost(markerData, new Date(start.getTime() + d.free_minutes * 60000), minutes - d.free_minutes);
+            }
+            if (!r || r.error) continue;
+            if (best.error || r.total < best.total) {
+                const label = d.label || whoLabel(d.who) + (d.percent ? ` ${d.percent}%` : d.free_minutes ? `, ${d.free_minutes / 60} שעות חינם` : d.free ? ", חינם" : "");
+                best = { ...r, discount: label, base: base.error ? null : base.total };
+            }
+        }
+        return best;
+    }
+
+    const api = { parseDays, parseClock, parseWindow, validateTariff, findRule, calcCost, estimateCost, validateDiscounts, matchesProfile, bestCost };
     if (typeof module !== "undefined" && module.exports) module.exports = api;
     else root.ParkingTariff = api;
 })(typeof window !== "undefined" ? window : this);
