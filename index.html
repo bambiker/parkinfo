@@ -87,7 +87,7 @@
         .plan-bar > * { pointer-events: auto; }
         .plan-bar[hidden] { display: none; }
         .plan-toggle {
-            display: flex; align-items: center; gap: 6px; height: 36px; padding: 0 12px; border: none; border-radius: 18px;
+            display: flex; align-items: center; gap: 4px; height: 36px; padding: 0 10px; border: none; border-radius: 18px;
             background: #fff; color: var(--text); font-size: 14px; font-weight: 500; box-shadow: 0 1px 3px rgba(0,0,0,0.12); cursor: pointer;
         }
         .plan-toggle svg { color: var(--primary); flex-shrink: 0; }
@@ -122,6 +122,7 @@
             color: #3a4350; box-shadow: 0 1px 3px rgba(0,0,0,0.12); line-height: 1.3;
         }
         #lastUpdatedPill { font-weight: 500; color: var(--text); }
+        .info-pill { margin-inline-start: auto; }
 
         .legend {
             right: 12px; bottom: 84px; width: calc(100% - 24px); max-width: 380px; box-sizing: border-box;
@@ -238,12 +239,10 @@
                 <label><input type="radio" name="priceDisplay" value="hourly" onchange="onPriceModeChange()"><span>שעתי</span></label>
                 <label><input type="radio" name="priceDisplay" value="plan" checked onchange="onPriceModeChange()"><span>מותאם</span></label>
             </div>
-            <div class="info-pill">
-                <div id="lastUpdatedPill">עודכן לאחרונה: —</div>
-                <div id="shownCount"></div>
-            </div>
         </div>
 
+        <!-- שורה שנייה: בחירת שעת הכניסה (במצב "מותאם") ומשמאל "עודכן" -->
+        <div class="map-row">
         <div id="planBar" class="plan-bar" hidden>
             <button id="planToggle" class="plan-toggle" onclick="togglePlanEditor()" aria-expanded="false" aria-controls="planEditor" title="שינוי שעת הכניסה ומשך החניה">
                 <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 14"></polyline></svg>
@@ -269,6 +268,11 @@
                     <option value="1440">יום שלם</option>
                 </select>
             </label>
+            </div>
+        </div>
+            <div class="info-pill">
+                <div id="lastUpdatedPill">עודכן: —</div>
+                <div id="shownCount"></div>
             </div>
         </div>
     </div>
@@ -907,7 +911,7 @@ function updateMarkerCount() {
     // סופרים רק חניונים שנמצאים בתחום המפה שעל המסך
     const bounds = map ? map.getBounds() : null;
     const shown = markers.filter(m => !bounds || bounds.contains(m.marker.getLatLng())).length;
-    document.getElementById("shownCount").innerText = `מוצגים ${shown} מתוך ${markers.length}`;
+    document.getElementById("shownCount").innerText = `מוצגים ${shown}/${markers.length}`;
 }
 
 // מקרא: סגור כברירת מחדל, וזוכר אם המשתמש פתח אותו
@@ -975,7 +979,7 @@ function sendMarkersToServer(data) {
 
 function updateLastUpdatedDate() {
     if (markers.length === 0) {
-        document.getElementById("lastUpdatedPill").innerText = "עודכן לאחרונה: לא ידוע";
+        document.getElementById("lastUpdatedPill").innerText = "עודכן: לא ידוע";
         return;
     }
 
@@ -986,12 +990,12 @@ function updateLastUpdatedDate() {
         .filter(d => !isNaN(d.getTime()));
 
     if (dates.length === 0) {
-        document.getElementById("lastUpdatedPill").innerText = "עודכן לאחרונה: לא ידוע";
+        document.getElementById("lastUpdatedPill").innerText = "עודכן: לא ידוע";
         return;
     }
 
     const latestDate = new Date(Math.max(...dates));
-    document.getElementById("lastUpdatedPill").innerText = `עודכן לאחרונה: ${latestDate.toLocaleDateString('he-IL', { day: 'numeric', month: 'numeric', year: '2-digit' })}`;
+    document.getElementById("lastUpdatedPill").innerText = `עודכן ${latestDate.toLocaleDateString('he-IL', { day: 'numeric', month: 'numeric', year: '2-digit' })}`;
 }
 function cancelsave() {
     document.getElementById("controls").style.display = "none";
