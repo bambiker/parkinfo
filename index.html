@@ -59,8 +59,8 @@
         .map-overlay { position: absolute; z-index: 1000; pointer-events: none; }
         .map-overlay > *, .legend { pointer-events: auto; }
         .map-top { top: 12px; left: 12px; right: 12px; display: flex; flex-direction: column; gap: 8px; }
-        .map-top .chips, .map-top .map-row { pointer-events: none; }
-        .map-top .chips > *, .map-top .map-row > * { pointer-events: auto; }
+        .map-top .map-row { pointer-events: none; }
+        .map-top .map-row > * { pointer-events: auto; }
 
         .search-bar {
             display: flex; align-items: center; gap: 8px; height: 52px; padding: 0 8px 0 12px;
@@ -81,14 +81,6 @@
             border-radius: 14px; cursor: pointer; font-size: 13px; white-space: nowrap; flex-shrink: 0;
         }
 
-        .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
-        .chips::-webkit-scrollbar { display: none; }
-        .chip {
-            flex-shrink: 0; height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid #d5d9e0;
-            background: #fff; color: var(--text); font-size: 14px; font-weight: 500; cursor: pointer;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12); white-space: nowrap;
-        }
-        .chip[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: #fff; }
 
         .map-row { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 8px; }
         .plan-bar {
@@ -224,12 +216,6 @@
             <button class="icon-btn" onclick="searchLocation()" aria-label="חיפוש">
                 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </button>
-        </div>
-
-        <div class="chips" role="group" aria-label="סינון חניונים">
-            <button class="chip" data-filter="all" aria-pressed="true" onclick="setFilter('all')">הכל</button>
-            <button class="chip" data-filter="paid" aria-pressed="false" onclick="setFilter('paid')">בתשלום</button>
-            <button class="chip" data-filter="free" aria-pressed="false" onclick="setFilter('free')">חינם</button>
         </div>
 
         <div class="map-row">
@@ -810,9 +796,6 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
     });
 
     markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime, contactinfo, tariff } });
-    if (!passesFilter(markers[markers.length - 1].data)) {
-        map.removeLayer(marker);
-    }
     updateMarkerCount();
     updateLastUpdatedDate();
 
@@ -867,37 +850,10 @@ function fillPlanCost(popupEl, data) {
 }
 
 function updateMarkerCount() {
-    // סופרים רק חניונים שעוברים את הסינון ונמצאים בתחום המפה שעל המסך
+    // סופרים רק חניונים שנמצאים בתחום המפה שעל המסך
     const bounds = map ? map.getBounds() : null;
-    const shown = markers.filter(m => passesFilter(m.data) && (!bounds || bounds.contains(m.marker.getLatLng()))).length;
+    const shown = markers.filter(m => !bounds || bounds.contains(m.marker.getLatLng())).length;
     document.getElementById("shownCount").innerText = `מוצגים ${shown} מתוך ${markers.length}`;
-}
-
-// סינון: הכל / בתשלום / חינם
-let currentFilter = "all";
-const FREE_COLORS = ["black", "grey"];
-const PAID_COLORS = ["violet", "blue", "orange"];
-
-function passesFilter(data) {
-    const isFree = FREE_COLORS.includes(data.color);
-    if (currentFilter === "paid") return PAID_COLORS.includes(data.color);
-    if (currentFilter === "free") return isFree;
-    return true;
-}
-
-function setFilter(filter) {
-    currentFilter = filter;
-    document.querySelectorAll(".chip").forEach(chip => {
-        chip.setAttribute("aria-pressed", chip.dataset.filter === filter ? "true" : "false");
-    });
-    markers.forEach(m => {
-        if (passesFilter(m.data)) {
-            if (!map.hasLayer(m.marker)) m.marker.addTo(map);
-        } else {
-            map.removeLayer(m.marker);
-        }
-    });
-    updateMarkerCount();
 }
 
 // מקרא: סגור כברירת מחדל, וזוכר אם המשתמש פתח אותו
