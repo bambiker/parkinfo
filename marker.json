@@ -5122,5 +5122,27 @@
     "daily": "",
     "imageUrl": null,
     "dateTime": "2026-10-27T17:12:48.739Z"
+  },
+  {
+    "lat": 32.07846562187839,
+    "lng": 34.789774417877204,
+    "color": "violet",
+    "note": "חניון בית אסיה",
+    "url": "",
+    "hourly": "28",
+    "daily": "112",
+    "imageUrl": "https://i.imgur.com/AadWpDr.jpeg",
+    "dateTime": "2026-11-09T06:11:53.828Z"
+  },
+  {
+    "lat": 32.076392901821976,
+    "lng": 34.793229103088386,
+    "color": "violet",
+    "note": "בית אגד",
+    "url": "",
+    "hourly": "42",
+    "daily": "85",
+    "imageUrl": "https://i.imgur.com/ydv2zOR.jpeg",
+    "dateTime": "2026-11-09T10:28:11.581Z"
   }
 ]
