@@ -911,7 +911,7 @@ function updateMarkerCount() {
     // סופרים רק חניונים שנמצאים בתחום המפה שעל המסך
     const bounds = map ? map.getBounds() : null;
     const shown = markers.filter(m => !bounds || bounds.contains(m.marker.getLatLng())).length;
-    document.getElementById("shownCount").innerText = `${shown} מתוך ${markers.length}`;
+    document.getElementById("shownCount").innerText = `מוצגים ${shown}/${markers.length}`;
 }
 
 // מקרא: סגור כברירת מחדל, וזוכר אם המשתמש פתח אותו
