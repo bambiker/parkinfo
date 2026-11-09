@@ -11,7 +11,79 @@ const SUN = 0, THU = 4, FRI = 5, SAT = 6;
 const cost = (tariff, start, minutes) => calcCost(tariff, start, minutes).total;
 
 const markers = JSON.parse(fs.readFileSync(__dirname + "/marker.json", "utf8"));
-const tariffOf = name => markers.find(m => m.note === name).tariff;
+// עותק קבוע של תעריפים אמיתיים (מ-28.10.2026), כדי שעדכון מחיר ב-marker.json לא יכשיל את הבדיקות
+const EXAMPLES = {
+    "התבור 2 וויט סיטי": [
+        {
+            "label": "ראשון עד חמישי, 06:00–16:00",
+            "days": "א-ה",
+            "entry": "06:00-16:00",
+            "hour": 20,
+            "max": 70,
+            "until": "06:00"
+        },
+        {
+            "label": "ראשון עד חמישי, 16:00–06:00",
+            "days": "א-ה",
+            "entry": "16:00-06:00",
+            "flat": 24,
+            "until": "06:00"
+        },
+        {
+            "label": "שישי עד שבת",
+            "days": "ו-ש",
+            "entry": "06:00-06:00",
+            "hour": 35,
+            "max": 120,
+            "until": "06:00"
+        }
+    ],
+    "עזריאלי תל אביב": [
+        {
+            "label": "שישי–שבת",
+            "days": "ו-ש",
+            "minute": 0.4,
+            "max": 25
+        },
+        {
+            "label": "ערב (כניסה 17:00–24:00)",
+            "entry": "17:00-24:00",
+            "minute": 0.4,
+            "max": 25
+        },
+        {
+            "label": "יום",
+            "minute": 0.4,
+            "max": 100
+        }
+    ],
+    "ברוריה": [
+        {
+            "label": "ראשון–שישי, יום",
+            "days": "א-ו",
+            "entry": "07:00-18:00",
+            "hour": 24,
+            "grace": 15
+        },
+        {
+            "label": "ראשון–שישי, ערב ולילה",
+            "days": "א-ו",
+            "entry": "18:00-07:00",
+            "flat": 36,
+            "until": "07:00",
+            "grace": 15
+        },
+        {
+            "label": "שבת",
+            "days": "ש",
+            "entry": "07:00-07:00",
+            "flat": 36,
+            "until": "07:00",
+            "grace": 15
+        }
+    ]
+};
+const tariffOf = name => EXAMPLES[name];
 
 test("ימים בעברית", () => {
     assert.deepStrictEqual(parseDays("א-ה"), [0, 1, 2, 3, 4]);
