@@ -230,14 +230,13 @@
             <button class="chip" data-filter="all" aria-pressed="true" onclick="setFilter('all')">הכל</button>
             <button class="chip" data-filter="paid" aria-pressed="false" onclick="setFilter('paid')">בתשלום</button>
             <button class="chip" data-filter="free" aria-pressed="false" onclick="setFilter('free')">חינם</button>
-            <button class="chip" data-filter="cheap" aria-pressed="false" onclick="setFilter('cheap')">עד 60 ₪ ליום</button>
         </div>
 
         <div class="map-row">
             <div class="segmented" role="radiogroup" aria-label="איזה מחיר להציג">
-                <label><input type="radio" name="priceDisplay" value="daily" checked onchange="onPriceModeChange()"><span>מחיר יומי</span></label>
+                <label><input type="radio" name="priceDisplay" value="daily" onchange="onPriceModeChange()"><span>מחיר יומי</span></label>
                 <label><input type="radio" name="priceDisplay" value="hourly" onchange="onPriceModeChange()"><span>מחיר שעתי</span></label>
-                <label><input type="radio" name="priceDisplay" value="plan" onchange="onPriceModeChange()"><span>החניה שלי</span></label>
+                <label><input type="radio" name="priceDisplay" value="plan" checked onchange="onPriceModeChange()"><span>החניה שלי</span></label>
             </div>
             <div class="info-pill">
                 <div id="lastUpdatedPill">עודכן לאחרונה: —</div>
@@ -874,7 +873,7 @@ function updateMarkerCount() {
     document.getElementById("shownCount").innerText = `מוצגים ${shown} מתוך ${markers.length}`;
 }
 
-// סינון: הכל / בתשלום / חינם / עד 60 ₪ ליום
+// סינון: הכל / בתשלום / חינם
 let currentFilter = "all";
 const FREE_COLORS = ["black", "grey"];
 const PAID_COLORS = ["violet", "blue", "orange"];
@@ -883,10 +882,6 @@ function passesFilter(data) {
     const isFree = FREE_COLORS.includes(data.color);
     if (currentFilter === "paid") return PAID_COLORS.includes(data.color);
     if (currentFilter === "free") return isFree;
-    if (currentFilter === "cheap") {
-        const daily = parseFloat(data.daily);
-        return isFree || (PAID_COLORS.includes(data.color) && !isNaN(daily) && daily <= 60);
-    }
     return true;
 }
 
@@ -1407,6 +1402,7 @@ function initSmallMap() {
 
 //startMapAtUserLocation();
 initLegend();
+onPriceModeChange(); // ברירת מחדל: "החניה שלי" מעכשיו
 fallbackMap();
 	
 </script>
