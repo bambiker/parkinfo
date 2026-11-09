@@ -628,7 +628,7 @@ function getDomain(url) {
     }
 }
 	
-function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, dateTime = null, contactinfo= null) {
+function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, dateTime = null, contactinfo= null, tariff = null) {
 //    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
 //        dateTime = new Date().toISOString();
 //}
@@ -708,7 +708,7 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
         }
     });
 
-    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime, contactinfo } });
+    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime, contactinfo, tariff } });
     if (!passesFilter(markers[markers.length - 1].data)) {
         map.removeLayer(marker);
     }
@@ -938,7 +938,7 @@ function submitForm() {
             map.removeLayer(editing.marker);
             markers = markers.filter(m => m !== editing);
         }
-        addMarker(latlng.lat, latlng.lng, color, note, finalUrl, hourly, daily, imgUrl, dateTime, contact);
+        addMarker(latlng.lat, latlng.lng, color, note, finalUrl, hourly, daily, imgUrl, dateTime, contact, editing ? editing.data.tariff : null);
         document.getElementById("controls").style.display = "none";
         document.getElementById("editNotice").style.display = "none";
         addMode = false;
@@ -996,6 +996,11 @@ function downloadMarkers() {
             dateTime: m.data.dateTime
         };
 
+        // תעריף מפורט (TARIFFS.md) נשמר רק אם קיים
+        if (m.data.tariff) {
+            markerObj.tariff = m.data.tariff;
+        }
+
         // הוסף רק אם contactinfo לא ריק
         if (m.data.contactinfo && m.data.contactinfo.trim() !== "") {
             markerObj.contact = m.data.contactinfo.trim();
@@ -1036,7 +1041,7 @@ function uploadMarkers(event) {
 		 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
      		 console.log("Loaded marker dateTime:", d.dateTime);
 
-                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime); //dt
+                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime, null, d.tariff); //dt
 
             });
 
@@ -1195,7 +1200,7 @@ function loadMarkers() {
         .then(data => {
             if (Array.isArray(data)) {
                 data.forEach(d => {
-                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime);
+                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime, null, d.tariff);
                 });
             } else {
                 console.error("Invalid marker data");
