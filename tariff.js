@@ -106,18 +106,21 @@
     }
 
     // עלות של חניה לפי מקטעי מחיר, עבור `minutes` דקות מתחילת התקופה
+    // כל מקטע מעוגל למעלה ליחידה שלו (unit של המקטע, אחרת של הכלל, אחרת דקה),
+    // כך ש"שעה ראשונה או חלק ממנה" היא מקטע של 60 דקות עם unit 60
     function ratesCost(rule, minutes) {
-        const unit = rule.unit > 0 ? rule.unit : 1;
-        const billed = Math.ceil(minutes / unit) * unit;
         const segs = ruleSegments(rule);
         let total = 0, segStart = 0;
-        for (let j = 0; j < segs.length && segStart < billed; j++) {
+        for (let j = 0; j < segs.length && segStart < minutes; j++) {
             const seg = segs[j];
-            const segEnd = j === segs.length - 1 ? billed : Math.min(billed, segStart + seg.minutes);
-            let cost = (segEnd - segStart) * hourPrice(seg) / 60;
+            const last = j === segs.length - 1;
+            const used = last ? minutes - segStart : Math.min(minutes, segStart + seg.minutes) - segStart;
+            const unit = seg.unit > 0 ? seg.unit : rule.unit > 0 ? rule.unit : 1;
+            const billed = Math.ceil(used / unit) * unit;
+            let cost = (last ? billed : Math.min(billed, seg.minutes)) * hourPrice(seg) / 60;
             if (typeof seg.max === "number") cost = Math.min(cost, seg.max);
             total += cost;
-            segStart = segEnd;
+            segStart += used;
         }
         return typeof rule.max === "number" ? Math.min(total, rule.max) : total;
     }
@@ -143,7 +146,9 @@
             }
             first = false;
 
-            const end = rule.free ? null : periodEnd(rule, entry, 24);
+            // חינם בלי until/hours = כל החניה חינם. עם until (למשל חניה ברחוב, חינם עד 08:00) ממשיכים מאותה שעה
+            const freeUntilEnd = rule.free && rule.until === undefined && rule.hours === undefined;
+            const end = freeUntilEnd ? null : periodEnd(rule, entry, 24);
             const periodMinutes = end ? Math.max(1, Math.round((end - entry) / 60000)) : left;
             const used = Math.min(left, periodMinutes);
             const cost = rule.free ? 0 : typeof rule.flat === "number" ? rule.flat : ratesCost(rule, used);

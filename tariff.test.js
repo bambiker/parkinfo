@@ -71,6 +71,18 @@ test("שעתיים ראשונות חינם, חיוב לפי רבע שעה, מק�
     const malcha = [{ rates: [{ minutes: 180, minute: 0.3, max: 7 }, { minute: 0.3 }], max: 90 }];
     assert.strictEqual(cost(malcha, at(SUN, 10), 240), 25);  // 7 על 3 שעות + 18 על השעה הרביעית
     assert.strictEqual(cost([{ days: "ש", free: true }, { hour: 10 }], at(SAT, 10), 120), 0);
+    // שנקר 2: שעה ראשונה או חלק ממנה 15, אחר כך 3 לכל רבע שעה או חלק ממנו
+    const shenkar = [{ rates: [{ minutes: 60, hour: 15, unit: 60 }, { hour: 12, unit: 15 }], max: 35 }];
+    assert.strictEqual(cost(shenkar, at(SUN, 10), 10), 15);
+    assert.strictEqual(cost(shenkar, at(SUN, 10), 61), 18);
+    assert.strictEqual(cost(shenkar, at(SUN, 10), 90), 21);
+    assert.strictEqual(cost(shenkar, at(SUN, 10), 600), 35);
+    // חניה ברחוב: בתשלום 08:00-19:00 לפי שעות בפועל, חינם בשאר הזמן
+    const street = [
+        { days: "א-ה", entry: "08:00-19:00", hour: 6, until: "19:00" },
+        { entry: "19:00-08:00", free: true, until: "08:00" }];
+    assert.strictEqual(cost(street, at(SUN, 18), 180), 6);   // 18:00-19:00 בתשלום, אחר כך חינם
+    assert.strictEqual(cost(street, at(SUN, 7), 120), 6);    // 07:00-08:00 חינם, 08:00-09:00 בתשלום
 });
 
 test("הערכה לחניון בלי תעריף מפורט", () => {

@@ -8,7 +8,32 @@
     "hourly": "15",
     "daily": "35",
     "imageUrl": "https://i.imgur.com/lP1GBYD.jpeg",
-    "dateTime": "2025-05-22T16:46:19.439Z"
+    "dateTime": "2025-05-22T16:46:19.439Z",
+    "tariff": [
+      {
+        "label": "יום (כניסה 06:00–19:00)",
+        "entry": "06:00-19:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 12,
+            "unit": 15
+          }
+        ],
+        "max": 35,
+        "until": "19:00"
+      },
+      {
+        "label": "לילה (כניסה 19:00–06:00)",
+        "entry": "19:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      }
+    ]
   },
   {
     "lat": 32.10061509832794,
@@ -19,7 +44,54 @@
     "hourly": "16",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/9qDLpUQ.jpeg",
-    "dateTime": "2025-05-22T16:46:19.441Z"
+    "dateTime": "2025-05-22T16:46:19.441Z",
+    "tariff": [
+      {
+        "label": "סוף שבוע וחג, יום",
+        "days": "ו-ש",
+        "entry": "05:00-20:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 16,
+            "unit": 60
+          },
+          {
+            "hour": 16,
+            "unit": 15
+          }
+        ],
+        "max": 60,
+        "until": "20:00",
+        "grace": 15
+      },
+      {
+        "label": "ימי חול, יום",
+        "days": "א-ה",
+        "entry": "05:00-20:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 10,
+            "unit": 60
+          },
+          {
+            "hour": 12,
+            "unit": 15
+          }
+        ],
+        "max": 50,
+        "until": "20:00",
+        "grace": 15
+      },
+      {
+        "label": "לילה (כניסה 20:00–05:00)",
+        "entry": "20:00-05:00",
+        "flat": 25,
+        "until": "05:00",
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 32.10033140441717,
@@ -30,7 +102,14 @@
     "hourly": "35",
     "daily": "35",
     "imageUrl": "https://i.imgur.com/ttJJbkF.jpeg",
-    "dateTime": "2025-05-22T16:46:19.442Z"
+    "dateTime": "2025-05-22T16:46:19.442Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית, עד 07:00 למחרת",
+        "flat": 35,
+        "until": "07:00"
+      }
+    ]
   },
   {
     "lat": 31.896647024396483,
@@ -41,7 +120,26 @@
     "hourly": "20",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/hGQHIkk.jpeg",
-    "dateTime": "2025-05-22T16:46:19.443Z"
+    "dateTime": "2025-05-22T16:46:19.443Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 20,
+            "unit": 60
+          },
+          {
+            "minutes": 15,
+            "hour": 40,
+            "unit": 15
+          }
+        ],
+        "max": 30,
+        "until": "07:00"
+      }
+    ]
   },
   {
     "lat": 31.89651494655929,
@@ -52,7 +150,14 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/yKP5q5j.jpeg",
-    "dateTime": "2025-05-22T16:46:19.443Z"
+    "dateTime": "2025-05-22T16:46:19.443Z",
+    "tariff": [
+      {
+        "label": "לכל היום",
+        "flat": 20,
+        "until": "24:00"
+      }
+    ]
   },
   {
     "lat": 31.89786293395349,
@@ -63,7 +168,36 @@
     "hourly": "12",
     "daily": "40+",
     "imageUrl": "https://i.imgur.com/iFhtacI.jpeg",
-    "dateTime": "2025-05-22T16:46:19.444Z"
+    "dateTime": "2025-05-22T16:46:19.444Z",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "flat": 40,
+        "hours": 24
+      },
+      {
+        "label": "ערב ולילה (כניסה 15:00–07:00)",
+        "entry": "15:00-07:00",
+        "flat": 40,
+        "until": "07:00"
+      },
+      {
+        "label": "יום",
+        "entry": "07:00-15:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 12,
+            "unit": 60
+          },
+          {
+            "hour": 12,
+            "unit": 15
+          }
+        ]
+      }
+    ]
   },
   {
     "lat": 31.900543617020645,
@@ -83,7 +217,28 @@
     "hourly": "10",
     "daily": "70",
     "imageUrl": "https://i.imgur.com/Tw2j2f6.jpeg",
-    "dateTime": "2025-05-22T16:46:19.447Z"
+    "dateTime": "2025-05-22T16:46:19.447Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 120,
+            "hour": 0
+          },
+          {
+            "minutes": 60,
+            "hour": 10,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 70
+      }
+    ]
   },
   {
     "lat": 31.89940543436071,
@@ -94,7 +249,14 @@
     "hourly": "35",
     "daily": "35",
     "imageUrl": "https://i.imgur.com/a6bqjLc.jpeg",
-    "dateTime": "2026-03-13T07:14:17.065Z"
+    "dateTime": "2026-03-13T07:14:17.065Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית, עד חצות",
+        "flat": 35,
+        "until": "24:00"
+      }
+    ]
   },
   {
     "lat": 31.909506139169984,
@@ -105,7 +267,14 @@
     "hourly": "25",
     "daily": "25",
     "imageUrl": "https://i.imgur.com/I28GBwl.jpeg",
-    "dateTime": "2026-07-08T06:46:19.448Z"
+    "dateTime": "2026-07-08T06:46:19.448Z",
+    "tariff": [
+      {
+        "label": "כניסה ללא הגבלת זמן",
+        "flat": 25,
+        "hours": 720
+      }
+    ]
   },
   {
     "lat": 31.90328796368529,
@@ -127,7 +296,30 @@
     "hourly": "5.4",
     "daily": "23.1",
     "imageUrl": "https://i.imgur.com/HzqTDl3.jpeg",
-    "dateTime": "2025-05-22T16:46:19.449Z"
+    "dateTime": "2025-05-22T16:46:19.449Z",
+    "tariff": [
+      {
+        "label": "חניון מכללת פרס בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 5.4,
+        "until": "19:00",
+        "max": 23.1
+      },
+      {
+        "label": "חניון מכללת פרס בתשלום",
+        "days": "ו",
+        "entry": "08:00-13:00",
+        "hour": 5.4,
+        "until": "13:00",
+        "max": 23.1
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.901532795253097,
@@ -149,7 +341,31 @@
     "hourly": "12",
     "daily": "50",
     "imageUrl": "https://i.imgur.com/hlx10M0.jpeg",
-    "dateTime": "2025-05-22T16:46:19.450Z"
+    "dateTime": "2025-05-22T16:46:19.450Z",
+    "tariff": [
+      {
+        "label": "כל השבוע, 06:00–23:00",
+        "entry": "06:00-23:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 12,
+            "unit": 60
+          },
+          {
+            "hour": 38,
+            "unit": 60
+          }
+        ],
+        "max": 50
+      },
+      {
+        "label": "כניסה 23:00–06:00 (לא מפורט בשלט)",
+        "entry": "23:00-06:00",
+        "flat": 50,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 32.08098438100123,
@@ -160,7 +376,15 @@
     "hourly": "",
     "daily": "",
     "imageUrl": "https://i.imgur.com/E24YzeB.jpeg",
-    "dateTime": "2025-05-22T16:46:19.450Z"
+    "dateTime": "2025-05-22T16:46:19.450Z",
+    "tariff": [
+      {
+        "label": "כניסה מותרת 19:00–24:00 (חניה עד 06:30)",
+        "entry": "19:00-24:00",
+        "free": true,
+        "until": "06:30"
+      }
+    ]
   },
   {
     "lat": 32.08194948650254,
@@ -171,7 +395,30 @@
     "hourly": "30",
     "daily": "120",
     "imageUrl": "https://i.imgur.com/pR9Rrul.jpeg",
-    "dateTime": "2025-05-22T16:46:19.451Z"
+    "dateTime": "2025-05-22T16:46:19.451Z",
+    "tariff": [
+      {
+        "label": "ערב (כניסה 19:00–04:00)",
+        "entry": "19:00-04:00",
+        "flat": 40,
+        "until": "04:00"
+      },
+      {
+        "label": "שעתי",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 120
+      }
+    ]
   },
   {
     "lat": 32.08460212145339,
@@ -182,7 +429,43 @@
     "hourly": "25",
     "daily": "140",
     "imageUrl": "https://i.imgur.com/YfRx873.jpeg",
-    "dateTime": "2025-05-22T16:46:19.452Z"
+    "dateTime": "2025-05-22T16:46:19.452Z",
+    "tariff": [
+      {
+        "label": "חמישי–שבת",
+        "days": "ה-ש",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 40,
+            "unit": 60
+          },
+          {
+            "hour": 48,
+            "unit": 15
+          }
+        ],
+        "max": 140,
+        "until": "24:00"
+      },
+      {
+        "label": "ראשון–רביעי",
+        "days": "א-ד",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 25,
+            "unit": 60
+          },
+          {
+            "hour": 36,
+            "unit": 15
+          }
+        ],
+        "max": 110,
+        "until": "24:00"
+      }
+    ]
   },
   {
     "lat": 32.08555896440299,
@@ -193,62 +476,183 @@
     "hourly": "28",
     "daily": "120",
     "imageUrl": "https://i.imgur.com/5OT4ZMg.jpeg",
-    "dateTime": "2025-05-22T16:46:19.453Z"
+    "dateTime": "2025-05-22T16:46:19.453Z",
+    "tariff": [
+      {
+        "label": "חמישי ערב",
+        "days": "ה",
+        "entry": "17:00-24:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 36,
+            "unit": 15
+          }
+        ],
+        "max": 160,
+        "until": "24:00",
+        "grace": 10
+      },
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 36,
+            "unit": 15
+          }
+        ],
+        "max": 160,
+        "until": "24:00",
+        "grace": 10
+      },
+      {
+        "label": "ראשון–חמישי",
+        "days": "א-ה",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 20,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 120,
+        "until": "24:00",
+        "grace": 10
+      }
+    ]
   },
   {
     "lat": 32.06851024907023,
     "lng": 34.76580566124598,
     "color": "violet",
     "note": "אחוזת החוף הכרמל 2",
-    "url": "",
-    "hourly": "30",
-    "daily": "30",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=114",
+    "hourly": "36",
+    "daily": "36",
     "imageUrl": "https://i.imgur.com/CKe49ZR.jpeg",
-    "dateTime": "2025-05-22T16:46:19.455Z"
+    "dateTime": "2026-11-09T14:39:49.000Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית, ל־24 שעות",
+        "flat": 36,
+        "hours": 24,
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 32.06691831058792,
     "lng": 34.76651803671679,
     "color": "violet",
     "note": "עירוני הכרמל",
-    "url": "",
-    "hourly": "20",
-    "daily": "30",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=24",
+    "hourly": "24",
+    "daily": "576",
     "imageUrl": "https://i.imgur.com/adFZN70.jpeg",
-    "dateTime": "2025-05-22T16:46:19.455Z"
+    "dateTime": "2026-11-09T14:39:49.000Z",
+    "tariff": [
+      {
+        "label": "ראשון–שישי, יום",
+        "days": "א-ו",
+        "entry": "07:00-18:00",
+        "hour": 24,
+        "grace": 15
+      },
+      {
+        "label": "ראשון–שישי, ערב ולילה",
+        "days": "א-ו",
+        "entry": "18:00-07:00",
+        "flat": 36,
+        "until": "07:00",
+        "grace": 15
+      },
+      {
+        "label": "שבת",
+        "days": "ש",
+        "entry": "07:00-07:00",
+        "flat": 36,
+        "until": "07:00",
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 32.065847622283165,
     "lng": 34.76441529920036,
     "color": "violet",
     "note": "גן הכובשים 1",
-    "url": "",
-    "hourly": "20",
-    "daily": "30",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=13",
+    "hourly": "24",
+    "daily": "576",
     "imageUrl": "https://i.imgur.com/J2oH0pO.jpeg",
-    "dateTime": "2025-05-22T16:46:19.455Z"
+    "dateTime": "2026-11-09T14:39:49.000Z",
+    "tariff": [
+      {
+        "label": "כל השבוע, יום",
+        "entry": "07:00-18:00",
+        "hour": 24,
+        "grace": 15
+      },
+      {
+        "label": "כל השבוע, ערב ולילה",
+        "entry": "18:00-07:00",
+        "flat": 36,
+        "until": "07:00",
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 32.065984219195926,
     "lng": 34.763718465842864,
     "color": "violet",
     "note": "גן הכובשים 2",
-    "url": "",
-    "hourly": "20",
-    "daily": "30",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=129",
+    "hourly": "36",
+    "daily": "36",
     "imageUrl": "https://i.imgur.com/UOj2TFU.jpeg",
-    "dateTime": "2025-05-22T16:46:19.456Z"
+    "dateTime": "2026-11-09T14:39:49.000Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית, עד 06:00 למחרת",
+        "flat": 36,
+        "until": "06:00",
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 32.064745531921716,
     "lng": 34.76450256286038,
     "color": "violet",
     "note": "תקומה",
-    "url": "",
-    "hourly": "30",
-    "daily": "30",
+    "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=44",
+    "hourly": "36",
+    "daily": "36",
     "imageUrl": "https://i.imgur.com/mGJg2QA.jpeg",
-    "dateTime": "2025-05-22T16:46:19.458Z"
+    "dateTime": "2026-11-09T14:39:49.000Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית, ל־24 שעות",
+        "flat": 36,
+        "hours": 24,
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 31.923783264322562,
@@ -292,7 +696,15 @@
     "hourly": "",
     "daily": "",
     "imageUrl": "https://i.imgur.com/qXK9zzc.jpeg",
-    "dateTime": "2025-05-22T16:46:19.460Z"
+    "dateTime": "2025-05-22T16:46:19.460Z",
+    "tariff": [
+      {
+        "label": "פתוח 06:00–23:00",
+        "entry": "06:00-23:00",
+        "free": true,
+        "until": "23:00"
+      }
+    ]
   },
   {
     "lat": 31.896055925765754,
@@ -303,7 +715,48 @@
     "hourly": "15",
     "daily": "25",
     "imageUrl": "https://i.imgur.com/MMfeQRc.jpeg",
-    "dateTime": "2025-05-22T16:46:19.460Z"
+    "dateTime": "2025-05-22T16:46:19.460Z",
+    "tariff": [
+      {
+        "label": "שישי וערב חג",
+        "days": "ו",
+        "entry": "07:00-15:00",
+        "flat": 20,
+        "until": "15:00"
+      },
+      {
+        "label": "מ־15:00 (ראשון, שני, רביעי, חמישי)",
+        "days": "א-ב,ד-ה",
+        "entry": "15:00-22:00",
+        "flat": 10,
+        "until": "22:00"
+      },
+      {
+        "label": "מ־15:00 (שלישי)",
+        "days": "ג",
+        "entry": "15:00-21:00",
+        "flat": 10,
+        "until": "21:00"
+      },
+      {
+        "label": "ראשון–חמישי, יום",
+        "days": "א-ה",
+        "entry": "07:00-15:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 25,
+        "until": "22:00"
+      }
+    ]
   },
   {
     "lat": 31.895811504153286,
@@ -314,7 +767,15 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/ChAkAQe.jpeg",
-    "dateTime": "2025-05-22T16:46:19.461Z"
+    "dateTime": "2025-05-22T16:46:19.461Z",
+    "tariff": [
+      {
+        "label": "חניה יומית (נסגר ב־21:00)",
+        "entry": "00:00-21:00",
+        "flat": 20,
+        "until": "21:00"
+      }
+    ]
   },
   {
     "lat": 31.89594206480674,
@@ -325,7 +786,24 @@
     "hourly": "15",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/wxH4gkP.jpeg",
-    "dateTime": "2025-05-22T16:46:19.461Z"
+    "dateTime": "2025-05-22T16:46:19.461Z",
+    "tariff": [
+      {
+        "label": "מזדמנים",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 5,
+            "unit": 60
+          }
+        ],
+        "max": 30
+      }
+    ]
   },
   {
     "lat": 31.896736485745272,
@@ -336,7 +814,14 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/ieX7OU8.jpeg",
-    "dateTime": "2025-05-22T16:48:21.174Z"
+    "dateTime": "2025-05-22T16:48:21.174Z",
+    "tariff": [
+      {
+        "label": "חניה יומית",
+        "flat": 20,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 31.894918628855766,
@@ -347,7 +832,14 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/cu7tpnc.jpeg",
-    "dateTime": "2025-05-23T09:18:44.821Z"
+    "dateTime": "2025-05-23T09:18:44.821Z",
+    "tariff": [
+      {
+        "label": "ללא הגבלת זמן",
+        "flat": 20,
+        "hours": 720
+      }
+    ]
   },
   {
     "lat": 31.89451546447937,
@@ -358,7 +850,28 @@
     "hourly": "16",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/GrApMke.jpeg",
-    "dateTime": "2025-05-23T09:19:34.525Z"
+    "dateTime": "2025-05-23T09:19:34.525Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 120,
+            "hour": 0
+          },
+          {
+            "minutes": 60,
+            "hour": 16,
+            "unit": 60
+          },
+          {
+            "hour": 16,
+            "unit": 15
+          }
+        ],
+        "max": 60
+      }
+    ]
   },
   {
     "lat": 31.9207747251808,
@@ -435,7 +948,14 @@
     "hourly": "5.40",
     "daily": "19",
     "imageUrl": "https://i.imgur.com/YKiA9Wu.jpeg",
-    "dateTime": "2025-05-27T05:27:51.047Z"
+    "dateTime": "2025-05-27T05:27:51.047Z",
+    "tariff": [
+      {
+        "label": "חניה שעתית או יומית (פנגו/סלופארק)",
+        "hour": 5.4,
+        "max": 19
+      }
+    ]
   },
   {
     "lat": 31.91131830424193,
@@ -446,7 +966,37 @@
     "hourly": "20",
     "daily": "63",
     "imageUrl": "https://i.imgur.com/KTInuwV.jpeg",
-    "dateTime": "2026-06-15T05:29:09.712Z"
+    "dateTime": "2026-06-15T05:29:09.712Z",
+    "tariff": [
+      {
+        "label": "שישי, שבת וערב חג (ללא הגבלת זמן)",
+        "days": "ו-ש",
+        "flat": 10,
+        "hours": 48
+      },
+      {
+        "label": "ערב ולילה (כניסה 17:00–06:00)",
+        "entry": "17:00-06:00",
+        "flat": 10,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-17:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 63
+      }
+    ]
   },
   {
     "lat": 31.911917219817113,
@@ -457,7 +1007,37 @@
     "hourly": "18",
     "daily": "63",
     "imageUrl": "https://i.imgur.com/UUSYnjz.jpeg",
-    "dateTime": "2025-05-27T05:31:27.010Z"
+    "dateTime": "2025-05-27T05:31:27.010Z",
+    "tariff": [
+      {
+        "label": "שישי, שבת וערב חג (ללא הגבלת זמן)",
+        "days": "ו-ש",
+        "flat": 10,
+        "hours": 48
+      },
+      {
+        "label": "ערב ולילה (כניסה 17:00–06:00)",
+        "entry": "17:00-06:00",
+        "flat": 10,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-17:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 63
+      }
+    ]
   },
   {
     "lat": 31.915349739661025,
@@ -512,7 +1092,14 @@
     "hourly": "25",
     "daily": "25",
     "imageUrl": "https://i.imgur.com/72Nfn01.jpeg",
-    "dateTime": "2025-06-01T04:51:54.573Z"
+    "dateTime": "2025-06-01T04:51:54.573Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית, עד 06:00 למחרת",
+        "flat": 25,
+        "until": "06:00"
+      }
+    ]
   },
   {
     "lat": 31.775832695554325,
@@ -523,7 +1110,28 @@
     "hourly": "24",
     "daily": "150",
     "imageUrl": "https://i.imgur.com/KTRtEOG.jpeg",
-    "dateTime": "2025-06-02T18:19:20.584Z"
+    "dateTime": "2025-06-02T18:19:20.584Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 0
+          },
+          {
+            "minutes": 60,
+            "hour": 12,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 150
+      }
+    ]
   },
   {
     "lat": 31.77639340239642,
@@ -567,7 +1175,14 @@
     "hourly": "25",
     "daily": "25",
     "imageUrl": "https://i.imgur.com/aaOzWwD.jpeg",
-    "dateTime": "2025-06-06T05:58:49.860Z"
+    "dateTime": "2025-06-06T05:58:49.860Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית (יציאה וחזרה)",
+        "flat": 25,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 31.91312331283779,
@@ -589,7 +1204,32 @@
     "hourly": "30",
     "daily": "90",
     "imageUrl": "https://i.imgur.com/bavPl11.jpeg",
-    "dateTime": "2025-06-06T06:01:38.446Z"
+    "dateTime": "2025-06-06T06:01:38.446Z",
+    "tariff": [
+      {
+        "label": "כניסה אחרי 17:00",
+        "entry": "17:00-06:00",
+        "flat": 30,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-17:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 90,
+        "until": "06:00"
+      }
+    ]
   },
   {
     "lat": 31.810877503451135,
@@ -600,7 +1240,22 @@
     "hourly": "4.2",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/ZhG6xNE.jpeg",
-    "dateTime": "2025-06-06T10:02:57.160Z"
+    "dateTime": "2025-06-06T10:02:57.160Z",
+    "tariff": [
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "א-ש",
+        "entry": "08:00-22:00",
+        "hour": 4.2,
+        "until": "22:00",
+        "max": 20
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.81015376216909,
@@ -611,7 +1266,22 @@
     "hourly": "4.2",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/MfUfqay.jpeg",
-    "dateTime": "2025-06-06T11:07:25.283Z"
+    "dateTime": "2025-06-06T11:07:25.283Z",
+    "tariff": [
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "א-ש",
+        "entry": "08:00-22:00",
+        "hour": 4.2,
+        "until": "22:00",
+        "max": 20
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.764606985460674,
@@ -2809,7 +3479,24 @@
     "hourly": "16",
     "daily": "54",
     "imageUrl": "https://i.imgur.com/YOHFZES.jpeg",
-    "dateTime": "2025-07-13T16:37:28.637Z"
+    "dateTime": "2025-07-13T16:37:28.637Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 16,
+            "unit": 15
+          }
+        ],
+        "max": 54
+      }
+    ]
   },
   {
     "lat": 31.787909906417024,
@@ -2930,7 +3617,14 @@
     "hourly": "60",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/Pqympvu.jpeg",
-    "dateTime": "2025-07-14T14:47:36.434Z"
+    "dateTime": "2025-07-14T14:47:36.434Z",
+    "tariff": [
+      {
+        "label": "מחיר חניה יומית (תשלום בכניסה)",
+        "flat": 60,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 31.913189354010484,
@@ -2941,7 +3635,30 @@
     "hourly": "5.4",
     "daily": "23.1",
     "imageUrl": "https://i.imgur.com/EUzbJ76.jpeg",
-    "dateTime": "2025-07-14T14:50:42.529Z"
+    "dateTime": "2025-07-14T14:50:42.529Z",
+    "tariff": [
+      {
+        "label": "חניון המדע בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 5.4,
+        "until": "19:00",
+        "max": 23.1
+      },
+      {
+        "label": "חניון המדע בתשלום",
+        "days": "ו",
+        "entry": "08:00-13:00",
+        "hour": 5.4,
+        "until": "13:00",
+        "max": 23.1
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.910517934915433,
@@ -2952,7 +3669,24 @@
     "hourly": "60",
     "daily": "250",
     "imageUrl": "https://i.imgur.com/HU8CEBw.jpeg",
-    "dateTime": "2025-07-14T14:54:16.596Z"
+    "dateTime": "2025-07-14T14:54:16.596Z",
+    "tariff": [
+      {
+        "label": "מזדמנים",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 60,
+            "unit": 60
+          },
+          {
+            "hour": 40,
+            "unit": 15
+          }
+        ],
+        "max": 250
+      }
+    ]
   },
   {
     "lat": 31.910517934915433,
@@ -2963,7 +3697,24 @@
     "hourly": "60",
     "daily": "250",
     "imageUrl": "https://i.imgur.com/Ew8zAyg.jpeg",
-    "dateTime": "2025-07-14T14:54:33.896Z"
+    "dateTime": "2025-07-14T14:54:33.896Z",
+    "tariff": [
+      {
+        "label": "מזדמנים",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 60,
+            "unit": 60
+          },
+          {
+            "hour": 40,
+            "unit": 15
+          }
+        ],
+        "max": 250
+      }
+    ]
   },
   {
     "lat": 31.910792673545252,
@@ -2974,7 +3725,30 @@
     "hourly": "5.4",
     "daily": "23.1",
     "imageUrl": "https://i.imgur.com/RR5FFMo.jpeg",
-    "dateTime": "2025-07-14T14:58:57.370Z"
+    "dateTime": "2025-07-14T14:58:57.370Z",
+    "tariff": [
+      {
+        "label": "חניון המדע בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 5.4,
+        "until": "19:00",
+        "max": 23.1
+      },
+      {
+        "label": "חניון המדע בתשלום",
+        "days": "ו",
+        "entry": "08:00-13:00",
+        "hour": 5.4,
+        "until": "13:00",
+        "max": 23.1
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.909774497124612,
@@ -2985,7 +3759,29 @@
     "hourly": "20",
     "daily": "50",
     "imageUrl": "https://i.imgur.com/fFZh7ZX.jpeg",
-    "dateTime": "2025-07-14T15:03:49.496Z"
+    "dateTime": "2025-07-14T15:03:49.496Z",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "free": true
+      },
+      {
+        "label": "ראשון–חמישי",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 50
+      }
+    ]
   },
   {
     "lat": 32.098934058882726,
@@ -2996,7 +3792,30 @@
     "hourly": "10",
     "daily": "90",
     "imageUrl": "https://i.imgur.com/M3R4Bz0.jpeg",
-    "dateTime": "2025-07-16T16:53:23.798Z"
+    "dateTime": "2025-07-16T16:53:23.798Z",
+    "tariff": [
+      {
+        "label": "ראשון–חמישי 08:00–18:30",
+        "days": "א-ה",
+        "entry": "08:00-18:30",
+        "rates": [
+          {
+            "minutes": 90,
+            "hour": 0
+          },
+          {
+            "hour": 10
+          }
+        ],
+        "max": 90,
+        "until": "18:30"
+      },
+      {
+        "label": "מחוץ לשעות התשלום, שישי–שבת וחג",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 32.89235491410316,
@@ -3304,7 +4123,14 @@
     "hourly": "70",
     "daily": "70",
     "imageUrl": "https://i.imgur.com/onN7o9x.jpeg",
-    "dateTime": "2025-07-27T07:16:05.542Z"
+    "dateTime": "2025-07-27T07:16:05.542Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית",
+        "flat": 70,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 32.063202786629624,
@@ -3370,7 +4196,14 @@
     "hourly": "30",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/LsbyD30.jpeg",
-    "dateTime": "2026-06-01T04:29:59.553Z"
+    "dateTime": "2026-06-01T04:29:59.553Z",
+    "tariff": [
+      {
+        "label": "כל היום",
+        "flat": 30,
+        "until": "24:00"
+      }
+    ]
   },
   {
     "lat": 31.90310579190261,
@@ -3447,7 +4280,30 @@
     "hourly": "12.4",
     "daily": "37.2",
     "imageUrl": "https://i.imgur.com/fpuxvlM.jpeg",
-    "dateTime": "2025-08-07T06:35:05.540Z"
+    "dateTime": "2025-08-07T06:35:05.540Z",
+    "tariff": [
+      {
+        "label": "חניה ברחוב בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 12.4,
+        "until": "19:00",
+        "max": 37.2
+      },
+      {
+        "label": "חניה ברחוב בתשלום",
+        "days": "ו",
+        "entry": "08:00-13:00",
+        "hour": 12.4,
+        "until": "13:00",
+        "max": 37.2
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.764047854224504,
@@ -3458,7 +4314,30 @@
     "hourly": "12.4",
     "daily": "37.2",
     "imageUrl": "https://i.imgur.com/GCOHRX0.jpeg",
-    "dateTime": "2025-08-07T06:35:56.187Z"
+    "dateTime": "2025-08-07T06:35:56.187Z",
+    "tariff": [
+      {
+        "label": "חניה ברחוב בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 12.4,
+        "until": "19:00",
+        "max": 37.2
+      },
+      {
+        "label": "חניה ברחוב בתשלום",
+        "days": "ו",
+        "entry": "08:00-13:00",
+        "hour": 12.4,
+        "until": "13:00",
+        "max": 37.2
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.76705160897185,
@@ -3469,18 +4348,56 @@
     "hourly": "25",
     "daily": "125",
     "imageUrl": "https://i.imgur.com/Zo2Gvoj.jpeg",
-    "dateTime": "2025-08-05T17:05:49.085Z"
+    "dateTime": "2025-08-05T17:05:49.085Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 25,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 125
+      }
+    ]
   },
   {
     "lat": 31.941372444974363,
     "lng": 34.834157542848,
-    "color": "black",
+    "color": "violet",
     "note": "קניון באר יעקב",
     "url": "",
     "hourly": "12",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/VH3oa3q.jpeg",
-    "dateTime": "2025-08-11T06:16:12.189Z"
+    "dateTime": "2025-08-11T06:16:12.189Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 150,
+            "hour": 0
+          },
+          {
+            "minutes": 60,
+            "hour": 10,
+            "unit": 60
+          },
+          {
+            "hour": 12,
+            "unit": 15
+          }
+        ],
+        "max": 60
+      }
+    ]
   },
   {
     "lat": 31.805315217247003,
@@ -3524,7 +4441,14 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/qkaBeNh.jpeg",
-    "dateTime": "2025-08-10T16:45:41.658Z"
+    "dateTime": "2025-08-10T16:45:41.658Z",
+    "tariff": [
+      {
+        "label": "מחיר כניסה",
+        "flat": 20,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 31.899329638240758,
@@ -3535,7 +4459,25 @@
     "hourly": "20",
     "daily": "90",
     "imageUrl": "https://i.imgur.com/xIrsMSn.jpeg",
-    "dateTime": "2025-08-11T18:10:44.813Z"
+    "dateTime": "2025-08-11T18:10:44.813Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 180,
+            "hour": 1.6666666666666667,
+            "unit": 180
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 90,
+        "grace": 20
+      }
+    ]
   },
   {
     "lat": 32.181539253159364,
@@ -3999,7 +4941,15 @@
     "hourly": "36",
     "daily": "36",
     "imageUrl": "https://i.imgur.com/5LWKdLg.jpeg",
-    "dateTime": "2026-10-28T15:17:21.000Z"
+    "dateTime": "2026-11-09T14:39:49.000Z",
+    "tariff": [
+      {
+        "label": "כניסה חד פעמית, ל־24 שעות",
+        "flat": 36,
+        "hours": 24,
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 32.0995210659355,
@@ -4243,7 +5193,25 @@
     "hourly": "18",
     "daily": "72",
     "imageUrl": "https://i.imgur.com/m5PILoE.jpeg",
-    "dateTime": "2025-08-21T13:10:28.889Z"
+    "dateTime": "2025-08-21T13:10:28.889Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 18,
+            "unit": 15
+          }
+        ],
+        "max": 72,
+        "until": "05:00"
+      }
+    ]
   },
   {
     "lat": 32.80534394450615,
@@ -5774,7 +6742,24 @@
     "hourly": "20",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/cFdvrlh.jpeg",
-    "dateTime": "2025-09-03T08:34:01.778Z"
+    "dateTime": "2025-09-03T08:34:01.778Z",
+    "tariff": [
+      {
+        "label": "מחירון יום",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 20,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 60
+      }
+    ]
   },
   {
     "lat": 32.091712551872355,
@@ -5785,7 +6770,25 @@
     "hourly": "30",
     "daily": "120",
     "imageUrl": "https://i.imgur.com/IQv1GUx.jpeg",
-    "dateTime": "2025-09-03T08:39:46.969Z"
+    "dateTime": "2025-09-03T08:39:46.969Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 120,
+        "until": "07:00"
+      }
+    ]
   },
   {
     "lat": 32.092551056121295,
@@ -5796,7 +6799,14 @@
     "hourly": "30",
     "daily": "30*",
     "imageUrl": "https://i.imgur.com/AR8Sw78.jpeg",
-    "dateTime": "2025-09-03T08:42:36.008Z"
+    "dateTime": "2025-09-03T08:42:36.008Z",
+    "tariff": [
+      {
+        "label": "30 ₪ לכל שעתיים",
+        "hour": 15,
+        "unit": 120
+      }
+    ]
   },
   {
     "lat": 32.09315055982623,
@@ -5807,7 +6817,25 @@
     "hourly": "30",
     "daily": "120",
     "imageUrl": "https://i.imgur.com/KduVvzm.jpeg",
-    "dateTime": "2025-09-03T08:44:04.444Z"
+    "dateTime": "2025-09-03T08:44:04.444Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 120,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 32.093355345888476,
@@ -5818,7 +6846,24 @@
     "hourly": "20",
     "daily": "100",
     "imageUrl": "https://i.imgur.com/kM1vYMP.jpeg",
-    "dateTime": "2025-09-03T08:44:50.141Z"
+    "dateTime": "2025-09-03T08:44:50.141Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 20,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 100
+      }
+    ]
   },
   {
     "lat": 31.924523296441915,
@@ -5851,7 +6896,44 @@
     "hourly": "4.6",
     "daily": "50.6",
     "imageUrl": "https://i.imgur.com/dbPCMIx.jpeg",
-    "dateTime": "2025-09-03T16:17:31.655Z"
+    "dateTime": "2025-09-03T16:17:31.655Z",
+    "tariff": [
+      {
+        "label": "ראשון–חמישי 08:00–19:00",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 0
+          },
+          {
+            "hour": 4.6
+          }
+        ],
+        "until": "19:00"
+      },
+      {
+        "label": "שישי וערב חג 08:00–14:00",
+        "days": "ו",
+        "entry": "08:00-14:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 0
+          },
+          {
+            "hour": 4.6
+          }
+        ],
+        "until": "14:00"
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 32.771981371364156,
@@ -5862,7 +6944,25 @@
     "hourly": "4",
     "daily": "48",
     "imageUrl": "https://i.imgur.com/Jt5GG8B.png",
-    "dateTime": "2025-09-03T16:40:28.380Z"
+    "dateTime": "2025-09-03T16:40:28.380Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 4,
+            "unit": 60
+          },
+          {
+            "hour": 4,
+            "unit": 15
+          }
+        ],
+        "max": 48,
+        "grace": 10
+      }
+    ]
   },
   {
     "lat": 32.77545816633838,
@@ -8074,7 +9174,25 @@
     "hourly": "28",
     "daily": "110",
     "imageUrl": "https://i.imgur.com/PmMBOTu.jpeg",
-    "dateTime": "2025-10-20T06:19:36.147Z"
+    "dateTime": "2025-10-20T06:19:36.147Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 25,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 110,
+        "until": "07:00"
+      }
+    ]
   },
   {
     "lat": 31.786927884621075,
@@ -8085,7 +9203,32 @@
     "hourly": "20",
     "daily": "70",
     "imageUrl": "https://i.imgur.com/UNRuFoK.jpeg",
-    "dateTime": "2025-10-20T06:21:00.650Z"
+    "dateTime": "2025-10-20T06:21:00.650Z",
+    "tariff": [
+      {
+        "label": "ערב ולילה (כניסה 18:00–06:00)",
+        "entry": "18:00-06:00",
+        "flat": 35,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 70,
+        "until": "24:00"
+      }
+    ]
   },
   {
     "lat": 31.789729266240293,
@@ -8140,7 +9283,28 @@
     "hourly": "4.94",
     "daily": "54",
     "imageUrl": "https://i.imgur.com/R97lBz0.jpeg",
-    "dateTime": "2025-11-23T12:44:45.170Z"
+    "dateTime": "2025-11-23T12:44:45.170Z",
+    "tariff": [
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 4.94,
+        "until": "19:00"
+      },
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "ו",
+        "entry": "08:00-13:00",
+        "hour": 4.94,
+        "until": "13:00"
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.1958702256603,
@@ -8151,7 +9315,35 @@
     "hourly": "6.86",
     "daily": "75",
     "imageUrl": "https://i.imgur.com/nDWTyGl.jpeg",
-    "dateTime": "2025-11-23T12:48:57.516Z"
+    "dateTime": "2025-11-23T12:48:57.516Z",
+    "tariff": [
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 6.86,
+        "until": "19:00"
+      },
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "ו",
+        "entry": "08:00-16:00",
+        "hour": 6.86,
+        "until": "16:00"
+      },
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "ש",
+        "entry": "08:00-19:00",
+        "hour": 6.86,
+        "until": "19:00"
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.19215200526741,
@@ -8173,7 +9365,21 @@
     "hourly": "27",
     "daily": "135",
     "imageUrl": "https://i.imgur.com/QSkdsk2.jpeg",
-    "dateTime": "2025-12-11T10:18:49.969Z"
+    "dateTime": "2025-12-11T10:18:49.969Z",
+    "tariff": [
+      {
+        "label": "אחר הצהריים (כניסה 17:00–06:00)",
+        "entry": "17:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "מחיר לדקה",
+        "minute": 0.45,
+        "max": 135,
+        "until": "06:00"
+      }
+    ]
   },
   {
     "lat": 32.10782686506308,
@@ -8239,7 +9445,25 @@
     "hourly": "20",
     "daily": "40",
     "imageUrl": "https://i.imgur.com/nV5J3tk.jpeg",
-    "dateTime": "2026-02-12T07:50:22.852Z"
+    "dateTime": "2026-02-12T07:50:22.852Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 40,
+        "until": "06:00"
+      }
+    ]
   },
   {
     "lat": 31.89730936283228,
@@ -8250,7 +9474,25 @@
     "hourly": "30",
     "daily": "174",
     "imageUrl": "https://i.imgur.com/WWxUIjz.jpeg",
-    "dateTime": "2026-02-20T08:25:57.832Z"
+    "dateTime": "2026-02-20T08:25:57.832Z",
+    "tariff": [
+      {
+        "label": "מחירון דינמי (לפי השלט בתמונה)",
+        "rates": [
+          {
+            "minutes": 30,
+            "minute": 0.8
+          },
+          {
+            "minutes": 90,
+            "minute": 0.2
+          },
+          {
+            "minute": 0.1
+          }
+        ]
+      }
+    ]
   },
   {
     "lat": 31.894367733390354,
@@ -8258,10 +9500,28 @@
     "color": "violet",
     "note": "דותן, מול מס הכנסה, בית המשפט",
     "url": "",
-    "hourly": "24",
-    "daily": "306",
+    "hourly": "30",
+    "daily": "312",
     "imageUrl": "https://i.imgur.com/rVXTNA6.jpeg",
-    "dateTime": "2026-02-20T08:28:21.492Z"
+    "dateTime": "2026-02-20T08:28:21.492Z",
+    "tariff": [
+      {
+        "label": "מחירון דינמי (לפי השלט בתמונה)",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.5
+          },
+          {
+            "minutes": 60,
+            "minute": 0.3
+          },
+          {
+            "minute": 0.2
+          }
+        ]
+      }
+    ]
   },
   {
     "lat": 31.89326990934552,
@@ -8272,7 +9532,14 @@
     "hourly": "30",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/rzKCIZM.jpeg",
-    "dateTime": "2026-03-11T11:02:49.441Z"
+    "dateTime": "2026-03-11T11:02:49.441Z",
+    "tariff": [
+      {
+        "label": "כניסה",
+        "flat": 30,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 31.900422657078085,
@@ -8283,7 +9550,15 @@
     "hourly": "",
     "daily": "",
     "imageUrl": "https://i.imgur.com/wbbi4ac.jpeg",
-    "dateTime": "2026-03-12T11:38:10.730Z"
+    "dateTime": "2026-03-12T11:38:10.730Z",
+    "tariff": [
+      {
+        "label": "חניה מותרת 05:00–02:00",
+        "entry": "05:00-02:00",
+        "free": true,
+        "until": "02:00"
+      }
+    ]
   },
   {
     "lat": 31.896453353650706,
@@ -8294,7 +9569,14 @@
     "hourly": "20",
     "daily": "20",
     "imageUrl": "https://i.imgur.com/6JdfmnZ.jpeg",
-    "dateTime": "2026-03-16T06:59:36.447Z"
+    "dateTime": "2026-03-16T06:59:36.447Z",
+    "tariff": [
+      {
+        "label": "מחיר יום מלא",
+        "flat": 20,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 32.1135036549591,
@@ -8305,7 +9587,24 @@
     "hourly": "24",
     "daily": "95",
     "imageUrl": "https://i.imgur.com/Uq51rcP.jpeg",
-    "dateTime": "2026-04-03T09:23:51.682Z"
+    "dateTime": "2026-04-03T09:23:51.682Z",
+    "tariff": [
+      {
+        "label": "תעריף רגיל למבקרים",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 1.5,
+            "max": 23
+          },
+          {
+            "minute": 0.4
+          }
+        ],
+        "max": 95,
+        "grace": 15
+      }
+    ]
   },
   {
     "lat": 32.11307714555273,
@@ -8316,7 +9615,29 @@
     "hourly": "30",
     "daily": "80",
     "imageUrl": "https://i.imgur.com/v1zT1og.jpeg",
-    "dateTime": "2026-04-03T09:25:52.208Z"
+    "dateTime": "2026-04-03T09:25:52.208Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 120,
+            "hour": 0
+          },
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 30,
+            "unit": 15
+          }
+        ],
+        "max": 80,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 32.11357651125173,
@@ -8327,7 +9648,26 @@
     "hourly": "90",
     "daily": "120",
     "imageUrl": "https://i.imgur.com/7hrOW7v.jpeg",
-    "dateTime": "2026-04-03T09:28:54.496Z"
+    "dateTime": "2026-04-03T09:28:54.496Z",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 120,
+            "hour": 0
+          },
+          {
+            "minutes": 30,
+            "minute": 2
+          },
+          {
+            "minute": 1
+          }
+        ],
+        "max": 120
+      }
+    ]
   },
   {
     "lat": 32.111000325545014,
@@ -8338,7 +9678,29 @@
     "hourly": "30",
     "daily": "75",
     "imageUrl": "https://i.imgur.com/BUFKfRD.jpeg",
-    "dateTime": "2026-04-03T09:32:28.712Z"
+    "dateTime": "2026-04-03T09:32:28.712Z",
+    "tariff": [
+      {
+        "label": "שישי–שבת (ללא הגבלת זמן)",
+        "days": "ו-ש",
+        "flat": 18,
+        "hours": 48
+      },
+      {
+        "label": "ערב בימי חול (כניסה 17:00–06:00)",
+        "days": "א-ה",
+        "entry": "17:00-06:00",
+        "flat": 10,
+        "until": "06:00"
+      },
+      {
+        "label": "ימי חול 06:00–17:00",
+        "days": "א-ה",
+        "entry": "06:00-17:00",
+        "minute": 0.3,
+        "max": 75
+      }
+    ]
   },
   {
     "lat": 32.10986355546686,
@@ -8349,7 +9711,36 @@
     "hourly": "45",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/3moT0xB.jpeg",
-    "dateTime": "2026-04-03T09:36:39.201Z"
+    "dateTime": "2026-04-03T09:36:39.201Z",
+    "tariff": [
+      {
+        "label": "שישי–שבת, ליום חניה",
+        "days": "ו-ש",
+        "entry": "07:00-07:00",
+        "flat": 20,
+        "until": "07:00"
+      },
+      {
+        "label": "אחר הצהריים (כניסה 17:00–07:00)",
+        "entry": "17:00-07:00",
+        "flat": 26,
+        "until": "07:00"
+      },
+      {
+        "label": "יום",
+        "rates": [
+          {
+            "minutes": 30,
+            "minute": 1
+          },
+          {
+            "minute": 0.5
+          }
+        ],
+        "max": 60,
+        "until": "07:00"
+      }
+    ]
   },
   {
     "lat": 32.109452745607925,
@@ -8360,7 +9751,21 @@
     "hourly": "22",
     "daily": "482",
     "imageUrl": "https://i.imgur.com/FfMSGcr.jpeg",
-    "dateTime": "2026-04-03T09:43:53.514Z"
+    "dateTime": "2026-04-03T09:43:53.514Z",
+    "tariff": [
+      {
+        "label": "מפלס 1- (כרוכה בתשלום)",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 22
+          },
+          {
+            "hour": 20
+          }
+        ]
+      }
+    ]
   },
   {
     "lat": 31.89277832731304,
@@ -8371,7 +9776,28 @@
     "hourly": "5.6",
     "daily": "61.6",
     "imageUrl": "https://i.imgur.com/fFPSFd9.jpeg",
-    "dateTime": "2026-04-10T05:52:26.080Z"
+    "dateTime": "2026-04-10T05:52:26.080Z",
+    "tariff": [
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "א-ה",
+        "entry": "08:00-19:00",
+        "hour": 5.6,
+        "until": "19:00"
+      },
+      {
+        "label": "חניה מוסדרת בתשלום",
+        "days": "ו",
+        "entry": "08:00-13:00",
+        "hour": 5.6,
+        "until": "13:00"
+      },
+      {
+        "label": "מחוץ לשעות התשלום",
+        "free": true,
+        "until": "08:00"
+      }
+    ]
   },
   {
     "lat": 31.94668304561245,
@@ -8514,7 +9940,14 @@
     "hourly": "30",
     "daily": "30",
     "imageUrl": "https://i.imgur.com/ktJVOex.jpeg",
-    "dateTime": "2026-07-20T04:44:58.916Z"
+    "dateTime": "2026-07-20T04:44:58.916Z",
+    "tariff": [
+      {
+        "label": "חניה חד פעמית (תשלום מראש בסופר)",
+        "flat": 30,
+        "hours": 24
+      }
+    ]
   },
   {
     "lat": 31.90704466779233,
@@ -8547,7 +9980,70 @@
     "hourly": "24",
     "daily": "85",
     "imageUrl": "https://i.imgur.com/5TuY1ng.jpeg",
-    "dateTime": "2026-09-07T10:40:48.966Z"
+    "dateTime": "2026-09-07T10:40:48.966Z",
+    "tariff": [
+      {
+        "label": "לילה, ראשון–חמישי (כניסה מ־18:00)",
+        "days": "א-ה",
+        "entry": "18:00-06:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 24
+          },
+          {
+            "hour": 15
+          }
+        ],
+        "max": 30,
+        "until": "09:00"
+      },
+      {
+        "label": "לילה, שישי וערב חג (כניסה מ־16:00)",
+        "days": "ו",
+        "entry": "16:00-06:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 24
+          },
+          {
+            "hour": 15
+          }
+        ],
+        "max": 30,
+        "until": "09:00"
+      },
+      {
+        "label": "שבת וחג (כניסה מ־09:00)",
+        "days": "ש",
+        "entry": "09:00-06:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 24
+          },
+          {
+            "hour": 15
+          }
+        ],
+        "max": 30,
+        "until": "09:00"
+      },
+      {
+        "label": "יום (כניסה מ־06:00)",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 24
+          },
+          {
+            "hour": 15
+          }
+        ],
+        "max": 85
+      }
+    ]
   },
   {
     "lat": 32.07147346676346,
@@ -8558,7 +10054,23 @@
     "hourly": "30",
     "daily": "85",
     "imageUrl": "https://i.imgur.com/gFkKL0O.jpeg",
-    "dateTime": "2026-09-07T10:43:39.151Z"
+    "dateTime": "2026-09-07T10:43:39.151Z",
+    "tariff": [
+      {
+        "label": "מבצע חניה לילית (כניסה 19:00–07:30)",
+        "entry": "19:00-07:30",
+        "flat": 25,
+        "until": "07:30",
+        "grace": 10
+      },
+      {
+        "label": "מחיר לדקה, יום קלנדרי",
+        "minute": 0.5,
+        "max": 85,
+        "until": "24:00",
+        "grace": 10
+      }
+    ]
   },
   {
     "lat": 32.816113368195275,
@@ -8650,7 +10162,14 @@
     "hourly": "30",
     "daily": "60",
     "imageUrl": "https://i.imgur.com/AEcw9HG.jpeg",
-    "dateTime": "2026-10-07T16:19:20.168Z"
+    "dateTime": "2026-10-07T16:19:20.168Z",
+    "tariff": [
+      {
+        "label": "מחיר לדקה",
+        "minute": 0.5,
+        "max": 60
+      }
+    ]
   },
   {
     "lat": 32.10363364004325,
@@ -8672,7 +10191,15 @@
     "hourly": "28",
     "daily": "112",
     "imageUrl": "https://i.imgur.com/AadWpDr.jpeg",
-    "dateTime": "2026-11-09T06:11:53.828Z"
+    "dateTime": "2026-11-09T06:11:53.828Z",
+    "tariff": [
+      {
+        "label": "מחיר לדקה, יום מתחיל ב־05:00",
+        "minute": 0.47,
+        "max": 112,
+        "until": "05:00"
+      }
+    ]
   },
   {
     "lat": 32.076392901821976,
@@ -8683,6 +10210,26 @@
     "hourly": "42",
     "daily": "85",
     "imageUrl": "https://i.imgur.com/ydv2zOR.jpeg",
-    "dateTime": "2026-11-09T10:28:11.581Z"
+    "dateTime": "2026-11-09T10:28:11.581Z",
+    "tariff": [
+      {
+        "label": "שישי–שבת, תשלום קבוע",
+        "days": "ו-ש",
+        "flat": 25,
+        "hours": 24
+      },
+      {
+        "label": "ערב (כניסה 18:00–06:00), תשלום קבוע",
+        "entry": "18:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "מחיר לדקה",
+        "minute": 0.7,
+        "max": 85,
+        "until": "24:00"
+      }
+    ]
   }
 ]
