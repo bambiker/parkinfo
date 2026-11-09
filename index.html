@@ -28,6 +28,7 @@
     <!-- Leaflet core -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="tariff.js"></script>
 
     <style>
         :root {
@@ -89,7 +90,20 @@
         }
         .chip[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: #fff; }
 
-        .map-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+        .map-row { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 8px; }
+        .plan-bar {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 8px 12px; max-width: 560px;
+            box-sizing: border-box; background: #fff; border-radius: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); font-size: 14px;
+        }
+        .plan-bar[hidden] { display: none; }
+        .plan-bar label { display: flex; align-items: center; gap: 6px; font-weight: 500; }
+        .plan-bar input, .plan-bar select {
+            font-size: 14px; padding: 5px 8px; border: 1px solid #d5d9e0; border-radius: 10px; background: #fff; color: var(--text);
+        }
+        .plan-cost { margin: 6px 0; padding: 6px 8px; background: #eef4ff; border-radius: 8px; }
+        .plan-cost[hidden] { display: none; }
+        .plan-cost ul { margin: 4px 0 0; padding-right: 18px; }
+        .plan-cost small { color: var(--muted); }
         .segmented { display: flex; padding: 3px; background: #fff; border-radius: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
         .segmented input { position: absolute; opacity: 0; pointer-events: none; }
         .segmented span {
@@ -221,13 +235,32 @@
 
         <div class="map-row">
             <div class="segmented" role="radiogroup" aria-label="איזה מחיר להציג">
-                <label><input type="radio" name="priceDisplay" value="daily" checked onchange="updateAllMarkerIcons()"><span>מחיר יומי</span></label>
-                <label><input type="radio" name="priceDisplay" value="hourly" onchange="updateAllMarkerIcons()"><span>מחיר שעתי</span></label>
+                <label><input type="radio" name="priceDisplay" value="daily" checked onchange="onPriceModeChange()"><span>מחיר יומי</span></label>
+                <label><input type="radio" name="priceDisplay" value="hourly" onchange="onPriceModeChange()"><span>מחיר שעתי</span></label>
+                <label><input type="radio" name="priceDisplay" value="plan" onchange="onPriceModeChange()"><span>החניה שלי</span></label>
             </div>
             <div class="info-pill">
                 <div id="lastUpdatedPill">עודכן לאחרונה: —</div>
                 <div id="shownCount"></div>
             </div>
+        </div>
+
+        <div id="planBar" class="plan-bar" hidden>
+            <label>כניסה <input type="datetime-local" id="planStart" onchange="updateAllMarkerIcons()"></label>
+            <label>למשך
+                <select id="planDuration" onchange="updateAllMarkerIcons()">
+                    <option value="30">חצי שעה</option>
+                    <option value="60">שעה</option>
+                    <option value="120">שעתיים</option>
+                    <option value="180" selected>3 שעות</option>
+                    <option value="240">4 שעות</option>
+                    <option value="360">6 שעות</option>
+                    <option value="480">8 שעות</option>
+                    <option value="600">10 שעות</option>
+                    <option value="720">12 שעות</option>
+                    <option value="1440">יום שלם</option>
+                </select>
+            </label>
         </div>
     </div>
 
@@ -581,12 +614,73 @@ const MARKER_COLORS = {
     green: "#1e7d3a"
 };
 
-// עיגול צבעוני עם המחיר (יומי או שעתי לפי הבחירה), הגופן קטן כשהטקסט ארוך
-function getPriceIcon(color, hourly, daily) {
-    const selectedType = document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
+// "החניה שלי": שעת כניסה ומשך שהמשתמש בחר
+function priceMode() {
+    return document.querySelector('input[name="priceDisplay"]:checked')?.value || "daily";
+}
+
+function toLocalInputValue(date) {
+    const pad = n => String(n).padStart(2, "0");
+    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`;
+}
+
+// כמה מקום החלונית של חניון יכולה לתפוס בין הפקדים שלמעלה לכפתורים שלמטה
+function popupLayout() {
+    const wrap = document.getElementById("mapWrap").getBoundingClientRect();
+    const top = document.querySelector(".map-top").getBoundingClientRect().bottom - wrap.top + 12;
+    const bottom = wrap.bottom - document.querySelector(".map-bottom").getBoundingClientRect().top + 12;
+    return {
+        autoPanPaddingTopLeft: [20, Math.round(top)],
+        autoPanPaddingBottomRight: [20, Math.round(bottom)],
+        maxHeight: Math.max(160, Math.round(wrap.height - top - bottom - 40))
+    };
+}
+
+function updatePopupLayout() {
+    const layout = popupLayout();
+    markers.forEach(m => Object.assign(m.marker.getPopup().options, layout));
+}
+window.addEventListener("resize", updatePopupLayout);
+
+function onPriceModeChange() {
+    const plan = priceMode() === "plan";
+    const startInput = document.getElementById("planStart");
+    if (plan && !startInput.value) {
+        // ברירת מחדל: עכשיו, מעוגל ל-5 הדקות הבאות
+        const now = new Date();
+        now.setMinutes(Math.ceil(now.getMinutes() / 5) * 5, 0, 0);
+        startInput.value = toLocalInputValue(now);
+    }
+    document.getElementById("planBar").hidden = !plan;
+    updatePopupLayout();
+    updateAllMarkerIcons();
+}
+
+function currentPlan() {
+    const start = new Date(document.getElementById("planStart").value);
+    const minutes = Number(document.getElementById("planDuration").value);
+    return isNaN(start.getTime()) ? null : { start, minutes };
+}
+
+// עלות החניה שנבחרה לחניון (לפי tariff אם יש, אחרת הערכה לפי המחיר לשעה וליום)
+function planCost(data) {
+    const plan = currentPlan();
+    return plan ? ParkingTariff.estimateCost(data, plan.start, plan.minutes) : null;
+}
+
+// עיגול צבעוני עם המחיר (יומי, שעתי, או העלות של החניה שנבחרה), הגופן קטן כשהטקסט ארוך
+function getPriceIcon(data) {
+    const { color, hourly, daily } = data;
+    const selectedType = priceMode();
     let svgText;
 
-    if (color === 'black') {
+    if (selectedType === "plan") {
+        const r = planCost(data);
+        if (!r) svgText = "";
+        else if (r.error) svgText = data.tariff ? "סגור" : "";
+        else if (r.total === 0) svgText = "חינם";
+        else svgText = (r.approximate ? "~" : "") + Math.round(r.total);
+    } else if (color === 'black') {
         svgText = 'חינם';
     } else {
         svgText = String((selectedType === "hourly" ? hourly : daily) ?? "");
@@ -635,7 +729,7 @@ function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, d
 	
 
     const marker = L.marker([lat, lng], {
-        icon: getPriceIcon(color, hourly, daily),
+        icon: getPriceIcon({ color, hourly, daily, tariff }),
         draggable: isAddModeEnabled()
 
     }).addTo(map);
@@ -661,7 +755,8 @@ if (url) {
 
 const [year, month, day] = dateTime.split("T")[0].split("-");
 const formattedDate = `${day}/${month}/${year}`;
-popupHTML += ` <br>המחירים נבדקו מול החניון. המחיר הקובע הוא זה שבכניסה לחניון בפועל. `;
+popupHTML += `<div class="plan-cost" hidden></div>`;
+popupHTML += ` המחירים נבדקו מול החניון. המחיר הקובע הוא זה שבכניסה לחניון בפועל. `;
 popupHTML += ` <br>תאריך עדכון: ${formattedDate} `;
 
 const wazeUrl = `https://waze.com/ul?ll=${lat}%2C${lng}&navigate=yes`;
@@ -678,8 +773,15 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
 </div>`;
 	
 
-    // שהחלונית לא תיפתח מתחת לחיפוש למעלה או לכפתורים למטה
-    marker.bindPopup(popupHTML, { autoPanPaddingTopLeft: [20, 180], autoPanPaddingBottomRight: [20, 100] });
+    // שהחלונית לא תיפתח מתחת לחיפוש למעלה או לכפתורים למטה (ראו popupLayout)
+    // התוכן נבנה בכל פתיחה, כולל העלות של "החניה שלי", כדי שהמיקום יחושב לפי הגובה הסופי
+    marker.bindPopup(() => {
+        const el = document.createElement("div");
+        el.innerHTML = popupHTML;
+        const entry = markers.find(m => m.marker === marker);
+        if (entry) fillPlanCost(el, entry.data);
+        return el;
+    }, popupLayout());
 
     marker.on("popupopen", () => {
         const parkingName = (note && note.trim() !== "") ? note.trim() : "חניון";
@@ -723,6 +825,46 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
     document.getElementById("markerImage").value = "";
     addMode = false;
 
+}
+
+// פירוט העלות של "החניה שלי" בחלונית של חניון
+const DAY_NAMES = ["א׳", "ב׳", "ג׳", "ד׳", "ה׳", "ו׳", "שבת"];
+function formatTime(date) {
+    return date.toLocaleTimeString("he-IL", { hour: "2-digit", minute: "2-digit" });
+}
+function formatWhen(date) {
+    const day = date.getDay() === 6 ? "שבת" : `יום ${DAY_NAMES[date.getDay()]}`;
+    return `${day} ${formatTime(date)}`;
+}
+function formatDuration(minutes) {
+    const opt = document.querySelector(`#planDuration option[value="${minutes}"]`);
+    return opt ? opt.textContent : `${minutes} דקות`;
+}
+
+function escapeHtml(text) {
+    return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function fillPlanCost(popupEl, data) {
+    const box = popupEl && popupEl.querySelector(".plan-cost");
+    if (!box) return;
+    const plan = currentPlan();
+    if (priceMode() !== "plan" || !plan) { box.hidden = true; return; }
+    const r = ParkingTariff.estimateCost(data, plan.start, plan.minutes);
+    let html = `<b>החניה שלך</b>: ${formatWhen(plan.start)}, ${formatDuration(plan.minutes)}<br>`;
+    if (r.error) {
+        html += data.tariff ? `<b>${r.error}</b>` : "אין מספיק מידע על המחיר";
+    } else {
+        html += `עלות ${r.approximate ? "משוערת" : "מחושבת"}: <b>${r.total === 0 ? "חינם" : Math.round(r.total * 100) / 100 + " ₪"}</b>`;
+        if (r.parts.length > 1) {
+            html += "<ul>" + r.parts.map(p => `<li>${formatWhen(p.start)}–${formatTime(p.end)}${p.label ? " (" + escapeHtml(p.label) + ")" : ""}: ${p.cost} ₪</li>`).join("") + "</ul>";
+        } else if (r.parts.length === 1 && r.parts[0].label) {
+            html += ` <small>(${escapeHtml(r.parts[0].label)})</small>`;
+        }
+        if (r.approximate) html += `<br><small>הערכה לפי המחיר לשעה וליום</small>`;
+    }
+    box.innerHTML = html;
+    box.hidden = false;
 }
 
 function updateMarkerCount() {
@@ -1119,9 +1261,10 @@ function uploadToImgur(file, callback, onError) {
 
 
 function updateAllMarkerIcons() {
+    const open = markers.find(m => m.marker.isPopupOpen());
+    if (open) open.marker.getPopup().update();
     markers.forEach(m => {
-        const { color, hourly, daily } = m.data;
-        m.marker.setIcon(getPriceIcon(color, hourly, daily));
+        m.marker.setIcon(getPriceIcon(m.data));
     });
 }
 function startMapAtUserLocation() {
