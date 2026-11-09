@@ -1,0 +1,28 @@
+# בודק בכל שינוי ש-marker.json תקין ושכל התעריפים (tariff) בו כתובים נכון.
+# אם משהו לא תקין, GitHub שולח מייל ומסמן את השינוי ב-X אדום.
+name: בדיקת תעריפים
+
+on:
+  push:
+    paths:
+      - "marker.json"
+      - "tariff.js"
+      - "tariff.test.js"
+      - ".github/workflows/check-tariffs.yml"
+  pull_request:
+    paths:
+      - "marker.json"
+      - "tariff.js"
+      - "tariff.test.js"
+      - ".github/workflows/check-tariffs.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: הרצת הבדיקות
+        run: node --test
