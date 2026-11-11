@@ -1,65 +1,366 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>תנאי שימוש באתר</title>
-  <style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>חוקי חניה: שאלות ותשובות</title>
+<meta name="description" content="שאלות ותשובות על חוקי חניה בישראל: גלגל על המדרכה, מרחק מצומת וממעבר חציה, ברז כיבוי, תחנת אוטובוס, חניית נכים, אבני שפה בצבעים. כל תשובה עם הפניה לתקנות.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+<style>
+    :root {
+        --primary: #0b62d6;
+        --text: #1c2430;
+        --muted: #4a5361;
+        --line: #e3e6ea;
+        --bg: #f7f8fa;
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+        font-family: Rubik, Arial, sans-serif;
+        margin: 0; color: var(--text); background: var(--bg);
+        line-height: 1.6;
     }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+    a { color: var(--primary); }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 16px; }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .top a { font-weight: 500; text-decoration: none; }
+    h1 { font-size: 26px; margin: 8px 0 12px; }
+    .warn {
+        background: #fff7e0; border: 1px solid #f0d58a; border-radius: 10px;
+        padding: 12px 14px; margin-bottom: 14px;
     }
-    h1 {
-      color: #006699;
-      font-size: 28px;
-      margin-bottom: 20px;
-      text-align: center;
+    .warn strong { display: block; margin-bottom: 2px; }
+    .warn p { margin: 4px 0; }
+    .city {
+        display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+        background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 14px;
     }
-    h2 {
-      color: #004466;
-      font-size: 20px;
-      margin-top: 25px;
+    .city label { font-weight: 500; }
+    .city select { font: inherit; padding: 6px 10px; border: 1px solid #c5cbd3; border-radius: 8px; background: #fff; }
+    .city small { color: var(--muted); flex-basis: 100%; }
+    details {
+        background: #fff; border: 1px solid var(--line); border-radius: 10px; margin-bottom: 8px;
     }
-    p {
-      margin: 10px 0;
+    summary {
+        cursor: pointer; padding: 12px 14px; font-weight: 500; font-size: 17px; list-style: none;
+        display: flex; gap: 8px; align-items: flex-start;
     }
-    ul {
-      padding-right: 20px;
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: "+"; color: var(--primary); font-weight: 700; width: 14px; flex: none; }
+    details[open] summary::before { content: "−"; }
+    .a { padding: 0 14px 12px 14px; }
+    .a p { margin: 6px 0; }
+    .a ul { margin: 6px 0; padding-inline-start: 22px; }
+    .short { font-weight: 500; }
+    blockquote {
+        margin: 8px 0; padding: 6px 12px; border-inline-start: 3px solid #c5cbd3; background: var(--bg); color: #333; font-size: 15px;
     }
-  </style>
+    .src { font-size: 14px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 6px; margin-top: 10px; }
+    .src a { word-break: break-word; }
+    .local { background: #eef5ff; border-radius: 8px; padding: 6px 10px; margin: 8px 0; }
+    .local b { color: #08479b; }
+    .gap { background: #f4f4f4; border-radius: 8px; padding: 6px 10px; margin: 8px 0; }
+    [data-city][hidden] { display: none; }
+    footer { color: var(--muted); font-size: 14px; margin: 18px 0 8px; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>חוקי החניה</h1>
+<div class="wrap">
+<div class="top">
+    <a href="./">→ חזרה למפת החניונים</a>
+</div>
+<h1>חוקי חניה: שאלות ותשובות</h1>
 
-    <p>האמור בדף זה לא אמור להחליף ייעוץ משפטי</p>
+<div class="warn" role="note">
+    <strong>זה לא ייעוץ משפטי.</strong>
+    <p>התשובות כתובות רק לפי המקורות שמקושרים בסוף כל תשובה (תקנות התעבורה, פקודת התעבורה, לוח התמרורים וחוקי עזר עירוניים), כפי שבדקנו אותם ב־11.11.26. יש לבדוק אותם בעצמכם, כי החוקים מתעדכנים ואנחנו יכולים לטעות.</p>
+    <p>במקום עצמו, התמרורים והסימונים שבשטח קובעים. כשלא מצאנו מקור לתשובה, כתבנו את זה במפורש.</p>
+</div>
 
-    <h2>1. כחול לבן</h2>
-    <p>חניה עירונית בתשלום, ניתן לשלם בפנגו או בצ'לו, ישנן עיריות שמאפשרות שעות חניה חינם לתושבים</p>
+<div class="city">
+    <label for="city">עיר:</label>
+    <select id="city">
+        <option value="all">כל הארץ (החוקים הארציים)</option>
+        <option value="tlv">תל אביב-יפו</option>
+    </select>
+    <small>החוקים הארציים חלים בכל עיר. לכל עירייה יש גם חוק עזר משלה לחניה, שמוסיף כללים (למשל שעות התשלום בכחול לבן). כרגע יש פה רק את חוק העזר של תל אביב-יפו.</small>
+</div>
 
-    <h2>2. אדום לבן</h2>
-    <p>אסור לחנות</p>
+<section id="faq">
 
-    <h2>3. רכב נכה</h2>
-    <p>ישנן עיריות כמו רחובות שמאפשרות חניה בחינם לנכים בכחול לבן</p>
+<details id="sidewalk">
+<summary>האם מותר לחנות עם גלגל אחד על המדרכה? שניים? שלושה?</summary>
+<div class="a">
+<p class="short">לא, גם לא גלגל אחד, אלא אם המקום הוסדר לחניה על המדרכה.</p>
+<p>התקנות אוסרות לעצור, להעמיד או להחנות רכב "כולו או חלק ממנו" על מדרכה:</p>
+<blockquote>"לא יעצור אדם רכב, לא יעמידנו, לא יחנהו ולא ישאירנו עומד, כולו או חלק ממנו, באחד המקומות המנויים להלן... (2א) על מדרכה, למעט במקום שהוסדר להעמדת רכב והחנייתו לפי חוק עזר... ובלבד שנותר מעבר להולכי רגל"</blockquote>
+<p>מדרכה היא החלק שמיועד להולכי רגל "בין אם נמצא במפלס אחד עם הכביש ובין אם לאו", כלומר גם מדרכה בלי מדרגה.</p>
+<p>מתי כן מותר: כשיש תמרור 627 (מותרת החניה על המדרכה לרכב עד 2,200 ק"ג, "בהתאם למסומן ובלי לחסום את המעבר ברוחב סביר להולכי רגל ולכסא גלגלים"), או מקומות חניה שמסומנים על המדרכה (סימון 819).</p>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> חוק העזר אוסר גם הוא חניה "על מדרכה, למעט במקום שהוסדר להעמדת רכב וחנייתו לפי חוק עזר זה" (סעיף 6(ד)(2א)). העירייה רשאית לקבוע חלק ממדרכה לחניה, בתנאי שנשאר מעבר סביר להולכי רגל, והמקום יסומן בתמרור (סעיף 6א).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(2א)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "מדרכה"</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=52" target="_blank" rel="noopener">לוח התמרורים, תמרור 627</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=68" target="_blank" rel="noopener">לוח התמרורים, סימון 819</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיפים 6(ד)(2א) ו־6א</a></span></p>
+</div>
+</details>
 
-    <h2>4. ראית רכב שחונה שלא כחוק</h2>
-    <p>הודע לעירייה, טלפון 106</p>
-    <p>הרם את הוישר כדי לסמן לנהג</p>
+<details id="dirt">
+<summary>מותר לחנות על האדמה (העפר) שאחרי השול הסלול?</summary>
+<div class="a">
+<p class="short">תלוי בסוג הדרך. בדרך בין־עירונית ראשית או אזורית: לא. בדרך עירונית: לא מצאנו איסור כללי, אבל חלים כל שאר הכללים.</p>
+<p>לפי ההגדרה, שול הדרך הוא "השטח שאין לצדו מדרכה הסמוך לשפת הכביש, עד לרוחב של ארבעה מטרים או עד לקצה תעלת ניקוז". ההגדרה לא דורשת שהשול יהיה סלול, ולכן גם רצועת עפר צמודה לכביש היא בדרך כלל חלק מהשול.</p>
+<ul>
+    <li><b>דרך שאיננה עירונית, שמסומנת בתמרור כדרך ראשית או אזורית:</b> אסור לעצור, להעמיד או להחנות "על הכביש או על שולי הדרך". יש חריגים, למשל העלאת נוסעים או הורדתם בשולי הדרך, ורכב שהתקלקל (תקנה 69(א), (ב), (ה)).</li>
+    <li><b>דרך מהירה:</b> אסורה עצירה וחניה בכל מקום בין הגדרות של רצועת הדרך, אלא אם סומן אחרת (תקנה 69(ג)).</li>
+    <li><b>בכל דרך:</b> אסור לחנות בכביש, "לרבות שולי הדרך", כשבכיוון הנסיעה יש נתיב אחד בלבד עם קו הפרדה רציף (תקנה 72(א)(9)), ואסור לחנות באופן שמפריע לתנועה או מסתיר תמרור (תקנה 71).</li>
+    <li>אם רצועת העפר משמשת כמדרכה, חל עליה איסור החניה על מדרכה (ראו השאלה על גלגל על המדרכה).</li>
+</ul>
+<p class="gap">שטח שנמצא יותר מ־4 מטרים מהכביש, או מגרש פרטי או ציבורי שאינו חלק מהדרך: לא מצאנו במקורות האלה תשובה. ייתכן שחלים עליו חוק העזר של העירייה או הוראות בעל הקרקע.</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "שול הדרך"</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_69" target="_blank" rel="noopener">תקנות התעבורה, תקנה 69</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(9)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a></p>
+</div>
+</details>
 
+<details id="bay">
+<summary>במפרץ חניה, חייבים לחנות צמוד לצדדים כדי שעוד רכבים ייכנסו?</summary>
+<div class="a">
+<p class="short">לא מצאנו בתקנות חובה לחנות צמוד לרכב אחר.</p>
+<p>מה שכן כתוב:</p>
+<ul>
+    <li>כשמקומות החניה מסומנים בצבע לבן, "החניה במקום תהיה רק בתחומי השטח המסומן" (סימון 819). כלומר, חונים בתוך המשבצת.</li>
+    <li>חונים במקביל לשפת הכביש, לא יותר מ־40 ס"מ ממנה (תקנה 75).</li>
+    <li>אסור לחנות באופן שמפריע או מעכב את התנועה (תקנה 71).</li>
+</ul>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> גם חוק העזר דורש לחנות "בתוך אחד מהשטחים המסומנים בקווי צבע", אם יש כאלה (סעיף 6(ב)(2)), ולא מחייב לחנות צמוד לרכב אחר.</p>
+<p class="src">מקורות: <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=68" target="_blank" rel="noopener">לוח התמרורים, סימון 819</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_75" target="_blank" rel="noopener">תקנות התעבורה, תקנה 75</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ב)</a></span></p>
+</div>
+</details>
 
-  </div>
+<details id="curb-gap">
+<summary>מותר להשאיר רווח בין שפת המדרכה לרכב?</summary>
+<div class="a">
+<p class="short">עד 40 ס"מ.</p>
+<blockquote>"העוצר, המעמיד או המחנה רכב בכביש... יעמידנו בקו מקביל לשפת הכביש, בין אם יש בו אבני שפה ובין אם לאו, כשהגלגלים הקרובים לאבני השפה או לשפת הכביש הם במרחק של לא יותר מארבעים ס״מ מהם, זולת אם התירה רשות התימרור המקומית באותו כביש חניה זוויתית וסימנה אותו לצורך זה."</blockquote>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> אותו כלל מופיע גם בחוק העזר (סעיף 6(ב1)).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_75" target="_blank" rel="noopener">תקנות התעבורה, תקנה 75</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ב1)</a></span></p>
+</div>
+</details>
+
+<details id="junction">
+<summary>כמה רחוק מצומת מותר לחנות?</summary>
+<div class="a">
+<p class="short">לא בתוך הצומת, ולא בתחום 12 מטר ממנו, אלא אם סומן שמותר.</p>
+<blockquote>"(3) בתוך צומת או בתחום שנים עשר מטר ממנו, פרט לקטע שסימנה רשות תימרור, בתמרור או בסימון על אבני השפה, שמותר לחנות בו"</blockquote>
+<p>צומת מוגדר כ"השטח המתהווה על ידי פגישתם של שני כבישים או יותר והמוגבל על ידי קווי שפות הכבישים או אבני השפה של אותם כבישים או על ידי הארכתם המדומה".</p>
+<p>לפי לוח התמרורים, תמרורי החניה 626 ו־627 חלים "עד לצומת הקרוב, אלא אם כן סומנו אבני השפה בצומת ואחריו בתמרור 817" (כחול לבן). כלומר, כחול לבן שמגיע עד הצומת הוא סימון שמתיר לחנות שם.</p>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> אותו איסור בחוק העזר (סעיף 6(ד)(3)).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(3)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "צומת"</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=51" target="_blank" rel="noopener">לוח התמרורים, תמרורים 626 ו־627</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(3)</a></span></p>
+</div>
+</details>
+
+<details id="roundabout">
+<summary>כמה רחוק מכיכר מותר לחנות?</summary>
+<div class="a">
+<p class="short">לא מצאנו כלל נפרד לכיכר. לדעתנו חל הכלל של צומת: לא בתוך הכיכר ולא בתחום 12 מטר ממנה.</p>
+<p>בתקנות אין הגדרה של "כיכר". המונח "מעגל תנועה" מופיע בתקנות רק בכללי זכות הקדימה בצומת (תקנה 64(ז)). צומת מוגדר כשטח שנוצר מפגישה של שני כבישים או יותר, וכיכר היא מקום שבו כבישים נפגשים. לכן, לפי ההבנה שלנו, חל עליה האיסור של צומת (תקנה 72(א)(3)). זו פרשנות שלנו ולא ציטוט, וכדאי לוודא מול העירייה.</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(3)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "צומת"</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_64" target="_blank" rel="noopener">תקנות התעבורה, תקנה 64(ז)</a></p>
+</div>
+</details>
+
+<details id="crosswalk">
+<summary>כמה רחוק ממעבר חציה מותר לחנות?</summary>
+<div class="a">
+<p class="short">לא בתוך המעבר, ולא בתחום 12 מטר לפניו.</p>
+<blockquote>"(6) בתוך מעבר חציה או בתחום שנים עשר מטר לפניו"</blockquote>
+<p>התקנה מדברת על 12 מטר <b>לפני</b> המעבר. לא מצאנו בתקנה הזו מרחק מינימלי אחרי המעבר. אבל הרבה מעברי חציה נמצאים ליד צומת, ואז חל גם האיסור של 12 מטר מהצומת. בנוסף, אסור לחנות באופן שמסתיר תמרור או מפריע לתנועה (תקנה 71).</p>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> אותו איסור בחוק העזר (סעיף 6(ד)(6)).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(6)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(6)</a></span></p>
+</div>
+</details>
+
+<details id="hydrant">
+<summary>כמה רחוק מברז כיבוי (הידרנט) מותר לחנות?</summary>
+<div class="a">
+<p class="short" data-city="all">בתקנות הארציות כבר אין כלל כזה. כלל כזה יכול להופיע בחוק העזר של העירייה. למשל בתל אביב-יפו: לא בתחום 2 מטר מהברז, כשהתחום מסומן.</p>
+<p class="short" data-city="tlv" hidden>בתל אביב-יפו: אסור בתחום 2 מטר מברז כיבוי, כשהתחום מסומן.</p>
+<p>בתקנות התעבורה, הפסקה בתקנה 72(א) שעסקה בזה (פסקה 5) נמחקה, והיא מופיעה היום ריקה.</p>
+<p>בחוק חניה לנכים עדיין כתוב שגם בעל תג נכה לא רשאי לחנות "בתחום שני מטרים מברז כיבוי (הידרנט) כאשר התחום מסומן בסימון על המדרכה או על שולי הכביש או על שניהם".</p>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> חוק העזר אוסר להעמיד או להחנות "בתחום שני מטרים מברז כיבוי (הידרנט), כאשר התחום מסומן בסימון על המדרכה או על שולי הכביש או על שניהם" (סעיף 6(ד)(5)).</p>
+<p class="gap" data-city="all">בעיר אחרת, בדקו את חוק העזר שלה לחניה ("העמדת רכב וחנייתו"). בכל מקרה, אסור לחנות באופן שמפריע לתנועה (תקנה 71).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(5) (נמחקה)</a> · <a href="https://he.wikisource.org/wiki/חוק_חניה_לנכים#סעיף_3" target="_blank" rel="noopener">חוק חניה לנכים, סעיף 3(6)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(5)</a></span></p>
+</div>
+</details>
+
+<details id="private-sign">
+<summary>מישהו שם ליד הבית שלו שלט "חניה פרטית" על מקום ברחוב. זה חוקי? איך בודקים? והעירייה יכולה להוריד אותו?</summary>
+<div class="a">
+<p class="short">אדם פרטי לא רשאי להציב תמרור. רק רשות התימרור המקומית (בדרך כלל העירייה) קובעת הסדרי חניה ברחוב.</p>
+<ul>
+    <li>"לא יציב אדם ולא יסמן על פני דרך או בקרבתה תמרור או כל סימן, אות או ציון הדומים לתמרור, אלא בהתאם להוראות תקנות אלה" (תקנה 147(ב)). מותר להשתמש רק בתמרורים שבלוח התמרורים (תקנה 147(א)).</li>
+    <li>מי שמוסמכת לקבוע, להציב, לשנות, "להסיר או למחוק" הסדרי תנועה בדרך היא רשות התימרור המקומית, אחרי התייעצות עם המשטרה ועם מהנדס תנועה (תקנה 18(א)).</li>
+    <li>מי שקיבל דוח בגלל תמרור, יכול להתגונן אם יוכיח שהתמרור "הוצב, סומן או נקבע שלא כדין" (תקנה 22(א)).</li>
+    <li>מקום חניה שמוקצה כחוק לרכב מסוים נראה כמו תמרור רשמי, למשל תמרור 437 (חניית נכה) עם תמרור 439 מתחתיו, שבו כתוב מספר הרכב. לפי חוק חניה לנכים, העירייה מקצה מקום כזה לנכה ליד ביתו ומציבה את התמרור על חשבונה (סעיף 4ד).</li>
+</ul>
+<p><b>איך בודקים:</b> פונים לעירייה (מוקד 106 ברוב הערים) ושואלים אם רשות התימרור המקומית הציבה את השלט, או אישרה את ההסדר.</p>
+<p class="gap"><b>האם העירייה יכולה להוריד שלט שתלוי על הבית הפרטי:</b> לא מצאנו במקורות האלה סעיף שמסמיך במפורש את העירייה להוריד שלט מקיר של בית פרטי. מה שכן ברור מהתקנות: השלט אסור, ואין לו תוקף של תמרור. כדאי לדווח לעירייה ולשאול מה היא עושה במקרה כזה.</p>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> לפי חוק העזר, ראש העירייה רשאי לציין על תמרור את מספרי הרכב שמותר להם לחנות במקום חניה מסוים, ואז אסור לרכב אחר לחנות שם (הסעיף "ריתוק רכב למקום חניה"). כלומר, הקצאה כזו נעשית בתמרור של העירייה ולא בשלט של התושב.</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_147" target="_blank" rel="noopener">תקנות התעבורה, תקנה 147</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_18" target="_blank" rel="noopener">תקנות התעבורה, תקנה 18(א)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_22" target="_blank" rel="noopener">תקנות התעבורה, תקנה 22(א)</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=34" target="_blank" rel="noopener">לוח התמרורים, תמרורים 437 ו־439</a> · <a href="https://he.wikisource.org/wiki/חוק_חניה_לנכים#סעיף_4ד" target="_blank" rel="noopener">חוק חניה לנכים, סעיף 4ד</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), "ריתוק רכב למקום חניה"</a></span></p>
+</div>
+</details>
+
+<details id="blue-white">
+<summary>יש סימון כחול לבן על אבני השפה, אבל אין שלט בתחילת הרחוב. מה זה אומר?</summary>
+<div class="a">
+<p class="short">כחול לבן אומר שהחניה שם בתשלום. את הימים והשעות כותבים על תמרור, שלא חייב להיות בתחילת הרחוב.</p>
+<ul>
+    <li>לפי לוח התמרורים, אבני שפה צבועות לסירוגין בכחול (סימון 817) פירושן: "החנייה מותרת בתשלום על הכביש שליד אבני השפה או על המדרכה על פי הוראות תמרור 439 בצמוד ומתחת לתמרורים 626 או 627".</li>
+    <li>פקודת התעבורה קובעת שעירייה יכולה לגבות תשלום על חניה ברחוב רק "אם כן אבני השפה בדרך סומנו לסירוגין בצבע כחול" (סעיף 77(א)(2)). יש חריגים מסוימים, למשל אבן שפה מעוצבת או עמדת תשלום ליד כל מקום. במקרים האלה צריך תמרורים לאורך הרחוב, במרחק של לא יותר מ־60 מטר זה מזה (תקנה 19ב).</li>
+</ul>
+<p>אם לא מצאתם תמרור, חפשו לאורך הרחוב ובצמתים הסמוכים. אפשר לבדוק גם באפליקציית התשלום או בעירייה. לא מצאנו כלל שאומר שבלי תמרור בתחילת הרחוב החניה בחינם.</p>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> לפי חוק העזר, כשלא צוינו מועדים על התמרור, משלמים בימי חול בין 9:00 ל־19:00, ובערבי שבת וחג בין 9:00 ל־13:00 (סעיף 3(ב)). בדקו תמיד את התמרור במקום, ואת ההנחות לתושבים.</p>
+<p class="src">מקורות: <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=68" target="_blank" rel="noopener">לוח התמרורים, סימון 817</a> · <a href="https://he.wikisource.org/wiki/פקודת_התעבורה#סעיף_77" target="_blank" rel="noopener">פקודת התעבורה, סעיף 77(א)(2)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_19ב" target="_blank" rel="noopener">תקנות התעבורה, תקנה 19ב</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 3(ב)</a></span></p>
+</div>
+</details>
+
+<details id="white">
+<summary>מה זה אומר שאבני השפה צבועות בלבן?</summary>
+<div class="a">
+<p class="short">בלוח התמרורים אין סימון של אבני שפה בלבן בלבד, ולכן לא מצאנו לזה משמעות רשמית.</p>
+<p>הסימונים הלבנים שכן מופיעים בלוח:</p>
+<ul>
+    <li><b>שחור-לבן על אבני השפה (816):</b> "להבלטה והדגשה של מדרכות, מפרדות ואיי תנועה בנויים". זה לא סימון של חניה או של איסור חניה.</li>
+    <li><b>קווים לבנים על הכביש שמסמנים מקומות חניה (819):</b> מותר לחנות רק בתוך השטח המסומן.</li>
+    <li><b>שטח שמסומן בלבן כאסור לחניה (820):</b> "אסורה חניה בתוך השטח המסומן".</li>
+</ul>
+<p>כשאין סימון שאוסר או שמחייב תשלום, חלים הכללים הרגילים (מרחק מצומת וממעבר חציה, וכו') והתמרורים שבמקום.</p>
+<p class="src">מקורות: <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=68" target="_blank" rel="noopener">לוח התמרורים, סימונים 816–820</a></p>
+</div>
+</details>
+
+<details id="red-white">
+<summary>ומה אומרים אדום-לבן ואדום-צהוב?</summary>
+<div class="a">
+<ul>
+    <li><b>אדום-לבן (818):</b> "אסורה כל עצירה או חניה של רכב בכביש שליד אבני השפה, אלא אם הדבר דרוש למילוי הוראות כל דין". מונית רשאית לעצור שם כדי להעלות או להוריד נוסע בדרך עירונית, אבל לא בתחום תחנת אוטובוס (תקנה 76(ב)).</li>
+    <li><b>אדום-צהוב (511–513):</b> מקום עצירה לסוג רכב מסוים, למשל אוטובוס או מונית. "אסורה עצירה, למעט סוג הרכב שעצירתו הותרה על ידי תמרור לשם העלאה והורדת נוסעים בלבד".</li>
+</ul>
+<p class="src">מקורות: <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=68" target="_blank" rel="noopener">לוח התמרורים, סימון 818</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=40" target="_blank" rel="noopener">לוח התמרורים, סימונים 511–513</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_76" target="_blank" rel="noopener">תקנות התעבורה, תקנה 76(ב)</a></p>
+</div>
+</details>
+
+<details id="bus-stop">
+<summary>מותר לעצור ולהישאר ברכב בתחנת אוטובוס?</summary>
+<div class="a">
+<p class="short">לא. אסור אפילו לעצור, ולא משנה אם הנהג נשאר ברכב.</p>
+<blockquote>"(12) בנתיב שיועד לתחבורה ציבורית ובתחום תחנת אוטובוסים המוגדרת על ידי סימון על פני כביש, ובאין סימון כאמור – בתוך עשרים מטר לפני תמרור "תחנת אוטובוסים" ועשרים מטר אחריו, בשני צדי הדרך; ובלבד שמותר לעצור או להעמיד או להחנות רכב בצד הדרך שממול... אם רוחב הכביש באותו מקום הוא שנים עשר מטר או יותר"</blockquote>
+<ul>
+    <li>תקנה 72(א) אוסרת במקומות האלה גם <b>עצירה</b>, לא רק חניה.</li>
+    <li>ההגדרה של חניה כוללת מצב שבו הנהג ברכב: "העמדת רכב לזמן כל שהוא... בין שיש ברכב נהג או אנשים או מטען ובין שאין".</li>
+    <li>חריג: בשבתות ובחגים מותר לחנות בתחנה אם יש בה תמרור 439 שמתיר את זה (תקנה 72(ד)).</li>
+</ul>
+<p class="local" data-city="tlv"><b>תל אביב-יפו:</b> אותו איסור בחוק העזר (סעיף 6(ד)(12)).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(12), 72(ד)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "חניה"</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=39" target="_blank" rel="noopener">לוח התמרורים, תמרור 505</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(12)</a></span></p>
+</div>
+</details>
+
+<details id="disabled-spot">
+<summary>מותר לעצור ולהישאר ברכב בחניית נכים?</summary>
+<div class="a">
+<p class="short">לא, אלא אם יש לכם תג נכה תקף והרכב משמש את הנכה.</p>
+<ul>
+    <li>תמרור 437 פירושו "חנייה בלעדית לרכב של נכה הנושא תג נכה מקורי תקף, בעת שהרכב משמש את הנכה שלו ניתן התג".</li>
+    <li>תקנה 72(א)(16) אוסרת לעצור, להעמיד או להחנות "ליד תמרור 437 בניגוד להוראות התמרור". אם יש מתחתיו תמרור 439 עם פרטי רכב מסוים, רק הרכב הזה רשאי. אם צוינו ימים או שעות, האיסור חל רק בהם.</li>
+    <li>לפי ההגדרה, גם כשהנהג נשאר ברכב זו חניה ("בין שיש ברכב נהג... ובין שאין").</li>
+</ul>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(16)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "חניה"</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=34" target="_blank" rel="noopener">לוח התמרורים, תמרור 437</a></p>
+</div>
+</details>
+
+<details id="drop-off">
+<summary>מותר לעצור לרגע כדי להוריד נוסע במקום שאסור בו לחנות?</summary>
+<div class="a">
+<p class="short">תלוי בתמרור או במקום.</p>
+<ul>
+    <li>העלאה או הורדה של אנשים "מיד, בלי הפסקות" היא לא חניה לפי ההגדרה. לכן, ליד תמרור 432 ("אסורה חניית רכב") מותר לעצור כדי להוריד נוסע.</li>
+    <li>ליד תמרור 433 ("אסורה כל עצירה וחניה") ובאבני שפה אדום-לבן אסורה גם עצירה.</li>
+    <li>ברוב המקומות שבתקנה 72(א) (צומת, מעבר חציה, תחנת אוטובוס ועוד) אסורה גם עצירה. מותר לעצור כדי להעלות או להוריד נוסעים בכניסה לחניה (72(א)(4)) ובתחנת מוניות (72(א)(14)).</li>
+</ul>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "חניה"</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=33" target="_blank" rel="noopener">לוח התמרורים, תמרורים 432 ו־433</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)</a></p>
+</div>
+</details>
+
+<details id="driveway">
+<summary>מותר לחנות מול כניסה לחניה או לחניון?</summary>
+<div class="a">
+<p class="short">לא, אבל מותר לעצור שם כדי להעלות או להוריד נוסעים.</p>
+<blockquote>"(4) במקום כניסה לשטח המיועד לכלי רכב, פרט להעלאת נוסעים והורדתם"</blockquote>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(4)</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(4)</a></span></p>
+</div>
+</details>
+
+<details id="double">
+<summary>מותר לחנות חניה כפולה, או בצד שמאל של הכביש?</summary>
+<div class="a">
+<ul>
+    <li><b>חניה כפולה:</b> אסור לעצור או לחנות "בצד רכב אחר העומד או חונה בצדה של הדרך" (72(א)(10)).</li>
+    <li><b>צד שמאל:</b> אסור, אלא אם הכביש חד־סטרי. כביש שהוא חלק מדרך עם שטח הפרדה באמצע לא נחשב חד־סטרי לעניין הזה (72(א)(1)).</li>
+</ul>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(1), (10)</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(1), (10)</a></span></p>
+</div>
+</details>
+
+<details id="tag">
+<summary>בעל תג נכה, מתי מותר לו לחנות במקום שאסור בו לחנות?</summary>
+<div class="a">
+<p class="short">רק כשכל התנאים בחוק מתקיימים, ולא בכל מקום.</p>
+<p>לפי חוק חניה לנכים, נכה (או מי שנוהג בשבילו) רשאי להחנות רכב עם תג נכה במקום שאסור בו לחנות, אם כל אלה מתקיימים: אין בסמוך חניית נכים פנויה; אין בסמוך מקום אחר שמותר לחנות בו; החניה לא מסכנת ולא חוסמת מעבר להולכי רגל, לעגלות ילדים ולכסאות גלגלים; והיא לא מפריעה ממש לתנועה (סעיף 2).</p>
+<p>ההיתר לא חל, למשל, בתוך צומת או בתחום 12 מטר ממנו, בכניסה לחניה, בתוך מעבר חציה או בתחום 12 מטר לפניו, בתחנת אוטובוס או מוניות, בתחום 2 מטר מברז כיבוי מסומן, בחניה כפולה, ובחניה שמוקצית לרכב של נכה אחר (סעיף 3).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/חוק_חניה_לנכים#סעיף_2" target="_blank" rel="noopener">חוק חניה לנכים, סעיף 2</a> · <a href="https://he.wikisource.org/wiki/חוק_חניה_לנכים#סעיף_3" target="_blank" rel="noopener">חוק חניה לנכים, סעיף 3</a></p>
+</div>
+</details>
+
+</section>
+
+<footer>
+    <p>מצאתם טעות, או רוצים שנוסיף עיר או שאלה? <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ_xLvKoVq3hQDqrJ06KrMifxZ-lqTE6dZ4zDnANBZC53Bug/viewform?usp=sharing&amp;ouid=111833292316340372069" target="_blank" rel="noopener">צרו קשר</a>.</p>
+    <p>על המקורות: תקנות התעבורה, פקודת התעבורה וחוק חניה לנכים מקושרים לנוסח המעודכן בוויקיטקסט. לוח התמרורים הוא הנוסח המשולב מספטמבר 2020 (הודעת התעבורה (קביעת תמרורים), התשע"א–2010). חוק העזר של תל אביב-יפו הוא הנוסח שבאתר העירייה.</p>
+    <p><a href="./">→ חזרה למפת החניונים</a> · <a href="terms.html">תנאי שימוש</a></p>
+</footer>
+</div>
+
+<script>
+// בחירת עיר: מציג את הכללים של העיר שנבחרה. ברירת המחדל לפי העיר שנבחרה ב"ההנחות שלי" במפה.
+(function () {
+    var CITY_BY_NAME = { "תל אביב-יפו": "tlv" };
+    var sel = document.getElementById("city");
+    var saved = null;
+    try {
+        saved = localStorage.getItem("parkinfo.lawsCity");
+        if (!saved) {
+            var p = JSON.parse(localStorage.getItem("parkinfo.discounts") || "{}");
+            saved = CITY_BY_NAME[p.city] || null;
+        }
+    } catch (e) {}
+    var fromUrl = new URLSearchParams(location.search).get("city");
+    var initial = fromUrl || saved;
+    if (initial && sel.querySelector('option[value="' + initial + '"]')) sel.value = initial;
+
+    function apply() {
+        var c = sel.value;
+        document.querySelectorAll("[data-city]").forEach(function (el) {
+            el.hidden = el.getAttribute("data-city") !== c;
+        });
+    }
+    sel.addEventListener("change", function () {
+        try { localStorage.setItem("parkinfo.lawsCity", sel.value); } catch (e) {}
+        apply();
+    });
+    apply();
+    // פתיחת שאלה לפי קישור ישיר (#hydrant)
+    if (location.hash) {
+        var d = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (d && d.tagName === "DETAILS") d.open = true;
+    }
+})();
+</script>
 </body>
 </html>
