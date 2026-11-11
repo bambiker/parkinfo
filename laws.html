@@ -62,8 +62,11 @@
     .src a { word-break: break-word; }
     .local { background: #eef5ff; border-radius: 8px; padding: 6px 10px; margin: 8px 0; }
     .local b { color: #08479b; }
+    .unverified { flex-basis: 100%; background: #fff7e0; border: 1px solid #f0d58a; border-radius: 8px; padding: 6px 10px; font-size: 15px; }
+    .local.nv { background: #fff7e0; }
+    .local.nv b { color: #7a5600; }
     .gap { background: #f4f4f4; border-radius: 8px; padding: 6px 10px; margin: 8px 0; }
-    [data-city][hidden] { display: none; }
+    [data-city][hidden], .unverified[hidden] { display: none; }
     footer { color: var(--muted); font-size: 14px; margin: 18px 0 8px; }
 </style>
 </head>
@@ -85,8 +88,12 @@
     <select id="city">
         <option value="all">כל הארץ (החוקים הארציים)</option>
         <option value="tlv">תל אביב-יפו</option>
+        <option value="jlm">ירושלים</option>
+        <option value="hfa">חיפה</option>
     </select>
-    <small>החוקים הארציים חלים בכל עיר. לכל עירייה יש גם חוק עזר משלה לחניה, שמוסיף כללים (למשל שעות התשלום בכחול לבן). כרגע יש פה רק את חוק העזר של תל אביב-יפו.</small>
+    <small>החוקים הארציים חלים בכל עיר. לכל עירייה יש גם חוק עזר משלה לחניה, שמוסיף כללים (למשל שעות התשלום בכחול לבן). את חוק העזר של תל אביב-יפו בדקנו מהנוסח המלא. בירושלים ובחיפה לא הצלחנו לקרוא את הנוסח המלא (ראו למטה).</small>
+    <div class="unverified" data-city="jlm" hidden><b>ירושלים:</b> חוק העזר הוא "חוק עזר לירושלים (העמדת רכב וחנייתו), תשכ״א–1960". לא הצלחנו לקרוא את הנוסח המלא שלו. מספרי הסעיפים שבדף לקוחים מתקצירים של תוצאות חיפוש שמפנים לדף "סעיפי העבירה" של עיריית ירושלים, ולא אומתו מול הנוסח עצמו. יש לבדוק בקישורים: <a href="https://www.jerusalem.muni.il/he/residents/parking/parking-enforcementt/listoffenses/" target="_blank" rel="noopener">סעיפי העבירה באתר העירייה</a> · <a href="https://www.nevo.co.il/law_html/law01/mek_003_005.htm" target="_blank" rel="noopener">נוסח חוק העזר בנבו</a>.</div>
+    <div class="unverified" data-city="hfa" hidden><b>חיפה:</b> חוק העזר הוא "חוק עזר לחיפה (העמדת רכב וחנייתו), תשמ״ה–1985". לא הצלחנו לקרוא את הנוסח שלו, ולכן בדף מוצגים רק החוקים הארציים. את הכללים העירוניים (למשל שעות התשלום בכחול לבן) יש לבדוק בנוסח המלא: <a href="https://www.haifa.muni.il/wp-content/uploads/2023/05/%D7%97%D7%95%D7%A7-%D7%A2%D7%96%D7%A8-%D7%9C%D7%97%D7%99%D7%A4%D7%94-%D7%94%D7%A2%D7%9E%D7%93%D7%AA-%D7%A8%D7%9B%D7%91-%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95.pdf" target="_blank" rel="noopener">באתר עיריית חיפה</a> · <a href="https://www.nevo.co.il/law_html/law01/mek_002_005.htm" target="_blank" rel="noopener">בנבו</a>.</div>
 </div>
 
 <section id="faq">
@@ -153,7 +160,8 @@
 <p>צומת מוגדר כ"השטח המתהווה על ידי פגישתם של שני כבישים או יותר והמוגבל על ידי קווי שפות הכבישים או אבני השפה של אותם כבישים או על ידי הארכתם המדומה".</p>
 <p>לפי לוח התמרורים, תמרורי החניה 626 ו־627 חלים "עד לצומת הקרוב, אלא אם כן סומנו אבני השפה בצומת ואחריו בתמרור 817" (כחול לבן). כלומר, כחול לבן שמגיע עד הצומת הוא סימון שמתיר לחנות שם.</p>
 <p class="local" data-city="tlv"><b>תל אביב-יפו:</b> אותו איסור בחוק העזר (סעיף 6(ד)(3)).</p>
-<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(3)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "צומת"</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=51" target="_blank" rel="noopener">לוח התמרורים, תמרורים 626 ו־627</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(3)</a></span></p>
+<p class="local nv" data-city="jlm" hidden><b>ירושלים (לא אומת):</b> לפי דף סעיפי העבירה של העירייה, חניה בתוך צומת או בתחום 12 מטר ממנו היא עבירה לפי סעיף 5(ו)(3) לחוק העזר.</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(3)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_1" target="_blank" rel="noopener">תקנות התעבורה, תקנה 1, הגדרת "צומת"</a> · <a href="https://meyda.education.gov.il/files/zahav/ALYesodi/luach-tamrurim-2021.pdf#page=51" target="_blank" rel="noopener">לוח התמרורים, תמרורים 626 ו־627</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(3)</a></span><span data-city="jlm" hidden> · <a href="https://www.jerusalem.muni.il/he/residents/parking/parking-enforcementt/listoffenses/" target="_blank" rel="noopener">עיריית ירושלים, סעיפי העבירה: סעיף 5(ו)(3) (לא אומת)</a></span></p>
 </div>
 </details>
 
@@ -173,20 +181,23 @@
 <blockquote>"(6) בתוך מעבר חציה או בתחום שנים עשר מטר לפניו"</blockquote>
 <p>התקנה מדברת על 12 מטר <b>לפני</b> המעבר. לא מצאנו בתקנה הזו מרחק מינימלי אחרי המעבר. אבל הרבה מעברי חציה נמצאים ליד צומת, ואז חל גם האיסור של 12 מטר מהצומת. בנוסף, אסור לחנות באופן שמסתיר תמרור או מפריע לתנועה (תקנה 71).</p>
 <p class="local" data-city="tlv"><b>תל אביב-יפו:</b> אותו איסור בחוק העזר (סעיף 6(ד)(6)).</p>
-<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(6)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(6)</a></span></p>
+<p class="local nv" data-city="jlm" hidden><b>ירושלים (לא אומת):</b> לפי דף סעיפי העבירה של העירייה, חניה בתוך מעבר חציה או בתחום 12 מטר לפניו היא עבירה לפי סעיף 5(ו)(6) לחוק העזר.</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(6)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(6)</a></span><span data-city="jlm" hidden> · <a href="https://www.jerusalem.muni.il/he/residents/parking/parking-enforcementt/listoffenses/" target="_blank" rel="noopener">עיריית ירושלים, סעיפי העבירה: סעיף 5(ו)(6) (לא אומת)</a></span></p>
 </div>
 </details>
 
 <details id="hydrant">
 <summary>כמה רחוק מברז כיבוי (הידרנט) מותר לחנות?</summary>
 <div class="a">
-<p class="short" data-city="all">בתקנות הארציות כבר אין כלל כזה. כלל כזה יכול להופיע בחוק העזר של העירייה. למשל בתל אביב-יפו: לא בתחום 2 מטר מהברז, כשהתחום מסומן.</p>
+<p class="short" data-city="all hfa">בתקנות הארציות כבר אין כלל כזה. כלל כזה יכול להופיע בחוק העזר של העירייה. למשל בתל אביב-יפו: לא בתחום 2 מטר מהברז, כשהתחום מסומן.</p>
 <p class="short" data-city="tlv" hidden>בתל אביב-יפו: אסור בתחום 2 מטר מברז כיבוי, כשהתחום מסומן.</p>
+<p class="short" data-city="jlm" hidden>בירושלים (לא אומת): לפי דף סעיפי העבירה של העירייה, אסור בתחום 2 מטר מברז כיבוי, כשהתחום מסומן.</p>
 <p>בתקנות התעבורה, הפסקה בתקנה 72(א) שעסקה בזה (פסקה 5) נמחקה, והיא מופיעה היום ריקה.</p>
 <p>בחוק חניה לנכים עדיין כתוב שגם בעל תג נכה לא רשאי לחנות "בתחום שני מטרים מברז כיבוי (הידרנט) כאשר התחום מסומן בסימון על המדרכה או על שולי הכביש או על שניהם".</p>
 <p class="local" data-city="tlv"><b>תל אביב-יפו:</b> חוק העזר אוסר להעמיד או להחנות "בתחום שני מטרים מברז כיבוי (הידרנט), כאשר התחום מסומן בסימון על המדרכה או על שולי הכביש או על שניהם" (סעיף 6(ד)(5)).</p>
-<p class="gap" data-city="all">בעיר אחרת, בדקו את חוק העזר שלה לחניה ("העמדת רכב וחנייתו"). בכל מקרה, אסור לחנות באופן שמפריע לתנועה (תקנה 71).</p>
-<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(5) (נמחקה)</a> · <a href="https://he.wikisource.org/wiki/חוק_חניה_לנכים#סעיף_3" target="_blank" rel="noopener">חוק חניה לנכים, סעיף 3(6)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(5)</a></span></p>
+<p class="local nv" data-city="jlm" hidden><b>ירושלים (לא אומת):</b> לפי דף סעיפי העבירה של העירייה, חניה "בתחום 2 מטרים מברז כיבוי" היא עבירה לפי סעיף 5(ו)(5) לחוק העזר.</p>
+<p class="gap" data-city="all hfa">בעיר אחרת, בדקו את חוק העזר שלה לחניה ("העמדת רכב וחנייתו"). בכל מקרה, אסור לחנות באופן שמפריע לתנועה (תקנה 71).</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(5) (נמחקה)</a> · <a href="https://he.wikisource.org/wiki/חוק_חניה_לנכים#סעיף_3" target="_blank" rel="noopener">חוק חניה לנכים, סעיף 3(6)</a> · <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_71" target="_blank" rel="noopener">תקנות התעבורה, תקנה 71</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(5)</a></span><span data-city="jlm" hidden> · <a href="https://www.jerusalem.muni.il/he/residents/parking/parking-enforcementt/listoffenses/" target="_blank" rel="noopener">עיריית ירושלים, סעיפי העבירה: סעיף 5(ו)(5) (לא אומת)</a></span></p>
 </div>
 </details>
 
@@ -304,7 +315,8 @@
     <li><b>חניה כפולה:</b> אסור לעצור או לחנות "בצד רכב אחר העומד או חונה בצדה של הדרך" (72(א)(10)).</li>
     <li><b>צד שמאל:</b> אסור, אלא אם הכביש חד־סטרי. כביש שהוא חלק מדרך עם שטח הפרדה באמצע לא נחשב חד־סטרי לעניין הזה (72(א)(1)).</li>
 </ul>
-<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(1), (10)</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(1), (10)</a></span></p>
+<p class="local nv" data-city="jlm" hidden><b>ירושלים (לא אומת):</b> לפי מדיניות האכיפה של העירייה, חניה כפולה היא עבירה לפי סעיף 5(ו)(10) לחוק העזר.</p>
+<p class="src">מקורות: <a href="https://he.wikisource.org/wiki/תקנות_התעבורה#סעיף_72" target="_blank" rel="noopener">תקנות התעבורה, תקנה 72(א)(1), (10)</a><span data-city="tlv"> · <a href="https://www.tel-aviv.gov.il/Bylaws/%D7%97%D7%95%D7%A7%20%D7%A2%D7%96%D7%A8%20%D7%9C%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95%20%28%D7%94%D7%A2%D7%9E%D7%93%D7%AA%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%97%D7%A0%D7%99%D7%99%D7%AA%D7%95%29.pdf" target="_blank" rel="noopener">חוק עזר לתל אביב-יפו (העמדת רכב וחנייתו), סעיף 6(ד)(1), (10)</a></span><span data-city="jlm" hidden> · <a href="https://www.jerusalem.muni.il/he/residents/parking/parking-enforcementt/listoffenses/" target="_blank" rel="noopener">עיריית ירושלים, סעיפי העבירה: סעיף 5(ו)(10) (לא אומת)</a></span></p>
 </div>
 </details>
 
@@ -322,7 +334,7 @@
 
 <footer>
     <p>מצאתם טעות, או רוצים שנוסיף עיר או שאלה? <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ_xLvKoVq3hQDqrJ06KrMifxZ-lqTE6dZ4zDnANBZC53Bug/viewform?usp=sharing&amp;ouid=111833292316340372069" target="_blank" rel="noopener">צרו קשר</a>.</p>
-    <p>על המקורות: תקנות התעבורה, פקודת התעבורה וחוק חניה לנכים מקושרים לנוסח המעודכן בוויקיטקסט. לוח התמרורים הוא הנוסח המשולב מספטמבר 2020 (הודעת התעבורה (קביעת תמרורים), התשע"א–2010). חוק העזר של תל אביב-יפו הוא הנוסח שבאתר העירייה.</p>
+    <p>על המקורות: תקנות התעבורה, פקודת התעבורה וחוק חניה לנכים מקושרים לנוסח המעודכן בוויקיטקסט. לוח התמרורים הוא הנוסח המשולב מספטמבר 2020 (הודעת התעבורה (קביעת תמרורים), התשע"א–2010). חוק העזר של תל אביב-יפו הוא הנוסח שבאתר העירייה. את חוקי העזר של ירושלים וחיפה לא הצלחנו לקרוא, ומה שכתוב על ירושלים מסומן "לא אומת".</p>
     <p><a href="./">→ חזרה למפת החניונים</a> · <a href="terms.html">תנאי שימוש</a></p>
 </footer>
 </div>
@@ -330,7 +342,7 @@
 <script>
 // בחירת עיר: מציג את הכללים של העיר שנבחרה. ברירת המחדל לפי העיר שנבחרה ב"ההנחות שלי" במפה.
 (function () {
-    var CITY_BY_NAME = { "תל אביב-יפו": "tlv" };
+    var CITY_BY_NAME = { "תל אביב-יפו": "tlv", "ירושלים": "jlm", "חיפה": "hfa" };
     var sel = document.getElementById("city");
     var saved = null;
     try {
@@ -347,7 +359,7 @@
     function apply() {
         var c = sel.value;
         document.querySelectorAll("[data-city]").forEach(function (el) {
-            el.hidden = el.getAttribute("data-city") !== c;
+            el.hidden = el.getAttribute("data-city").split(" ").indexOf(c) < 0;
         });
     }
     sel.addEventListener("change", function () {
