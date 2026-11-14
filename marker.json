@@ -7899,36 +7899,6 @@
     ]
   },
   {
-    "lat": 32.07200598369323,
-    "lng": 34.78863129645828,
-    "color": "violet",
-    "note": "עזריאלי שרונה",
-    "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/17/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A9%D7%A8%D7%95%D7%A0%D7%94/",
-    "hourly": "30",
-    "daily": "100",
-    "imageUrl": null,
-    "dateTime": "2026-11-09T14:21:45.000Z",
-    "tariff": [
-      {
-        "label": "שישי–שבת",
-        "days": "ו-ש",
-        "minute": 0.5,
-        "max": 25
-      },
-      {
-        "label": "ערב (כניסה 18:00–24:00)",
-        "entry": "18:00-24:00",
-        "minute": 0.5,
-        "max": 25
-      },
-      {
-        "label": "יום",
-        "minute": 0.5,
-        "max": 100
-      }
-    ]
-  },
-  {
     "lat": 32.007783927722315,
     "lng": 34.80010621276244,
     "color": "violet",
@@ -13728,6 +13698,36 @@
         "minute": 0.7,
         "max": 85,
         "until": "24:00"
+      }
+    ]
+  },
+  {
+    "lat": 32.07200598369323,
+    "lng": 34.78863129645828,
+    "color": "violet",
+    "note": "עזריאלי שרונה",
+    "url": "https://www.azrielimalls.co.il/%D7%9E%D7%99%D7%93%D7%A2_%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99/17/%D7%A2%D7%96%D7%A8%D7%99%D7%90%D7%9C%D7%99-%D7%A9%D7%A8%D7%95%D7%A0%D7%94/",
+    "hourly": "33",
+    "daily": "115",
+    "imageUrl": "https://i.imgur.com/YmrD9Cl.jpeg",
+    "dateTime": "2026-11-14T11:08:41.133Z",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "minute": 0.5,
+        "max": 25
+      },
+      {
+        "label": "ערב (כניסה 18:00–24:00)",
+        "entry": "18:00-24:00",
+        "minute": 0.5,
+        "max": 25
+      },
+      {
+        "label": "יום",
+        "minute": 0.5,
+        "max": 100
       }
     ]
   }
