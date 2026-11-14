@@ -443,6 +443,7 @@ document.getElementById("searchBox").addEventListener("keydown", function(event)
     <div style="margin-bottom: 15px;">
         <label for="markerImage" style="font-weight: bold;"> לצרף תמונה של שלט המחיר (או של החניון עצמו בחניון חינמי):<span style="color:red">*</span></label>
         <input type="file" id="markerImage" accept="image/*" capture="environment" style="display: block; margin-top: 5px;">
+        <div id="photoTimeInfo" style="font-size: 14px; color: #4a5361; margin-top: 4px;" hidden></div>
     </div>
 
     <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
@@ -797,7 +798,7 @@ function getDomain(url) {
     }
 }
 	
-function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, dateTime = null, contactinfo= null, tariff = null, discounts = null) {
+function addMarker(lat, lng, color, note, url, hourly, daily, imageUrl = null, dateTime = null, contactinfo= null, tariff = null, discounts = null, photoTime = null) {
 //    if (!dateTime || typeof dateTime !== "string" || dateTime.trim() === "") {
 //        dateTime = new Date().toISOString();
 //}
@@ -813,6 +814,9 @@ let popupHTML = `<div style="direction: rtl; text-align: right;"><b>${note}</b> 
 
 if (imageUrl) {
     popupHTML += `<br><img src="${imageUrl}" style="max-width:100px; cursor:pointer;" onclick="showImageModal('${imageUrl}')">`;
+    if (photoTime) {
+        popupHTML += `<br><span style="font-size:0.9em; color:#4a5361;">התמונה צולמה: ${formatPhotoTime(photoTime)}</span>`;
+    }
 }
 
 if (hourly) {
@@ -885,7 +889,7 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
         }
     });
 
-    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime, contactinfo, tariff, discounts } });
+    markers.push({ marker, data: { lat, lng, color, note, url, hourly, daily, imageUrl, dateTime, contactinfo, tariff, discounts, photoTime } });
     updateMarkerCount();
     updateLastUpdatedDate();
 
@@ -895,6 +899,7 @@ popupHTML += `&ensp;<button onclick="map.closePopup()"
     document.getElementById("markerHourly").value = "";
     document.getElementById("markerDaily").value = "";	
     document.getElementById("markerImage").value = "";
+    clearPhotoTime();
     addMode = false;
 
 }
@@ -1089,6 +1094,7 @@ function cancelsave() {
     document.getElementById("markerHourly").value = "";
     document.getElementById("markerDaily").value = "";	
     document.getElementById("markerImage").value = "";	
+    clearPhotoTime();
 }
 
 
@@ -1134,6 +1140,91 @@ function scrollToForm() {
     }, 150);  // מעט יותר זמן כדי לוודא הצגה
 }
 	
+// ===== זמן צילום התמונה =====
+// נלקח מנתוני ה-EXIF של התמונה (DateTimeOriginal), כי Imgur מוחק אותם בהעלאה.
+// אם אין EXIF, לוקחים את זמן הקובץ (בצילום מהמצלמה זה זמן הצילום).
+let selectedPhotoTime = null;
+
+// מחזיר "YYYY-MM-DDTHH:MM:SS" (שעון מקומי של המצלמה) או null
+function readExifDate(buffer) {
+    const v = new DataView(buffer);
+    if (v.byteLength < 4 || v.getUint16(0) !== 0xFFD8) return null; // לא JPEG
+    let off = 2;
+    while (off + 4 <= v.byteLength) {
+        const marker = v.getUint16(off);
+        if ((marker & 0xFF00) !== 0xFF00) return null;
+        const size = v.getUint16(off + 2);
+        if (marker === 0xFFE1 && v.getUint32(off + 4) === 0x45786966) { // "Exif"
+            const tiff = off + 10;
+            const le = v.getUint16(tiff) === 0x4949;
+            const u16 = o => v.getUint16(o, le), u32 = o => v.getUint32(o, le);
+            const readTags = (ifd) => {
+                const tags = {};
+                if (ifd + 2 > v.byteLength) return tags;
+                const n = u16(ifd);
+                for (let i = 0; i < n; i++) {
+                    const e = ifd + 2 + i * 12;
+                    if (e + 12 > v.byteLength) break;
+                    tags[u16(e)] = { type: u16(e + 2), count: u32(e + 4), value: e + 8 };
+                }
+                return tags;
+            };
+            const ascii = (t) => {
+                if (!t || t.type !== 2) return null;
+                const start = t.count > 4 ? tiff + u32(t.value) : t.value;
+                let str = "";
+                for (let i = 0; i < t.count - 1 && start + i < v.byteLength; i++) str += String.fromCharCode(v.getUint8(start + i));
+                return str;
+            };
+            const ifd0 = readTags(tiff + u32(tiff + 4));
+            let raw = null;
+            if (ifd0[0x8769]) raw = ascii(readTags(tiff + u32(ifd0[0x8769].value))[0x9003]); // DateTimeOriginal
+            if (!raw) raw = ascii(ifd0[0x0132]); // DateTime
+            const m = raw && raw.match(/^(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})/);
+            return m && m[1] !== "0000" ? `${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}:${m[6]}` : null;
+        }
+        if (marker === 0xFFDA) return null; // תחילת התמונה עצמה, אין EXIF
+        off += 2 + size;
+    }
+    return null;
+}
+
+function localIso(d) {
+    const p = n => String(n).padStart(2, "0");
+    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
+}
+
+function photoTimeOf(file) {
+    return file.slice(0, 256 * 1024).arrayBuffer()
+        .then(buf => readExifDate(buf))
+        .catch(() => null)
+        .then(t => t || (file.lastModified ? localIso(new Date(file.lastModified)) : null));
+}
+
+// "2026-11-14T10:23:05" -> "14/11/26 10:23"
+function formatPhotoTime(t) {
+    const m = String(t).match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+    return m ? `${m[3]}/${m[2]}/${m[1].slice(2)} ${m[4]}:${m[5]}` : t;
+}
+
+function clearPhotoTime() {
+    selectedPhotoTime = null;
+    const info = document.getElementById("photoTimeInfo");
+    if (info) { info.hidden = true; info.textContent = ""; }
+}
+
+document.getElementById("markerImage").addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    clearPhotoTime();
+    if (!file) return;
+    photoTimeOf(file).then(t => {
+        if (e.target.files[0] !== file) return; // בינתיים נבחרה תמונה אחרת
+        selectedPhotoTime = t;
+        const info = document.getElementById("photoTimeInfo");
+        if (t) { info.textContent = "התמונה צולמה: " + formatPhotoTime(t); info.hidden = false; }
+    });
+});
+
 function submitForm() {
     const color = document.getElementById("markerColor").value;
     const note = document.getElementById("markerText").value;
@@ -1169,7 +1260,9 @@ function submitForm() {
             map.removeLayer(editing.marker);
             markers = markers.filter(m => m !== editing);
         }
-        addMarker(latlng.lat, latlng.lng, color, note, finalUrl, hourly, daily, imgUrl, dateTime, contact, editing ? editing.data.tariff : null, editing ? editing.data.discounts : null);
+        // תמונה חדשה: זמן הצילום שלה. בלי תמונה חדשה: נשאר הזמן של התמונה הקיימת
+        const photoTime = file ? (selectedPhotoTime || null) : (editing ? editing.data.photoTime || null : null);
+        addMarker(latlng.lat, latlng.lng, color, note, finalUrl, hourly, daily, imgUrl, dateTime, contact, editing ? editing.data.tariff : null, editing ? editing.data.discounts : null, photoTime);
         document.getElementById("controls").style.display = "none";
         document.getElementById("editNotice").style.display = "none";
         addMode = false;
@@ -1234,6 +1327,10 @@ function downloadMarkers() {
         if (m.data.discounts) {
             markerObj.discounts = m.data.discounts;
         }
+        // מתי צולמה התמונה של השלט (נשמר רק אם ידוע)
+        if (m.data.photoTime) {
+            markerObj.photoTime = m.data.photoTime;
+        }
 
         // הוסף רק אם contactinfo לא ריק
         if (m.data.contactinfo && m.data.contactinfo.trim() !== "") {
@@ -1275,7 +1372,7 @@ function uploadMarkers(event) {
 		 const dt = (d.dateTime && d.dateTime.trim() !== "") ? d.dateTime : null;
      		 console.log("Loaded marker dateTime:", d.dateTime);
 
-                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime, null, d.tariff, d.discounts); //dt
+                 addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime, null, d.tariff, d.discounts, d.photoTime); //dt
 
             });
 
@@ -1436,7 +1533,7 @@ function loadMarkers() {
         .then(data => {
             if (Array.isArray(data)) {
                 data.forEach(d => {
-                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime, null, d.tariff, d.discounts);
+                    addMarker(d.lat, d.lng, d.color, d.note, d.url, d.hourly, d.daily, d.imageUrl, d.dateTime, null, d.tariff, d.discounts, d.photoTime);
                 });
             } else {
                 console.error("Invalid marker data");
