@@ -1146,17 +1146,6 @@
     "dateTime": "2025-05-27T05:38:15.419Z"
   },
   {
-    "lat": 31.91884154204445,
-    "lng": 34.80366706011777,
-    "color": "black",
-    "note": "עפר",
-    "url": "",
-    "hourly": "",
-    "daily": "",
-    "imageUrl": "https://i.imgur.com/ALyORDL.jpeg",
-    "dateTime": "2025-05-27T05:40:25.452Z"
-  },
-  {
     "lat": 32.830424604391915,
     "lng": 34.982734480224124,
     "color": "violet",
@@ -13730,5 +13719,17 @@
         "max": 100
       }
     ]
+  },
+  {
+    "lat": 31.91884154204445,
+    "lng": 34.80366706011777,
+    "color": "violet",
+    "note": "עפר",
+    "url": "",
+    "hourly": "4.7",
+    "daily": "79.9",
+    "imageUrl": "https://i.imgur.com/MI7YbFK.jpeg",
+    "dateTime": "2026-11-18T13:38:08.532Z",
+    "photoTime": "2026-11-18T15:36:53"
   }
 ]
