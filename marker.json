@@ -561,6 +561,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=114",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 78,
     "imageUrl": "https://i.imgur.com/CKe49ZR.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -591,6 +592,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=24",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 48,
     "imageUrl": "https://i.imgur.com/adFZN70.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -638,6 +640,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=13",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 53,
     "imageUrl": "https://i.imgur.com/J2oH0pO.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -675,6 +678,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=129",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 196,
     "imageUrl": "https://i.imgur.com/UOj2TFU.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -705,6 +709,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=44",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 51,
     "imageUrl": "https://i.imgur.com/mGJg2QA.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -1392,6 +1397,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=122",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 76,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1421,6 +1427,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=1",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 21,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1451,6 +1458,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=123",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 77,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1480,6 +1488,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=3",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 10,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1539,6 +1548,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=93",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 65,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1586,6 +1596,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=138",
     "hourly": "20",
     "daily": "480",
+    "ahuzot": 57,
     "imageUrl": null,
     "dateTime": "2025-06-09T11:00:02.095Z"
   },
@@ -1597,6 +1608,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=7",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 15,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1644,6 +1656,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=8",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 14,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1691,6 +1704,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=10",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 13,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1753,6 +1767,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=98",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 62,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1783,6 +1798,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=12",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 44,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1813,6 +1829,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=99",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 61,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1843,6 +1860,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=15",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 24,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1890,6 +1908,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=16",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 12,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1937,6 +1956,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=18",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 52,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1984,6 +2004,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=25",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 63,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2014,6 +2035,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=121",
     "hourly": "44",
     "daily": "44",
+    "ahuzot": 75,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2819,6 +2841,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=28",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 22,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2849,6 +2872,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=94",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 42,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2896,6 +2920,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=4",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 16,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2943,6 +2968,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=134",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 167,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2973,6 +2999,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=132",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 88,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3020,6 +3047,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=137",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 173,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3049,6 +3077,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=96",
     "hourly": "49",
     "daily": "49",
+    "ahuzot": 67,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3088,6 +3117,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=26",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 30,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3151,6 +3181,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=120",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 833,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3180,6 +3211,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=50",
     "hourly": "20",
     "daily": "44",
+    "ahuzot": 20,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3221,6 +3253,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=29",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 54,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3268,6 +3301,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=48",
     "hourly": "20",
     "daily": "52",
+    "ahuzot": 18,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3309,6 +3343,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=31",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 23,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3356,6 +3391,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=33",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 49,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3403,6 +3439,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=32",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 47,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3433,6 +3470,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=34",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 28,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3480,6 +3518,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=108",
     "hourly": "49",
     "daily": "49",
+    "ahuzot": 72,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3519,6 +3558,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=37",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 25,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3606,6 +3646,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=38",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 31,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3653,6 +3694,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=39",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 43,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3683,6 +3725,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=23",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 50,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3730,6 +3773,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=127",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 83,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3760,6 +3804,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=135",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 170,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3807,6 +3852,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=40",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 58,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3854,6 +3900,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=42",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 66,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3891,6 +3938,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=53",
     "hourly": "44",
     "daily": "44",
+    "ahuzot": 39,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3930,6 +3978,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=131",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 86,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3992,6 +4041,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=45",
     "hourly": "24",
     "daily": "576",
+    "ahuzot": 11,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -4149,6 +4199,7 @@
     "url": "",
     "hourly": "",
     "daily": "",
+    "ahuzot": 2016,
     "imageUrl": null,
     "dateTime": "2025-07-08T19:28:49.156Z"
   },
@@ -6020,6 +6071,7 @@
     "url": "https://www.tel-aviv.gov.il/Residents/Transportation/Pages/reading.aspx",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 80,
     "imageUrl": "https://i.imgur.com/5LWKdLg.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -6050,6 +6102,7 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=126",
     "hourly": "36",
     "daily": "36",
+    "ahuzot": 81,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
