@@ -13796,5 +13796,29 @@
     "imageUrl": "https://i.imgur.com/efDP7c9.jpeg",
     "dateTime": "2026-11-19T16:45:58.879Z",
     "photoTime": "2026-11-19T18:45:28"
+  },
+  {
+    "lat": 32.04112359187309,
+    "lng": 34.770649555139244,
+    "color": "violet",
+    "note": "בית טפר",
+    "url": "",
+    "hourly": "20",
+    "daily": "100",
+    "imageUrl": "https://i.imgur.com/gSpy3pO.jpeg",
+    "dateTime": "2026-11-22T15:10:41.564Z",
+    "photoTime": "2026-11-22T17:10:22"
+  },
+  {
+    "lat": 32.04112359187309,
+    "lng": 34.770649555139244,
+    "color": "black",
+    "note": "בית פנורמה",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/NSuKOnw.jpeg",
+    "dateTime": "2026-11-22T15:14:45.931Z",
+    "photoTime": "2026-11-22T17:14:33"
   }
 ]
