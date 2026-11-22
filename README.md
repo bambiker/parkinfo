@@ -22,4 +22,17 @@ https://bambiker.github.io/parkinfo/
 - בחניון שיש לו שדה `"ahuzot"` ב־`marker.json` (קוד החניון באחוזות החוף), החלונית מציגה "מצב עכשיו": יש מקום / מעט מקומות / מלא / סגור.
   המידע נלקח בזמן אמת משירות המפות הפתוח של עיריית תל אביב-יפו (שכבה 970), ומתעדכן כל 5 דקות. אין שם מספר מקומות פנויים.
   כשמוסיפים חניון של אחוזות החוף, אפשר להוסיף לו `"ahuzot": <קוד>` (הקוד מופיע בשדה `code_achoza` בשירות של העירייה).
-- היסטוריה: הפעולה "איסוף תפוסת חניונים" (`.github/workflows/collect-occupancy.yml`) שומרת כל חצי שעה את הסטטוס בענף `occupancy-data`, לסטטיסטיקות בהמשך. פירוט הפורמט ב־README שבענף.
+- היסטוריה: הפעולה "איסוף תפוסת חניונים" (`.github/workflows/collect-occupancy.yml`) שומרת את הסטטוס בענף `occupancy-data`, לסטטיסטיקות בהמשך. פירוט הפורמט ב־README שבענף.
+  GitHub מריץ פעולות מתוזמנות רק כמה פעמים ביום, ולכן מי שמפעיל אותה כל 30 דקות הוא Google Apps Script (`scripts/occupancy-trigger.gs`).
+
+### התקנת הטריגר ב־Google Apps Script (פעם אחת)
+
+1. **טוקן ב־GitHub:** Settings > Developer settings > Personal access tokens > Fine-grained tokens > Generate new token.
+   - Repository access: Only select repositories > `parkinfo`.
+   - Permissions > Repository permissions > **Actions: Read and write**. שום הרשאה אחרת לא נדרשת.
+   - מעתיקים את הטוקן. כשתוקפו יפוג צריך ליצור חדש ולהחליף אותו בשלב 3.
+2. **פרויקט חדש** ב־https://script.google.com (פרויקט נפרד, לא זה שמקבל חניונים חדשים). מוחקים את מה שיש ב־`Code.gs` ומדביקים את כל התוכן של `scripts/occupancy-trigger.gs`. שומרים.
+3. **הטוקן:** הגדרות הפרויקט (גלגל השיניים) > מאפייני סקריפט > הוספה: שם `GITHUB_TOKEN`, ערך: הטוקן.
+4. **הפעלה:** בעורך בוחרים את הפונקציה `setupTrigger` ולוחצים "הפעלה". בפעם הראשונה Google מבקש אישור הרשאות (גישה לשירותים חיצוניים והרצת טריגרים): מאשרים.
+5. **בדיקה:** בלשונית Actions בריפו מופיעה הרצה חדשה של "איסוף תפוסת חניונים" (event: workflow_dispatch). מעכשיו אחת לחצי שעה.
+   אם משהו נכשל, Google שולח מייל עם השגיאה. ב־Apps Script אפשר לראות את ההרצות ב"ביצועים".
