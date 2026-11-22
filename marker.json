@@ -561,7 +561,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=114",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 78,
     "imageUrl": "https://i.imgur.com/CKe49ZR.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -582,7 +581,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 78
   },
   {
     "lat": 32.06691831058792,
@@ -592,7 +592,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=24",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 48,
     "imageUrl": "https://i.imgur.com/adFZN70.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -630,7 +629,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 48
   },
   {
     "lat": 32.065847622283165,
@@ -640,7 +640,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=13",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 53,
     "imageUrl": "https://i.imgur.com/J2oH0pO.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -668,7 +667,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 53
   },
   {
     "lat": 32.065984219195926,
@@ -678,7 +678,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=129",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 196,
     "imageUrl": "https://i.imgur.com/UOj2TFU.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -699,7 +698,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 196
   },
   {
     "lat": 32.064745531921716,
@@ -709,7 +709,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=44",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 51,
     "imageUrl": "https://i.imgur.com/mGJg2QA.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -730,7 +729,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 51
   },
   {
     "lat": 31.923783264322562,
@@ -1397,7 +1397,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=122",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 76,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1417,7 +1416,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 76
   },
   {
     "lat": 32.08501256316085,
@@ -1427,7 +1427,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=1",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 21,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1448,7 +1447,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 21
   },
   {
     "lat": 32.08728870165632,
@@ -1458,7 +1458,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=123",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 77,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1478,7 +1477,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 77
   },
   {
     "lat": 32.08998290734283,
@@ -1488,7 +1488,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=3",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 10,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1508,7 +1507,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 10
   },
   {
     "lat": 32.05746579451901,
@@ -1548,7 +1548,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=93",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 65,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1586,7 +1585,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 65
   },
   {
     "lat": 32.12579265960731,
@@ -1596,9 +1596,9 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=138",
     "hourly": "20",
     "daily": "480",
-    "ahuzot": 57,
     "imageUrl": null,
-    "dateTime": "2025-06-09T11:00:02.095Z"
+    "dateTime": "2025-06-09T11:00:02.095Z",
+    "ahuzot": 57
   },
   {
     "lat": 32.09558830946965,
@@ -1608,7 +1608,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=7",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 15,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1646,7 +1645,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 15
   },
   {
     "lat": 32.07815880772818,
@@ -1656,7 +1656,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=8",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 14,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1694,7 +1693,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 14
   },
   {
     "lat": 32.077258359075856,
@@ -1704,7 +1704,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=10",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 13,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1757,7 +1756,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 13
   },
   {
     "lat": 32.100275423267234,
@@ -1767,7 +1767,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=98",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 62,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1788,7 +1787,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 62
   },
   {
     "lat": 32.08321815506313,
@@ -1798,7 +1798,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=12",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 44,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1819,7 +1818,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 44
   },
   {
     "lat": 32.1043888331588,
@@ -1829,7 +1829,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=99",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 61,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1850,7 +1849,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 61
   },
   {
     "lat": 32.07409921871132,
@@ -1860,7 +1860,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=15",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 24,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1898,7 +1897,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 24
   },
   {
     "lat": 32.11114111273817,
@@ -1908,7 +1908,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=16",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 12,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1946,7 +1945,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 12
   },
   {
     "lat": 32.062199416096405,
@@ -1956,7 +1956,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=18",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 52,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -1994,7 +1993,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 52
   },
   {
     "lat": 32.036933172421534,
@@ -2004,7 +2004,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=25",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 63,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2025,7 +2024,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 63
   },
   {
     "lat": 32.11438620966779,
@@ -2035,7 +2035,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=121",
     "hourly": "44",
     "daily": "44",
-    "ahuzot": 75,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2097,7 +2096,8 @@
           }
         ]
       }
-    ]
+    ],
+    "ahuzot": 75
   },
   {
     "lat": 31.909316832161107,
@@ -2841,7 +2841,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=28",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 22,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2862,7 +2861,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 22
   },
   {
     "lat": 32.0721241322729,
@@ -2872,7 +2872,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=94",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 42,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2910,7 +2909,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 42
   },
   {
     "lat": 32.08481894330278,
@@ -2920,7 +2920,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=4",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 16,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2958,7 +2957,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 16
   },
   {
     "lat": 32.12286144791001,
@@ -2968,7 +2968,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=134",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 167,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -2989,7 +2988,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 167
   },
   {
     "lat": 32.05767811258954,
@@ -2999,7 +2999,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=132",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 88,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3037,7 +3036,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 88
   },
   {
     "lat": 32.114428919541346,
@@ -3047,7 +3047,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=137",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 173,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3067,7 +3066,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 173
   },
   {
     "lat": 32.109627118779635,
@@ -3077,7 +3077,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=96",
     "hourly": "49",
     "daily": "49",
-    "ahuzot": 67,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3107,7 +3106,8 @@
           }
         ]
       }
-    ]
+    ],
+    "ahuzot": 67
   },
   {
     "lat": 32.08168006323586,
@@ -3117,7 +3117,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=26",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 30,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3138,7 +3137,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 30
   },
   {
     "lat": 31.933508567245468,
@@ -3181,7 +3181,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=120",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 833,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3201,7 +3200,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 833
   },
   {
     "lat": 32.1105286116249,
@@ -3211,7 +3211,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=50",
     "hourly": "20",
     "daily": "44",
-    "ahuzot": 20,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3243,7 +3242,8 @@
           }
         ]
       }
-    ]
+    ],
+    "ahuzot": 20
   },
   {
     "lat": 32.06484935524119,
@@ -3253,7 +3253,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=29",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 54,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3291,7 +3290,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 54
   },
   {
     "lat": 32.117553044112746,
@@ -3301,7 +3301,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=48",
     "hourly": "20",
     "daily": "52",
-    "ahuzot": 18,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3333,7 +3332,8 @@
           }
         ]
       }
-    ]
+    ],
+    "ahuzot": 18
   },
   {
     "lat": 32.07287553382721,
@@ -3343,7 +3343,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=31",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 23,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3381,7 +3380,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 23
   },
   {
     "lat": 32.06419744733532,
@@ -3391,7 +3391,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=33",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 49,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3429,7 +3428,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 49
   },
   {
     "lat": 32.05107374381921,
@@ -3439,7 +3439,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=32",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 47,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3460,7 +3459,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 47
   },
   {
     "lat": 32.10922998653004,
@@ -3470,7 +3470,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=34",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 28,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3508,7 +3507,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 28
   },
   {
     "lat": 32.10863655687201,
@@ -3518,7 +3518,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=108",
     "hourly": "49",
     "daily": "49",
-    "ahuzot": 72,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3548,7 +3547,8 @@
           }
         ]
       }
-    ]
+    ],
+    "ahuzot": 72
   },
   {
     "lat": 32.06496118836027,
@@ -3558,7 +3558,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=37",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 25,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3579,7 +3578,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 25
   },
   {
     "lat": 32.10907913037258,
@@ -3646,7 +3646,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=38",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 31,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3684,7 +3683,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 31
   },
   {
     "lat": 32.063004543825194,
@@ -3694,7 +3694,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=39",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 43,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3715,7 +3714,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 43
   },
   {
     "lat": 32.113116718970865,
@@ -3725,7 +3725,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=23",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 50,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3763,7 +3762,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 50
   },
   {
     "lat": 32.08672967129032,
@@ -3773,7 +3773,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=127",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 83,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3794,7 +3793,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 83
   },
   {
     "lat": 32.062883615973206,
@@ -3804,7 +3804,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=135",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 170,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3842,7 +3841,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 170
   },
   {
     "lat": 32.06602314143048,
@@ -3852,7 +3852,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=40",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 58,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3890,7 +3889,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 58
   },
   {
     "lat": 32.09407860228592,
@@ -3900,7 +3900,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=42",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 66,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3928,7 +3927,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 66
   },
   {
     "lat": 32.117462175181316,
@@ -3938,7 +3938,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=53",
     "hourly": "44",
     "daily": "44",
-    "ahuzot": 39,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -3968,7 +3967,8 @@
           }
         ]
       }
-    ]
+    ],
+    "ahuzot": 39
   },
   {
     "lat": 32.08551160950921,
@@ -3978,7 +3978,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=131",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 86,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -4031,7 +4030,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 86
   },
   {
     "lat": 32.079647869438816,
@@ -4041,7 +4041,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=45",
     "hourly": "24",
     "daily": "576",
-    "ahuzot": 11,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -4079,7 +4078,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 11
   },
   {
     "lat": 31.862953859314047,
@@ -4199,9 +4199,9 @@
     "url": "",
     "hourly": "",
     "daily": "",
-    "ahuzot": 2016,
     "imageUrl": null,
-    "dateTime": "2025-07-08T19:28:49.156Z"
+    "dateTime": "2025-07-08T19:28:49.156Z",
+    "ahuzot": 2016
   },
   {
     "lat": 32.19274490515423,
@@ -6071,7 +6071,6 @@
     "url": "https://www.tel-aviv.gov.il/Residents/Transportation/Pages/reading.aspx",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 80,
     "imageUrl": "https://i.imgur.com/5LWKdLg.jpeg",
     "dateTime": "2026-11-09T14:39:49.000Z",
     "tariff": [
@@ -6092,7 +6091,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 80
   },
   {
     "lat": 32.0995210659355,
@@ -6102,7 +6102,6 @@
     "url": "https://www.ahuzot.co.il/Parking/ParkingDetails/?ID=126",
     "hourly": "36",
     "daily": "36",
-    "ahuzot": 81,
     "imageUrl": null,
     "dateTime": "2026-11-09T14:21:45.000Z",
     "tariff": [
@@ -6123,7 +6122,8 @@
         "label": "תג נכה – כסא גלגלים, חינם",
         "free": true
       }
-    ]
+    ],
+    "ahuzot": 81
   },
   {
     "lat": 32.08369610353957,
@@ -13784,5 +13784,17 @@
     "imageUrl": "https://i.imgur.com/MI7YbFK.jpeg",
     "dateTime": "2026-11-18T13:38:08.532Z",
     "photoTime": "2026-11-18T15:36:53"
+  },
+  {
+    "lat": 31.76639485079133,
+    "lng": 35.16217231750489,
+    "color": "black",
+    "note": "עין כרם",
+    "url": "",
+    "hourly": "",
+    "daily": "",
+    "imageUrl": "https://i.imgur.com/efDP7c9.jpeg",
+    "dateTime": "2026-11-19T16:45:58.879Z",
+    "photoTime": "2026-11-19T18:45:28"
   }
 ]
