@@ -936,14 +936,28 @@ const LIVE_STATUS = {
 const LIVE_MAX_AGE = 2 * 60 * 60 * 1000; // סטטוס ישן משעתיים לא מוצג
 let liveStatus = {}; // קוד -> { status, time }
 
+// העירייה שומרת את זמן העדכון בשעון ישראל, אבל מסמנת אותו כאילו הוא UTC.
+// לכן קוראים ממנו את השעה "כמו שהיא" (getUTC...), ומשווים לשעה הנוכחית בישראל באותה שיטה.
+function israelWallNow() {
+    const p = Object.fromEntries(new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Asia/Jerusalem", year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23"
+    }).formatToParts(new Date()).map(x => [x.type, x.value]));
+    return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second);
+}
+function wallTimeText(ms) {
+    const d = new Date(ms);
+    return String(d.getUTCHours()).padStart(2, "0") + ":" + String(d.getUTCMinutes()).padStart(2, "0");
+}
+
 function fillLiveStatus(popupEl, data) {
     const box = popupEl && popupEl.querySelector(".live-status");
     if (!box) return;
     const s = data.ahuzot && liveStatus[data.ahuzot];
     const info = s && LIVE_STATUS[s.status];
-    if (!info || !s.time || Date.now() - s.time > LIVE_MAX_AGE) { box.hidden = true; return; }
+    if (!info || !s.time || Math.abs(israelWallNow() - s.time) > LIVE_MAX_AGE) { box.hidden = true; return; }
     box.innerHTML = `<b>מצב עכשיו:</b> <span style="color:${info.color}; font-weight:700;">● ${info.text}</span>` +
-        ` <small style="color:#4a5361;">(עודכן ${formatTime(new Date(s.time))}, לפי אחוזות החוף)</small>`;
+        ` <small style="color:#4a5361;">(עודכן ${wallTimeText(s.time)}, לפי אחוזות החוף)</small>`;
     box.hidden = false;
 }
 

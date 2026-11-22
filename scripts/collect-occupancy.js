@@ -21,6 +21,7 @@ const README = `# היסטוריית תפוסה של חניוני אחוזות �
     2026-11-19T16:52,10:F 11:L 33:X
 
 - time: זמן העדכון של הנתונים אצל העירייה, בשעון ישראל.
+  (השורות עד 22.11.26 נשמרו שעתיים קדימה, ותוקנו אוטומטית. ראו time-fixed.)
 - statuses: קוד החניון באחוזות החוף (השדה ahuzot ב-marker.json) וסטטוס:
   F = פנוי, L = מעט מקומות, X = מלא, C = סגור.
   חניונים בלי סטטוס תפוסה (למשל "פעיל") לא מופיעים.
@@ -42,13 +43,31 @@ async function fetchJson(url, tries = 3) {
     }
 }
 
-// זמן בשעון ישראל, בפורמט 2026-11-19T16:52
-function israelTime(ms) {
-    const p = Object.fromEntries(new Intl.DateTimeFormat("en-GB", {
-        timeZone: "Asia/Jerusalem", year: "numeric", month: "2-digit", day: "2-digit",
-        hour: "2-digit", minute: "2-digit", hourCycle: "h23"
-    }).formatToParts(new Date(ms)).map(x => [x.type, x.value]));
-    return `${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}`;
+// העירייה שומרת את זמן העדכון בשעון ישראל, אבל מסמנת אותו כאילו הוא UTC.
+// לכן השעה נקראת "כמו שהיא", בלי המרה, בפורמט 2026-11-19T16:52
+function wallTime(ms) {
+    return new Date(ms).toISOString().slice(0, 16);
+}
+
+// תיקון חד פעמי: עד 22.11.26 השעות נשמרו עם המרה מיותרת לשעון ישראל, כלומר שעתיים קדימה
+// (בנובמבר ישראל ב-UTC+2). מתקן את השורות הישנות פעם אחת, ומסמן בקובץ time-fixed.
+function fixOldTimes(dir) {
+    const mark = path.join(dir, "time-fixed");
+    const odir = path.join(dir, "occupancy");
+    if (fs.existsSync(mark) || !fs.existsSync(odir)) return;
+    for (const name of fs.readdirSync(odir)) {
+        if (!/^2026-11\.csv$/.test(name)) continue; // כל השורות הישנות הן מנובמבר 2026
+        const file = path.join(odir, name);
+        const lines = fs.readFileSync(file, "utf8").split("\n").map(l => {
+            const m = l.match(/^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}),/);
+            if (!m) return l;
+            const t = new Date(Date.parse(m[1] + ":00Z") - 2 * 60 * 60 * 1000).toISOString().slice(0, 16);
+            return t + l.slice(m[1].length);
+        });
+        fs.writeFileSync(file, lines.join("\n"));
+    }
+    fs.writeFileSync(mark, "השעות בשורות שנשמרו עד 22.11.26 תוקנו (פחות שעתיים).\n");
+    console.log("תוקנו השעות בשורות הישנות");
 }
 
 async function main() {
@@ -60,8 +79,10 @@ async function main() {
         .sort((a, b) => a.code_achoza - b.code_achoza);
     if (!items.length) throw new Error("אין סטטוסים בתשובה מהעירייה");
 
-    const updated = Math.max(...items.map(a => a.tr_status_chenyon || 0)) || Date.now();
-    const time = israelTime(updated);
+    fixOldTimes(dir);
+    const updated = Math.max(...items.map(a => a.tr_status_chenyon || 0));
+    if (!updated) throw new Error("אין זמן עדכון בתשובה מהעירייה");
+    const time = wallTime(updated);
     const line = `${time},${items.map(a => `${a.code_achoza}:${CODES[a.status_chenyon.trim()]}`).join(" ")}`;
 
     const file = path.join(dir, "occupancy", time.slice(0, 7) + ".csv");
