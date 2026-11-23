@@ -1225,6 +1225,14 @@
     "url": "https://www.szmc.org.il/services/chanaya/",
     "hourly": "35",
     "daily": "35",
+    "tariff": [
+      {
+        "label": "כל השבוע, כניסה חד פעמית עד חצות",
+        "flat": 35,
+        "until": "24:00",
+        "grace": 30
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-06-02T19:33:50.915Z"
   },
@@ -1236,6 +1244,14 @@
     "url": "https://www.szmc.org.il/services/chanaya/",
     "hourly": "30",
     "daily": "30",
+    "tariff": [
+      {
+        "label": "כל השבוע, כניסה חד פעמית עד חצות",
+        "flat": 30,
+        "until": "24:00",
+        "grace": 30
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-06-02T19:34:48.224Z"
   },
@@ -2126,7 +2142,7 @@
     "lng": 34.80505714496496,
     "color": "violet",
     "note": "זד\"ל",
-    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "url": "https://www.rishonlezion.muni.il/Lists/List17/CustomDispForm.aspx?ID=51",
     "hourly": "15",
     "daily": "20",
     "imageUrl": null,
@@ -2137,7 +2153,7 @@
     "lng": 34.80098854766222,
     "color": "violet",
     "note": "הבנים",
-    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "url": "https://www.rishonlezion.muni.il/Lists/List17/CustomDispForm.aspx?ID=54",
     "hourly": "20",
     "daily": "20",
     "imageUrl": null,
@@ -2148,7 +2164,7 @@
     "lng": 34.801181706331995,
     "color": "violet",
     "note": "היכל התרבות",
-    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "url": "https://www.rishonlezion.muni.il/Residents/Transportation/Parking/Pages/Cityparking.aspx",
     "hourly": "15",
     "daily": "15",
     "imageUrl": null,
@@ -2159,7 +2175,7 @@
     "lng": 34.80509027653461,
     "color": "violet",
     "note": "רכבת ראשונים",
-    "url": "https://www.rlz-bitachon.co.il/?CategoryID=173",
+    "url": "https://www.rishonlezion.muni.il/Residents/Transportation/Parking/Pages/Cityparking.aspx",
     "hourly": "20",
     "daily": "20",
     "imageUrl": null,
@@ -2250,6 +2266,13 @@
     "url": "https://www.rlz-bitachon.co.il/?CategoryID=171",
     "hourly": "6.4",
     "daily": "24",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "hour": 6.4,
+        "max": 24
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-06-22T15:32:22.119Z"
   },
@@ -2313,9 +2336,17 @@
     "lng": 34.84148982190132,
     "color": "violet",
     "note": "שיבא תל השומר",
-    "url": "https://www.sheba.co.il/%D7%A9%D7%A8%D7%95%D7%AA%D7%99%D7%9D_%D7%9C%D7%A0%D7%95%D7%97%D7%95%D7%AA_%D7%94%D7%9E%D7%98%D7%95%D7%A4%D7%9C#%D7%AA%D7%97%D7%91%D7%95%D7%A8%D7%94",
+    "url": "https://www.sheba.co.il/general/directions-clinics/directions-er",
     "hourly": "30",
     "daily": "30",
+    "tariff": [
+      {
+        "label": "כל השבוע, 30 ₪ ליממה",
+        "flat": 30,
+        "hours": 24,
+        "grace": 30
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-06-23T08:48:01.984Z"
   },
@@ -2327,6 +2358,15 @@
     "url": "https://www.rambam.org.il/maps/#{A87E0C64-090F-4D27-B591-9DFCAA26A229}",
     "hourly": "30",
     "daily": "49",
+    "tariff": [
+      {
+        "label": "כל השבוע, 0.5 ₪ לדקה, מקסימום 49 ₪ ל-24 שעות",
+        "minute": 0.5,
+        "max": 49,
+        "hours": 24,
+        "grace": 15
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-12-11T08:52:43.840Z"
   },
@@ -4674,6 +4714,23 @@
     "url": "https://www.bgu.ac.il/u/admin/logistics/public-parking/",
     "hourly": "8",
     "daily": "25",
+    "tariff": [
+      {
+        "label": "אורח",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 8,
+            "unit": 60
+          },
+          {
+            "hour": 8,
+            "unit": 15
+          }
+        ],
+        "max": 25
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-07-22T11:28:05.236Z"
   },
@@ -4716,8 +4773,15 @@
     "color": "violet",
     "note": "ביאליק רמת גן",
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
-    "hourly": "24",
+    "hourly": "30",
     "daily": "96",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "minute": 0.5,
+        "max": 96
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-07-23T07:32:20.323Z"
   },
@@ -4727,8 +4791,15 @@
     "color": "violet",
     "note": "הרצל - רמת גן",
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
-    "hourly": "24",
+    "hourly": "30",
     "daily": "96",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "minute": 0.5,
+        "max": 96
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-07-23T07:32:42.739Z"
   },
@@ -4738,8 +4809,38 @@
     "color": "violet",
     "note": "הפארק הלאומי הצבי",
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
-    "hourly": "16",
-    "daily": "48",
+    "hourly": "30",
+    "daily": "70",
+    "tariff": [
+      {
+        "label": "שבת",
+        "days": "ש",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.5
+          },
+          {
+            "minute": 0.35
+          }
+        ],
+        "max": 70
+      },
+      {
+        "label": "ראשון–שישי",
+        "days": "א-ו",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.4
+          },
+          {
+            "minute": 0.3
+          }
+        ],
+        "max": 60
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-07-23T07:34:38.370Z"
   },
@@ -4748,9 +4849,39 @@
     "lng": 34.82210040092469,
     "color": "violet",
     "note": "הפארק הלאומי",
-    "url": "סן מרטין",
-    "hourly": "16",
-    "daily": "48",
+    "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
+    "hourly": "30",
+    "daily": "70",
+    "tariff": [
+      {
+        "label": "שבת",
+        "days": "ש",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.5
+          },
+          {
+            "minute": 0.35
+          }
+        ],
+        "max": 70
+      },
+      {
+        "label": "ראשון–שישי",
+        "days": "א-ו",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.4
+          },
+          {
+            "minute": 0.3
+          }
+        ],
+        "max": 60
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-07-23T07:35:27.682Z"
   },
@@ -4760,8 +4891,38 @@
     "color": "violet",
     "note": "הפארק הלאומי אחד העם",
     "url": "https://www.ramat-gan.muni.il/department-security-and-enforcement/content-pages/parking-lobby",
-    "hourly": "16",
-    "daily": "48",
+    "hourly": "30",
+    "daily": "70",
+    "tariff": [
+      {
+        "label": "שבת",
+        "days": "ש",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.5
+          },
+          {
+            "minute": 0.35
+          }
+        ],
+        "max": 70
+      },
+      {
+        "label": "ראשון–שישי",
+        "days": "א-ו",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.4
+          },
+          {
+            "minute": 0.3
+          }
+        ],
+        "max": 60
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-07-23T07:35:59.809Z"
   },
@@ -6754,8 +6915,21 @@
     "color": "violet",
     "note": "שער שכם",
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
-    "hourly": "18",
-    "daily": "108",
+    "hourly": "22",
+    "daily": "132",
+    "tariff": [
+      {
+        "label": "ערב ולילה (כניסה 17:00–07:00)",
+        "entry": "17:00-07:00",
+        "flat": 30,
+        "until": "07:00"
+      },
+      {
+        "label": "יום",
+        "minute": 0.36666666666666664,
+        "max": 132
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-08-21T07:03:37.190Z"
   },
@@ -6765,8 +6939,21 @@
     "color": "violet",
     "note": "ספרא",
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
-    "hourly": "18",
-    "daily": "108",
+    "hourly": "22",
+    "daily": "132",
+    "tariff": [
+      {
+        "label": "ערב ולילה (כניסה 16:00–07:00)",
+        "entry": "16:00-07:00",
+        "flat": 30,
+        "until": "07:00"
+      },
+      {
+        "label": "יום",
+        "minute": 0.36666666666666664,
+        "max": 132
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-08-21T07:05:49.869Z"
   },
@@ -6776,8 +6963,21 @@
     "color": "violet",
     "note": "מנורה",
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
-    "hourly": "14",
-    "daily": "84",
+    "hourly": "22",
+    "daily": "132",
+    "tariff": [
+      {
+        "label": "ערב ולילה (כניסה 17:00–08:00)",
+        "entry": "17:00-08:00",
+        "flat": 30,
+        "until": "08:00"
+      },
+      {
+        "label": "יום",
+        "minute": 0.36666666666666664,
+        "max": 132
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-08-21T07:21:56.637Z"
   },
@@ -6787,8 +6987,21 @@
     "color": "violet",
     "note": "אגרון",
     "url": "https://jeden.co.il/projects_category/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%99%D7%9D/",
-    "hourly": "12",
-    "daily": "72",
+    "hourly": "22",
+    "daily": "132",
+    "tariff": [
+      {
+        "label": "ערב ולילה (כניסה 17:00–07:00)",
+        "entry": "17:00-07:00",
+        "flat": 30,
+        "until": "07:00"
+      },
+      {
+        "label": "יום",
+        "minute": 0.36666666666666664,
+        "max": 132
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-08-21T07:23:23.452Z"
   },
@@ -7036,6 +7249,42 @@
     "url": "https://www.tlvmall.com/Content/%D7%97%D7%A0%D7%99%D7%94",
     "hourly": "30",
     "daily": "126",
+    "tariff": [
+      {
+        "label": "שבת (כניסה 06:00 עד 06:00 למחרת)",
+        "days": "ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "שישי (כניסה מ-16:00 עד 06:00 למחרת)",
+        "days": "ו",
+        "entry": "16:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "לילה ראשון–חמישי (כניסה 20:00–06:00)",
+        "days": "א-ה",
+        "entry": "20:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      },
+      {
+        "label": "חניה יומית",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.5
+          },
+          {
+            "minute": 0.4
+          }
+        ],
+        "max": 126
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-26T05:41:21.090Z"
   },
@@ -9075,6 +9324,205 @@
     "url": "https://www.iaa.gov.il/airports/ben-gurion/parking-at-ben-gurion-airport/",
     "hourly": "12",
     "daily": "50",
+    "tariff": [
+      {
+        "label": "יממה ראשונה 50 ₪, אחר כך 12 ₪ לשעה עד 50 ₪ ליממה",
+        "rates": [
+          {
+            "minutes": 1440,
+            "hour": 50,
+            "unit": 1440,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "minutes": 1440,
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          },
+          {
+            "hour": 12,
+            "unit": 60,
+            "max": 50
+          }
+        ],
+        "hours": 744
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-03T16:45:22.746Z"
   },
@@ -9084,8 +9532,17 @@
     "color": "violet",
     "note": "חניה קצרת טווח - תעריף לשעה ראשונה ₪22. כל רבע שעה נוספת ₪6. תעריף מקסימום ליום ₪100 22 ₪ לכל שעה נוספת (תעריף מקסימום ליממה-100 ₪). בעונת השיא מהתאריך 15.06 ועד התאריך 31.10 תעריף מקסימום ליממה- 135 ₪.",
     "url": "https://www.iaa.gov.il/airports/ben-gurion/parking-at-ben-gurion-airport/",
-    "hourly": "22",
-    "daily": "100+",
+    "hourly": "30",
+    "daily": "135",
+    "tariff": [
+      {
+        "label": "חניה לטווח קצר (0.5 ₪ לדקה, עד 135 ₪ ליממה)",
+        "minute": 0.5,
+        "max": 135,
+        "hours": 24,
+        "grace": 15
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-03T16:45:30.410Z"
   },
@@ -9095,8 +9552,207 @@
     "color": "violet",
     "note": "נתבג חניון 15 - חניה באזור לא מקורה: 50 ₪ ליממה. כל שעה נוספת מעבר לכך 12 ₪. (תעריף מקסימום ליממה 50 ₪). חניה באזור מקורה: 90 ₪ ליממה. כל שעה נוספת מעבר 16 ₪. (תעריף מקסימום ליממה 90 ₪) .",
     "url": "https://www.iaa.gov.il/airports/ben-gurion/parking-at-ben-gurion-airport/",
-    "hourly": "12",
-    "daily": "50",
+    "hourly": "16",
+    "daily": "90",
+    "tariff": [
+      {
+        "label": "יממה ראשונה 90 ₪, אחר כך 16 ₪ לשעה עד 90 ₪ ליממה",
+        "rates": [
+          {
+            "minutes": 1440,
+            "hour": 90,
+            "unit": 1440,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "minutes": 1440,
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          },
+          {
+            "hour": 16,
+            "unit": 60,
+            "max": 90
+          }
+        ],
+        "hours": 744
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-03T16:45:46.930Z"
   },
@@ -9543,8 +10199,36 @@
     "color": "violet",
     "note": "הקניון הגדול - שעתיים ראשונות חינם",
     "url": "https://myofer.co.il/malls/grand-mall-petah-tikva/info",
-    "hourly": "16",
+    "hourly": "18",
     "daily": "80",
+    "tariff": [
+      {
+        "label": "שבת",
+        "days": "ש",
+        "free": true
+      },
+      {
+        "label": "ראשון–שישי",
+        "rates": [
+          {
+            "minutes": 120,
+            "hour": 0
+          },
+          {
+            "minutes": 30,
+            "minute": 0.5
+          },
+          {
+            "minutes": 90,
+            "minute": 0.2
+          },
+          {
+            "minute": 0.3
+          }
+        ],
+        "max": 80
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-09T08:08:52.543Z"
   },
@@ -9589,6 +10273,21 @@
     "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792",
     "hourly": "8",
     "daily": "88",
+    "tariff": [
+      {
+        "label": "כל השבוע",
+        "rates": [
+          {
+            "minutes": 120,
+            "hour": 0
+          },
+          {
+            "minute": 0.13
+          }
+        ],
+        "max": 88
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-10-28T15:17:21.000Z"
   },
@@ -9600,6 +10299,21 @@
     "url": "https://www.modiin.muni.il/ModiinWebSite/ArticlePage.aspx?PageID=1290_3792#%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%91%D7%A2%D7%99%D7%A8",
     "hourly": "5",
     "daily": "60",
+    "tariff": [
+      {
+        "label": "ראשון–חמישי 07:00–19:00",
+        "days": "א-ה",
+        "entry": "07:00-19:00",
+        "hour": 5,
+        "until": "19:00",
+        "max": 60
+      },
+      {
+        "label": "שאר השעות",
+        "free": true,
+        "until": "07:00"
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-25T05:42:43.739Z"
   },
@@ -13265,8 +13979,37 @@
     "color": "violet",
     "note": "סנטר 1",
     "url": "https://center1.co.il/contant/",
-    "hourly": "16",
-    "daily": "70",
+    "hourly": "24",
+    "daily": "90",
+    "tariff": [
+      {
+        "label": "ראשון–חמישי (פתוח 06:30–01:00)",
+        "days": "א-ה",
+        "entry": "06:30-01:00",
+        "minute": 0.4,
+        "max": 90,
+        "hours": 24,
+        "grace": 10
+      },
+      {
+        "label": "שישי (עד שעה לפני כניסת השבת)",
+        "days": "ו",
+        "entry": "06:30-19:00",
+        "minute": 0.4,
+        "max": 90,
+        "hours": 24,
+        "grace": 10
+      },
+      {
+        "label": "מוצאי שבת (משעה אחרי צאת השבת עד 24:00)",
+        "days": "ש",
+        "entry": "17:30-24:00",
+        "minute": 0.4,
+        "max": 90,
+        "hours": 24,
+        "grace": 10
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-10-26T11:02:25.157Z"
   },
@@ -13278,6 +14021,30 @@
     "url": "https://seamall.co.il/about/",
     "hourly": "21",
     "daily": "55",
+    "tariff": [
+      {
+        "label": "שבת",
+        "days": "ש",
+        "free": true
+      },
+      {
+        "label": "ראשון–שישי",
+        "rates": [
+          {
+            "minutes": 120,
+            "hour": 0
+          },
+          {
+            "minutes": 30,
+            "minute": 0.65
+          },
+          {
+            "minute": 0.35
+          }
+        ],
+        "max": 55
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-03-16T05:01:10.385Z"
   },
