@@ -4795,6 +4795,39 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a9%d7%98%d7%9e%d7%a4%d7%a4%d7%a8-17/",
     "hourly": "27",
     "daily": "75",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-18:00)",
+        "entry": "18:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.45
+          },
+          {
+            "minutes": 120,
+            "minute": 0.4
+          },
+          {
+            "minute": 0.45
+          }
+        ],
+        "max": 75
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4804,8 +4837,40 @@
     "color": "violet",
     "note": "בית אמות ביטוח(לשעבר בית כלל)",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%90%d7%9e%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%94%d7%a8%d7%9b%d7%91%d7%aa/",
-    "hourly": "28",
-    "daily": "93",
+    "hourly": "24",
+    "daily": "70",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ראשון–חמישי, ערב (כניסה מ-19:00)",
+        "days": "א-ה",
+        "entry": "19:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-19:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 70
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-04T10:40:39.749Z"
   },
@@ -4864,8 +4929,43 @@
     "color": "violet",
     "note": "גינת השרון / גן החשמל",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%92%d7%99%d7%a0%d7%aa-%d7%94%d7%a9%d7%a8%d7%95%d7%9f-%d7%92%d7%9f-%d7%94%d7%97%d7%a9%d7%9e%d7%9c/",
-    "hourly": "33",
+    "hourly": "28",
     "daily": "93",
+    "tariff": [
+      {
+        "label": "ערב (כניסה מ-19:00)",
+        "entry": "19:00-06:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 28,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 50,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-19:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 28,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 93
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4875,8 +4975,39 @@
     "color": "violet",
     "note": "סינמטק – קרליבך",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a1%d7%99%d7%a0%d7%99%d7%9e%d7%98%d7%a7-%d7%a7%d7%a8%d7%9c%d7%99%d7%91%d7%9a/",
-    "hourly": "30",
-    "daily": "90",
+    "hourly": "28",
+    "daily": "80",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-20:00)",
+        "entry": "20:00-06:00",
+        "flat": 30,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-20:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 22,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 80
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4886,8 +5017,45 @@
     "color": "violet",
     "note": "אומנויות הבמה / לויד ג'ורג'",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%9e%d7%a0%d7%95%d7%99%d7%95%d7%aa-%d7%94%d7%91%d7%9e%d7%94-%d7%9c%d7%95%d7%99%d7%93-%d7%92%d7%95%d7%a8%d7%92/",
-    "hourly": "27",
+    "hourly": "30",
     "daily": "87",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-20:00)",
+        "entry": "20:00-06:00",
+        "flat": 32,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-20:00",
+        "rates": [
+          {
+            "minutes": 30,
+            "minute": 0.5
+          },
+          {
+            "minutes": 150,
+            "minute": 0.4
+          },
+          {
+            "minutes": 60,
+            "minute": 0.2
+          },
+          {
+            "minute": 0.5
+          }
+        ],
+        "max": 87
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4915,8 +5083,32 @@
     "color": "violet",
     "note": "המסגר",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%9e%d7%a1%d7%92%d7%a8/",
-    "hourly": "22.5",
-    "daily": "55",
+    "hourly": "24",
+    "daily": "50",
+    "tariff": [
+      {
+        "label": "ערב (כניסה מ-18:00)",
+        "entry": "18:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 20,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 50
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4928,6 +5120,27 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%90%d7%95%d7%90%d7%96%d7%99%d7%a1/",
     "hourly": "24",
     "daily": "72",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-18:00)",
+        "entry": "18:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "max": 72,
+        "minute": 0.4
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4937,8 +5150,39 @@
     "color": "violet",
     "note": "בזארנו",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%96%d7%90%d7%a8%d7%a0%d7%95/",
-    "hourly": "24",
-    "daily": "72",
+    "hourly": "28",
+    "daily": "67",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 15,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-16:00)",
+        "entry": "16:00-06:00",
+        "flat": 15,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-16:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 67
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4949,7 +5193,38 @@
     "note": "בית גיבור ספורט",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%99%d7%aa-%d7%92%d7%99%d7%91%d7%95%d7%a8-%d7%a1%d7%a4%d7%95%d7%a8%d7%98/",
     "hourly": "30",
-    "daily": "98",
+    "daily": "93",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 30,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-20:00)",
+        "entry": "20:00-06:00",
+        "flat": 30,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-20:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 30,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 93
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -4959,8 +5234,42 @@
     "color": "violet",
     "note": "הבורסה ליהלומים",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%91%d7%95%d7%a8%d7%a1%d7%94-%d7%9c%d7%99%d7%94%d7%9c%d7%95%d7%9e%d7%99%d7%9d/",
-    "hourly": "80",
-    "daily": "80",
+    "hourly": "33",
+    "daily": "92",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-19:00)",
+        "entry": "19:00-06:00",
+        "max": 35,
+        "until": "06:00",
+        "minute": 0.35
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-19:00",
+        "rates": [
+          {
+            "minutes": 30,
+            "minute": 0.55
+          },
+          {
+            "minutes": 30,
+            "minute": 0.45
+          },
+          {
+            "minute": 0.55
+          }
+        ],
+        "max": 92
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
@@ -8850,6 +9159,23 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a8%d7%95%d7%9e%d7%9e%d7%94-2-%d7%94%d7%a8%d7%9b%d7%91%d7%aa-%d7%99%d7%a8%d7%95%d7%a9%d7%9c%d7%99%d7%9d-2/",
     "hourly": "24",
     "daily": "64",
+    "tariff": [
+      {
+        "label": "יום",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 64
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T14:41:56.472Z"
   },
@@ -8860,7 +9186,38 @@
     "note": "יהודה אנגלרד 1 צומת עלית",
     "url": "https://www.greenparking.co.il/parkings/%d7%a6%d7%95%d7%9e%d7%aa-%d7%a2%d7%9c%d7%99%d7%aa-%d7%a8%d7%9e%d7%aa-%d7%92%d7%9f/",
     "hourly": "24",
-    "daily": "64",
+    "daily": "69",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-18:00)",
+        "entry": "18:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 20,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 69
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T14:47:35.303Z"
   },
@@ -8872,6 +9229,38 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%91%d7%a8-%d7%9b%d7%95%d7%9b%d7%91%d7%90/",
     "hourly": "24",
     "daily": "80",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 10,
+        "until": "06:00"
+      },
+      {
+        "label": "ראשון–חמישי, ערב (כניסה מ-18:00)",
+        "days": "א-ה",
+        "entry": "18:00-06:00",
+        "flat": 10,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 17,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 80
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T14:49:07.095Z"
   },
@@ -8883,6 +9272,30 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%91%d7%9c%d7%95%d7%9e%d7%a4%d7%99%d7%9c%d7%93-%d7%9e%d7%a9%d7%98%d7%a8%d7%94/",
     "hourly": "24",
     "daily": "54",
+    "tariff": [
+      {
+        "label": "ערב (כניסה מ-18:00)",
+        "entry": "18:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 20,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 54
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T14:50:57.839Z"
   },
@@ -8893,7 +9306,38 @@
     "note": "בית גאון - יחזקאל קויפמן 6",
     "url": "https://www.greenparking.co.il/parkings/%d7%91%d7%99%d7%aa-%d7%92%d7%90%d7%95%d7%9f/",
     "hourly": "24",
-    "daily": "54",
+    "daily": "64",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-18:00)",
+        "entry": "18:00-06:00",
+        "flat": 30,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-18:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 64
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T14:52:47.895Z"
   },
@@ -8903,8 +9347,40 @@
     "color": "violet",
     "note": "דוד חכמי 16",
     "url": "https://www.greenparking.co.il/parkings/%d7%93%d7%95%d7%93-%d7%97%d7%9b%d7%9e%d7%99-16-%d7%aa%d7%90/",
-    "hourly": "27",
-    "daily": "81",
+    "hourly": "24",
+    "daily": "70",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ראשון–חמישי, ערב (כניסה מ-19:00)",
+        "days": "א-ה",
+        "entry": "19:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-19:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 18,
+            "unit": 60
+          },
+          {
+            "hour": 24,
+            "unit": 15
+          }
+        ],
+        "max": 70
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-04T10:40:39.749Z"
   },
@@ -8914,8 +9390,29 @@
     "color": "violet",
     "note": "מגדל השחר - סיטי גבעתיים",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%9e%d7%92%d7%93%d7%9c-%d7%94%d7%a9%d7%97%d7%a8-%d7%a1%d7%99%d7%98%d7%99-%d7%92%d7%91%d7%a2%d7%aa%d7%99%d7%99%d7%9d/",
-    "hourly": "24",
-    "daily": "75",
+    "hourly": "27",
+    "daily": "90",
+    "tariff": [
+      {
+        "label": "שישי–שבת",
+        "days": "ו-ש",
+        "entry": "06:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "ערב (כניסה מ-20:00)",
+        "entry": "20:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-20:00",
+        "max": 90,
+        "minute": 0.45
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T14:59:27.030Z"
   },
@@ -8925,8 +9422,25 @@
     "color": "violet",
     "note": "בן יהודה 11 תל אביב",
     "url": "https://www.greenparking.co.il/parkings/%d7%91%d7%9f-%d7%99%d7%94%d7%95%d7%93%d7%94-11-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
-    "hourly": "24",
-    "daily": "70",
+    "hourly": "28",
+    "daily": "90",
+    "tariff": [
+      {
+        "label": "יום",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 25,
+            "unit": 60
+          },
+          {
+            "hour": 28,
+            "unit": 15
+          }
+        ],
+        "max": 90
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T15:01:19.310Z"
   },
@@ -8936,8 +9450,32 @@
     "color": "violet",
     "note": "לב הפארק - רבקה גובר 5 רעננה",
     "url": "https://www.greenparking.co.il/parkings/%d7%a8%d7%91%d7%a7%d7%94-%d7%92%d7%95%d7%91%d7%a8-6-%d7%a8%d7%a2%d7%a0%d7%a0%d7%94/",
-    "hourly": "16",
-    "daily": "42",
+    "hourly": "20",
+    "daily": "40",
+    "tariff": [
+      {
+        "label": "ערב (כניסה מ-19:00)",
+        "entry": "19:00-06:00",
+        "flat": 20,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-19:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "hour": 15,
+            "unit": 60
+          },
+          {
+            "hour": 20,
+            "unit": 15
+          }
+        ],
+        "max": 40
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T15:13:15.877Z"
   },
@@ -8947,8 +9485,22 @@
     "color": "violet",
     "note": "פארק גב ים - הסדן 2 חולון",
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%a4%d7%90%d7%a8%d7%a7-%d7%92%d7%91-%d7%99%d7%9d-%d7%97%d7%95%d7%9c%d7%95%d7%9f/",
-    "hourly": "24",
-    "daily": "74",
+    "hourly": "27",
+    "daily": "80",
+    "tariff": [
+      {
+        "label": "ערב (כניסה מ-20:00)",
+        "entry": "20:00-06:00",
+        "flat": 25,
+        "until": "06:00"
+      },
+      {
+        "label": "יום",
+        "entry": "06:00-20:00",
+        "max": 80,
+        "minute": 0.45
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2025-09-07T15:16:02.548Z"
   },
