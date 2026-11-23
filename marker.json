@@ -4817,6 +4817,44 @@
     "url": "https://www.greenparking.co.il/parkings/%d7%97%d7%a0%d7%99%d7%95%d7%9f-%d7%94%d7%aa%d7%9c%d7%9e%d7%99/",
     "hourly": "24",
     "daily": "87",
+    "tariff": [
+      {
+        "label": "שבת",
+        "days": "ש",
+        "entry": "00:00-19:00",
+        "flat": 30,
+        "until": "19:00"
+      },
+      {
+        "label": "ערב (כניסה מ-19:00)",
+        "entry": "19:00-06:00",
+        "minute": 0.35,
+        "max": 50,
+        "until": "06:00"
+      },
+      {
+        "label": "יום (ראשון עד שישי)",
+        "entry": "06:00-19:00",
+        "rates": [
+          {
+            "minutes": 60,
+            "minute": 0.35
+          },
+          {
+            "minutes": 120,
+            "minute": 0.4
+          },
+          {
+            "minutes": 60,
+            "minute": 0.3
+          },
+          {
+            "minute": 0.4
+          }
+        ],
+        "max": 87
+      }
+    ],
     "imageUrl": null,
     "dateTime": "2026-01-05T14:45:15.707Z"
   },
